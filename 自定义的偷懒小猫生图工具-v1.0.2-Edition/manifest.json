@@ -1,0 +1,11 @@
+{
+  "display_name": "自定义的偷懒小猫生图工具 v1.0.2 Edition",
+  "loading_order": 10,
+  "requires": [],
+  "optional": [],
+  "js": "index.js",
+  "author": "reasonix",
+  "version": "1.0.2",
+  "homePage": "",
+  "auto_update": false
+}
