@@ -1,1 +1,313 @@
-(function(_0x56155e,_0x62aa5f){var _0x27d637=a0_0x8a4f,_0xaff58d=_0x56155e();while(!![]){try{var _0x273f7e=-parseInt(_0x27d637(0xe6))/0x1*(parseInt(_0x27d637(0x112))/0x2)+-parseInt(_0x27d637(0xcf))/0x3*(parseInt(_0x27d637(0xc1))/0x4)+parseInt(_0x27d637(0xc5))/0x5+parseInt(_0x27d637(0xfc))/0x6*(parseInt(_0x27d637(0x10f))/0x7)+-parseInt(_0x27d637(0x10b))/0x8+parseInt(_0x27d637(0x110))/0x9*(-parseInt(_0x27d637(0xd7))/0xa)+parseInt(_0x27d637(0x100))/0xb;if(_0x273f7e===_0x62aa5f)break;else _0xaff58d['push'](_0xaff58d['shift']());}catch(_0x2ac657){_0xaff58d['push'](_0xaff58d['shift']());}}}(a0_0x4ff3,0x9c767));var a0_0x42fdfd=(function(){var _0x380ff7=!![];return function(_0x4b897a,_0x17d211){var _0x3fe968=_0x380ff7?function(){var _0x4aad73=a0_0x8a4f;if(_0x17d211){var _0x1053d0=_0x17d211[_0x4aad73(0x116)](_0x4b897a,arguments);return _0x17d211=null,_0x1053d0;}}:function(){};return _0x380ff7=![],_0x3fe968;};}()),a0_0x2607cd=a0_0x42fdfd(this,function(){var _0x5f10c5=a0_0x8a4f,_0x137ed2;try{var _0x4374e0=Function(_0x5f10c5(0xca)+'{}.constructor(\x22return\x20this\x22)(\x20)'+');');_0x137ed2=_0x4374e0();}catch(_0x13c497){_0x137ed2=window;}var _0x4fd1fb=_0x137ed2[_0x5f10c5(0xe3)]=_0x137ed2['console']||{},_0x3b3a4e=['log','warn','info','error','exception',_0x5f10c5(0xc8),'trace'];for(var _0x295206=0x0;_0x295206<_0x3b3a4e[_0x5f10c5(0xd8)];_0x295206++){var _0x5c0874=a0_0x42fdfd[_0x5f10c5(0x101)][_0x5f10c5(0xef)][_0x5f10c5(0xf2)](a0_0x42fdfd),_0x5b16bc=_0x3b3a4e[_0x295206],_0x218505=_0x4fd1fb[_0x5b16bc]||_0x5c0874;_0x5c0874[_0x5f10c5(0xf5)]=a0_0x42fdfd['bind'](a0_0x42fdfd),_0x5c0874['toString']=_0x218505[_0x5f10c5(0xfd)][_0x5f10c5(0xf2)](_0x218505),_0x4fd1fb[_0x5b16bc]=_0x5c0874;}});a0_0x2607cd();import{slLog,slErr}from'./log.js';import{settings,getSTContext,escapeHtml,saveSettings}from'./settings.js';import{extractBodyText,hasBodyMarker}from'./text-utils.js';import{getChatId,runAuxPipeline}from'./pipeline.js';import{renderBodyEnhanced,renderEnhanced,setRestoreDeps,restoreImageBlocks}from'./render.js';import{getChatId as a0_0x3a56ed}from'./pipeline.js';setRestoreDeps(a0_0x3a56ed,getSTContext);var scanSession=null,sessionIdCounter=0x0;function startScanSession(_0x4ab5b5,_0x2bbfae,_0x537bff){var _0x33f423=a0_0x8a4f;if(scanSession&&scanSession['mesid']===_0x2bbfae&&scanSession[_0x33f423(0xf4)]!==_0x33f423(0x10c))return;sessionIdCounter++;var _0x180892=sessionIdCounter;scanSession&&(clearTimeout(scanSession['timer']),slLog(_0x33f423(0xfa)+scanSession['id']+'\x20被\x20#'+_0x180892+_0x33f423(0xe0)));var _0x58f634={};_0x58f634['id']=_0x180892,_0x58f634['msgEl']=_0x4ab5b5,_0x58f634[_0x33f423(0x106)]=_0x2bbfae,_0x58f634[_0x33f423(0x108)]=_0x537bff,_0x58f634['phase']=_0x33f423(0xff),_0x58f634['timer']=null,_0x58f634['tries']=0x0,scanSession=_0x58f634,_0x4ab5b5[_0x33f423(0xeb)](_0x33f423(0x109),0x1),slLog(_0x33f423(0xfa)+_0x180892+_0x33f423(0xd9)),scheduleMarkerCheck(_0x180892);}function scheduleMarkerCheck(_0x2a549a){var _0x3f278f=scanSession;if(!_0x3f278f||_0x3f278f['id']!==_0x2a549a)return;clearTimeout(_0x3f278f['timer']),_0x3f278f['timer']=setTimeout(function(){doMarkerCheck(_0x2a549a);},0x1388);}function doMarkerCheck(_0x56c319){var _0x599f4b=a0_0x8a4f,_0x3d3df3=scanSession;if(!_0x3d3df3||_0x3d3df3['id']!==_0x56c319)return;_0x3d3df3['tries']++;var _0x1a45f6=_0x3d3df3['msgEl'][_0x599f4b(0xde)](),_0x4200d0=_0x1a45f6[_0x599f4b(0x10d)](/<think[\s\S]*?<\/think>/gi,'')[_0x599f4b(0x10d)](/<fox_selc>[\s\S]*?<\/fox_selc>/gi,'')['replace'](/<fox_tip>[\s\S]*?<\/fox_tip>/gi,'')['replace'](/<CEstuff>[\s\S]*?<\/CEstuff>/gi,'')[_0x599f4b(0x10d)](/<catsay>[\s\S]*?<\/catsay>/gi,''),_0x2c3b35=_0x4200d0[_0x599f4b(0xdb)](_0x599f4b(0xc7)),_0x538b06=_0x4200d0['indexOf'](_0x599f4b(0x111),_0x2c3b35+0x1);if(_0x2c3b35>=0x0&&_0x538b06>_0x2c3b35){_0x3d3df3[_0x599f4b(0xf4)]='done',slLog(_0x599f4b(0xd0)+_0x56c319+'\x20检测到完整标记，提取正文('+(_0x538b06-_0x2c3b35-0x5)+'字)');var _0x353696=_0x1a45f6['slice'](_0x2c3b35+0x5,_0x538b06),_0x50fbb5=settings['storyMode']==='comic'?0x14:0x50;_0x353696[_0x599f4b(0xd8)]>=_0x50fbb5?(slLog('触发管线(标记模式)'),runAuxImageScan(_0x3d3df3[_0x599f4b(0xce)])):slLog(_0x599f4b(0xf9)+_0x353696[_0x599f4b(0xd8)]+')，跳过');return;}if(_0x2c3b35>=0x0&&_0x538b06<0x0){_0x3d3df3[_0x599f4b(0xf4)]=_0x599f4b(0xcc),slLog(_0x599f4b(0xd0)+_0x56c319+_0x599f4b(0xf7)),scheduleEndCheck(_0x56c319);return;}if(_0x3d3df3[_0x599f4b(0xc9)]<0x3)slLog(_0x599f4b(0xd0)+_0x56c319+'\x20第'+_0x3d3df3['tries']+'次未检测到标记'),scheduleMarkerCheck(_0x56c319);else{_0x3d3df3['phase']='done',slLog(_0x599f4b(0xd0)+_0x56c319+_0x599f4b(0xf1));var _0x39ced9=extractBodyText(_0x1a45f6);_0x39ced9[_0x599f4b(0xd8)]>=(settings[_0x599f4b(0x102)]===_0x599f4b(0x114)?0x14:0x50)&&(clearTimeout(_0x3d3df3[_0x599f4b(0xf6)]),_0x3d3df3[_0x599f4b(0xf6)]=setTimeout(function(){slLog('触发管线(回退模式)'),runAuxImageScan(_0x3d3df3['msgEl']);},0x1f40));}}function scheduleEndCheck(_0x535c13){var _0x39edbc=a0_0x8a4f,_0xe89d2f=scanSession;if(!_0xe89d2f||_0xe89d2f['id']!==_0x535c13)return;clearTimeout(_0xe89d2f[_0x39edbc(0xf6)]),_0xe89d2f['timer']=setTimeout(function(){doEndCheck(_0x535c13);},0x7d0);}function doEndCheck(_0x242ee5){var _0x4564c2=a0_0x8a4f,_0x2c36a2=scanSession;if(!_0x2c36a2||_0x2c36a2['id']!==_0x242ee5)return;var _0x1b42ce=_0x2c36a2[_0x4564c2(0xce)]['text'](),_0x55e5e0=_0x1b42ce[_0x4564c2(0x10d)](/<think[\s\S]*?<\/think>/gi,'')[_0x4564c2(0x10d)](/<fox_selc>[\s\S]*?<\/fox_selc>/gi,'')['replace'](/<fox_tip>[\s\S]*?<\/fox_tip>/gi,'')['replace'](/<CEstuff>[\s\S]*?<\/CEstuff>/gi,'')[_0x4564c2(0x10d)](/<catsay>[\s\S]*?<\/catsay>/gi,''),_0x33be31=_0x55e5e0['indexOf'](_0x4564c2(0xc7)),_0x1ab98a=_0x55e5e0['indexOf'](_0x4564c2(0x111),_0x33be31+0x1);if(_0x1ab98a>=0x0){_0x2c36a2[_0x4564c2(0xf4)]=_0x4564c2(0x10c);var _0xa2aafc=_0x1b42ce['slice'](_0x33be31+0x5,_0x1ab98a);slLog(_0x4564c2(0xd0)+_0x242ee5+_0x4564c2(0x103)+_0xa2aafc['length']+'字)');_0xa2aafc[_0x4564c2(0xd8)]>=(settings['storyMode']===_0x4564c2(0x114)?0x14:0x50)?(slLog('触发管线(标记模式)'),runAuxImageScan(_0x2c36a2[_0x4564c2(0xce)])):slLog('正文过短('+_0xa2aafc[_0x4564c2(0xd8)]+')，跳过');return;}scheduleEndCheck(_0x242ee5);}export function scanAllMsgs(){var _0x2f66eb=a0_0x8a4f;try{if(!settings['cWf']||!settings[_0x2f66eb(0xd1)])return;if(jQuery('.edit_textarea')[_0x2f66eb(0xd8)]||jQuery('#curEditTextarea')['length'])return;var _0x409391=getChatId();jQuery('.mes')['each'](function(){var _0x5557bb=_0x2f66eb,_0x3afaf9=jQuery(this)[_0x5557bb(0xcd)]('.mes_text');if(!_0x3afaf9['length'])return;var _0x8eee8f=jQuery(this)['attr'](_0x5557bb(0x106));if(!_0x8eee8f)return;var _0x3e2b06=findBestCached(_0x409391,_0x8eee8f,_0x3afaf9['text']());if(_0x3e2b06&&/\[image:/[_0x5557bb(0x107)](_0x3e2b06)){if(/sl_img_btn/[_0x5557bb(0x107)](_0x3afaf9[_0x5557bb(0xdf)]()))return;if(hasBodyMarker(_0x3e2b06)){var _0x854bfd=_0x3e2b06['slice'](_0x3e2b06['indexOf'](_0x5557bb(0xc7))+0x5,_0x3e2b06[_0x5557bb(0xdb)]('结尾###',_0x3e2b06[_0x5557bb(0xdb)]('正文###')+0x5));renderBodyEnhanced(_0x3afaf9,_0x854bfd);}else renderEnhanced(_0x3afaf9,_0x3e2b06);}});}catch(_0x2a3182){}}function a0_0x8a4f(_0x5670a5,_0x1b6f5c){_0x5670a5=_0x5670a5-0xc0;var _0x182316=a0_0x4ff3();var _0x2607cd=_0x182316[_0x5670a5];if(a0_0x8a4f['TAaImt']===undefined){var _0x42fdfd=function(_0x1e774f){var _0x51fa61='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x292d92='',_0x1efbe2='';for(var _0x42152d=0x0,_0x43a672,_0x2745d8,_0x3a0e9e=0x0;_0x2745d8=_0x1e774f['charAt'](_0x3a0e9e++);~_0x2745d8&&(_0x43a672=_0x42152d%0x4?_0x43a672*0x40+_0x2745d8:_0x2745d8,_0x42152d++%0x4)?_0x292d92+=String['fromCharCode'](0xff&_0x43a672>>(-0x2*_0x42152d&0x6)):0x0){_0x2745d8=_0x51fa61['indexOf'](_0x2745d8);}for(var _0x3a56ed=0x0,_0x380ff7=_0x292d92['length'];_0x3a56ed<_0x380ff7;_0x3a56ed++){_0x1efbe2+='%'+('00'+_0x292d92['charCodeAt'](_0x3a56ed)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x1efbe2);};a0_0x8a4f['NcKJlP']=_0x42fdfd,a0_0x8a4f['JAOjIT']={},a0_0x8a4f['TAaImt']=!![];}var _0x1a4b3a=_0x182316[0x0],_0x4ff3a3=_0x5670a5+_0x1a4b3a,_0x8a4f8a=a0_0x8a4f['JAOjIT'][_0x4ff3a3];return!_0x8a4f8a?(_0x2607cd=a0_0x8a4f['NcKJlP'](_0x2607cd),a0_0x8a4f['JAOjIT'][_0x4ff3a3]=_0x2607cd):_0x2607cd=_0x8a4f8a,_0x2607cd;}export async function runAuxImageScan(_0x54a98f){var _0x107f80=a0_0x8a4f;try{slLog(_0x107f80(0xea));var _0x20f54a=_0x54a98f||jQuery('.mes_text')[_0x107f80(0xe8)]();if(!_0x20f54a['length']){slLog('无消息');return;}if(_0x20f54a['data'](_0x107f80(0xdc))){slLog(_0x107f80(0xc0));return;}_0x20f54a[_0x107f80(0xda)](_0x107f80(0x109));var _0x4cefe4=_0x20f54a[_0x107f80(0xde)]();_0x20f54a[_0x107f80(0xeb)](_0x107f80(0xec),getMsgFingerprint(_0x4cefe4)||_0x4cefe4['slice'](0x0,0x32)[_0x107f80(0x10d)](/\s/g,'')),_0x20f54a[_0x107f80(0xeb)]('sl_aux_scanned',0x1);var _0x277638=extractBodyText(_0x4cefe4),_0xd21353=settings['storyMode']==='comic'?0x14:0x50;if(_0x277638['length']<_0xd21353){slLog('过短('+_0x277638['length']+')'),_0x20f54a[_0x107f80(0xda)](_0x107f80(0xdc)),_0x20f54a['removeData']('sl_session_started');return;}slLog('管线启动,\x20清洗后:\x20'+_0x277638['length']);var _0x14d377=await runAuxPipeline(_0x277638);if(!_0x14d377){slLog(_0x107f80(0x10e));return;}if(!settings[_0x107f80(0xc3)])settings['msgMap']={};var _0x5e1dec=_0x20f54a[_0x107f80(0xc4)](_0x107f80(0xe5)),_0x4f6db1=_0x5e1dec['length']?_0x5e1dec[_0x107f80(0xed)]('mesid'):Date[_0x107f80(0xf3)]()+'',_0x79dbf3=_0x4f6db1?jQuery(_0x107f80(0xe2)+_0x4f6db1+'\x22]'):jQuery(),_0x58a6ed=_0x79dbf3[_0x107f80(0xd8)]?_0x79dbf3['find'](_0x107f80(0xdd)):_0x20f54a,_0x368537=getMsgKey(getChatId(),_0x4f6db1,_0x58a6ed['text']()),_0x26a242=_0x58a6ed[_0x107f80(0xde)](),_0xdc8074=_0x26a242['indexOf'](_0x107f80(0xc7)),_0x132082=_0x26a242['indexOf'](_0x107f80(0x111),_0xdc8074+0x1);if(_0xdc8074>=0x0&&_0x132082>_0xdc8074){var _0xc2b2fc=_0x26a242[_0x107f80(0xe4)](0x0,_0xdc8074)+'正文###'+_0x14d377+'结尾###'+_0x26a242['slice'](_0x132082+0x5);settings['msgMap'][_0x368537]=_0xc2b2fc,renderBodyEnhanced(_0x58a6ed,_0x14d377,_0xdc8074,_0x132082),slLog(_0x107f80(0x115));}else settings['msgMap'][_0x368537]=_0x14d377,renderEnhanced(_0x58a6ed,_0x14d377);var _0x57417f=Object['keys'](settings[_0x107f80(0xc3)]);_0x57417f[_0x107f80(0xd8)]>0x32&&delete settings['msgMap'][_0x57417f[0x0]],saveSettings(),slLog(_0x107f80(0xc6)+_0x368537+_0x107f80(0x104)+_0x57417f['length']+'条缓存)'),slLog(_0x107f80(0xee)+(_0x14d377[_0x107f80(0xfb)](/\[image:/g)||[])[_0x107f80(0xd8)]);}catch(_0xc67145){slErr(_0x107f80(0xfe)+_0xc67145[_0x107f80(0xe1)]),_0x20f54a[_0x107f80(0xda)]('sl_session_started');}}function getMsgFingerprint(_0x36d3dd){var _0x183b45=a0_0x8a4f,_0x4475c9=_0x36d3dd['indexOf']('正文###');if(_0x4475c9>=0x0)return _0x36d3dd['slice'](_0x4475c9+0x5,_0x4475c9+0x37)[_0x183b45(0x10d)](/\s/g,'');return _0x36d3dd['slice'](0x0,0x32)['replace'](/\s/g,'');}function a0_0x4ff3(){var _0x415848=['D2fPDf9LBMq','zMLUza','BxnNrwW','mta4ndi5ovfrrMHsvW','5OMR5O+picm','yxv0B0DLBG','B3zLCMzSB3C','CgX1z2LUt24','6l2U6k+I5BYc5BI4oIa','y2fZDa','zM9YrwfJAa','mZbwCvHQAKW','BgvUz3rO','iowqR+wkQa','CMvTB3zLrgf0yq','Aw5KzxHpzG','C2XFyxv4x3nJyw5Uzwq','lM1LC190zxH0','Dgv4Da','AhrTBa','ioABV+s7OW','BwvZC2fNzq','lM1LC1TTzxnPzd0I','y29UC29Szq','C2XPy2u','lM1LCW','nZuZnwP3BezRyq','6l2U6k+IoIdMRApMLOFOV4FNN60O','BgfZDa','x3rPBwvYCW','yxv4sw1Hz2vty2fUiowqR+wkQa','zgf0yq','C2XFDgv4Df9MCa','yxr0CG','566H57Q/5A6m5OIqlcbPBwFLNzC6','ChjVDg90ExbL','tuvtu0fhrv9vuerbveve','idpMRkhMNkRMO4dMTyVLIldMOiFORRdVViZKVB/NLkJLM57PGiaGohm','yMLUza','BM93','CgHHC2u','x19WCM90B19F','DgLTzxi','ioAJGoA1I+wiScdMRApMLOCJiYpVViZNRyNLVOuG57Ut5Bc+iYmJ','lNnSx2LTz19IBg9JAYWGlNnSx2LTz19IDg4','5Q2J5PAh6l+h55+Tka','5OMR5O+p5lYA6k+Dicm','Bwf0y2G','mtuYndm5nLLmCwrlua','Dg9tDhjPBMC','566H57Q/5AsX6lsLoIa','D2fPDf9TyxjRzxi','ndy5ndC3ohzoCe9Psa','y29UC3rYDwn0B3i','C3rVCNLnB2rL','ioAJGoA1I+wiScdNU5pLSl4JiYpVViZMJ5dLJ5BMRApMLOCO','icJLHBe','5RAi5OgV57Yw6l6r6zkP5A2q5BcX57UQ5zA1FIdINkG','BwvZAwq','DgvZDa','y2HHDeLK','C2XFC2vZC2LVBL9ZDgfYDgvK','5Qoa5Rwl5yIW6igk5AsP5yIh5O2I5zA1FIdMUixNKiBML6FKVjROR53KUk3IGkyG4PYO','mta4nJuZnKTjs1HXza','zg9Uzq','CMvWBgfJzq','5PEG5AkE5BY66l6t5yE6','mZvWBKPLs3O','mJy2ndG5muvYvwjuDq','57Ut5Bc+iYmJ','mJi4s1b1sLfo','zxzLBNrFDhLWzxm','y29TAwm','5Qch6k6W5QIH5BYpoIdLOP7LVlRMLOFMNkZLT7lLM57LOAVLIlaG5Q2J5PAhiYmJlI4U57Ut5Bc+iYmJiowmUUMxTa','yxbWBhK','5BEY5OMR5O+p6l+hlcdOT7pOV4C','nezgqNPTtG','q0Hbvf9dsefor0ve','BxnNtwfW','y2XVC2vZDa','ntK0mtqWmgT1yujArG','5AkE5BY65PAh5PYS5BEY57Yt5A2ylcbRzxK9','5Q2J5PAhiYmJ','DgfIBgu','DhjPzxm','CMv0DxjUicHMDw5JDgLVBIGPia','6igk5AsP5yIh5O2I6zkP5A2q5BcX57UQ5zA1FIdINkG'];a0_0x4ff3=function(){return _0x415848;};return a0_0x4ff3();}function getMsgKey(_0x64378d,_0x1e54ff,_0x5a87b4){var _0x38c159=a0_0x8a4f;return _0x64378d+'_'+_0x1e54ff+'_'+getMsgFingerprint(_0x5a87b4||'')[_0x38c159(0xe4)](0x0,0x14);}function findBestCached(_0x32aea1,_0x417125,_0x466a74){var _0x3c592b=a0_0x8a4f,_0x28ea74=settings[_0x3c592b(0xc3)]||{},_0x34e763=getMsgKey(_0x32aea1,_0x417125,_0x466a74);if(_0x28ea74[_0x34e763]&&/\[image:/[_0x3c592b(0x107)](_0x28ea74[_0x34e763]))return _0x28ea74[_0x34e763];var _0x55f3bc=_0x32aea1+'_'+_0x417125+'_';for(var _0x538757 in _0x28ea74){if(_0x538757[_0x3c592b(0xdb)](_0x55f3bc)===0x0&&_0x28ea74[_0x538757]&&/\[image:/['test'](_0x28ea74[_0x538757])){var _0x518c2d=extractBodyContent(_0x28ea74[_0x538757])['slice'](0x0,0x28)[_0x3c592b(0x10d)](/\s/g,''),_0x2c30a6=extractBodyContent(_0x466a74)['slice'](0x0,0x28)[_0x3c592b(0x10d)](/\s/g,'');if(_0x518c2d&&_0x2c30a6&&_0x518c2d===_0x2c30a6)return _0x28ea74[_0x538757];}}return null;}function clearMsgCache(_0x2ff611,_0x3e717b){var _0x23e2c7=_0x2ff611+'_'+_0x3e717b+'_';for(var _0x40d2fd in settings['msgMap']||{}){_0x40d2fd['indexOf'](_0x23e2c7)===0x0&&(delete settings['msgMap'][_0x40d2fd],slLog('清理旧缓存:\x20'+_0x40d2fd));}}export function startPolling(){var _0x324755=a0_0x8a4f,_0x4300a1=setInterval(function(){scanAllMsgs();},0xbb8),_0x2a2caa=setInterval(function(){var _0x2a5697=a0_0x8a4f;try{if(settings[_0x2a5697(0xd3)]===![])return;var _0x590be7=jQuery(_0x2a5697(0xdd));if(!_0x590be7['length'])return;var _0x172f19=_0x590be7['last'](),_0x34a3a2=_0x172f19['text']();if(_0x34a3a2['indexOf']('正文###')<0x0)return;var _0x5e943d=_0x172f19[_0x2a5697(0xc4)]('.mes');if(!_0x5e943d||!_0x5e943d['length'])_0x5e943d=_0x172f19['parents'](_0x2a5697(0xe5))['first']();var _0x1ea5dc=_0x5e943d[_0x2a5697(0xd8)]?_0x5e943d[_0x2a5697(0xed)]('mesid'):null;if(!_0x1ea5dc){slLog('轮询:\x20未获取到mesId,\x20跳过');return;}var _0x1a7617=getChatId();if(_0x172f19['data'](_0x2a5697(0x109)))return;if(_0x172f19[_0x2a5697(0xeb)]('sl_aux_scanned')){var _0x269cab=_0x172f19['data']('sl_text_fp'),_0x25947b=getMsgFingerprint(_0x34a3a2)||_0x34a3a2[_0x2a5697(0xe4)](0x0,0x32)[_0x2a5697(0x10d)](/\s/g,'');if(_0x269cab&&_0x269cab!==_0x25947b){slLog('轮询:\x20检测到文本变化(重新生成/swipe),\x20清除旧渲染'),_0x172f19['removeData'](_0x2a5697(0xdc)),_0x172f19['removeData']('sl_session_started'),_0x172f19['find'](_0x2a5697(0xf8))['remove']();var _0x17c8c7={};_0x17c8c7['background']='',_0x17c8c7['border-left']='',_0x17c8c7['padding']='',_0x17c8c7['border-radius']='',_0x17c8c7['line-height']='',_0x17c8c7['color']='',_0x17c8c7['font-size']='',_0x17c8c7[_0x2a5697(0xd2)]='',_0x172f19['css'](_0x17c8c7);}else return;}var _0x2fe05e=extractBodyText(_0x34a3a2);if(_0x2fe05e[_0x2a5697(0xd8)]<(settings['storyMode']===_0x2a5697(0x114)?0x14:0x50)){slLog(_0x2a5697(0xe7)+_0x2fe05e['length']+'字),\x20跳过');return;}slLog('轮询:\x20检测到标记,\x20启动扫描会话,\x20mesId='+_0x1ea5dc),startScanSession(_0x172f19,_0x1ea5dc,_0x1a7617);}catch(_0x53ff0f){slErr(_0x2a5697(0xd4)+_0x53ff0f['message']);}},0x7d0);setTimeout(function(){var _0x48e0d1=a0_0x8a4f;try{var _0xfee10d=getSTContext(),_0x4881d1=_0xfee10d['eventSource'],_0xe1606f=_0xfee10d[_0x48e0d1(0x113)]||_0xfee10d['eventTypes'];_0x4881d1&&_0x4881d1['on']&&_0xe1606f&&_0xe1606f['MESSAGE_UPDATED']&&(_0x4881d1['on'](_0xe1606f[_0x48e0d1(0xf0)],function(){setTimeout(restoreImageBlocks,0x12c);}),slLog(_0x48e0d1(0x105))),_0xe1606f&&_0xe1606f[_0x48e0d1(0xc2)]&&(_0x4881d1['on'](_0xe1606f['CHAT_CHANGED'],function(){var _0x4db054=_0x48e0d1;slLog(_0x4db054(0x10a));scanSession&&(clearTimeout(scanSession['timer']),scanSession=null);var _0x20e509=jQuery('.mes_text')[_0x4db054(0xe8)]();setTimeout(function(){restoreImageBlocks(),scanAllMsgs();},0x7d0);}),slLog(_0x48e0d1(0xcb)));}catch(_0x35412d){slErr('事件钩子失败喵~\x20(╥﹏╥)\x20\x20'+_0x35412d[_0x48e0d1(0xe1)]);}},0x1388),startPolling[_0x324755(0xe9)]=[_0x4300a1,_0x2a2caa];}export function stopPolling(){var _0xf794b7=a0_0x8a4f;startPolling[_0xf794b7(0xe9)]&&(startPolling['_timers'][_0xf794b7(0xd6)](function(_0x338028){clearInterval(_0x338028);}),startPolling['_timers']=null);}export function hasCastCache(){var _0x3bff4f=a0_0x8a4f;try{var _0x8c8eee=getProfiles();return _0x8c8eee&&Object['keys'](_0x8c8eee['root'][_0x8c8eee['charName']][_0x3bff4f(0xd5)]||{})[_0x3bff4f(0xd8)]>0x0;}catch(_0x28ff7b){return![];}}
+// ── SillyImage Lab 消息扫描与触发 ──
+import { slLog, slErr } from './log.js';
+import { settings, getSTContext, escapeHtml, saveSettings } from './settings.js';
+import { extractBodyText, hasBodyMarker } from './text-utils.js';
+import { getChatId, runAuxPipeline } from './pipeline.js';
+import { renderBodyEnhanced, renderEnhanced, setRestoreDeps, restoreImageBlocks } from './render.js';
+
+// 注入 render 模块需要的依赖
+import { getChatId as pipelineGetChatId } from './pipeline.js';
+setRestoreDeps(pipelineGetChatId, getSTContext);
+
+// ── 扫描会话管理 ──
+var scanSession = null;
+var sessionIdCounter = 0;
+
+function startScanSession(msgElement, mesId, chatId) {
+    // 同一条消息已有进行中的会话 → 不重复启动
+    if (scanSession && scanSession.mesid === mesId && scanSession.phase !== 'done') return;
+    sessionIdCounter++;
+    var sessionId = sessionIdCounter;
+    if (scanSession) {
+        clearTimeout(scanSession.timer);
+        slLog('扫描会话 #' + scanSession.id + ' 被 #' + sessionId + ' 替代');
+    }
+    scanSession = { id: sessionId, msgEl: msgElement, mesid: mesId, chatId: chatId, phase: 'wait_marker', timer: null, tries: 0 };
+    // 标记会话已启动（和 sl_aux_scanned 分开，避免 auxImageScan 误判）
+    msgElement.data('sl_session_started', 1);
+    slLog('扫描会话 #' + sessionId + ' 启动');
+    scheduleMarkerCheck(sessionId);
+}
+
+function scheduleMarkerCheck(sessionId) {
+    var session = scanSession;
+    if (!session || session.id !== sessionId) return;
+    clearTimeout(session.timer);
+    session.timer = setTimeout(function() { doMarkerCheck(sessionId); }, 5000);
+}
+
+function doMarkerCheck(sessionId) {
+    var session = scanSession;
+    if (!session || session.id !== sessionId) return;
+    session.tries++;
+    var text = session.msgEl.text();
+    var clean = text.replace(/<think[\s\S]*?<\/think>/gi, '')
+        .replace(/<fox_selc>[\s\S]*?<\/fox_selc>/gi, '')
+        .replace(/<fox_tip>[\s\S]*?<\/fox_tip>/gi, '')
+        .replace(/<CEstuff>[\s\S]*?<\/CEstuff>/gi, '')
+        .replace(/<catsay>[\s\S]*?<\/catsay>/gi, '');
+    var startIdx = clean.indexOf('正文###');
+    var endIdx = clean.indexOf('结尾###', startIdx + 1);
+    if (startIdx >= 0 && endIdx > startIdx) {
+        session.phase = 'done';
+        slLog('扫描 #' + sessionId + ' 检测到完整标记，提取正文(' + (endIdx - startIdx - 5) + '字)');
+        var bodyText = text.slice(startIdx + 5, endIdx);
+        var minBody = settings.storyMode === 'comic' ? 20 : 80;
+        if (bodyText.length >= minBody) {
+            slLog('触发管线(标记模式)');
+            runAuxImageScan(session.msgEl);
+        } else { slLog('正文过短(' + bodyText.length + ')，跳过'); }
+        return;
+    }
+    if (startIdx >= 0 && endIdx < 0) {
+        session.phase = 'wait_end';
+        slLog('扫描 #' + sessionId + ' 检测到 正文###，等待 结尾###');
+        scheduleEndCheck(sessionId);
+        return;
+    }
+    if (session.tries < 3) {
+        slLog('扫描 #' + sessionId + ' 第' + session.tries + '次未检测到标记');
+        scheduleMarkerCheck(sessionId);
+    } else {
+        session.phase = 'done';
+        slLog('扫描 #' + sessionId + ' 3次未检测到标记，使用回退 8s');
+        var backupText = extractBodyText(text);
+        if (backupText.length >= (settings.storyMode === 'comic' ? 20 : 80)) {
+            clearTimeout(session.timer);
+            session.timer = setTimeout(function() {
+                slLog('触发管线(回退模式)');
+                runAuxImageScan(session.msgEl);
+            }, 8000);
+        }
+    }
+}
+
+function scheduleEndCheck(sessionId) {
+    var session = scanSession;
+    if (!session || session.id !== sessionId) return;
+    clearTimeout(session.timer);
+    session.timer = setTimeout(function() { doEndCheck(sessionId); }, 2000);
+}
+
+function doEndCheck(sessionId) {
+    var session = scanSession;
+    if (!session || session.id !== sessionId) return;
+    var text = session.msgEl.text();
+    var clean = text.replace(/<think[\s\S]*?<\/think>/gi, '')
+        .replace(/<fox_selc>[\s\S]*?<\/fox_selc>/gi, '')
+        .replace(/<fox_tip>[\s\S]*?<\/fox_tip>/gi, '')
+        .replace(/<CEstuff>[\s\S]*?<\/CEstuff>/gi, '')
+        .replace(/<catsay>[\s\S]*?<\/catsay>/gi, '');
+    var startIdx = clean.indexOf('正文###');
+    var endIdx = clean.indexOf('结尾###', startIdx + 1);
+    if (endIdx >= 0) {
+        session.phase = 'done';
+        var bodyText = text.slice(startIdx + 5, endIdx);
+        slLog('扫描 #' + sessionId + ' 检测到 结尾###，提取正文(' + bodyText.length + '字)');
+        if (bodyText.length >= (settings.storyMode === 'comic' ? 20 : 80)) {
+            slLog('触发管线(标记模式)');
+            runAuxImageScan(session.msgEl);
+        } else { slLog('正文过短(' + bodyText.length + ')，跳过'); }
+        return;
+    }
+    scheduleEndCheck(sessionId);
+}
+
+// ── 全量消息恢复 ──
+export function scanAllMsgs() {
+    try {
+        if (!settings.cWf || !settings.autoGen) return;
+        if (jQuery('.edit_textarea').length || jQuery('#curEditTextarea').length) return;
+        var chatId = getChatId();
+        jQuery('.mes').each(function() {
+            var mesEl = jQuery(this).find('.mes_text');
+            if (!mesEl.length) return;
+            var mesId = jQuery(this).attr('mesid');
+            if (!mesId) return;
+            var cached = findBestCached(chatId, mesId, mesEl.text());
+            if (cached && /\[image:/.test(cached)) {
+                if (/sl_img_btn/.test(mesEl.html())) return;
+                if (hasBodyMarker(cached)) {
+                    var bodyContent = cached.slice(cached.indexOf('正文###') + 5, cached.indexOf('结尾###', cached.indexOf('正文###') + 5));
+                    renderBodyEnhanced(mesEl, bodyContent);
+                } else {
+                    renderEnhanced(mesEl, cached);
+                }
+            }
+        });
+    } catch (e) {}
+}
+
+// ── 管线入口：分析消息 + 增强渲染 ──
+export async function runAuxImageScan(messageElement) {
+    try {
+        slLog('auxImageScan 启动');
+        var lastMsg = messageElement || jQuery('.mes_text').last();
+        if (!lastMsg.length) { slLog('无消息'); return; }
+        if (lastMsg.data('sl_aux_scanned')) { slLog('已扫描过, 跳过'); return; }
+        lastMsg.removeData('sl_session_started');
+        var rawText = lastMsg.text();
+        // 记录文本指纹，用于检测重新生成/swipe
+        lastMsg.data('sl_text_fp', getMsgFingerprint(rawText) || rawText.slice(0, 50).replace(/\s/g, ''));
+        lastMsg.data('sl_aux_scanned', 1);
+        var bodyText = extractBodyText(rawText);
+        var minLen = settings.storyMode === 'comic' ? 20 : 80;
+        if (bodyText.length < minLen) { slLog('过短(' + bodyText.length + ')'); lastMsg.removeData('sl_aux_scanned'); lastMsg.removeData('sl_session_started'); return; }
+        slLog('管线启动, 清洗后: ' + bodyText.length);
+        var enhanced = await runAuxPipeline(bodyText);
+        if (!enhanced) { slLog('无增强输出'); return; }
+        if (!settings.msgMap) settings.msgMap = {};
+        var mesContainer = lastMsg.closest('.mes');
+        var mesId = mesContainer.length ? mesContainer.attr('mesid') : (Date.now() + '');
+        // 重新获取 DOM 引用
+        var freshContainer = mesId ? jQuery('.mes[mesid="' + mesId + '"]') : jQuery();
+        var freshMsg = freshContainer.length ? freshContainer.find('.mes_text') : lastMsg;
+        var key = getMsgKey(getChatId(), mesId, freshMsg.text());
+        var rawBody = freshMsg.text();
+        var startIdx = rawBody.indexOf('正文###');
+        var endIdx = rawBody.indexOf('结尾###', startIdx + 1);
+        if (startIdx >= 0 && endIdx > startIdx) {
+            var reconstructed = rawBody.slice(0, startIdx) + '正文###' + enhanced + '结尾###' + rawBody.slice(endIdx + 5);
+            settings.msgMap[key] = reconstructed;
+            renderBodyEnhanced(freshMsg, enhanced, startIdx, endIdx);
+            slLog('标记模式: 增强文本已回填到 正文###...结尾### 区间');
+        } else {
+            settings.msgMap[key] = enhanced;
+            renderEnhanced(freshMsg, enhanced);
+        }
+        var keys = Object.keys(settings.msgMap);
+        if (keys.length > 50) { delete settings.msgMap[keys[0]]; }
+        saveSettings();
+        slLog('增强文本已缓存, key=' + key + ' (共' + keys.length + '条缓存)');
+        slLog('管线完成, img块:' + (enhanced.match(/\[image:/g) || []).length);
+    } catch (e) { slErr('管线失败: ' + e.message); lastMsg.removeData('sl_session_started'); }
+}
+
+// ── 消息指纹（正文###后50字，用于检测🔄 重新生成/swipe切换） ──
+function getMsgFingerprint(text) {
+    var si = text.indexOf('正文###');
+    if (si >= 0) return text.slice(si + 5, si + 55).replace(/\s/g, '');
+    return text.slice(0, 50).replace(/\s/g, '');
+}
+// ── 为消息缓存生成唯一 key（含指纹，支持 swipe 分支独立缓存） ──
+function getMsgKey(chid, mesid, text) {
+    return chid + '_' + mesid + '_' + getMsgFingerprint(text || '').slice(0, 20);
+}
+// ── 模糊匹配缓存（支持 swipe 分支 + 编辑恢复） ──
+function findBestCached(chid, mesid, text) {
+    var msgMap = settings.msgMap || {};
+    var key = getMsgKey(chid, mesid, text);
+    if (msgMap[key] && /\[image:/.test(msgMap[key])) return msgMap[key];
+    var prefix = chid + '_' + mesid + '_';
+    for (var k in msgMap) {
+        if (k.indexOf(prefix) === 0 && msgMap[k] && /\[image:/.test(msgMap[k])) {
+            var cachedText = extractBodyContent(msgMap[k]).slice(0, 40).replace(/\s/g, '');
+            var msgText = extractBodyContent(text).slice(0, 40).replace(/\s/g, '');
+            if (cachedText && msgText && cachedText === msgText) return msgMap[k];
+        }
+    }
+    return null;
+}
+// ── 清理某条消息的所有 swipe 分支缓存 ──
+function clearMsgCache(chid, mesid) {
+    var prefix = chid + '_' + mesid + '_';
+    for (var k in (settings.msgMap || {})) {
+        if (k.indexOf(prefix) === 0) { delete settings.msgMap[k]; slLog('清理旧缓存: ' + k); }
+    }
+}
+
+// ── 轮询 + 事件钩子注册 ──
+export function startPolling() {
+    var poll1 = setInterval(function() { scanAllMsgs(); }, 3000);
+    var poll2 = setInterval(function() {
+        try {
+            if (settings.pluginOn === false) return;
+            var all = jQuery('.mes_text');
+            if (!all.length) return;
+            var last = all.last();
+            var rawText = last.text();
+
+            // 只检测正文###，不要求结尾###同时存在（startScanSession 会等结尾###）
+            if (rawText.indexOf('正文###') < 0) return;
+
+            // 从 DOM 中获取 mesid：优先 closest->parents 兜底
+            var mesContainer = last.closest('.mes');
+            if (!mesContainer || !mesContainer.length) mesContainer = last.parents('.mes').first();
+            var mesId = mesContainer.length ? mesContainer.attr('mesid') : null;
+            if (!mesId) { slLog('轮询: 未获取到mesId, 跳过'); return; }
+
+            var chatId = getChatId();
+            if (last.data('sl_session_started')) return;     // 已有扫描会话，等待完成
+            if (last.data('sl_aux_scanned')) {
+                var oldFp = last.data('sl_text_fp');
+                var newFp = getMsgFingerprint(rawText) || rawText.slice(0, 50).replace(/\s/g, '');
+                if (oldFp && oldFp !== newFp) {
+                    slLog('轮询: 检测到文本变化(重新生成/swipe), 清除旧渲染');
+                    last.removeData('sl_aux_scanned');
+                    last.removeData('sl_session_started');
+                    last.find('.sl_img_block, .sl_img_btn').remove();
+                    last.css({background:'', 'border-left':'', padding:'', 'border-radius':'', 'line-height':'', color:'', 'font-size':'', overflow:''});
+                } else { return; }
+            }
+
+            var bodyText = extractBodyText(rawText);
+            if (bodyText.length < (settings.storyMode === 'comic' ? 20 : 80)) { slLog('轮询: 正文过短(' + bodyText.length + '字), 跳过'); return; }
+
+            slLog('轮询: 检测到标记, 启动扫描会话, mesId=' + mesId);
+            startScanSession(last, mesId, chatId);
+        } catch (e) { slErr('轮询异常: ' + e.message); }
+    }, 2000);
+
+    // ST 事件钩子
+    setTimeout(function() {
+        try {
+            var ctx = getSTContext();
+            var evSrc = ctx.eventSource;
+            var evTypes = ctx.event_types || ctx.eventTypes;
+            if (evSrc && evSrc.on && evTypes && evTypes.MESSAGE_UPDATED) {
+                evSrc.on(evTypes.MESSAGE_UPDATED, function() {
+                    setTimeout(restoreImageBlocks, 300);
+                });
+                slLog('消息编辑钩子就绪喵~ ✨');
+            }
+            if (evTypes && evTypes.CHAT_CHANGED) {
+                evSrc.on(evTypes.CHAT_CHANGED, function() {
+                    slLog('检测到聊天切换喵~ 清理旧会话中… ✨');
+                    if (scanSession) { clearTimeout(scanSession.timer); scanSession = null; }
+                    var last = jQuery('.mes_text').last();
+                    setTimeout(function() { restoreImageBlocks(); scanAllMsgs(); }, 2000);
+                });
+                slLog('聊天切换钩子就绪喵~ ✨');
+            }
+        } catch (e) { slErr('事件钩子失败喵~ (╥﹏╥)  ' + e.message); }
+    }, 5000);
+
+    // 💾 保存定时器引用以便 OFF 时清除
+    startPolling._timers = [poll1, poll2];
+}
+export function stopPolling() {
+    if (startPolling._timers) {
+        startPolling._timers.forEach(function(t) { clearInterval(t); });
+        startPolling._timers = null;
+    }
+}
+// 检查当前角色卡是否有静态档案缓存
+export function hasCastCache() {
+    try {
+        var pf = getProfiles();
+        return pf && Object.keys(pf.root[pf.charName].cast || {}).length > 0;
+    } catch(e) { return false; }
+}
+
+// 暴露扫描器状态给 UI 小窗
+export function getScannerStatus() {
+    if (!settings.pluginOn) return 'off';
+    if (!scanSession) return 'idle';
+    var p = scanSession.phase || '';
+    if (p === 'wait_marker') return 'waiting_body';
+    if (p === 'wait_end') return 'waiting_end';
+    if (p === 'done') return 'idle';
+    return 'scanning';
+}
+
+// ══════════════════════════════

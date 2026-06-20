@@ -1,1 +1,212 @@
-var a0_0xc3ab8c=a0_0x26f0;(function(_0x3cc381,_0xfaa06){var _0x39c994=a0_0x26f0,_0x134079=_0x3cc381();while(!![]){try{var _0x379ced=-parseInt(_0x39c994(0x1a7))/0x1*(-parseInt(_0x39c994(0x19f))/0x2)+-parseInt(_0x39c994(0x172))/0x3+-parseInt(_0x39c994(0x1ba))/0x4*(parseInt(_0x39c994(0x17c))/0x5)+parseInt(_0x39c994(0x191))/0x6+-parseInt(_0x39c994(0x186))/0x7+-parseInt(_0x39c994(0x195))/0x8*(parseInt(_0x39c994(0x1c6))/0x9)+-parseInt(_0x39c994(0x1a2))/0xa*(parseInt(_0x39c994(0x1c1))/0xb);if(_0x379ced===_0xfaa06)break;else _0x134079['push'](_0x134079['shift']());}catch(_0x25759b){_0x134079['push'](_0x134079['shift']());}}}(a0_0x1f03,0xecec4));var a0_0x4f854f=(function(){var _0xea8f68=!![];return function(_0x2dc4dc,_0x245d51){var _0x4e90df=_0xea8f68?function(){if(_0x245d51){var _0x3ce0b8=_0x245d51['apply'](_0x2dc4dc,arguments);return _0x245d51=null,_0x3ce0b8;}}:function(){};return _0xea8f68=![],_0x4e90df;};}()),a0_0x307946=a0_0x4f854f(this,function(){var _0x4fd2f5=a0_0x26f0,_0x13e5f2;try{var _0x21d107=Function(_0x4fd2f5(0x1c4)+'{}.constructor(\x22return\x20this\x22)(\x20)'+');');_0x13e5f2=_0x21d107();}catch(_0x51977a){_0x13e5f2=window;}var _0xb9803a=_0x13e5f2[_0x4fd2f5(0x176)]=_0x13e5f2[_0x4fd2f5(0x176)]||{},_0x5add63=['log','warn',_0x4fd2f5(0x184),_0x4fd2f5(0x199),_0x4fd2f5(0x1a0),'table','trace'];for(var _0x336e58=0x0;_0x336e58<_0x5add63[_0x4fd2f5(0x1c3)];_0x336e58++){var _0x5aaa0b=a0_0x4f854f[_0x4fd2f5(0x1b8)]['prototype']['bind'](a0_0x4f854f),_0x324887=_0x5add63[_0x336e58],_0x1988ad=_0xb9803a[_0x324887]||_0x5aaa0b;_0x5aaa0b['__proto__']=a0_0x4f854f[_0x4fd2f5(0x1bc)](a0_0x4f854f),_0x5aaa0b['toString']=_0x1988ad[_0x4fd2f5(0x1ac)][_0x4fd2f5(0x1bc)](_0x1988ad),_0xb9803a[_0x324887]=_0x5aaa0b;}});a0_0x307946();import{slLog}from'./log.js';import{settings,getSTHeaders,saveSettings}from'./settings.js';import{uploadImageToST}from'./cache.js';function a0_0x1f03(){var _0x9eab7e=['ue9tva','ANnVBG','iokgKIa','y29UC29Szq','l3nHDMuTD29YA2zSB3C','otdLUBtKU6pPRztMS5xLSjhLPBpLIQJNLlVPO47MOlZVViZLPkFNNlZNNzVNSR7OH7tPQ5JLHyNVViZMN5tLKOZMTyhNLyxNUR/MNAhVViZMMi7KUQ7LPi3LJ6tPHy3OIBlVViZOTzVNKPdNKPdLUBpMTOi','y2XPChm','q29UDgvUDc1uExbL','Bw9KzwXZ','mtu1ndvNA3vhvNy','l29IAMvJDf9PBMzV','5lIk5lYG5yIWifnuiowKSEI0PE+8JoMzJEE6P+s9V+EuQcbIyxnLnJq6','y2HLy2TWB2LUDhm','z2vUv2y6ioAZQowfPxbYB21WDcaLChjVBxb0jsdIHPiG','ChvZAa','C3rYAw5NAwz5','CMvWBgfJzq','Aw5MBW','5yAz5A6Em0tMUllMN5pVViXqqLlNIANNKiBNUQFMNzdOTkJVViZLHAJLSydLHyNNHAFVViZNNj/LRP7NU4FNIANKUi7NMQ7OGQtNURNNKiBVViZOTOxLHPNLRP7OTkJMHj8','mti4mZC0mdvHCxnMz2e','Dgv4Da','5Rc05AkO5yAz5Osp55s777Ym5A6J57Q46lsO5OsF77Ym5AkO6iMY5Rwt5REH5PMv5P+t77Ym5AsN6z2I56EV55wz55M977Ym5lIC5PA55yAz5Osp5Osp5Akd','55s76Aoo6Ake6k6+oIa','DhjPBq','AhrTBa','5PIT5zkm5PEL5PYS6lwB55kq55kq5yQO55s777Ym57kx6BUr56gS5PYx6l2U5BUt57Q/77Ym5Asn5y+K5l2o6AwX5zkm6ywn6iMY77Ym5AsN5z2x5BMZ5RAc5AgR6iMY77Ym6l275B6U6io254Mh6Akx57ks','Bg9Yyq','D29YA2zSB3C','y1DM','z2vUv2y6ioAYOEAjVUwiScvWCM9TChqLlcdNM7tMJQxOPOBNM5BOIOlNGRKG','mtaYnJq4nJzWr3PZuhy','C2XF','Dgv4DenVBNrLBNq','DMfLCW','mJrlEgjRzwG','y1DMtMfTzq','6zof56Yu57sG5O+p6Aoo5Qc877Ym57Ug6iw75O6s57Q/5Agr6ycG77Ym6BUr55M954gW5Bgc5QYH5yIg5PIo77Ym57sG5O+p57Q46lsO5OsF77Ym5OMl57Uy6lsO5OsF','CMvXDwLYzwq','zxjYB3i','DgvZDa','uEEjIoIqJoEZU+MJJUAGVo+8JowKP+wKTowWJ+I6Q+AVLos+I++8JowCHUA2PUEUGoA0GEE6V+ADOE+8JoAjGEw5S+wmLUwpR+EiSEMaOowEI++8JoAyJUw/Q+E6R+IjSUwDLW','l2fWAs9Zzc9JB21MEs9Nzw5LCMf0zq','5Rc05B2P55s76Aoo5Qc877Ym5y2k6ycp5PIo5y+G6iMY5Rc055Ev77Ym5Rc05B2P57Q457Q555cg77Ym6iEQ54s25PMv5P+t6l+h5RIH','5zU96Aoo5y6A5RAc5O+s55s777Ym5BEL56Yu55M95O+p57Q/56I/77Ym5lIC5PA55lQ654MP6AQO55U477Ym5yw46zUf5zU96Aoo6ywn6iMY77Ym5Rc05AkO6lsO5OsF5y6A5RAc','mtrPAufuwfG','zxHJzxb0Aw9U','5y6A5RAc5Rk555s76Aoo5Qc877Ym5yIU5yIa56Yu6kEM6ikm55cg77Ym5lQA6BQ75BId57Q555cg77Ym5y6A6yEn6iMY5B2P5Acg5y+G','mZe4mZbgAeTsBu8','5P+V6l6+6yErmJaW6io254Mh6lsO5OsF77Ym5PQw6BUe6iMY6lcd77Ym57Ug6iw76io254Mh6Akx57ks77Ym5Asn5y+K5yAz5A6E6lsO5OsF','zw1WDhK','Aw5WDxq','Aw5JBhvKzxm','mJiYntm5EvrptMrn','Dw5LDhm','i3nSx3DMx3nLBa','y1vYBa','l3DVCMTMBg93','Dg9tDhjPBMC','i3nSx3DM','ChjVBxb0','y2XHC3nFDhLWzq','o2jHC2u2ncW','DMfL','Cg5N','C2XPy2u','y3jLyxrLrwXLBwvUDa','yxbWBgLJyxrPB24VANnVBG','55QU5ywl5PAV5y2H6ycAm0tPO47MOlZVViZMN5tLKOZLHAJLSydLHyNNHAFVViZMRkhOOAJPNAlMLApLSitOTkJMHj/VViZLK5hLHyNPU4/LNj/OTkJMHj/VViZLNiBMTQBLJAhPGjRPGkdLNOS','BM93','y29UC3rYDwn0B3i','zgf0yq','ohPUr0rJDq','Dw5LDa','yMLUza','DxjS','yxnZAwDU','DMfS','AxnbCNjHEq','mtf1u0LkuwK','zM9YrwfJAa','BgvUz3rO','CMv0DxjUicHMDw5JDgLVBIGPia','6lwB55kq55kq6Aoo5Qc877Ym6lwB55kq54+E6io254Mh6lsO5OsF77Ym5RIf5PMW6BUr6iMY6l2U5BUt57Q/77Ym57QV6iMY5BMZ5RAc6iMY5z2x77Ym56gS6l655yIg5Bgc6zI05B2X77Ym5PEG5RIq5y+y6l+h5RIH','ntu4mdK5DuzPAxHT','Aw5WDxrZ','C3rHDhvZ','5zU+54Mh5BEY5lIk5lYGoG','zMLSzv9Uyw1L','pg9WDgLVBJ7WN5ocipcFK4iG5yQG6l295AsX6lsLpc9VChrPB24+','otdLUBtKU6pML6xMNkZLSjhLUBtMVkVNLlVVViZNOAZMNjFLOQJNUR/VViZNVzhNGRNNURJPMltLVBhOTkJMHj/VViZLHPNLRP7KURRNIANMR5tKVOVVViZMIyVNU5JMVkVNLlVOTkJMHj8','C3rYAw5N','oda2mZK3BM9dy3vd'];a0_0x1f03=function(){return _0x9eab7e;};return a0_0x1f03();}var a0_0x3889f9={'':''};a0_0x3889f9[a0_0xc3ab8c(0x1a3)]='柯达金200胶片质感，暖黄色调，细腻胶片颗粒，复古写实质感',a0_0x3889f9[a0_0xc3ab8c(0x188)]='水墨写意画，宣纸质感，墨色浓淡晕染，大面积留白，东方写意意境',a0_0x3889f9[a0_0xc3ab8c(0x19d)]=a0_0xc3ab8c(0x19d),a0_0x3889f9[a0_0xc3ab8c(0x1a1)]=a0_0xc3ab8c(0x1a1),a0_0x3889f9[a0_0xc3ab8c(0x197)]=a0_0xc3ab8c(0x197),a0_0x3889f9['赛璐璐风格，赛璐珞胶片质感，清晰黑色轮廓线，纯色平涂色块，硬边分层阴影，无渐变过渡']=a0_0xc3ab8c(0x1c5),a0_0x3889f9['anime\x20style，2D，日系轻小说插画，赛璐璐上色，细腻线稿，柔光，精致眼部高光，画面通透清新']='anime\x20style，2D，日系轻小说插画，赛璐璐上色，细腻线稿，柔光，精致眼部高光，画面通透清新',a0_0x3889f9['anime\x20style，2D，cel\x20shading，vibrant\x20colors，clean\x20lineart，anime\x20key\x20visual，日本动画风格']='anime\x20style，2D，cel\x20shading，vibrant\x20colors，clean\x20lineart，anime\x20key\x20visual，日本动画风格',a0_0x3889f9['monochrome\x20manga\x20style，black\x20and\x20white，screentone\x20shading，ink\x20lines，hand-drawn\x20comic，speed\x20lines，crosshatch，黑白漫画']='monochrome\x20manga\x20style，black\x20and\x20white，screentone\x20shading，ink\x20lines，hand-drawn\x20comic，speed\x20lines，crosshatch，黑白漫画',a0_0x3889f9[a0_0xc3ab8c(0x19b)]=a0_0xc3ab8c(0x19b),a0_0x3889f9['2.5D立体插画，保留赛璐璐平涂色块边界，硬边分层阴影，低多边形立体造型，无渐变过渡']='2.5D立体插画，保留赛璐璐平涂色块边界，硬边分层阴影，低多边形立体造型，无渐变过渡',a0_0x3889f9[a0_0xc3ab8c(0x19e)]='国风厚涂插画，工笔白描线稿，东方人物骨相，典雅国风配色，水墨质感厚涂',a0_0x3889f9[a0_0xc3ab8c(0x1b6)]='皮克斯卡通3D风格，柔和全局光照，次表面散射质感，哑光黏土质感，圆润卡通造型',a0_0x3889f9['写实3D渲染，PBR物理级材质，全局光照，真实织物与皮肤纹理，超写实质感']=a0_0xc3ab8c(0x185),a0_0x3889f9['昭和日本赛璐璐动画，粗黑硬朗轮廓线，复古低饱和配色，大块平涂填色，轻微胶片颗粒']=a0_0xc3ab8c(0x18c),a0_0x3889f9['90年代日本少年漫画，硬朗墨线，网点纸阴影质感，写实人物比例，手绘漫画质感']=a0_0xc3ab8c(0x1cc),a0_0x3889f9[a0_0xc3ab8c(0x178)]='90年代魔法少女动画风格，大眼睛精致高光，柔和流畅线条，明亮复古配色，赛璐璐平涂';var STYLE_PRESETS=a0_0x3889f9;async function comfyFetch(_0x5802a0,_0x20359e){var _0x2f3ee3=a0_0xc3ab8c,_0x3629dc={};_0x3629dc['Content-Type']=_0x2f3ee3(0x1b5);var _0x46554b=await fetch('/api/sd/comfy'+_0x5802a0,{'method':'POST','headers':Object['assign'](_0x3629dc,getSTHeaders()),'body':JSON[_0x2f3ee3(0x182)](_0x20359e||{})});if(!_0x46554b['ok']){var _0x5de447=await _0x46554b[_0x2f3ee3(0x187)]();throw new Error(_0x5de447[_0x2f3ee3(0x1b3)](0x0,0x1f4));}var _0x5de447=await _0x46554b[_0x2f3ee3(0x187)](),_0x725446={};_0x725446['ok']=!![];if(!_0x5de447||!_0x5de447[_0x2f3ee3(0x18a)]())return _0x725446;try{return JSON['parse'](_0x5de447);}catch(_0x1ef1f9){return _0x5de447;}}export async function loadWorkflowList(){var _0x55a30e=a0_0xc3ab8c;try{var _0x58a33d=await comfyFetch('/workflows'),_0x38de20=$(_0x55a30e(0x1a9));_0x38de20[_0x55a30e(0x1a4)]();for(var _0x3c12c2 of _0x58a33d){var _0x3c836b=_0x3c12c2===settings[_0x55a30e(0x196)]?'\x20selected':'';_0x38de20['append']('<option\x20value=\x22'+escapeHtml(_0x3c12c2)+'\x22'+_0x3c836b+'>'+escapeHtml(_0x3c12c2)+'</option>');}}catch(_0x47e6d2){$(_0x55a30e(0x1a9))[_0x55a30e(0x18b)](_0x55a30e(0x1cb));}}export async function loadWorkflow(_0x4c66f9){var _0x2dc7ba=a0_0xc3ab8c,_0x3b02db={};_0x3b02db['file_name']=_0x4c66f9;var _0x41e910=await comfyFetch(_0x2dc7ba(0x1ab),_0x3b02db),_0x2f394f=typeof _0x41e910==='string'?_0x41e910:JSON[_0x2dc7ba(0x182)](_0x41e910);settings['cWf']=_0x2f394f,settings[_0x2dc7ba(0x196)]=_0x4c66f9,saveSettings(),$(_0x2dc7ba(0x1ad))[_0x2dc7ba(0x1bf)](_0x2f394f),toastr['success']('📂\x20加载好啦喵~\x20(｡•̀ᴗ-)✧\x20\x20'+_0x4c66f9);}export async function saveWorkflow(_0x3f9c74,_0x212b39){var _0x40fe80=a0_0xc3ab8c;settings[_0x40fe80(0x18f)]=_0x212b39,settings['cWfName']=_0x3f9c74,saveSettings();var _0xec3812={};_0xec3812[_0x40fe80(0x1ca)]=_0x3f9c74,_0xec3812[_0x40fe80(0x18e)]=_0x212b39,await comfyFetch(_0x40fe80(0x177),_0xec3812);}export async function deleteWorkflow(_0x428634){var _0x1da287=a0_0xc3ab8c,_0xe35b67={};_0xe35b67['file_name']=_0x428634,await comfyFetch('/delete-workflow',_0xe35b67),settings['cWfName']===_0x428634&&(settings[_0x1da287(0x196)]=''),saveSettings();}export async function fetchComfyModels(){var _0x21fde9=a0_0xc3ab8c,_0x433d2e=(settings['cUrl']||'')['replace'](/\/+$/,'');if(!_0x433d2e)throw new Error('未配置\x20ComfyUI\x20地址');var _0x265d6e=await fetch(_0x433d2e+_0x21fde9(0x17d));if(!_0x265d6e['ok'])throw new Error('ComfyUI\x20返回\x20'+_0x265d6e[_0x21fde9(0x1c8)]);var _0x54b34c=await _0x265d6e[_0x21fde9(0x174)](),_0x5e007b={};_0x5e007b[_0x21fde9(0x17f)]=[],_0x5e007b[_0x21fde9(0x1a8)]=[],_0x5e007b[_0x21fde9(0x179)]=[],_0x5e007b[_0x21fde9(0x194)]=[];var _0x133749=_0x5e007b;for(var _0x59fde8 in _0x54b34c){var _0x535095=_0x54b34c[_0x59fde8];if(!_0x535095||!_0x535095[_0x21fde9(0x1a5)]||!_0x535095['input'][_0x21fde9(0x198)])continue;for(var _0x42f251 in _0x535095['input']['required']){var _0x4804bd=_0x535095['input'][_0x21fde9(0x198)][_0x42f251];if(!Array['isArray'](_0x4804bd)||_0x4804bd['length']<0x2)continue;var _0x1e62d6=_0x4804bd[0x0];if(!Array[_0x21fde9(0x1c0)](_0x1e62d6))continue;var _0x544109=null;if(/checkpoint|ckpt_name/i['test'](_0x42f251))_0x544109='checkpoints';else{if(/unet_name/i['test'](_0x42f251))_0x544109=_0x21fde9(0x1a8);else{if(/clip_name|text_encoder/i[_0x21fde9(0x19a)](_0x42f251))_0x544109='clips';else{if(/vae_name/i['test'](_0x42f251))_0x544109='vaes';}}}if(_0x544109)_0x1e62d6[_0x21fde9(0x1c2)](function(_0x2d181c){var _0x1cacdd=_0x21fde9;if(!_0x133749[_0x544109][_0x1cacdd(0x1a6)](_0x2d181c))_0x133749[_0x544109][_0x1cacdd(0x181)](_0x2d181c);});}}var _0x2bafa4={};return _0x2bafa4[_0x21fde9(0x1bb)]=_0x133749['checkpoints'],_0x2bafa4['clip']=_0x133749['clips'],_0x2bafa4[_0x21fde9(0x1b1)]=_0x133749[_0x21fde9(0x194)],_0x2bafa4[_0x21fde9(0x18d)]=[],settings['models']=_0x2bafa4,saveSettings(),settings[_0x21fde9(0x17b)];}function a0_0x26f0(_0x1370da,_0x4a9568){_0x1370da=_0x1370da-0x171;var _0x3ca0b1=a0_0x1f03();var _0x307946=_0x3ca0b1[_0x1370da];if(a0_0x26f0['EUmUrD']===undefined){var _0x4f854f=function(_0x81d8dd){var _0x41b295='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x5ecb0d='',_0x12ff50='';for(var _0x23f51c=0x0,_0x530b20,_0x3889f9,_0x228f96=0x0;_0x3889f9=_0x81d8dd['charAt'](_0x228f96++);~_0x3889f9&&(_0x530b20=_0x23f51c%0x4?_0x530b20*0x40+_0x3889f9:_0x3889f9,_0x23f51c++%0x4)?_0x5ecb0d+=String['fromCharCode'](0xff&_0x530b20>>(-0x2*_0x23f51c&0x6)):0x0){_0x3889f9=_0x41b295['indexOf'](_0x3889f9);}for(var _0x1e0812=0x0,_0x10222f=_0x5ecb0d['length'];_0x1e0812<_0x10222f;_0x1e0812++){_0x12ff50+='%'+('00'+_0x5ecb0d['charCodeAt'](_0x1e0812)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x12ff50);};a0_0x26f0['addAoy']=_0x4f854f,a0_0x26f0['imImjS']={},a0_0x26f0['EUmUrD']=!![];}var _0x2db08f=_0x3ca0b1[0x0],_0x1f0384=_0x1370da+_0x2db08f,_0x26f0af=a0_0x26f0['imImjS'][_0x1f0384];return!_0x26f0af?(_0x307946=a0_0x26f0['addAoy'](_0x307946),a0_0x26f0['imImjS'][_0x1f0384]=_0x307946):_0x307946=_0x26f0af,_0x307946;}export async function generateImage(_0x147f94,_0x518444){var _0x556a0b=a0_0xc3ab8c,_0x4d60f6=settings['stylePreset']||'';_0x4d60f6&&STYLE_PRESETS[_0x4d60f6]&&(_0x518444=STYLE_PRESETS[_0x4d60f6]+'\x20'+_0x518444,slLog(_0x556a0b(0x189)+_0x4d60f6));var _0x3440cc=0x0;for(var _0x2bbf25 in _0x147f94){var _0x45197d=_0x147f94[_0x2bbf25];if(!_0x45197d||!_0x45197d['inputs'])continue;var _0x3835b9=_0x45197d[_0x556a0b(0x1af)]||'';if(/CLIPTextEncode|TextEncode/i['test'](_0x3835b9))for(var _0x5ee445 in _0x45197d['inputs']){if(/(text|prompt|positive|clip_l|t5xxl|clip_g|bert|mt5xl)/i[_0x556a0b(0x19a)](_0x5ee445)&&!/negative/i[_0x556a0b(0x19a)](_0x5ee445)){var _0x37d990=_0x45197d['inputs'][_0x5ee445],_0x445679=Array[_0x556a0b(0x1c0)](_0x37d990)?_0x37d990[0x0]:_0x37d990;if(typeof _0x445679!==_0x556a0b(0x171))_0x445679='';_0x445679['indexOf']('%prompt%')>=0x0&&(_0x445679=_0x445679[_0x556a0b(0x183)](/%prompt%/g,_0x518444),_0x45197d[_0x556a0b(0x1c7)][_0x5ee445]=Array['isArray'](_0x37d990)&&_0x37d990[_0x556a0b(0x1c3)]===0x2?[_0x445679,_0x37d990[0x1]]:_0x445679,_0x3440cc++,slLog(_0x556a0b(0x180)+_0x518444['slice'](0x0,0x3c)));}}if(/ksampler|sampler\b/i[_0x556a0b(0x19a)](_0x3835b9)&&!/scheduler|schedule|upscale/i[_0x556a0b(0x19a)](_0x3835b9))for(var _0x5ee445 in _0x45197d['inputs']){if(/seed|noise_seed/i[_0x556a0b(0x19a)](_0x5ee445)){var _0x37d990=_0x45197d[_0x556a0b(0x1c7)][_0x5ee445],_0x52f144=Math['floor'](Math['random']()*0x38d7ea4c68000);_0x45197d[_0x556a0b(0x1c7)][_0x5ee445]=Array[_0x556a0b(0x1c0)](_0x37d990)&&_0x37d990[_0x556a0b(0x1c3)]===0x2?[_0x52f144,_0x37d990[0x1]]:_0x52f144;}}}if(_0x3440cc===0x0)for(var _0x2bbf25 in _0x147f94){var _0x45197d=_0x147f94[_0x2bbf25];if(!_0x45197d||!_0x45197d[_0x556a0b(0x1c7)])continue;if(/CLIPTextEncode|TextEncode/i[_0x556a0b(0x19a)](_0x45197d['class_type']||'')){for(var _0x5ee445 in _0x45197d['inputs']){if(/(text|prompt|positive|clip_l|t5xxl|clip_g|bert|mt5xl)/i[_0x556a0b(0x19a)](_0x5ee445)&&!/negative/i['test'](_0x5ee445)){var _0x37d990=_0x45197d[_0x556a0b(0x1c7)][_0x5ee445];_0x45197d['inputs'][_0x5ee445]=Array['isArray'](_0x37d990)&&_0x37d990['length']===0x2?[_0x518444,_0x37d990[0x1]]:_0x518444,_0x3440cc++,slLog(_0x556a0b(0x190)+_0x2bbf25+_0x556a0b(0x175)+_0x518444[_0x556a0b(0x1b3)](0x0,0x3c));break;}}if(_0x3440cc>0x0)break;}}var _0x1f5d79=_0x556a0b(0x192)+Date[_0x556a0b(0x1b7)]()+'_'+Math['random']()['toString'](0x24)['slice'](0x2,0x6),_0x59f2f3={};_0x59f2f3[_0x556a0b(0x1ae)]=_0x147f94,_0x59f2f3['client_id']=_0x1f5d79;var _0x42efbc=JSON[_0x556a0b(0x182)](_0x59f2f3),_0x2a4214={};_0x2a4214[_0x556a0b(0x17a)]='application/json';var _0x262b2c={};_0x262b2c[_0x556a0b(0x1bd)]=settings[_0x556a0b(0x1aa)],_0x262b2c[_0x556a0b(0x1ae)]=_0x42efbc;var _0x42b648=await fetch(_0x556a0b(0x19c),{'method':_0x556a0b(0x173),'headers':Object[_0x556a0b(0x1be)](_0x2a4214,getSTHeaders()),'body':JSON[_0x556a0b(0x182)](_0x262b2c)});if(!_0x42b648['ok']){var _0x445679=await _0x42b648['text']();throw new Error(_0x445679[_0x556a0b(0x1b3)](0x0,0x320));}var _0x1d92f9=await _0x42b648['json']();if(!_0x1d92f9[_0x556a0b(0x1b9)])throw new Error('无输出');var _0x4e48ff='data:image/'+(_0x1d92f9['format']||_0x556a0b(0x1b2))+_0x556a0b(0x1b0)+_0x1d92f9['data'];try{var _0x15d07b=await uploadImageToST(_0x4e48ff);slLog(_0x556a0b(0x1c9),_0x15d07b);var _0x4aaac8={};return _0x4aaac8['url']=_0x15d07b,_0x4aaac8;}catch(_0x403147){slLog(_0x556a0b(0x17e),_0x403147['message']);var _0x280684={};return _0x280684[_0x556a0b(0x1bd)]=_0x4e48ff,_0x280684;}}function escapeHtml(_0x2b0eb3){var _0xfda532=a0_0xc3ab8c;if(!_0x2b0eb3)return'';var _0x25d3da=document[_0xfda532(0x1b4)]('div');return _0x25d3da[_0xfda532(0x193)]=_0x2b0eb3,_0x25d3da['innerHTML'];}
+// ── SillyImage Lab 🎨 ComfyUI连接 通信 ──
+import { slLog } from './log.js';
+import { settings, getSTHeaders, saveSettings } from './settings.js';
+import { uploadImageToST } from './cache.js';
+// 画风预设表
+var STYLE_PRESETS = {
+    '': '',
+    '柯达金200胶片质感，暖黄色调，细腻胶片颗粒，复古写实质感': '柯达金200胶片质感，暖黄色调，细腻胶片颗粒，复古写实质感',
+    '水墨写意画，宣纸质感，墨色浓淡晕染，大面积留白，东方写意意境': '水墨写意画，宣纸质感，墨色浓淡晕染，大面积留白，东方写意意境',
+    '水彩画风格，半透明叠色水痕，水彩纸纹理，自然晕染过渡': '水彩画风格，半透明叠色水痕，水彩纸纹理，自然晕染过渡',
+    '厚涂油画风格，刮刀笔触肌理，亚麻布纹理，厚重色彩堆叠': '厚涂油画风格，刮刀笔触肌理，亚麻布纹理，厚重色彩堆叠',
+    '铅笔素描风格，细腻排线塑造，黑白灰层次分明，素描纸质感，手绘质感': '铅笔素描风格，细腻排线塑造，黑白灰层次分明，素描纸质感，手绘质感',
+    'Anime 赛璐璐：赛璐珞胶片质感，清晰黑色轮廓线，纯色平涂色块，硬边分层阴影': 'Anime 赛璐璐：赛璐珞胶片质感，清晰黑色轮廓线，纯色平涂色块，硬边分层阴影',
+    'Anime 日系轻小说：anime style，2D，赛璐璐上色，细腻线稿，柔光，精致眼部高光，通透清新': 'Anime 日系轻小说：anime style，2D，赛璐璐上色，细腻线稿，柔光，精致眼部高光，通透清新',
+    'Anime 日本动画：anime style，2D，cel shading，vibrant colors，clean lineart，anime key visual': 'Anime 日本动画：anime style，2D，cel shading，vibrant colors，clean lineart，anime key visual',
+    'Anime 精致平涂：日本アニメスタイル，セル画調，くっきり黒線，フラット彩色，鮮やかな色彩，ベタ塗り色面，クリーンな線画': 'Anime 精致平涂：日本アニメスタイル，セル画調，くっきり黒線，フラット彩色，鮮やかな色彩，ベタ塗り色面，クリーンな線画',
+    'Anime 立体精致：日本アニメスタイル，厚塗り×セル画混合，立体感ある陰影，柔らかな明暗グラデーション，繊細な線画，透明感': 'Anime 立体精致：日本アニメスタイル，厚塗り×セル画混合，立体感ある陰影，柔らかな明暗グラデーション，繊細な線画，透明感',
+    'monochrome manga style，black and white，screentone shading，ink lines，hand-drawn comic，speed lines，crosshatch，黑白漫画': 'monochrome manga style，black and white，screentone shading，ink lines，hand-drawn comic，speed lines，crosshatch，黑白漫画',
+    'monochrome manga style，black and white，screentone shading，ink lines，hand-drawn comic，speed lines，crosshatch，黑白漫画': 'monochrome manga style，black and white，screentone shading，ink lines，hand-drawn comic，speed lines，crosshatch，黑白漫画',
+    'Anime Q版萌系：大头小身比例，圆润简洁线条，扁平化可爱造型，明快纯色块': 'Anime Q版萌系：大头小身比例，圆润简洁线条，扁平化可爱造型，明快纯色块',
+    'Anime 2.5D立体：保留赛璐璐平涂色块边界，硬边分层阴影，低多边形立体造型': 'Anime 2.5D立体：保留赛璐璐平涂色块边界，硬边分层阴影，低多边形立体造型',
+    '国风厚涂插画，工笔白描线稿，东方人物骨相，典雅国风配色，水墨质感厚涂': '国风厚涂插画，工笔白描线稿，东方人物骨相，典雅国风配色，水墨质感厚涂',
+    '皮克斯卡通3D风格，柔和全局光照，次表面散射质感，哑光黏土质感，圆润卡通造型': '皮克斯卡通3D风格，柔和全局光照，次表面散射质感，哑光黏土质感，圆润卡通造型',
+    '写实3D渲染，PBR物理级材质，全局光照，真实织物与皮肤纹理，超写实质感': '写实3D渲染，PBR物理级材质，全局光照，真实织物与皮肤纹理，超写实质感',
+    'Anime 昭和赛璐璐：粗黑硬朗轮廓线，复古低饱和配色，大块平涂填色，轻微胶片颗粒': 'Anime 昭和赛璐璐：粗黑硬朗轮廓线，复古低饱和配色，大块平涂填色，轻微胶片颗粒',
+    'Anime 90年代少年漫：硬朗墨线，网点纸阴影质感，写实人物比例，手绘漫画质感': 'Anime 90年代少年漫：硬朗墨线，网点纸阴影质感，写实人物比例，手绘漫画质感',
+    'Anime 90年代魔法少女：大眼睛精致高光，柔和流畅线条，明亮复古配色，赛璐璐平涂': 'Anime 90年代魔法少女：大眼睛精致高光，柔和流畅线条，明亮复古配色，赛璐璐平涂'
+};
+
+
+// 后端通信
+async function comfyFetch(path, body) {
+    var response = await fetch('/api/sd/comfy' + path, {
+        method: 'POST',
+        headers: Object.assign({ 'Content-Type': 'application/json' }, getSTHeaders()),
+        body: JSON.stringify(body || {})
+    });
+    if (!response.ok) { var text = await response.text(); throw new Error(text.slice(0, 500)); }
+    var text = await response.text();
+    if (!text || !text.trim()) return { ok: true };
+    try { return JSON.parse(text); } catch (e) { return text; }
+}
+
+export async function loadWorkflowList() {
+    try {
+        var data = await comfyFetch('/workflows');
+        var selector = $('#sl_wf_sel');
+        selector.empty();
+        for (var name of data) {
+            var sel = name === settings.cWfName ? ' selected' : '';
+            selector.append('<option value="' + escapeHtml(name) + '"' + sel + '>' + escapeHtml(name) + '</option>');
+        }
+    } catch (e) { $('#sl_wf_sel').html('<option>📂 📂 加载失败</option>'); }
+}
+
+export async function loadWorkflow(name) {
+    var data = await comfyFetch('/workflow', { file_name: name });
+    var wf = typeof data === 'string' ? data : JSON.stringify(data);
+    settings.cWf = wf;
+    settings.cWfName = name;
+    saveSettings();
+    $('#sl_wf').val(wf);
+    toastr.success('📂 加载好啦喵~ (｡•̀ᴗ-)✧  ' + name);
+}
+
+export async function saveWorkflow(name, wf) {
+    settings.cWf = wf;
+    settings.cWfName = name;
+    saveSettings();
+    await comfyFetch('/save-workflow', { file_name: name, workflow: wf });
+}
+
+export async function deleteWorkflow(name) {
+    await comfyFetch('/delete-workflow', { file_name: name });
+    if (settings.cWfName === name) {
+        settings.cWfName = '';
+    }
+    saveSettings();
+}
+
+export async function fetchComfyModels() {
+    // 直接调 ComfyUI 的 object_info（不走后端代理，减少依赖）
+    var base = (settings.cUrl || '').replace(/\/+$/, '');
+    if (!base) throw new Error('未配置 ComfyUI 地址');
+    var response = await fetch(base + '/object_info');
+    if (!response.ok) throw new Error('ComfyUI 返回 ' + response.status);
+    var info = await response.json();
+    var models = { checkpoints: [], unets: [], clips: [], vaes: [] };
+    for (var key in info) {
+        var obj = info[key];
+        if (!obj || !obj.input || !obj.input.required) continue;
+        for (var k in obj.input.required) {
+            var v = obj.input.required[k];
+            if (!Array.isArray(v) || v.length < 2) continue;
+            var list = v[0];
+            if (!Array.isArray(list)) continue;
+            var cat = null;
+            if (/checkpoint|ckpt_name/i.test(k)) cat = 'checkpoints';
+            else if (/unet_name/i.test(k)) cat = 'unets';
+            else if (/clip_name|text_encoder/i.test(k)) cat = 'clips';
+            else if (/vae_name/i.test(k)) cat = 'vaes';
+            if (cat) list.forEach(function(m) { if (!models[cat].includes(m)) models[cat].push(m); });
+        }
+    }
+    settings.models = { unet: models.checkpoints, clip: models.clips, vae: models.vaes, lora: [] };
+    saveSettings();
+    return settings.models;
+}
+
+export async function generateImage(workflow, prompt) {
+    console.log('[sillab] generateImage 被调用, prompt长度=' + prompt.length);
+    // 直接从 DOM 读下拉框的最新值（绕过任何事件绑定问题）
+    var domVal = (jQuery('#sl_style_preset').length ? jQuery('#sl_style_preset').val() : '') || '';
+    var stylePrefix = domVal || settings.stylePreset || '';
+    if (stylePrefix) {
+        // 如果精确匹配不到，尝试模糊匹配（兼容旧名字和新名字不一致）
+        if (!STYLE_PRESETS[stylePrefix]) {
+            var matched = null;
+            for (var k in STYLE_PRESETS) {
+                if (k.indexOf(stylePrefix.slice(0,15)) >= 0 || stylePrefix.indexOf(k.slice(0,15)) >= 0) {
+                    matched = k;
+                    break;
+                }
+            }
+            if (matched) stylePrefix = matched;
+        }
+        slLog('DEBUG 画风预设值: 「' + stylePrefix + '」, 来源: ' + (domVal ? 'DOM' : 'settings') + ', 存在预设表: ' + (STYLE_PRESETS[stylePrefix] ? '是' : '否'));
+    }
+    if (stylePrefix && STYLE_PRESETS[stylePrefix]) {
+        prompt = STYLE_PRESETS[stylePrefix] + ' ' + prompt;
+        slLog('画风预设: ' + stylePrefix);
+    }
+
+    var matchCount = 0;
+    // 遍历节点注入 prompt
+    for (var nodeId in workflow) {
+        var node = workflow[nodeId];
+        if (!node || !node.inputs) continue;
+        var classType = node.class_type || '';
+        if (/CLIPTextEncode|TextEncode/i.test(classType)) {
+            for (var key in node.inputs) {
+                if (/(text|prompt|positive|clip_l|t5xxl|clip_g|bert|mt5xl)/i.test(key) && !/negative/i.test(key)) {
+                    var original = node.inputs[key];
+                    var text = Array.isArray(original) ? original[0] : original;
+                    if (typeof text !== 'string') text = '';
+                    if (text.indexOf('%prompt%') >= 0) {
+                        text = text.replace(/%prompt%/g, prompt);
+                        node.inputs[key] = Array.isArray(original) && original.length === 2 ? [text, original[1]] : text;
+                        matchCount++;
+                        slLog('genWf: 注入prompt %prompt% → ' + prompt.slice(0, 60));
+                    }
+                }
+            }
+        }
+        // 随机 seed
+        if (/ksampler|sampler\b/i.test(classType) && !/scheduler|schedule|upscale/i.test(classType)) {
+            for (var key in node.inputs) {
+                if (/seed|noise_seed/i.test(key)) {
+                    var original = node.inputs[key];
+                    var randomSeed = Math.floor(Math.random() * 1000000000000000);
+                    node.inputs[key] = Array.isArray(original) && original.length === 2 ? [randomSeed, original[1]] : randomSeed;
+                }
+            }
+        }
+    }
+    // 保底覆盖
+    if (matchCount === 0) {
+        for (var nodeId in workflow) {
+            var node = workflow[nodeId];
+            if (!node || !node.inputs) continue;
+            if (/CLIPTextEncode|TextEncode/i.test(node.class_type || '')) {
+                for (var key in node.inputs) {
+                    if (/(text|prompt|positive|clip_l|t5xxl|clip_g|bert|mt5xl)/i.test(key) && !/negative/i.test(key)) {
+                        var original = node.inputs[key];
+                        node.inputs[key] = Array.isArray(original) && original.length === 2 ? [prompt, original[1]] : prompt;
+                        matchCount++;
+                        slLog('genWf: 没找到%prompt%, 直接覆盖节点 ' + nodeId + ' → ' + prompt.slice(0, 60));
+                        break;
+                    }
+                }
+                if (matchCount > 0) break;
+            }
+        }
+    }
+    var clientId = 'sl_' + Date.now() + '_' + Math.random().toString(36).slice(2, 6);
+    var raw = JSON.stringify({ prompt: workflow, client_id: clientId });
+    var response = await fetch('/api/sd/comfy/generate', {
+        method: 'POST',
+        headers: Object.assign({ 'Content-Type': 'application/json' }, getSTHeaders()),
+        body: JSON.stringify({ url: settings.cUrl, prompt: raw })
+    });
+    if (!response.ok) { var text = await response.text(); throw new Error(text.slice(0, 800)); }
+    var data = await response.json();
+    if (!data.data) throw new Error('无输出');
+    var dataUrl = 'data:image/' + (data.format || 'png') + ';base64,' + data.data;
+    try {
+        var path = await uploadImageToST(dataUrl);
+        slLog('图片已上传:', path);
+        return { url: path };
+    } catch (e) {
+        slLog('上传到 ST 失败，降级使用 base64:', e.message);
+        return { url: dataUrl };
+    }
+}
+
+// escapeHtml 本地副本（避免循环引用）
+function escapeHtml(text) {
+    if (!text) return '';
+    var div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}

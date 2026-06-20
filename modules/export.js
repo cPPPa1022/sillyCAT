@@ -1,1 +1,64 @@
-(function(_0x4530c1,_0x283f54){var _0x12bd35=a0_0x2808,_0x439fe5=_0x4530c1();while(!![]){try{var _0x29beb1=-parseInt(_0x12bd35(0x91))/0x1+-parseInt(_0x12bd35(0x7d))/0x2*(parseInt(_0x12bd35(0x9b))/0x3)+parseInt(_0x12bd35(0x9f))/0x4+-parseInt(_0x12bd35(0x97))/0x5+parseInt(_0x12bd35(0x85))/0x6*(parseInt(_0x12bd35(0x8d))/0x7)+-parseInt(_0x12bd35(0x75))/0x8*(parseInt(_0x12bd35(0x80))/0x9)+parseInt(_0x12bd35(0x89))/0xa;if(_0x29beb1===_0x283f54)break;else _0x439fe5['push'](_0x439fe5['shift']());}catch(_0x388fcd){_0x439fe5['push'](_0x439fe5['shift']());}}}(a0_0x27d4,0x538a6));var a0_0x2a4e41=(function(){var _0x44f025=!![];return function(_0x87911,_0x376266){var _0x23a76f=_0x44f025?function(){if(_0x376266){var _0xc9ce5e=_0x376266['apply'](_0x87911,arguments);return _0x376266=null,_0xc9ce5e;}}:function(){};return _0x44f025=![],_0x23a76f;};}()),a0_0x5d64d0=a0_0x2a4e41(this,function(){var _0x569ab0=a0_0x2808,_0xbb0412;try{var _0x10ac7d=Function('return\x20(function()\x20'+_0x569ab0(0x7b)+');');_0xbb0412=_0x10ac7d();}catch(_0x537e79){_0xbb0412=window;}var _0x17b814=_0xbb0412['console']=_0xbb0412[_0x569ab0(0x9d)]||{},_0x2ede9d=[_0x569ab0(0xa0),'warn','info','error',_0x569ab0(0x95),'table',_0x569ab0(0x8c)];for(var _0x47970e=0x0;_0x47970e<_0x2ede9d['length'];_0x47970e++){var _0x13feb8=a0_0x2a4e41['constructor']['prototype']['bind'](a0_0x2a4e41),_0x137ce4=_0x2ede9d[_0x47970e],_0x3bb9ef=_0x17b814[_0x137ce4]||_0x13feb8;_0x13feb8[_0x569ab0(0x8f)]=a0_0x2a4e41[_0x569ab0(0x7e)](a0_0x2a4e41),_0x13feb8[_0x569ab0(0x98)]=_0x3bb9ef[_0x569ab0(0x98)][_0x569ab0(0x7e)](_0x3bb9ef),_0x17b814[_0x137ce4]=_0x13feb8;}});a0_0x5d64d0();function a0_0x27d4(){var _0x256469=['x19WCM90B19F','y3jLyxrLrwXLBwvUDa','mJyZntLXrhD1vLi','DhLWzq','C2XPy2u','CM9VDa','zxHJzxb0Aw9U','icaGia','ndm0mJuWy1f1shHm','Dg9tDhjPBMC','5ywO6yoO5QgJ5Qgi5A+85yE65Aw95zwM5zA1FIdWN5oL4PYO','lNr4Da','m3DdwgvdqW','BNbJCW','y29UC29Szq','zg93BMXVywq','mJiYmdy4wejfuLzc','Bg9N','icaGicaG','5PYQ5Qoa5Rwl5yIW5B2t5yMn6kEs6iMY','Dg9mB2nHBgvtDhjPBMC','C3vJy2vZCW','y2fZDa','zhLUyw1PyW','77Yi5yE6546W','5A+85yE65PE26zE077YA','CMv2B2TLt2jQzwn0vvjm','mtzIwfrUuvi','y2HHCK5HBwu','ChvZAa','DhjPBq','icdLVzpLIy3LNlRMMA/OP5lOIBlVVjO','6igk5AsPsutVVjO','E30Uy29UC3rYDwn0B3iOiNjLDhvYBIb0AgLZiIKOicK','y2HHDa','ndC2mJGYsxPKB3nU','yMLUza','6kEs6iMY5y2H5QgJ5QgixW','mtKZota4nNLMtKfnyW','6kEs6iMY5y2H5QgJ5QgiicSG6igk5AsP5QgJ5Qgi','6kEs6iMY5y2H5QgJ5Qgi77Yi5lQy5y+K5lIn5y+y77Yj','6kEs6iMY5y2H6igk5AsP5QgJ5QgixW','Dgv4Dc9WBgfPBJTJAgfYC2v0pxv0zI04','mJa0nZH5s3PSqKe','icbouepLIjFOOAJVVjO','A2v5CW','AM9PBG','ode5nZC0me11zvjyvG','CMvWBgfJzq','BgvUz3rO','DhjHy2u','nteXBND6uuHo','ChjLC2vUDa'];a0_0x27d4=function(){return _0x256469;};return a0_0x27d4();}function a0_0x2808(_0x17fc87,_0x26d385){_0x17fc87=_0x17fc87-0x6f;var _0x4b491b=a0_0x27d4();var _0x5d64d0=_0x4b491b[_0x17fc87];if(a0_0x2808['BArorI']===undefined){var _0x2a4e41=function(_0x3cf451){var _0x533ca5='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x47b947='',_0xf6f3a4='';for(var _0x373bb7=0x0,_0x353e36,_0x21396e,_0x44f025=0x0;_0x21396e=_0x3cf451['charAt'](_0x44f025++);~_0x21396e&&(_0x353e36=_0x373bb7%0x4?_0x353e36*0x40+_0x21396e:_0x21396e,_0x373bb7++%0x4)?_0x47b947+=String['fromCharCode'](0xff&_0x353e36>>(-0x2*_0x373bb7&0x6)):0x0){_0x21396e=_0x533ca5['indexOf'](_0x21396e);}for(var _0x87911=0x0,_0x376266=_0x47b947['length'];_0x87911<_0x376266;_0x87911++){_0xf6f3a4+='%'+('00'+_0x47b947['charCodeAt'](_0x87911)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0xf6f3a4);};a0_0x2808['rMjnMc']=_0x2a4e41,a0_0x2808['VUFLyT']={},a0_0x2808['BArorI']=!![];}var _0x2c75a6=_0x4b491b[0x0],_0x27d469=_0x17fc87+_0x2c75a6,_0x28086e=a0_0x2808['VUFLyT'][_0x27d469];return!_0x28086e?(_0x5d64d0=a0_0x2808['rMjnMc'](_0x5d64d0),a0_0x2808['VUFLyT'][_0x27d469]=_0x5d64d0):_0x5d64d0=_0x28086e,_0x5d64d0;}import{settings,getSTContext,escapeHtml,saveSettings}from'./settings.js';import{getCharacterName,getChatId,getProfiles}from'./pipeline.js';export function exportProfiles(_0x300c34){var _0x42a1ee=a0_0x2808,_0x53d817=getProfiles();if(!_0x53d817||!_0x53d817['charName']){toastr['error'](_0x42a1ee(0xa2));return;}var _0x57aaa3=_0x53d817[_0x42a1ee(0x94)][_0x53d817[_0x42a1ee(0x76)]][_0x42a1ee(0x70)]||{},_0x58012f=_0x53d817['chat']['dynamics']||{},_0x422652=_0x53d817[_0x42a1ee(0x7c)][_0x42a1ee(0x8e)]||[],_0xb58431=_0x53d817['chat'][_0x42a1ee(0x9c)]||{},_0x48887a=getChatId(),_0x191394=new Date()[_0x42a1ee(0xa3)](),_0x31a168=[],_0x3b67db='══════════════════════════════════';_0x31a168['push'](_0x3b67db),_0x31a168['push']('\x20\x20SillyImage\x20Lab\x20—\x20角色档案导出'),_0x31a168[_0x42a1ee(0x77)](_0x3b67db),_0x31a168['push'](''),_0x31a168[_0x42a1ee(0x77)]('角色：'+_0x53d817['charName']),_0x31a168['push'](_0x42a1ee(0x7a)+_0x48887a),_0x31a168[_0x42a1ee(0x77)](_0x42a1ee(0x73)+_0x191394),_0x31a168[_0x42a1ee(0x77)]('类型：'+(_0x300c34==='cast'?_0x42a1ee(0x82):_0x42a1ee(0x81))),_0x31a168[_0x42a1ee(0x77)](''),_0x31a168[_0x42a1ee(0x77)]('──\x20角色卡档案（亘古不变）\x20──');if(Object['keys'](_0x57aaa3)['length'])for(var _0xbfca2c in _0x57aaa3){var _0xf5747c=_0x57aaa3[_0xbfca2c];_0x31a168[_0x42a1ee(0x77)]('\x20\x20■\x20'+_0xbfca2c);if(_0xf5747c['static'])_0x31a168['push']('\x20\x20\x20\x20'+_0xf5747c['static']);if(_0xf5747c['semi']&&_0xf5747c['semi'][_0x42a1ee(0x8a)](/[-:]/g,'')[_0x42a1ee(0x78)]())_0x31a168['push'](_0x42a1ee(0x96)+_0xf5747c['semi']);}else _0x31a168['push']('\x20\x20（未生成）');if(_0x300c34!==_0x42a1ee(0x70)){_0x31a168[_0x42a1ee(0x77)](''),_0x31a168[_0x42a1ee(0x77)]('──\x20聊天档案（随上下文变化）\x20──');if(Object[_0x42a1ee(0x87)](_0x58012f)[_0x42a1ee(0x8b)])for(var _0x241c24 in _0x58012f){_0x58012f[_0x241c24]&&(_0x31a168[_0x42a1ee(0x77)]('\x20\x20■\x20'+_0x241c24),_0x31a168[_0x42a1ee(0x77)]('\x20\x20\x20\x20'+_0x58012f[_0x241c24]));}Object['keys'](_0x422652)[_0x42a1ee(0x8b)]&&(_0x31a168[_0x42a1ee(0x77)](''),_0x31a168['push'](_0x42a1ee(0x79)+_0x422652['join']('、')));if(Object['keys'](_0xb58431)[_0x42a1ee(0x8b)]){_0x31a168[_0x42a1ee(0x77)](''),_0x31a168[_0x42a1ee(0x77)](_0x42a1ee(0x86));for(var _0x201d6c in _0xb58431){var _0x46d283=_0xb58431[_0x201d6c];_0x31a168[_0x42a1ee(0x77)]('\x20\x20\x20\x20■\x20'+_0x201d6c+_0x42a1ee(0x72)+(_0x46d283['appearances']||0x1)+'次）');if(_0x46d283['static'])_0x31a168[_0x42a1ee(0x77)]('\x20\x20\x20\x20\x20\x20'+_0x46d283['static']);if(_0x46d283['dynamic'])_0x31a168['push'](_0x42a1ee(0xa1)+_0x46d283[_0x42a1ee(0x71)]);}}}var _0x5bc247=_0x31a168[_0x42a1ee(0x88)]('\x0a'),_0x7944e8=_0x300c34==='cast'?_0x42a1ee(0x7f)+_0x53d817[_0x42a1ee(0x76)]+'.txt':_0x42a1ee(0x83)+_0x53d817[_0x42a1ee(0x76)]+'_'+_0x48887a[_0x42a1ee(0x93)](0x0,0x10)+_0x42a1ee(0x9a),_0x5106ad={};_0x5106ad[_0x42a1ee(0x92)]=_0x42a1ee(0x84);var _0x4f6e34=new Blob([_0x5bc247],_0x5106ad),_0x145673=URL['createObjectURL'](_0x4f6e34),_0x41b9d5=document[_0x42a1ee(0x90)]('a');_0x41b9d5['href']=_0x145673,_0x41b9d5[_0x42a1ee(0x9e)]=_0x7944e8,_0x41b9d5['click'](),URL[_0x42a1ee(0x74)](_0x145673),toastr[_0x42a1ee(0x6f)](_0x300c34==='cast'?'档案导出好啦喵~\x20📥':_0x42a1ee(0x99));}
+// ── SillyImage Lab 档案导出 ──
+import { settings, getSTContext, escapeHtml, saveSettings } from './settings.js';
+import { getCharacterName, getChatId, getProfiles } from './pipeline.js';
+
+export function exportProfiles(mode) {
+    var profiles = getProfiles();
+    if (!profiles || !profiles.charName) { toastr.error('未检测到当前角色'); return; }
+    var cast = profiles.root[profiles.charName].cast || {};
+    var dynamics = profiles.chat.dynamics || {};
+    var presentList = profiles.chat.present || [];
+    var npcs = profiles.chat.npcs || {};
+    var chatId = getChatId();
+    var now = new Date().toLocaleString();
+    var lines = [];
+    var sep = '══════════════════════════════════';
+    lines.push(sep);
+    lines.push('  SillyImage Lab — 角色档案导出');
+    lines.push(sep);
+    lines.push('');
+    lines.push('角色：' + profiles.charName);
+    lines.push('聊天ID：' + chatId);
+    lines.push('导出时间：' + now);
+    lines.push('类型：' + (mode === 'cast' ? '角色卡档案（亘古不变）' : '角色卡档案 + 聊天档案'));
+    lines.push('');
+    lines.push('── 角色卡档案（亘古不变） ──');
+    if (Object.keys(cast).length) {
+        for (var ck in cast) {
+            var cv = cast[ck];
+            lines.push('  ■ ' + ck);
+            if (cv.static) lines.push('    ' + cv.static);
+            if (cv.semi && cv.semi.replace(/[-:]/g, '').trim()) lines.push('    ' + cv.semi);
+        }
+    } else { lines.push('  （未生成）'); }
+    if (mode !== 'cast') {
+        lines.push('');
+        lines.push('── 聊天档案（随上下文变化） ──');
+        if (Object.keys(dynamics).length) {
+            for (var dk in dynamics) {
+                if (dynamics[dk]) { lines.push('  ■ ' + dk); lines.push('    ' + dynamics[dk]); }
+            }
+        }
+        if (Object.keys(presentList).length) { lines.push(''); lines.push('  当前场景角色：' + presentList.join('、')); }
+        if (Object.keys(npcs).length) {
+            lines.push('');
+            lines.push('  NPC列表：');
+            for (var n in npcs) {
+                var npc = npcs[n];
+                lines.push('    ■ ' + n + '（出现' + (npc.appearances || 1) + '次）');
+                if (npc.static) lines.push('      ' + npc.static);
+                if (npc.dynamic) lines.push('      ' + npc.dynamic);
+            }
+        }
+    }
+    var text = lines.join('\n');
+    var filename = mode === 'cast' ? '角色卡档案_' + profiles.charName + '.txt' : '角色卡聊天档案_' + profiles.charName + '_' + chatId.slice(0, 16) + '.txt';
+    var blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    a.click();
+    URL.revokeObjectURL(url);
+    toastr.success(mode === 'cast' ? '档案导出好啦喵~ 📥' : '全部档案导出好啦喵~ 📥✨');
+}

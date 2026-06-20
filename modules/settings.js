@@ -1,1 +1,85 @@
-var a0_0x8cb48a=a0_0x418f;(function(_0x1d01ea,_0xfcf01f){var _0x195ca5=a0_0x418f,_0x4fb979=_0x1d01ea();while(!![]){try{var _0x13b9da=-parseInt(_0x195ca5(0x77))/0x1+-parseInt(_0x195ca5(0x70))/0x2*(parseInt(_0x195ca5(0x84))/0x3)+-parseInt(_0x195ca5(0x85))/0x4+-parseInt(_0x195ca5(0x74))/0x5*(parseInt(_0x195ca5(0x80))/0x6)+-parseInt(_0x195ca5(0x7d))/0x7*(-parseInt(_0x195ca5(0x8f))/0x8)+-parseInt(_0x195ca5(0x91))/0x9+parseInt(_0x195ca5(0x9e))/0xa;if(_0x13b9da===_0xfcf01f)break;else _0x4fb979['push'](_0x4fb979['shift']());}catch(_0x1ed07c){_0x4fb979['push'](_0x4fb979['shift']());}}}(a0_0x40df,0x4fc91));var a0_0xbef23f=(function(){var _0x1c2179=!![];return function(_0x56eec0,_0x4c9487){var _0x1aa8f6=_0x1c2179?function(){if(_0x4c9487){var _0x429855=_0x4c9487['apply'](_0x56eec0,arguments);return _0x4c9487=null,_0x429855;}}:function(){};return _0x1c2179=![],_0x1aa8f6;};}()),a0_0xd93ed5=a0_0xbef23f(this,function(){var _0x5485c4=a0_0x418f,_0x1a1f01;try{var _0x4596cb=Function(_0x5485c4(0x82)+_0x5485c4(0x9c)+');');_0x1a1f01=_0x4596cb();}catch(_0x2d7e97){_0x1a1f01=window;}var _0x39b38e=_0x1a1f01[_0x5485c4(0x98)]=_0x1a1f01['console']||{},_0x19e2cb=['log','warn','info','error','exception',_0x5485c4(0x88),'trace'];for(var _0x3f8d19=0x0;_0x3f8d19<_0x19e2cb['length'];_0x3f8d19++){var _0x29cc00=a0_0xbef23f[_0x5485c4(0x75)][_0x5485c4(0x81)]['bind'](a0_0xbef23f),_0x915410=_0x19e2cb[_0x3f8d19],_0x1b68da=_0x39b38e[_0x915410]||_0x29cc00;_0x29cc00[_0x5485c4(0x8c)]=a0_0xbef23f['bind'](a0_0xbef23f),_0x29cc00['toString']=_0x1b68da['toString'][_0x5485c4(0x90)](_0x1b68da),_0x39b38e[_0x915410]=_0x29cc00;}});function a0_0x40df(){var _0x5b7b36=['x19WCM90B19F','BgLUzq','iZmWzde1oa','mJG0odi0twjbsMDT','yMLUza','ndG5mteWnfDbDLfPBW','y1DMtMfTzq','o2zVBNqTC2L6ztOXm3b4o2jVEc1ZAxPPBMC6yM9YzgvYlwjVEdTVDxrSAw5LoM5VBMu7yMfJA2DYB3vUzdO','i2zMzMzMzG','C3r5BgvqCMvZzxq','zgL2','yxv4vxjS','y29UC29Szq','CgfNzq','BxnNtwfW','o2nVBg9YoG','E30Uy29UC3rYDwn0B3iOiNjLDhvYBIb0AgLZiIKOicK','iZbbodrgrG','mtyXntu5mZb1y2rzsK0','mtuYmZHnywPuqxi','i2qXzdfKnG','D2LKDgG6mtaWjtTWywrKAw5NoJHWEcaXmNb4o2jVCMrLCI1YywrPDxm6ohb4o2jVCMrLCJOXChGGC29SAwqG','Bxv0zq','nvbOv1HcBG','y29UC3rYDwn0B3i','B3jHBMDL','mta5ndK0vundy0vX','CgfKzgLUzZO3ChGGmtzWEdTIB3jKzxi6BM9UztTIB3jKzxiTCMfKAxvZoJHWEdTJDxjZB3i6Cg9PBNrLCJTMB250lxnPEMu6mtjWEdTMB250lxDLAwDODdO2mda7Bgv0DgvYlxnWywnPBMC6mc4WmwvTo3rYyw5ZAxrPB246ywXSic4Xnxm7','y2fYza','i0zgouyWqq','CgX1z2LUt24','yxv4tw9KzwXZ','mtrAseXks2y','C2LSBgfI','i2vIzwjLza','mZiXmJa4mLPIsePcCa','ChjVDg90ExbL','CMv0DxjUicHMDw5JDgLVBIGPia','ChjVzMLSzu1VzgvS','m29Vt21bBa','nJu2mZi4A3jSAgzg','y1DM','DxnLCK5HBwu','DgfIBgu','yxv0B0DLBG','z2v0uMvXDwvZDeHLywrLCNm','iZzLnMu3mW'];a0_0x40df=function(){return _0x5b7b36;};return a0_0x40df();}function a0_0x418f(_0x3eaf6a,_0x36f49e){_0x3eaf6a=_0x3eaf6a-0x70;var _0x56e74c=a0_0x40df();var _0xd93ed5=_0x56e74c[_0x3eaf6a];if(a0_0x418f['EOGBLs']===undefined){var _0xbef23f=function(_0x494ef7){var _0x53e443='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x3f3be7='',_0x2a3a69='';for(var _0x3457c2=0x0,_0x3bac0c,_0x38b29a,_0x1faf13=0x0;_0x38b29a=_0x494ef7['charAt'](_0x1faf13++);~_0x38b29a&&(_0x3bac0c=_0x3457c2%0x4?_0x3bac0c*0x40+_0x38b29a:_0x38b29a,_0x3457c2++%0x4)?_0x3f3be7+=String['fromCharCode'](0xff&_0x3bac0c>>(-0x2*_0x3457c2&0x6)):0x0){_0x38b29a=_0x53e443['indexOf'](_0x38b29a);}for(var _0x1c2179=0x0,_0x56eec0=_0x3f3be7['length'];_0x1c2179<_0x56eec0;_0x1c2179++){_0x2a3a69+='%'+('00'+_0x3f3be7['charCodeAt'](_0x1c2179)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x2a3a69);};a0_0x418f['vflcqt']=_0xbef23f,a0_0x418f['mEqrfd']={},a0_0x418f['EOGBLs']=!![];}var _0x11b88e=_0x56e74c[0x0],_0x40df0f=_0x3eaf6a+_0x11b88e,_0x418f43=a0_0x418f['mEqrfd'][_0x40df0f];return!_0x418f43?(_0xd93ed5=a0_0x418f['vflcqt'](_0xd93ed5),a0_0x418f['mEqrfd'][_0x40df0f]=_0xd93ed5):_0xd93ed5=_0x418f43,_0xd93ed5;}a0_0xd93ed5();export var settings={};export function getDefaults(){var _0x49cc6e=a0_0x418f,_0x567692={};return _0x567692[_0x49cc6e(0x7b)]=!![],_0x567692[_0x49cc6e(0x89)]=0x1,_0x567692['cUrl']='http://localhost:8181',_0x567692['cTimeout']=0xb4,_0x567692[_0x49cc6e(0x86)]='',_0x567692[_0x49cc6e(0x92)]='',_0x567692['models']=null,_0x567692[_0x49cc6e(0x97)]='',_0x567692['auxKey']='',_0x567692['auxModel']='',_0x567692[_0x49cc6e(0x83)]='',_0x567692[_0x49cc6e(0x7c)]=[],_0x567692[_0x49cc6e(0x87)]='',_0x567692['userDesc']='',_0x567692['profiles']={},_0x567692[_0x49cc6e(0x9a)]={},_0x567692[_0x49cc6e(0x95)]='',_0x567692[_0x49cc6e(0x95)]='',_0x567692['storyMode']='narrative',_0x567692;}var a0_0x1faf13={};a0_0x1faf13[a0_0x8cb48a(0x99)]=a0_0x8cb48a(0x94),a0_0x1faf13[a0_0x8cb48a(0x79)]='#f5f5f7',a0_0x1faf13['input']=a0_0x8cb48a(0x7f),a0_0x1faf13['text']='#1d1d1f',a0_0x1faf13['sub']=a0_0x8cb48a(0x8b),a0_0x1faf13[a0_0x8cb48a(0x73)]='#aeaeb2',a0_0x1faf13[a0_0x8cb48a(0x8d)]=a0_0x8cb48a(0x71),a0_0x1faf13['blue']=a0_0x8cb48a(0x9d),a0_0x1faf13[a0_0x8cb48a(0x76)]=a0_0x8cb48a(0x7a),a0_0x1faf13['green']=a0_0x8cb48a(0x8e),a0_0x1faf13['red']='#ff3b30';export var COLORS=a0_0x1faf13;export var INPUT_STYLE=a0_0x8cb48a(0x72)+COLORS['line']+a0_0x8cb48a(0x93)+COLORS['page']+a0_0x8cb48a(0x9b)+COLORS['text']+';transition:border-color\x20.2s;';export var BUTTON_STYLE=a0_0x8cb48a(0x78);var _getContext=null,_extensionSettings=null;export function initSettings(_0x316715,_0x4f7ab5){_getContext=_0x316715,_extensionSettings=_0x4f7ab5;}export function getSTContext(){if(!_getContext)throw new Error('settings\x20not\x20initialized');return _getContext();}export function getSTHeaders(){var _0x1775b9=a0_0x8cb48a;return getSTContext()[_0x1775b9(0x8a)]();}export function escapeHtml(_0x534bb9){var _0x294f3b=a0_0x8cb48a;if(!_0x534bb9)return'';var _0x43f7e5=document['createElement'](_0x294f3b(0x96));return _0x43f7e5['textContent']=_0x534bb9,_0x43f7e5['innerHTML'];}export function saveSettings(){var _0x5bf741=a0_0x8cb48a;if(!_extensionSettings)return;if(!_extensionSettings[_0x5bf741(0x7e)])_extensionSettings[_0x5bf741(0x7e)]={};_extensionSettings[_0x5bf741(0x7e)]=settings,getSTContext()['saveSettingsDebounced']();}
+// ── SillyImage Lab 设置中心 ──
+export var settings = {};
+export var _heartbeat = 0;
+
+export function getDefaults() {
+    return {
+        pluginOn: true,
+        autoGen: 1,
+        cUrl: 'http://localhost:8181',
+        cTimeout: 180,
+        cWf: '',
+        cWfName: '',
+        models: null,
+        auxUrl: '',
+        auxKey: '',
+        auxModel: '',
+        profileModel: '',
+        auxModels: [],
+        auxProvider: 'deepseek',
+        userName: '',
+        userDesc: '',
+        profiles: {},
+        msgMap: {},
+        stylePreset: "",
+        enhancedTheme: 'default',
+        storyMode: 'narrative',
+        nsfwEnhance: false
+    };
+}
+
+export var COLORS = {
+    page: '#ffffff',
+    card: '#f5f5f7',
+    input: '#ebebed',
+    text: '#1d1d1f',
+    sub: '#6e6e73',
+    mute: '#aeaeb2',
+    line: '#d1d1d6',
+    blue: '#0A84FF',
+    orange: '#FF9F0A',
+    green: '#30d158',
+    red: '#ff3b30'
+};
+
+export var INPUT_STYLE = 'width:100%;padding:8px 12px;border-radius:8px;border:1px solid ' + COLORS.line + ';font-size:13px;box-sizing:border-box;outline:none;background:' + COLORS.page + ';color:' + COLORS.text + ';transition:border-color .2s;';
+
+export var BUTTON_STYLE = 'padding:7px 16px;border:none;border-radius:8px;cursor:pointer;font-size:12px;font-weight:600;letter-spacing:0.01em;transition:all .15s;';
+
+// 运行时从 index.js 注入
+var _getContext = null;
+var _extensionSettings = null;
+
+export function initSettings(getContextFn, extSettings) {
+    _getContext = getContextFn;
+    _extensionSettings = extSettings;
+}
+
+export function getSTContext() {
+    if (!_getContext) throw new Error('settings not initialized');
+    return _getContext();
+}
+
+export function getSTHeaders() {
+    return getSTContext().getRequestHeaders();
+}
+
+export function escapeHtml(text) {
+    if (!text) return '';
+    var div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+var STORAGE_KEY = 'sillab_settings';
+
+export function saveSettings() {
+    try {
+        console.log('[sillab] saveSettings 被调用, stylePreset=' + settings.stylePreset + ', cWf长度=' + (settings.cWf || '').length);
+        localStorage.setItem('sillab_settings', JSON.stringify(settings));
+        if (_extensionSettings) {
+            if (!_extensionSettings.sillab) _extensionSettings.sillab = {};
+            _extensionSettings.sillab = JSON.parse(JSON.stringify(settings));
+        }
+    } catch (e) { console.log('[sillab] saveSettings异常: ' + e.message); }
+}

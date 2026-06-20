@@ -1,1 +1,86 @@
-var a0_0x44b07d=a0_0x3b0d;(function(_0x514d1e,_0xfdd26e){var _0x229ed5=a0_0x3b0d,_0x1d810b=_0x514d1e();while(!![]){try{var _0x398d17=parseInt(_0x229ed5(0x15d))/0x1+parseInt(_0x229ed5(0x164))/0x2*(parseInt(_0x229ed5(0x180))/0x3)+-parseInt(_0x229ed5(0x16c))/0x4*(-parseInt(_0x229ed5(0x156))/0x5)+parseInt(_0x229ed5(0x170))/0x6+parseInt(_0x229ed5(0x161))/0x7+parseInt(_0x229ed5(0x17b))/0x8+-parseInt(_0x229ed5(0x181))/0x9;if(_0x398d17===_0xfdd26e)break;else _0x1d810b['push'](_0x1d810b['shift']());}catch(_0x3de41f){_0x1d810b['push'](_0x1d810b['shift']());}}}(a0_0x38d2,0xdefc8));var a0_0x1ef823=(function(){var _0x120813=!![];return function(_0x24084b,_0x104896){var _0x208e3f=_0x120813?function(){var _0x15e637=a0_0x3b0d;if(_0x104896){var _0x2d54b7=_0x104896[_0x15e637(0x16a)](_0x24084b,arguments);return _0x104896=null,_0x2d54b7;}}:function(){};return _0x120813=![],_0x208e3f;};}()),a0_0x45e05b=a0_0x1ef823(this,function(){var _0x2d9be8=a0_0x3b0d,_0x1e7655=function(){var _0x53b104=a0_0x3b0d,_0x42e560;try{_0x42e560=Function(_0x53b104(0x15a)+_0x53b104(0x16f)+');')();}catch(_0x206484){_0x42e560=window;}return _0x42e560;},_0x31ebdd=_0x1e7655(),_0x469848=_0x31ebdd['console']=_0x31ebdd[_0x2d9be8(0x17a)]||{},_0x51d6a0=['log','warn',_0x2d9be8(0x15e),'error',_0x2d9be8(0x160),_0x2d9be8(0x158),_0x2d9be8(0x168)];for(var _0x3e85c1=0x0;_0x3e85c1<_0x51d6a0[_0x2d9be8(0x165)];_0x3e85c1++){var _0x102514=a0_0x1ef823['constructor'][_0x2d9be8(0x162)]['bind'](a0_0x1ef823),_0x5c59ce=_0x51d6a0[_0x3e85c1],_0x499c87=_0x469848[_0x5c59ce]||_0x102514;_0x102514[_0x2d9be8(0x175)]=a0_0x1ef823['bind'](a0_0x1ef823),_0x102514[_0x2d9be8(0x17d)]=_0x499c87[_0x2d9be8(0x17d)][_0x2d9be8(0x16e)](_0x499c87),_0x469848[_0x5c59ce]=_0x102514;}});a0_0x45e05b();import{extension_settings,getContext}from'../../../extensions.js';import{SlashCommandParser}from'../../../slash-commands/SlashCommandParser.js';import{SlashCommand}from'../../../slash-commands/SlashCommand.js';import{loadPrompts}from'./prompts/loader.js';import{slLog,slErr,slLogDump,getLogCount}from'./modules/log.js';import{initSettings,settings,getDefaults,COLORS,INPUT_STYLE,BUTTON_STYLE,getSTContext,getSTHeaders,escapeHtml,saveSettings}from'./modules/settings.js';import{buildUI}from'./modules/ui.js';import{setEnqueueGen}from'./modules/render.js';import{enqueueGen}from'./modules/queue.js';import{startPolling,stopPolling}from'./modules/scanner.js';window[a0_0x44b07d(0x169)]=a0_0x44b07d(0x177)+Date[a0_0x44b07d(0x15c)](),slLog(a0_0x44b07d(0x178)+window[a0_0x44b07d(0x169)]),initSettings(getContext,extension_settings);try{Object[a0_0x44b07d(0x166)](settings,getDefaults(),extension_settings[a0_0x44b07d(0x182)]||{});}catch(a0_0x5244e7){Object[a0_0x44b07d(0x166)](settings,getDefaults());}if(!localStorage[a0_0x44b07d(0x17e)](a0_0x44b07d(0x17f))){try{localStorage[a0_0x44b07d(0x171)]('slimg_cache');typeof extension_settings!==a0_0x44b07d(0x163)&&delete extension_settings[a0_0x44b07d(0x182)];Object[a0_0x44b07d(0x166)](settings,getDefaults());try{saveSettings();}catch(a0_0x23e03f){}slLog('🧹\x20v1.0.3\x20全新部署喵~\x20缓存清空啦\x20✨🧹');}catch(a0_0x51f5f2){slLog(a0_0x44b07d(0x16b)+a0_0x51f5f2[a0_0x44b07d(0x167)]);}localStorage[a0_0x44b07d(0x17c)](a0_0x44b07d(0x17f),'1');}slLog(a0_0x44b07d(0x179)),SlashCommandParser[a0_0x44b07d(0x174)](SlashCommand[a0_0x44b07d(0x15f)]({'name':a0_0x44b07d(0x16d),'callback':function(){var _0x2511b2=a0_0x44b07d;jQuery(_0x2511b2(0x157))[_0x2511b2(0x172)](0xc8);}}));var PROMPTS_BASE='';try{PROMPTS_BASE=new URL('prompts/',import.meta.url)[a0_0x44b07d(0x159)];}catch(a0_0x50f607){}PROMPTS_BASE?(slLog('提示词加载器:\x20📥\x20从\x20'+PROMPTS_BASE+a0_0x44b07d(0x176)),loadPrompts(PROMPTS_BASE)):slLog(a0_0x44b07d(0x173));setEnqueueGen(enqueueGen);function a0_0x3b0d(_0x4d057e,_0x2f896f){_0x4d057e=_0x4d057e-0x156;var _0x8132e4=a0_0x38d2();var _0x45e05b=_0x8132e4[_0x4d057e];if(a0_0x3b0d['QvpCGg']===undefined){var _0x1ef823=function(_0x54caea){var _0x96bd4b='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x5a0366='',_0xc1a8b8='';for(var _0x2a96d3=0x0,_0x3df015,_0x120813,_0x24084b=0x0;_0x120813=_0x54caea['charAt'](_0x24084b++);~_0x120813&&(_0x3df015=_0x2a96d3%0x4?_0x3df015*0x40+_0x120813:_0x120813,_0x2a96d3++%0x4)?_0x5a0366+=String['fromCharCode'](0xff&_0x3df015>>(-0x2*_0x2a96d3&0x6)):0x0){_0x120813=_0x96bd4b['indexOf'](_0x120813);}for(var _0x104896=0x0,_0x208e3f=_0x5a0366['length'];_0x104896<_0x208e3f;_0x104896++){_0xc1a8b8+='%'+('00'+_0x5a0366['charCodeAt'](_0x104896)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0xc1a8b8);};a0_0x3b0d['ktjBLs']=_0x1ef823,a0_0x3b0d['XbdKhS']={},a0_0x3b0d['QvpCGg']=!![];}var _0x51523a=_0x8132e4[0x0],_0x38d258=_0x4d057e+_0x51523a,_0x3b0db0=a0_0x3b0d['XbdKhS'][_0x38d258];return!_0x3b0db0?(_0x45e05b=a0_0x3b0d['ktjBLs'](_0x45e05b),a0_0x3b0d['XbdKhS'][_0x38d258]=_0x45e05b):_0x45e05b=_0x3b0db0,_0x45e05b;}function a0_0x38d2(){var _0x5ac72c=['ntq2nJi4BKz2s0DO','BgvUz3rO','yxnZAwDU','BwvZC2fNzq','DhjHy2u','u0LmtfLmqujFvKvsu0LptG','yxbWBhK','5RIf57Yt5A2y6lEZ6l+hoIa','nti1ody0oe9SvK90Ea','C2LSBhLSywi','yMLUza','E30Uy29UC3rYDwn0B3iOiNjLDhvYBIb0AgLZiIKOicK','ntq3nta2nM5wAu5JEa','CMvTB3zLsxrLBq','zMfKzvrVz2DSzq','5O+q56s66k+n5yQG6l295zMOoIdLKzZLKzWGAw1WB3j0lM1LDgeUDxjSios4JEwpR+EuQowwTx4GkokvPE+5J+kvPsK','ywrKq29TBwfUze9IAMvJDa','x19WCM90B19F','iowkOoI9Vq','DJeUmc4Zlq','te9breveihy','DJfIzxrHigLUAxq','y29UC29Szq','mta1mJi0ntzpt0f3r1O','C2v0sxrLBq','Dg9tDhjPBMC','z2v0sxrLBq','C2LSBgfIx2nSzwfUx3yXmdi','m2nuyvPUBa','ndu3ota1otzeuerWu3i','C2LSBgfI','nxrTD3rZzq','i3nSx292zxjSyxK','DgfIBgu','AhjLzG','CMv0DxjUicHMDw5JDgLVBIGPia','DJfIzxrHifvjie9l','BM93','mte2odq4nwTRve5stG','Aw5MBW','zNjVBvbYB3bZ','zxHJzxb0Aw9U','nZeXodqXovHJzhfMrq','ChjVDg90ExbL','Dw5KzwzPBMvK'];a0_0x38d2=function(){return _0x5ac72c;};return a0_0x38d2();}try{buildUI(extension_settings),slLog(a0_0x44b07d(0x15b));}catch(a0_0x212c3b){slErr('buildUI失败:\x20'+a0_0x212c3b[a0_0x44b07d(0x167)]);}startPolling();
+// ── SillyImage Lab v1beta — 入口文件 ──
+import { extension_settings, getContext } from '../../../extensions.js';
+import { SlashCommandParser } from '../../../slash-commands/SlashCommandParser.js';
+import { SlashCommand } from '../../../slash-commands/SlashCommand.js';
+import { loadPrompts } from './prompts/loader.js';
+
+import { slLog, slErr, slLogDump, getLogCount } from './modules/log.js';
+import { initSettings, settings, getDefaults, COLORS, INPUT_STYLE, BUTTON_STYLE, getSTContext, getSTHeaders, escapeHtml, saveSettings } from './modules/settings.js';
+import { buildUI } from './modules/ui.js';
+import { setEnqueueGen } from './modules/render.js';
+import { enqueueGen } from './modules/queue.js';
+import { startPolling, stopPolling, getScannerStatus, hasCastCache } from './modules/scanner.js';
+
+// ── 版本 ──
+window.SILLYLAB_VERSION = 'v1.1.0-' + Date.now();
+slLog('LOADED v1.1.0');
+
+// ── 初始化设置：从 localStorage 加载（远离 ST 控制范围） ──
+initSettings(getContext, extension_settings);
+try {
+    var saved = localStorage.getItem('sillab_settings');
+    if (saved) {
+        var parsed = JSON.parse(saved);
+        Object.assign(settings, getDefaults(), parsed);
+        slLog('从 localStorage 加载设置');
+    } else {
+        // 首次：从 extension_settings 迁移
+        Object.assign(settings, getDefaults(), extension_settings.sillab || {});
+        saveSettings();
+        slLog('从 extension_settings 迁移设置');
+    }
+} catch (e) {
+    Object.assign(settings, getDefaults());
+    slLog('设置加载失败，使用默认值: ' + e.message);
+}
+
+// ── 清旧缓存哨兵 ──
+// 清掉旧版所有可能的残留 key
+try {
+    localStorage.removeItem('slimg_v2_deployed');
+    localStorage.removeItem('slimg_cache');
+    localStorage.removeItem('sillab_clean_v102');
+} catch (e) {}
+
+if (!localStorage.getItem('sillab_clean_v110')) {
+    try {
+        localStorage.removeItem('slimg_cache');
+        if (typeof extension_settings !== 'undefined') { delete extension_settings.sillab; }
+        Object.assign(settings, getDefaults());
+        try { saveSettings(); } catch (e) {}
+        slLog('🧹 v1.1.0 全新部署喵~ 缓存清空啦 ✨🧹');
+    } catch (e) { slLog('清缓存跳过: ' + e.message); }
+    localStorage.setItem('sillab_clean_v110', '1');
+}
+
+slLog('v1.1.0 init');
+
+// ── 注册斜杠命令 ──
+SlashCommandParser.addCommandObject(SlashCommand.fromProps({
+    name: 'sillylab',
+    callback: function () {
+        var ov = jQuery('#sl_overlay'), mini = jQuery('#sl_mini');
+        if (ov.is(':visible')) {
+            ov.fadeOut(200, function() { mini.fadeIn(200); });
+        } else if (mini.is(':visible')) {
+            mini.fadeOut(200, function() { ov.fadeIn(200); });
+        } else {
+            ov.fadeIn(200);
+        }
+    }
+}));
+
+// ── 启动💬 提示词📂 加载 ──
+var PROMPTS_BASE = '';
+try { PROMPTS_BASE = new URL('prompts/', import.meta.url).href; } catch (e) {}
+if (PROMPTS_BASE) { slLog('提示词加载器: 📥 从 ' + PROMPTS_BASE + ' 加载'); loadPrompts(PROMPTS_BASE); }
+else { slLog('提示词加载器: 呜呜 import.meta.url 不可用喵~ (╥﹏╥)'); }
+
+// ── 注入 render 模块的生图排队 ──
+setEnqueueGen(enqueueGen);
+
+// ── 构建 UI ──
+try { buildUI(extension_settings); slLog('v1.1.0 UI OK'); } catch (e) { slErr('buildUI失败: ' + e.message); }
+
+// ── 启动轮询 + 事件钩子 ──
+startPolling();
