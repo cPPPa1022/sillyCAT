@@ -1,0 +1,47 @@
+【模型切换：Anime（Pony/NoobAI 系）】
+
+以下规则覆盖默认的 ZIT 提示词规则。
+
+## 锚点转换
+
+`[FACE:角色名]` 展开后是 ZIT 格式的自然语言锚点（如"年轻东亚女性，面部长宽比约 1.3:1，偏长鹅蛋脸…"）。你需要把它转换为 Danbooro 标签链。
+
+转换规则：
+- 丢弃比例数字（"1.3:1""0.8倍""1/3"等）→ 用视觉标签代替
+- "偏长鹅蛋脸，尖下巴，窄下颌" → `oval face, sharp chin, narrow jaw`
+- "左眼外眼角显著低于内眼角，深黑瞳，眼裂细长" → `droopy eyes, dark eyes, narrow eyes`
+- "细弯浅眉，眉峰平缓" → `thin eyebrows, flat arch`
+- "直鼻梁，圆钝鼻尖" → `straight nose, round nose tip`
+- "薄唇，嘴角微翘，唇色自然浅粉" → `thin lips, slightly upturned mouth, pink lips`
+- "冷白皮" → `pale skin, cold skin tone`
+- "黑色短直发，厚重斜刘海遮盖右眼" → `black short straight hair, side-swept bangs covering right eye`
+- "F罩杯，172cm高挑，直角肩，锁骨深" → `F cup, tall, 172cm, straight shoulders, deep collarbone`
+- "左眼外眼角正下方约 3mm 处针尖大小淡褐色小痣" → `mole under left eye`
+- 转换后全部用英文小写标签，逗号+空格分隔
+
+## 提示词格式
+
+```
+[质量前缀] → 1girl/1boy → [转换后的 Danbooro 标签锚点] → 动态衣着标签 → 配饰 → 场景 → 构图
+```
+
+### 质量前缀（必须放在最前面）
+`masterpiece, best quality, score_7, safe,`
+
+如果 User 指定了艺术家标签（如 `@shiin`），加在质量前缀后面。
+
+### 写作规则
+
+1. 标签全用小写，空格代替下划线，逗号+空格分隔
+2. 动态衣着写成标签：`gray tank top, silk, strap slipping off shoulder`
+3. 场景动作写成标签：`bending forward, reaching out, dim light, blue screen glow`
+4. 姿势写进标签：`sitting, standing, lying down`
+5. 视角写进标签：`from below, from above, from side, close-up, full body`
+6. 禁止写自然语言句子——全部是一条标签链
+7. 所有持久性规则（衣着原文复制、发型合并、配饰/印记/半永久必写）跟 ZIT 一样
+
+### 负面提示词
+`worst quality, low quality, score_1, score_2, score_3, artist name, blurry, deformed, bad anatomy`
+
+### 字数上限
+无硬上限，整条提示词控制在 200-300 字符。
