@@ -215,7 +215,7 @@ export async function scanCharacterProfile() {
             var ctMatch = metaContent.match(/卡类型[：:]\s*(.+)/);
             if (ctMatch) metaResult.cardType = ctMatch[1].trim();
             var ccMatch = metaContent.match(/核心角色[：:]\s*(.+)/);
-            if (ccMatch) metaResult.coreChar = ccMatch[1].trim();
+            if (ccMatch){ var core = ccMatch[1].trim(); if (core.toLowerCase() !== 'user') metaResult.coreChar = core; }
             var stMatch = metaContent.match(/画风约束[：:]\s*(.+)/);
             if (stMatch) metaResult.styleTag = stMatch[1].trim();
             var noteMatch = metaContent.match(/结论[：:]\s*(.+)/);
