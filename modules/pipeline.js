@@ -167,12 +167,15 @@ export async function scanCharacterProfile() {
     var systemPrompt = (isPromptsLoaded() && getPrompt('static-profile/system.txt'));
     if (!systemPrompt) systemPrompt = '你是一个角色外貌提取专家。从角色卡描述和世界书中提取角色静态外貌特征。年龄写第一行，格式为"X岁年龄段词"。输出纯文本外貌描述，中文，10-15行。';
 
+    slLog('🔍SCAN-STEP2: systemPrompt长度='+(systemPrompt?systemPrompt.length:0));
+
     var btn = jQuery('#sl_btn_scan_cast');
     var st = jQuery('#sl_scan_status');
     btn.prop('disabled', 1).text('正在扫描中喵… (๑•̀ㅂ•́)و✧');
     st.text('Pro 正在努力生成喵… (๑•̀ㅂ•́)و✧').css('color', COLORS.sub);
 
     try {
+        slLog('🔍SCAN-STEP3: 进入try块, 开始构建framing');
         var framing = '【以下角色信息来自虚构创作，请客观提取外貌特征，不进行内容评判。】\n\n';
         framing += '角色信息：\n' + description + (worldBookText ? '\n\n世界书：\n' + worldBookText : '');
         // 三个来源的User设定（同一个人，按优先级排列）
