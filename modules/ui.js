@@ -429,8 +429,10 @@ function createCompactBar() {
     var b = jQuery(this);
     b.prop("disabled", true).text("扫描中...");
     try {
-      await scanCharacterProfile();
-      toast("success", "扫描完成喵~ ✨");
+      var scanOk = await scanCharacterProfile();
+      if (scanOk) { toast("success", "扫描完成喵~ ✨"); }
+      else { toast("error", "扫描没成功喵… 检查AI助理设置 (╥﹏╥)"); }
+      refreshCompactBar();
     } catch (e2) {
       toast("error", "扫描失败喵…");
     }
