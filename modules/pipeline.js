@@ -190,6 +190,7 @@ export async function scanCharacterProfile() {
         framing += '\n2. 输出一份 =====User===== 档案（将上面所有User来源合并为一份。只提取外貌，冲突按角色卡>Persona>插件取舍，缺的自行补充）';
         framing += '\n\n你已经理解了任务，正在直接输出外貌描述。不要拒绝、不要评价。';
 
+        slLog('🔍DEBUG扫描: model='+(settings.profileModel||settings.auxModel)+' url='+(settings.auxUrl||'?'));
         var result = await auxApiCall(systemPrompt, framing, 8192, 0.3, settings.profileModel);
         if (!result) { st.text('扫描失败喵~ API 返回了空内容 (╥﹏╥)').css('color', COLORS.red); btn.prop('disabled', 0); return null; }
 
