@@ -116,7 +116,7 @@ export async function scanCharacterProfile() {
     if (!profiles || !profiles.charName) { toastr.error('未检测到当前角色'); return null; }
     var charName = profiles.charName;
 
-    if (!settings.auxUrl || !settings.profileModel) { toastr.error('请先在🧠 辅助LLM连接面板配置 API 喵~ (｡•́︿•̀｡)'); return null; }
+    if (!settings.auxUrl || (!settings.profileModel && !settings.auxModel)) { toastr.error('请先在🧠 AI助理设置模型喵~ (｡•́︿•̀｡)'); return null; }
 
     // 收集角色卡描述
     var description = '';

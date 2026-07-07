@@ -36,7 +36,7 @@ function chkProf() {
     var s = JSON.parse(localStorage.sillab_settings);
     var pf = s.profiles || {};
     var cn = Object.keys(pf)[0];
-    return cn && pf[cn] && Object.keys(pf[cn].cast || {}).length > 0;
+    return (cn && pf[cn] && Object.keys(pf[cn].cast || {}).length > 0) || (pf[cn] && pf[cn].meta && pf[cn].meta.cardType === '世界观卡');
   } catch (e) {
     return false;
   }
@@ -793,8 +793,12 @@ function renderHomeTab() {
       var b = jQuery(this);
       b.prop("disabled", true).text("扫描中...");
       try {
-        await scanCharacterProfile();
-        toast("success", "扫描完成喵~ ✨");
+        var scanResult = await scanCharacterProfile();
+        if (scanResult) {
+          toast("success", "扫描完成喵~ ✨");
+        } else {
+          toast("error", "扫描没成功喵… 检查AI助理设置是否已配置 (╥﹏╥)");
+        }
         renderHomeTab();
         refreshCompactBar();
       } catch (e) {
