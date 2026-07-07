@@ -1,1 +1,1972 @@
-var a0bz=a0f;(function(a,b){var a0dn={a:0x730,b:0x50d,c:0x909,d:0x2de,e:0x819,f:0x339},bm=a0f,c=a();while(!![]){try{var d=-parseInt(bm(0x603))/0x1*(parseInt(bm(a0dn.a))/0x2)+parseInt(bm(a0dn.b))/0x3*(parseInt(bm(a0dn.c))/0x4)+-parseInt(bm(0x419))/0x5+-parseInt(bm(0x4e1))/0x6+-parseInt(bm(a0dn.d))/0x7+-parseInt(bm(0x29a))/0x8*(parseInt(bm(a0dn.e))/0x9)+-parseInt(bm(a0dn.f))/0xa*(-parseInt(bm(0x409))/0xb);if(d===b)break;else c['push'](c['shift']());}catch(e){c['push'](c['shift']());}}}(a0e,0x2a4a2));var a0d=(function(){var a0dy={a:0x7d1},a0dw={a:0x454,b:0x2cc,c:0x614,d:0x2b2,e:0x204,f:0x5c5,g:0x204,h:0x8cf,i:0x821},a0dv={a:0x7cb},a0dt={a:0x88f},a={'zCVJz':'wglnY','kppQg':function(c,d){return c(d);},'DkmrZ':function(c,d){return c+d;},'gAPDa':function(c){return c();}},b=!![];return function(c,d){var bo=a0f,e={'GcSWw':function(g,h){var bn=a0f;return a[bn(0x4ee)](g,h);},'MRbTJ':bo(0x1d1),'PLwkh':function(g,h){return g+h;},'kRLTM':function(g,h){var bp=bo;return a[bp(a0dt.a)](g,h);},'FKtzi':'.sl_dyn_edit_ta'+bo(a0dy.a),'qWpup':function(g){return a['gAPDa'](g);},'FryCv':function(g){var bq=bo;return a[bq(a0dv.a)](g);}},f=b?function(){var br=bo;if(d){if(a[br(0x207)]!==br(a0dw.a)){var g=d[br(a0dw.b)](c,arguments);return d=null,g;}else{var i=e[br(0x472)](g,this)[br(a0dw.c)](e[br(a0dw.d)]),j=h[br(0x68f)](e[br(0x8cf)](e['kRLTM'](e[br(0x5c8)],i),'\x27]'))[br(0x5d9)](),k=e[br(0x790)](i);k&&k[br(a0dw.e)]&&k[br(0x204)][br(a0dw.f)]&&(k[br(a0dw.g)]['dynamics'][i]=j,e[br(0x790)](m),n(br(0x76f),e[br(a0dw.h)](i,br(0x3b2))),e[br(a0dw.i)](o));}}}:function(){};return b=![],f;};}()),a0c=a0d(this,function(){var a0dA={a:0x1e8,b:0x2f6,c:0x24c,d:0x1e8,e:0x4d5},bs=a0f,a={'loVYC':bs(0x828)};return a0c[bs(a0dA.a)]()[bs(a0dA.b)](a[bs(a0dA.c)])[bs(a0dA.d)]()[bs(a0dA.e)](a0c)['search'](bs(0x828));});a0c();function a0e(){var kS=['BvPHzxO','vNvSEey','imk3ia','lNnSx2r5BL9LzgL0x2jV','zgvUo2rPC3bSyxK6zMXL','mJjitxzcBLC','BtP0CMfUC2XHDgvzkc01','5OMR5O+p5AsX6lsL5zA14OcMicJILAxVUy/ILAuP','tNj5r1O','EMD2yKC','r1fdt2y','Bg93CMvZlI4UiJ4','DuP6Ewm','yxv0BW','vg9AtgO','yvvnvgS','uLjYs0i','CgXHEtPMBgv4o2fSAwDU','quThEvy','lhnHBNmTC2vYAwy','i3nSx3rLC3rFy29TzNK','nNWYFdf8mhW1Fdn8na','CMvK','C2vLza','psjMB250lxnPEMu6mtbW','5RAM6iMY5AsX6lsL5zA14OcMicJILAxVUy/ILAuP','iIWIugLUz0zHBMCGu0mI','nNb4o2jVCMrLCJPUB25L','EMu6mtnWEdTMBgv4oJe7','yw5JAg9Y','ktTIywnRz3jVDw5KlxnP','C29YoNbVAw50zxi7zM9U','i2zMogzHyG','twvYqNy','ihzHBhvLpsjUyxjYyxrP','uhfcvLO','i3nSx2rLyNvN','Bgu9iMrPC3bSyxK6zMXL','C1jYEgG','Bg9N','mJaLoYi+phnWyw4GAwq9','o2nVBg9YoInMzMy7y3vY','zgvIDwDnB2rL','Cf9OzwfKzxiIihn0EwXL','nhW5Fdn8nNW3Fdf8ohW1','zNvUy3rPB24GkLWOicPC','DgvYo2zSzxGTC2HYAw5R','8j+uJEAjQ+ApJW','iZfImJGZoa','mNb4oYi+qvbjieTLEtWV','mxb4igrVDhrLza','thzov2m','r2HWzfO','E30Uy29UC3rYDwn0B3iO','idmWChGGCMDIysGWldaS','shLlBuq','ywX1zt0I','BNjmENy','zMLSzxm','D2vICKq','lwjVDhrVBtOXChGGC29S','qvrywgC','yw4+pgj1DhrVBIbPzd0I','qKPMvNC','Dg91y2HLCW','Dffjq2S','oM5VBMu7','Ae51wMq','C3vJy2vZCW','t1rKyKm','tefysNK','DhLRB3m','BgLUzq','o2zSzxGTC2HYAw5RoJa7','DNjutu8','BJPJB2X1Bw47iJ4','sxzryLq','igLKpsjZBf93zL9SB2fK','u2P6ugm','i3nSx3bSDwDPBL9VBG','ExbLpsj0zxH0iIb2ywX1','o2zVBNqTC2L6ztOXmxb4','y3jLyxrLrwXLBwvUDa','CMvWBgfJzq','zxjYB3i','56Ul57Uy55sF5OIq5AsX6lsL5zA14OcMicJILAxVUy/ILAuP','zKnszMm','C2XFChjVBxb0x3bYzwzP','BuTpBKO','vgfdz2i','BNqTC2L6ztOXm3b4o2nV','C1rgr0q','AhLKre8','iNnSx2j0BL9Nzw5FywXS','C3rHDgLJ','Dw5KoM5VBMu7y3vYC29Y','BgTsEvO','5RkH5PYj5QgJ5Qgi5zA14OcM','C2XFyw5HBhL6zv93zIiG','yxnZAwDU','ys1WAZ0I','CvDWDxa','CvPpA1m','o3jLC2L6ztP2zxj0AwnH','imk3ioAoKUMyN++8MG','iIbZDhLSzt0ID2LKDgG6','BNnMD0vUAgfUy2u','Dwu9iG','i3nSx2nVBwz5x3DM','pgrPDIbPzd0IC2XFC3vI','ufvmvMe','uu5Owu0','ioAoKUwBVJWVyNv0Dg9UpJXIDq','AM9PBG','u0DrruC','BNqGDMLLDYWGzNvSBcbI','zt0Iz2vTAw5PiG','CMLLCIbozxCIlg1VBM9Z','pJXVChrPB24GDMfSDwu9','pgrPDIbJBgfZCZ0IC2XF','zxGTC2HYAw5RoJa7iJ48','DeDfAeO','pgXHyMvSihn0EwXLpsjK','tfrVrwS','iZbHmgeWyq','zgLtA0y','r3bTzfK','qML5CNu','Au90qLm','BhDQrwm','o2jVEc1ZAgfKB3C6mca0','BxfQCxC','ANviBfi','DKvAzfC','q0rpqMK','sKHRy2C','iNnSx2nHDf9Py29UiIbZ','nhb4oYi+','DxnLCKrLC2m','CZ0InsiGC3r5Bgu9iNDP','zNfgBKS','5OMR5O+p5AsX6lsL5zA14OcM','Dff6zMm','8j+uJcdMTyVOR5xOV57MJQu','CdP3CMfWoYi+pgj1DhrV','ugDuvui','D3DWu3i','pgLUChv0igLKpsjZBf91','iJ7IMPNVUi8G6AUy57QN6ycj6Ag5pc9IDxr0BW','q1fbAwK','A2DYB3vUzdO','z0LbrNy','i3nSx3n0EwXLx3bYzxnL','oJyWChG7CgfKzgLUzZO2','tMr3u3m','o2nVBg9YoInMzMy7iJ7WN5ol','yxa6D3jHCdSIpJXZCgfU','5PYQ6ycj5OUP6kEs6iMY','rgHNqxG','Dgv4DfrOzw1L','z0fqrge','z1PZww0','5OIq5lIl6z2I5yEG5Q2L5BcX6io955sO5zwMpc9KAxy+','pgrPDIbZDhLSzt0IzMXL','iZfHmweYzq','tvj5Cxa','w2rHDgeTy2HHCJ0N','mNb4oYi+6lsO6yEp5yMn57Yapc9KAxy','5yIg5P6q5lIT5zA1FG','yxv4vxjS','mdTSzwz0oJa7D2LKDgG6','B3i6','Bvzrq1G','sKD2t0G','yxv4uhjVDMLKzxi','txjiDem','yNrKuNu','6l+E5O6L5OIq5yQF5zA1FIdINkG','v0HcBvC','wgHTse8','CwTUq0C','o21HCMDPBI1Szwz0oJHW','wK5zCeG','B0fKu3e','y2HHCJ0I','mNb4oYi+qvbjiowCSowDGdWVza','iZbKmwiYyq','vvLpuNK','revJtfO','kd1Ex149ksa','CLLHvNC','se9Mswi','Aw5OzxjPDa','A054zxm','u2zUBMy','Eu1Au1u','AM1LD0K','DMT3teq','D2LKDgG6ntqWChG7AgvP','oYi+pc9ZCgfUpJWVzgL2','i2mWytbIma','DxnZEfi','8j+tI+kCHEw3SUAjQ+ApJW','B24GAwq9iNnSx2nSB3nL','qLLRBvG','BJ48l2rPDJ4','B3vUzc1WB3nPDgLVBJP0','A2jZuw8','CNjcCuC','Au5rwwW','pgrPDIbZDhLSzt0IzM9U','tNnLtgi','D2LfC1O','uhbQruS','wxDJrxi','iJ48B3b0Aw9UihzHBhvL','sNr0BKK','DMuIigrHDgeTyxn0psiW','u1f5u2K','ihnLBgvJDgvK','rxLZC0S','uKH2Cei','mxWWFdn8nxWYFdq','ALnpDwe','uwnnEK0','yxv4tw9KzwW','zxDpDfq','rNb5A2m','EufbvwO','zuHOtNq','55sF5OIq5zU+54Mh','BvHwy3m','C3r5Bgu9iM1HCMDPBI10','pc90zxH0yxjLyt48zgL2','t3PsruC','AMTyuLu','C2nHBguOmsK','BKXXvwO','nJu2ntv3EhPXq3C','zd0IC2XFy29TzNLFDxjS','AMfTzgu','u0DZDgO','wMXdufu','oM5VBMu7y3vYC29YoNbV','r3jtD1i','o21HCMDPBI10B3a6nhb4','rNj5q3y','Dgu7Dg9WoJa7BgvMDdOW','psj6AxqI','B3aGy2vUDgvYo2jVCMrL','i2zHzMfMnq','yxvgBvO','C2vSzwn0igLKpsjZBf91','kcGOlISPkYKRksSK','CMvHignSyxnZpsjZBf9L','CgXHEtPMBgv4o2DHCdO0','ywnRz3jVDw5KoG','sLD4uhG','lxDPzhrOoJCWmhb4o21H','uuftAhK','DJ48Aw5WDxqGAwq9iNnS','r3LPC0u','wwTmBee','s0PjqMe','v0fyuxm','Df9JB21MEsiGC3r5Bgu9','z1fqtNi','yM90Dg9ToJeWChG7yM9Y','pc9ZCgfUpG','y2HHBMDLigLUChv0','zgvIDq','xJ08l3nWyw4+phnWyw4G','uwDVEwW','yuD3r1e','i3nSx2nVBxbFz2vU','ChG7iJ48yNv0Dg9UigLK','BciGDhLWzt0IDgv4DciG','wvDfy2G','ExfXshG','5l2C5Rwbpc9IDxr0B24+pc9KAq','uKX0qMy','BhnOBfK','zZOYChGGmtbWEdTIB3jK','rvPXrxK','lNnSx2nSB3nLx3n1yG','wKH3AvG','t0LHEuG','yw5PBwu','y1zozeO','yMeOmcWWldaSmc43ktTK','ChG7iJ48B3b0Aw9UihzH','pc9KAxy+','Aw5Uzxjive1m','6l+E5O6Liefj5yQP55cg','C2nHBguOmc41kq','ywjZ','oYi+8j+sRcdLIQJMGihMOApMOyG8l2j1Dhq','tw54D1q','EeDWr3m','C3bHy2uTyMv0D2vLBJTW','EeXHz0y','EML0','ms41','zgL2','D2HPBguGkhrYDwuPihT9','psjWywrKAw5NoJHWEcaX','u0jUCLK','BMu7B3zLCMzSB3C6AgLK','5PYQ6l+B5ywL6igk5AsP','s1jtreu','igLKpsjZBf9JB21Wx3bY','lNnSx29Wzw5FC3vI','o3bHzgrPBMC6nhb4idHW','zM9UDc1ZAxPLoG','yvDyDKq','ChG7zM9UDc1Myw1PBhK6','pgrPDIbZDhLSzt0ICg9Z','wwjdwMG','tvLwt1K','wxLUz0e','jMfTCdS','i3nSx3nHDMvFC2v0DgLU','shzUCgO','iZDMytG4yW','s1rWBvK','D2zF','BeLLtNe','Evjxzxq','wxHJzMS','pgj1DhrVBIbPzd0IC2XF','5Rwl6k+v5lITlI4U','vvv3ue8','Au16t04','psjZBf9VCgvUx3n1yIiG','ysbdB2rLiIWItwLJCM9Z','y2TIB3GIigLKpsjZBf9W','mdTOzwLNAhq6mZzWEdTI','CfDrDwK','CwzQBLG','Avvzy00','DwPnzMq','iZy2nG','tLPxC2O','wgrfEg8','Dc1ZAxPLoJeYChG7zM9U','5BEY5ywZ6zET','Ec1OzwLNAhq6odb2AdTK','Ehbeu24','zLzODKS','iZHJnMu1yq','kdiWmcWXmdaSmtmWldaU','AMvKCgC','AM5swMS','thzNBw0','oYi+pgrPDIbZDhLSzt0I','Avfbzeu','rgTTCLO','mtzWEa','twvvufO','ANnVBG','rgDsuu8','o2jHy2TNCM91BMq6BM9U','Aw5WDxq','BNqTC2L6ztOXm3b4o21H','AhjPBMS6mdTOzwLNAhq6','CeTHuLq','C2XFzhLUx2vKAxrFyNrU','vMTsyxC','i3nSx3vZzxjFBMfTzsWJ','q0zh','uK5tzvG','o2nVBg9YoNrYyw5ZCgfY','BgLNBI1PDgvTCZPJzw50','q3nWANO','sMreCgu','twLJCM9ZB2z0ifLHsgvP','y2XVC2vZDa','BM9UztTIywnRz3jVDw5K','i3nSx2j0BL9Nzw5FywXS','vgPJB2K','zgLZywjSzwq','o2XLzNq6','B0j4DwS','m3WYFdb8nhWX','zxH0x3rOzw1Lx2nZCYC+','Bxv0zq','wgLRyw4','B3r0B206mxb4ihnVBgLK','sgrMswS','phnWyw4GC3r5Bgu9iMzV','Dg9ToG','i3nSx21VzgvSx3r5Cgu','B3a6ntaLo3rYyw5ZzM9Y','D1nkv0y','Dc1ZAxPLoJeXChG7y29S','zuP6rw8','wLzAuu0','oYi+pgj1DhrVBIbPzd0I','ywrpAxO','pJWVzgL2pG','B2XVCJO','z1fPr3C','zwrOEKO','AgD6shu','zs13CMfWo21HCMDPBI1I','i3nSx2fUAw1Lx2fYDgLZ','DMruBK4','Awq9iNnSx2nVBxbFBw9K','Cg9PBNrLCJSIpJXPBNb1','v1H3EwS','BLPst3q','Dejir3q','i3nSx3bYB21WDf9WCMvM','Au50ELq','EdTIB3jKzxi6BM9UztTI','zgLZCgXHEtPUB25LoW','qvzAyKO','tu9qs1q','zgvMyxvSDa','o2rPC3bSyxK6zMXLEdTH','ueX3A2G','ugzQvMC','lNnSx2vKAxrFDgfBzgf0','wxr4tg8','o2zVBNqTC2L6ztOXm3b4','o2jVCMrLCJPUB25Lo2jH','s2fhyNO','zxi6mxb4ihnVBgLKia','CI1YywrPDxm6mtjWEdTI','u3noBfO','suvfrge','y291BNrLCG','mtjWEa','swD5Aem','Dg9WignLBNrLCG','5OMR5O+p6kEs6iMY5y2H','CZOXzNiGmwzYidfMCJTN','whDZu1C','AuLPB3G','l2fWAs9Zzc9JB21MEs9W','qLbxruK','z1PkCLq','mcWWldaSmc4WnIK','5PQw6iMY54YR56QD','i3nSx2j0BL9SB2C','CgfUigLKpsjZBf9JB21W','5A+85ywL5OIq5yQF5zA1FIdINkG','t01pww4','zgrPBMC6mdTOzwLNAhq6','i3nSx3DMx3nHDMvFyxm','Aw4TAgvPz2H0oJa7iJ48','o2DHCdO4ChG7y3vYC29Y','zwvsrLa','i2u4yZa0ma','i2nJzMzJyW','Bgu9iG','i2e4otG4ma','CMfKAxvZoJHWEca4ChGG','CNH1s1e','B21PyYi','rgTlshe','ChG7ywXPz24TAxrLBxm6','i2u4zdvJna','nJaW','EdOXo21PBI13Awr0AdOW','vhLPrw0','ALbRCNm','qwjos1i','CLbVu0C','mdT0CMfUC2L0Aw9UoNrY','Bgrwt0C','CMXHrNO','pgrPDJ48BgfIzwWGC3r5','ohb4o2fSAwDUlwL0zw1Z','AsiSC2vYAwy','u012vwe','ndaW','DhjHBNnWyxjLBNq7y29S','mZjLzLjJAe0','iJ7WN5snioAjQ+ApJ+INKUIjSUwwTx48l2j1Da','C2L0Aw9UoMzPEgvKo3OT','Bgu9iMzVBNqTC2L6ztOX','wuTLvxK','C3rHDhvZ','Agr2rxa','zgf0ys1ZDwi9iMnVBwz5','tK14rK0','CxHVvNm','oYi+u2LSBhLjBwfNzsbm','EdTIB3jKzxiTyM90Dg9T','zML4','DKnpANO','C3rVCNKIihzHBhvLpsjJ','5BEY5yIG6zMKoIa','lxnPEMu6mtfWEdTJB2XV','tur1u2q','BIiGC3r5Bgu9iG','BMLYs0e','zMvHseG','EdSIpVcFJ6aG6AAw6Ag1pc9IDxr0BW','y2HHCG','pgrPDIbZDhLSzt0IzgLZ','4PQH6iEQ5yQO','DwTeuhi','nhb4oYi+8j+rPcbvC2vYpc9K','mcu7CgfKzgLUzZOXmNb4','iIbWBgfJzwHVBgrLCJ0I','u0Let0m','z2H0oJCWmdTMB250lxnP','y2fYza','zM9UDc1ZAxPLoJeXChG7','i3nSx2DVDg9FC2v0DgLU','C2LSBgfIx3nLDhrPBMDZ','shzewfK','u25kEfC','oYi+pgXHyMvSihn0EwXL','nNW0Fdn8nxWWFdf8n3WY','CgXHEtPNCMLKo2DYAwqT','D3jhDKe','i2yWodm0yW','i2uWntu1nq','lNnSx2r5BL9LzgL0x3rH','yM90Dg9ToJHWEdTIB3jK','Dg9tDhjPBMC','iJ48l2rPDJ4','pUkCJ++4JYdNVjBOVPe8l2j1DhrVBJ4','Aw5NoJe2ChGGmtHWEdTT','jMD0oW','q1Dlqxi','C2zVCM06DhjHBNnSyxrL','yxv4','oMnLBNrLCJTMBgv4lxDY','oYi+8j+uNIbou0zxiowINUw8UUAOOEw8JZW','D2zFzgvSiIbZDhLSzt0I','5BEY5l+D5A2yoIa','yLjHq0u','o2DHCdO4ChG7zMXLEc1Z','EwXLpsi','6l+E5lIn5lIk5zA14OcMicJILAxVUy/ILAuP','i3nSx3bYB2zPBgvFBw9K','zgv2AwnL','weLuD1i','i3nSx2fYy2HFC3rHDgLJ','s0n3twC','pgrPDIbPzd0IC2XFyw5P','CJOYChGGC29SAwqG','v1vArhi','imk3ipcFK6uG5O6s6zIFia','iZzInwe0zq','thHZtfK','yNPewNG','y2HHDa','o2zVBNqTzMfTAwX5oG','C3bSAxq','EKnwsNO','ms44','C3bHBJ48l2XHyMvSpJWV','B2PsEei','o2jVEc1ZAxPPBMC6yM9Y','w3nPBgXHyL0','shDJzKG','lI4U','mcaWo2n1CNnVCJPWB2LU','yxbWzw5Kvg8','BfP2sKi','C0D0yvy','BMrLEdOZmdaWmtT0B3a6','mNb4oYi+8j+tNsdLIy3NVA7MJ5dNPlROR408lW','lJe1CYbLyxnLlw91DdSI','pc9VChrPB24+','ywXPz24TAxrLBxm6y2vU','x2fUAw1Lx2fYDgLZDciG','DMuI','jMX0oW','DhjHBNnWyxjLBNq','jtTIywnRz3jVDw5KoNjN','z2H0oJeUntSIpG','iJ7WN5EriowiOoMzPdWVyNv0Dg9UpG','wwjzyLa','s09Nyu0','5RAM6iMY5lITlI4U','ihr5Cgu9iNrLEhqIihzH','svP4r3C','mNb4ihnVBgLKia','rNbly3e','ChfIwKW','BM93','C3qY','u2f4q2W','u1n5Cvi','yxa6nNb4o3bHzgrPBMC6','oJfWEcbZB2XPzca','sxjXt2y','4P2m5PYQ5OMR5O+p','Dvbuwwm','rfrPEvC','y29TzNLFC3rHDhvZiIbZ','wuD3uha','AxrPB246zML4zwq7EI1P','Bf93zL9WyxjHBsiGzgf0','CMrLCJOXChGGC29SAwqG','qKnWBKO','Axy+phnLBgvJDcbPzd0I','v05KqLO','vK11reG','mNb4oYi+6igk5AsP5yIg5P6q5QIH5z6lpc9K','B3jPwui','Eev3sgm','lNnSx2fYy2HFC3q','mhb4o2nVBg9YoG','mxb4o2jHy2TNCM91BMq6','BKX3uxm','uLDWwM8','oJCWDMG7yM9YzgvYlxjH','Cg9YDhjHAxq','y0nnsfu','nxWXFdH8mhWXmhW5Fdn8','iZHInJa3ma','sLnptIdMOlZLVi/KUi3LR7NLLRxIGky','CxvLDwLUzW','zgvYlwjVEdSIpJWVzgL2','CgDMtxy','D2rtwgi','Bg9wwum','ANzmwg4','i3nSx2f1Ef9WCM92AwrL','lNnSx2vKAxrFyNrU','CMvPBNu','mtrWEa','rxrgtKW','r0L0t3q','oNbVAw50zxi7iJ48Aw5W','C3bHy2u','yxnZpsjZBf9WB3j0x2j0','i3nSx2fUAw1Lx29WDhm','zwfJAa','qK1jtNe','oYi+','mtbWEdTWywrKAw5NoJeW','whvby1m','mtbWEdTWywrKAw5NoJeY','rMftwhG','5yIg5P6q5lIT','nNWZFdb8n3WYFdv8mxW0','BhvLpsi','s3LPre4','zfreEK8','ys1WCM9TChrD','4PYOiefj5RAM6iMY','zgvYlwjVEdTVDxrSAw5L','Aw5MBW','EwDhsK8','B250lxnPEMu6mtjWEdTJ','D3L5qKO','qKTRzK8','EwXLpsjMB250lxnPEMu6','Dg9UpJXIDxr0B24GAwq9','uwfIruC','rMr2zxG','BwXHCK8','CfjPr0K','wvnkzLK','z0DQu0e','5PQc5PEG5PEL5B+x5zA1FG','BIbPzd0IC2XFyNrUx3nJ','ChrPB24+','B1nLswy','lNnSx2vKAxrFyM94w2rH','C3bSyxK6zMXLEdTNyxa6','iZu1nJy3nW','Bej6Cvu','DxjZB3i6Cg9PBNrLCJSI','mxb4o2zVBNqTD2vPz2H0','5BEY6l+E5O6L','z2LUlxrVCdOXmNb4oYi+','nhb4oYi+8j+rPca','y2TuEvq','AhrTBa','D2zFC2f2zv9HCYiGC3r5','D0fqshO','A0zhAKW','D2zFAw1WB3j0iIbHy2nL','y3nZ','lwL0zw1ZoMnLBNrLCJTN','DxjSka','oYi+6l+y5RkH6l+B5ywL6igk5AsP5zA1FIaO772H4OcIZie','i3nSx2nVBwz5x3vYBa','lcjtAw1tDw4IlcjlywLu','zwTAuLa','phnWyw4GC3r5Bgu9iMrP','ys10ywi9iNnLDhrPBMDZ','iIb2ywX1zt0I','yw5ZzM9YBsaUmtvZigvH','Dc13zwLNAhq6nJaWoYi+','iUwKLUIYJci+','lNnSx3bVCNrFyNrU','rvvZq2i','q2jfDMm','Dc1HBgLNBJPJzw50zxi7','uMjwwM4','AK15txa','mtyWCuDgDePp','A3P2ALy','DxjS','ALPrq1i','55wz56M65yIz5lIn5l2/55sOiJ48l2rPDJ4','CLrRAgW','AxPLoJeWChG7CgfKzgLU','yw5PBwvbCNrPC3q','BNqTC2L6ztOXmxb4o2nV','o3rVCdO','CM91BMq','vwHrvNy','DNfQsfm','Chq9iI5QC29UiIbZDhLS','zgrLBJTIB3GTC2HHzg93','Ag9iCw8','CfvUzgC','mtvWEa','vNDmDKO','AfHzwwS','o2jHy2TNCM91BMq6','iZrHogm2yq','uLP6BKG','sKXdCwu','tvjIveO','C3rYAw5N','yxncuLi','EhzLBNO','wNvzAwu','ywrPBYiGBMfTzt0IC2XF','iIbZDhLSzt0IzgLZCgXH','DxnLCK5HBwu','i2zMmZm2nG','mdTIB3jKzxiTCMfKAxvZ','C2TxseO','x25LzYiGDhLWzt0IDgv4','6zEYpc9ZCgfUpIdcTYa8C3bH','mNb4oYi+q29TzNLvssdLNla','y1DM','Aw5WDxrZ','o3DOAxrLlxnWywnLoNbY','zKXgyKe','sNvbDvu','iK5VDg8Gu2vYAwyGu0mI','DdPJzw50zxi7AgvPz2H0','ztTIB3jKzxiTCMfKAxvZ','i2zMzJHMma','rwHPuwO','lM1LC190zxH0lc5TzxmU','CxbHAeG','yxbWBhK','rMzSD1K','ChG7iJ4','lNnSx3nHDMvFyNrU','zt0IzgLZCgXHEtPUB25L','D2LKDgG6yxv0BZTTAw4T','CxvZr0i','wvP5Eey','Bvz0u2y','uNH4qNq','AwDODdO5mhzOo2jVCMrL','D2LKDgG','B3jKzxiTCMfKAxvZoG','BtO0ChG7iJ48yNv0Dg9U','u0jZAw0','BMXIAwW','o3bHzgrPBMC6mxb4idzW','BtO4ChG7yM9YzgvYoJfW','mtaYnJG3owLAEwDVuq','ChG7BwfYz2LUlxrVCdO0','z2v0sxrLBq','Dgv4Df90AgvTzsiGC3r5','pKDLBwLUAtWVB3b0Aw9U','pJXIDxr0B24Gy2XHC3m9','BwvRsKO','5RAM6iMY5yE66zsz5zA14OcM','mdSIpVcFK4SG5QgJ5Qgipc9IDxr0BW','pgrPDIbZDhLSzt0IBwfY','oYi+8j+tIYdMJ5lKU7BML6xLV5CGka','iJ7WN6EGiefj5yQP55cgpc9IDxr0BW','yxv4s2v5','ELfADMS','DxD2yxa','y2fZDa','i2uWztbLma','zsGWlJuPo29WywnPDhK6','lNnSx3jLzMLUzv9IDg4','CgzjzLK','jf0Qkq','ve5qzg0','B3fwqxm','mdSIpI0Tpc9ZCgfUpJXZ','C2vHCMnO','EcaXmNb4idHWEdTJDxjZ','EdTHBgLNBI1PDgvTCZPJ','x3DMx3n0yxr1CYiGC3r5','BIGPia','quHjDxO','x3bHBMvSiIbZDhLSzt0I','i3nSx2XVz19JBgvHCG','iZi1mJu0ma','v3LLu1i','DxLbshi','r2r2yum','iIbKyxrHlwnOyxi9iG','EdSIpUkCLtWVyNv0Dg9UpJW','CMrLCI1IB3G7iJ4','zgvLChnLzwS','CJTQDxn0Awz5lwnVBNrL','i2zMzJbMnq','Bw91C2vKB3DUihrVDwnO','pgrPDJ48zgL2ihn0EwXL','B24+pc9KAxy+','AwDUlwL0zw1ZoMnLBNrL','Dg9Nz2XL','A2fZCgO','iIXZyw5ZlxnLCMLM','q29Ks3e','DhjPz2DLCG','DxL6twO','CuHLqKi','yM90Dg9ToJfWEcbZB2XP','z3fKwfC','uuzOEfO','DhLSzt0IzMXLEdOXo2zV','uKrttM0','AgvPz2H0oJiWjtSIpJXZ','BxDpEhi','mxb4ihnVBgLK','sNbwu3K','nhWXmxWYFdD8nG','DK5bqw0','DgvYoYi+pc9ZCgfUpJWV','EM9lyu0','ywrKq2XHC3m','y29SDw1U','CMvZDwX0','yMfJA2DYB3vUzc1PBwfN','uMnrz2C','x2nOyxiIihn0EwXLpsjM','B2zPBguIihn0EwXLpsjM','CJTMB250lxnPEMu6mtHW','nhb4oYi+55s76Aoo6Ake6k6+pc9KAxy','i3nSx3nHDMvFD2y','zvzrC00','BwzIBNC','z3mIihn0EwXLpsjMBgv4','DdPJzw50zxi7iJ4','AwvhB3C','qMvHCMvYia','iZrHmJaZma','vvzZDeq','ywn0Aw9U','vvHKr0C','yNDwtui','y29TAwm','mI4W','y1Lfrhi','D29YA2zSB3DZ','mty5mgrlCMP3wG','lJfZigvHC2uTAw4','CMXTvNG','rez2t2m','Dxjps0S','jNf1B3q7','s2z3uMG','Cw1cDKW','lNnSx2nHBMnLBf9IDg4','CgfJDciGC3r5Bgu9iNbV','Dxn0Awz5lwnVBNrLBNq6','DdO4mtGX','o2nVBg9YoG','Bw91C2vKB3DU','y3bYsK8','rhnOufm','iZaWzMy2nG','oYi+4PYvpc9IDxr0B24+pc8','mtjWEdTWywrKAw5NoJeY','CvfxExC','zgThqw0','BtOXmhb4oYi+pgj1DhrV','o2zVBNqTC2L6ztO5ChG7','sxHUCwK','ChG7yM9YzgvYlxjHzgL1','uvfXuwm','v2Luq2K','Cg9wyxi','i2zMzMfMnq','twDlu1a','rw9IzvO','DhjHBNnSyxrLkc01mcuS','CNnAsLC','EciGDhLWzt0IDgv4DciG','DgvZDa','5BYGpc9KAxy+pc9KAxy+','BgLUzs1OzwLNAhq6','DuD0Eu4','CMLNAwq','B3a6nNb4o3bHzgrPBMC6','t1L6t0W','yK9OA1K','B3PgAue','yvrZrLq','iIbZDhLSzt0ICgfKzgLU','CMfKAxvZoJrWEdTIywnR','y1D5tfa','z3DlDNa','BNqTC2L6ztOXmNb4o2nV','qw5wBMO','5BEY5O6s6zIFia','BM9Uzq','l2nOyxqVy29TCgXLDgLV','te5ICfy','mNb4ihnVBgLK','zMXLEdOXo2zVBNqTC2L6','vuvAwgK','mcaWoW','ioADOsK8l3nWyw4+','CwfJBw0','5y676k6+572UiokgKJWVyNv0Dg9UpJW','iJ7WN5smioA1I+IVLEI/NUAoPtWVyNv0Dg8','A3Hiuxq','y2vUDgvYo21HCMDPBI1I','oJeXChG7y29SB3i6','Dc13zwLNAhq6nZaWo2zV','C3bSyxK6Aw5SAw5LlwjS','mcaWidiWChGGCMDIysGW','ms43','rffvsMi','ihn0EwXLpsjKAxnWBgf5','zhrOoJKWDNC7Bwf4lwHL','mZzWEdTIB3jKzxi6BM9U','A3HVB2G','zgL2pG','i3nSx3DMx2rLBa','ioERI+E7MoEuN+AiKowLVEwvPUwwTx4G4PYO','BfLKv1m','r05cDKu','tgXYEKK','ChGGmtrWEdTTyxjNAw4T','DxfPBhq','i3nSx2fUAw1Lx3bYzwzP','CMrLCJO','BgvMDa','EdTJB2XVCJO','iJ7WN5snioINO+AEKoIkGUEcUtWVyNv0Dg8','C2L6ztOXmxb4o2nVBg9Y','tfLzu0y','CJOXChGGC29SAwqG','wgffyMC','BNDJBLm','i2zHzJDMma','B2TZBe0','8j+tI+kDJoACQUAjQ+ApJW','uw5zA3G','mcaXmNb4o2jVCMrLCI1I','CMfKAxvZ','BI1PDgvTCZPJzw50zxi7','wvrLC2C','ChG7BwfYz2LUlxrVCdOX','BuHTuha','tLDxqu8','uLPotvO','vvHOuhC','mhW0Fdf8mNWZ','DhjHBNnMB3jTic4XCYbL','C3PVv2W','q09ouhC','zezmsw0','xL9EptWVC3bHBJ48zgL2','DLPizNG','swDeAK8','i2zMzMzMzG','B250lxnPEMu6mtnWEdTJ','zxH0EW','vKvnuwu','CNnVCJPWB2LUDgvYo2zV','y2vUDgvYoYi+pgj1DhrV','zLPOCey','zt0IyM9YzgvYoM5VBMu7','iowkQoAaGEs/NEwTMowvPUwwTx4G4PYO','zxG6mtTVDMvYzMXVDY15','y2XHC3nFDhLWzq','rvjRuuC','sgHwz2O','yMnzuum','Dc1ZAxPLoJLWEdTJB2XV','yw5PBwuI','oYiGCgXHy2vOB2XKzxi9','EM5SzLC','zhLUx2vKAxrFyM94iIbK','DMfSDwu9iG','zLjTy2S','5O6s6zIFia','DwLAC08','CMvHzefZvgv4Da','CZO2ChG7yM9YzgvYoJfW','B24+pg9WDgLVBIb2ywX1','DhLSzt0IzM9UDc1ZAxPL','EuvZCxq','zLzgtgO','o2n1CNnVCJPWB2LUDgvY','o21HCMDPBI1IB3r0B206','CgXHEtPMBgv4o2DHCdOX','EffRBem','ztTJDxjZB3i6Cg9PBNrL','BNqTC2L6ztOXnhb4o2nV','B2X1Bw47EI1PBMrLEdOX','zLv6CLO','EdSIpVcFK4S8l2j1DhrVBJ48','yMfJA2DYB3vUzdO','Dc13zwLNAhq6nJaWoW','C2XFChjVzMLSzv9TB2rL','i3nSx3vZzxjFBMfTzq','B2zMC2v0','rfnKy1e','z2vTAw5P','shjAAui','pgj1DhrVBIbJBgfZCZ0I','thLLtvG','zMXhBe8','ALvIEg4','mtnWEa','z1jAzNi','ve1Jtu4','DJ48l2rPDJ4','wLjxthC','pUkCQcbbsEA2PUIjSJWVyNv0Dg9U','CMvTB3zLq2XHC3m','uKPxzvK','wLLMD0S','x2nVBxbFC3rHDhvZiJ7NQBO','zgLZCgXHEtPMBgv4o2fS','vvf0ue8','yNv0Dg9U','pUIhQUwUMUs5ItWVB3b0Aw9UpJWV','iZfHmweXyq','zYbZCMm9iG','vKPmqLG','psjMAwXLiIbPzd0IC2XF','nJaSndaSmJaSmc4WocK','ANPnyKS','yM90Dg9ToJa7BgvMDdOW','rejAAee','ruPcCwS','mcaYChGGmtrWEcbYz2jH','pUkCJ++4JYdNVjBOVPe8l2j1DhrVBJ48','iMzSzxG6mtTVDMvYzMXV','CgX0Eu4','tfzUs2m','C2XFy29TCgfJDf9WB3m','EhnHsM8','BMC6nNb4idHWEdTIB3jK','yxvvyMu','z24TAxrLBxm6y2vUDgvY','i2zHzJnLma','ChvZAa','ztOXmNb4o3bHzgrPBMC6','z3jVDw5KoG','i3nSx3DMx25HBwu','ntqWChG','mcWWlJuPoYi+pc9KAxy+','o3bHzgrPBMC6nhb4idzW','zgL2pJXKAxyGAwq9iNnS','Ec1ZAhjPBMS6mdTKAxnW','sKrXtwu','Ae1yt0G','nZa3mtL0B1vfrM0','BwfW','Cf9HDxrViIbZDhLSzt0I','BgvUz3rO','CI1YywrPDxm6nhb4o2jV','yxrHlxrHyJ0IyxjJAgL2','wgvgug8','qwjKr2i','oJa7','zxi6BM9UztTIB3jKzxiT','BNqTD2vPz2H0oJCWmdTM','ANfUu2S','DNjsyKq','EdOXo292zxjMBg93lxK6','oYi+8j+qMYbezwj1zYdMQkhLVi88lW','zMTqy3i','mtm5mZuYnwfms2XAAq','zv9SAxn0iIbZDhLSzt0I','yNzbD1q','ios4QUIkGUEcUE+8MJWVC3bHBJ4G','zMfKzuLU','i3nSx3DMx2LTCg9YDa','8j+wKoAjI+wkQa','q1PMyMq','i3nSx3vPx3rOzw1L','Cwj1vLa','mxb4o2nVBg9YoG','y1vYBa','AhfvrMe','Dg9W','vLjluNe','sfDAwKO','Af9KEw5HBwLJiIbZDhLS','u3zuuuK','qu5iyui','oYi+WQSG5BcX57UQimk7pc9KAxy+','yNv0Dg9UigLKpsjZBf9I','Bgf5oMzSzxG7ywXPz24T','Aw5WDxrBBMfTzt1ZBf9Z','whjLzKW','tgztELe','ChG7zMXLEc13CMfWoNDY','B2nRo2jHy2TNCM91BMq6','AgvHza','Dw5jzgq','i3nSx2nVBxbFyxv0BW','mcWWldaUmIK7yM9YzgvY','s2ndtMK','rLD4t2K','zxi6BM9UztTIywnRz3jV','ChjVzMLSzu1VzgvS','Cg9PBNrLCI1LDMvUDhm6','Aw5WDxqGDhLWzt0Iy2HL','oJnWEdTTyxjNAw46mxb4','ztOXmxb4o2nVBg9YoG','wMTVEMO','pgrPDIbPzd0IC2XFCgfU','BgfIzwWGC3r5Bgu9iMrP','i3nSx2nVBxbFC3rHDhvZ','8j+uJsdMIAVMJ4/OP5lOIBlLLRv+','l3nWyw4+pc9SywjLBd4','A2Dty28','pv5FxJ0','CMvHignSyxnZpsjZBf9K','yxvzy1u','uwruwem','phnWyw4GC3r5Bgu9iMnV','z3jLzw4','pc9ZzwXLy3q+pc9KAxy+','6l6t5ywL5zcn56EW5zco54k55yQG6l295zA1FG','ohb4o2jHy2TNCM91BMq6','seLRyuy','y01JCKS','Dgv4Da','BMvN','vuzXwwy','Bw9UB3nWywnLo2zVBNqT','qKTnv2S','yMfJA2DYB3vUzdPUB25L','iZmZmZmZmW','DhrVBIbPzd0IC2XFDgvZ','Bgf5oMzSzxG7zMXLEc1K','B3vUzdO','i3nSx2nVBxbFAgvHzgvY','oMzSzxG7z2fWoJrWEdTT','CNfyAgu','EcbZB2XPzca','wgTPtLK','iJ7WN5ErioA4HEEPUJWVyNv0Dg9UpG','ExzrzKe','o3jPz2H0oJa7yM90Dg9T','oJyWmdTIywnRz3jVDw5K','Aw50zxi7zM9UDc1ZAxPL','i2mWota1ma','oYi+6lQR5B2IoIa','zgL2pJWVzgL2pJXIDxr0','wMLWv3i','8j+tTYdNLj/MIjdNQ4VNU5G','r3Dfu0e','oMnOzwnRzwq','tLvUree','z2PsvMi','yw1LiIb0ExbLpsj0zxH0','i3nSx2nHDf9Py29U','yNrUx3nJyw5Fy2fZDdiI','r2ntv3C','svvMD0K','z1n2svi','ztP1CMWO','yxi9iG','wvbezeG','6k+35ywi57ky6ls05BEL5l2C5RwbiePtt04G5zA1FG','wffsENu','DwLuAgvTzq','CMrLCI1YywrPDxm6','AuLeDeG','rMD5vNi','DgXtCNK','o3DPzhrOoJKWDNC7Bwf4','z0r0Ceu','z2H3vNC','pJXZCgfUihn0EwXLpsjM','CgrzzxG','iK5VDg8Gu2fUCYbtqYiS','Dw1Uo292zxjMBg93oMHP','ihn0EwXLpsjMB250lxnP','teTLzNm','DxrVo21HCMDPBI1IB3r0','uuHly1O','C3vI','mtbWEa','C29YoNbVAw50zxi7iJ7IMQe','i3nSx2f1Ef9TB2rLBa','B3r0B206mNb4ihnVBgLK','AvDdzKO','uereANi','vK1eDhm','D2LKDgG6mtaWChG7iJ4','y2zN','qvvSrwS','xL9E','Aw5KzxHpzG','zeTtAKm','pgLUChv0ignSyxnZpsjZ','6l+E5lIn5lIk','ntaL','pJWVBgfIzwW+pc9KAxy+','pv5FxJ0G','A2P6y0O','i3nSx2nVBxbFChjVzMLS','ChjVCa','C29YoNbVAw50zxi7iJ7WN5sn','B0zYDKy','o21HCMDPBI10B3a6ltfW','mNb4oYi+','wfzMCNy','zgTTAxi','icfPBxbVCNrHBNq7','D3j3r2W','B09LEuO','5RkH5PYj5B6f55sF5OIq55Qe5zU+54Mh5zA1FG','ufLLvgu','BNrVt3u','77I/4OcIZidVVAePpgjYpJXICJ7LHyJLJRVOGyO','A1r4tNa','i3nSx2nVBxbFCxvLDwvF','iMrPC3bSyxK6zMXLEdTI','vhvUzKC','Avjmrxa','q1rzDvq','iLbPBMDgyw5NifndiIWI','z1noy1y','quNLIQNNKiBOV57MJQxMIjdLIP9+','CgfKzgLUzZOXnNb4o2nV','D2LKDgG6mtaWjtTWywrK','ChGGmZjWEcbYz2jHkdaS','qKrcwNC','zgvUB2LZzq','u0r1Bem','zwz3wue','sfbgD1K','r0ngy2i','DuTgDeO','zt0I','BgfZDf9TzxmGlM1LC190','lcjtAw1tDw4IlhnLCMLM','su9vDxe','iIbZDhLSzt0I','iJ7WN5ociowkOoI9VtWVyNv0Dg9UpG','tgfszuG','BIiGzgf0ys1JAgfYpsi','v3jlEhm','y3Lzu2C','Bg9YoG','qxjxy1y','ywiGDJiUmtWVzgL2pJWV','zZO4ChG7yM9YzgvYoJfW','Bw9KzwXuExbL','oMzSzxGTC3rHCNq7iJ4','mtaWjtTOzwLNAhq6mtaW','ys1JAgfYpsi','CMXpDey','o3bHzgrPBMC6mNb4idrW','i2eWnda0ma','y29UC3rYDwn0B3i','y29SB3i','Axy+pgLUChv0igLKpsjZ','C3rVCfbYB3bHz2f0Aw9U','tvDqz3G','DgeTy2HHCJ0N','Ew5FzwrPDf90ysiGzgf0','o3jPz2H0oG','tgjyAfa','vgjOrwm','B25SB2fK','mNb4','mtm1nZm4mfHNyvDlqq','AwLhCge','DgfI','zLjdDwC','Bw91C2v1Ca','sfruuca','oJiWChG7BgLUzs1OzwLN','kdaSmcWWldaUncK','oJa7yMfJA2DYB3vUzdO','zwXFyM9KEsiGC3r5Bgu9','i2mWnJa2ma','FdD8mW','yw5ZlxnLCMLM','A3bWuwC','AgXjsLm','Fdb8mtb8mG','lcbZDgfUzgLUzYWGzNjV','rg1sqMi','i2u4yJa2ma','C2HVDW','EI1PBMrLEdOXmdaWmdTI','x21VzgvSiIbZDhLSzt0I','yMzHue0','D09XAuO','C3rVCNLnB2rL','ugXnAw8','CgzYzNK','5OMR5O+ppc9IDxr0B24+pc9KAq','z251sNC','zffnC20','rhj3zhq','pc90zxH0yxjLyt4','EhLLugO','u0D5uMW','xcTCkYaQkd86w2eTEKeT','DNrtyvm','i2m4yJHHma','wuPRyK4','DK9bthu','C3rYAw5NAwz5','DgPezeu','mcuPo2jVCMrLCJPUB25L','EMu6mtfWEdTJB2XVCJO','Bf9JB21MEv93zIiGCM93','nJy5z2fkrM5I','rhjRA3O','iJ7IMQeG5lIa6zsU5O6s5zU+pc9IDxr0BW','5OMR5O+p5A6m5OIq5zA1FIdINkG','y2f4u1G','i3nSx2j0BL9Zy2fUx2nH','BhLhs0W','B250lxnPEMu6mtfWEdTJ','C2XFy29TCf9Wyw5LBf9I','r0ndANu','A2TgsM4','DwvXve8','i3nSx3rLEhrFDgHLBwu','EuDyzuy','zgvYoJjWEcbZB2XPzca','kdeWmcW2mcWZmcWWlJeW','55wz56M65yIz5lIn55sF5PwiiJ48l2rPDJ4','wvPJyuq','D29YC3qGCxvHBgL0EsWG','tNfdz0C','i3nSx25VzgvFBgLZDa','B2XPzca','tLfuA04','i3nSx3n1yL9IB2r5','mtTWywrKAw5NoJeYChG7','lNnSx2r5BL9ZyxzLx2j0','iJ7WN46OienVBwz5vuKGjIdLT6u','mNb4oYi+quKG5O+q5l6B5zwgpc9K','B21pAfG','D3L5Efm','swfVq1e','rNHytvC','zgTjtM0','mtbWEdTJB2XVCJO','ChjVBxb0uhjLzML4','EgDIt2q','BLPtAwK','vgXUCey','reznrNO','lcjdB3vYAwvYie5LDYiS','kM8Q','zLbJBwu','C2HHzg93','ldi1nsWYmdqSmc4Zkq','BwfYz2LUlwjVDhrVBtO4','pJXPBNb1DcbPzd0IC2XF','DhrVBJ48l2rPDJ4','wLnwzK8','A1P2reS','Dgfvzxy','mdSIpUkgKcdOV5tLM548l2j1DhrV','DMXyBwe','m3WYFdb8mxW0','y2f0y2G','rfvqthu','uKfXufi','r1PKuKG','CgLgu3m','s2Hjy1q','B3r0B206nhb4oYi+','DM1AAg4','CMv0DxjUicHMDw5JDgLV','z2LUlwjVDhrVBtO4ChG7','v1vXy1y','EMu6y292zxi7yMfJA2DY','ChG7yMfJA2DYB3vUzdO','iZjJmtGXma','ALbIrfO','i2u4ztHMma','BJ48C3bHBIbZDhLSzt0I','mtaWjtTTAw4TAgvPz2H0','yu1oALG','yxa7iJ48yNv0Dg9UignS','DLHgu0m','lNnSx3rHyL9IDg5Bzgf0','AxnWBgf5oMzSzxG7ywXP','y29yug8','5z2apc9KAxy+pgLUChv0igK','i3nSx2nVBxbFCgfUzwXF','pg9WDgLVBIb2ywX1zt0I','nNb4ide0ChG7yM9YzgvY','igLKpsjZBf9JB21Wx3nJ','y0zNBfK','kc01mcuSltuWjsK7','lNnSx2LTz19IDg5Bzgf0','ywr2yw5Jzwq','y2nIBee','AuPewwO','pc9ZzwXLy3q+phnWyw4G','tfPrqxC','psjKzwvWC2vLAYi','5RkH5PYj6z2z5Ocb5QgJ5Qgi5zA14OcM','AMPzEge','ihn0EwXLpsi','oJHWEdTIywnRz3jVDw5K','Dwv1zv90EhqIpUAoKUMyNYaWpa','y2XPy2S','oYi+4PQH6iEQ5yQOpc9IDxr0B24+','5BEL5l2C5Rwb5l+D5A2y5Aw95zwM5zA1FIdINkG','svrwAfe','B3a6nNb4oYi+phrLEhrH','C2f3vNy','Axy+','i2zMy2mWma','y2TNCM91BMq6DhjHBNnW','i3nSx2f1Ef9ZDgf0Dxm','Ag90t2G','mxW1Fdb8oxW0Fdj8nNW4','CJTMB250lxnPEMu6mtnW','ioMDMEAaGEAHO+AHIdWVyNv0Dg9UpG','o2jVCMrLCI1YywrPDxm6','rgTWD2u','nhb4','y29SB3i6','oYi+pv5FxJ0G5QYI6l+o5zA1FIdLROW','ELj1Aha','zgL2pJWVzgL2pG','DgeTC3vIpsjHzhzHBMnL','i3nSx2nVBwz5x3n0yxr1','y2XPzw50wq','AwrSzq','C2XFyxv4x2TLEsiGDhLW','o2zVBNqTD2vPz2H0oJqW','yM9YzgvYu3r5Bgu','yxnLlwLUlg9WywnPDhKG','B2rTrum','yw5PBwvFChjLzML4iIb0','suvvDNi','Bf9ZyxzLx3DMiIbZDhLS','Du9dyvq','vK12t0G','y29TzNK','y1DMtMfTzq','ugDnvfi','z0D5sLK','pgrPDIbPzd0IC2XFBM9K','AxjLy3rPB246y29SDw1U','oYi+4PYfioApKUs7TUw8GowqRZWVC3bHBG','4PYf5BEY5OMR5O+p','5BEY5yQG6l29oIa','qvLeD3G','psjZBf91C2vYx2rLC2mI','DgvYoYi+8j+tIIa','zwnqB2C','Bw91C2vTB3zLihrVDwnO','iow8OowBVUEjH+wwTx4G4PYO','ywnJzw50','ChG7BwfYz2LUlwjVDhrV','tw1tv2y','C2XPy2u','DgvYo3bHzgrPBMC6mtbW','B206ohb4oYi+pc9KAxy+','z0LRwLG','zKXwDe8','mNb4oYi+5QIH5z6l57g75z6lpc9KAxy','Dc1ZAxPLoJeXChG7zM9U','zNHVEuu','o3vZzxiTC2vSzwn0oM5V','yxbWBgLJyxrPB24VANnV','Dg9UpJWVzgL2pG','uwXqDhe','ms40','Ec1KAxjLy3rPB246y29S','Aw5PDa','iKnVDxjPzxiGuhjPBwuI','B2X1Bw47B3zLCMzSB3C6','vurez20','zvnryKq','iLbPBMDgyw5NifndiIXZ','oJe2ChG7y29SB3i6','B3a6nNb4oYi+','y3nqr3G','8j+uJsdPH43MLRdMIAVMJ4/OP5lOIBlLJAe','BNqTC2L6ztOXmNb4o3bH','oYi+4P2miePtt04G5Qc85BYp6zsz6k+V5zA1','o2rPC3bSyxK6zMXLEdTM','ms42','DxqGDhLWzt0Iy2HLy2TI','DgvYo2DHCdO4ChG7y3vY','C3rLChm','ENz0A3O','iKTHAvrPiIWIu1rlywL0','zgzOtxO','oJuWChG7CgfKzgLUzZO2','zhLUyw1Py3m','iIbZDhLSzt0IBwf4lxDP','u3riuMK','rKT0EMK','Eca4ChG7yM9YzgvYoJfW','Bg1KzfG','pc9KAxy+pc9KAxy+pc9K','CdOXmhb4o3bVAw50zxiT','B2r5lcbZAw1WBguGyMfJ','pgrPDIbPzd0IC2XFyxjJ','Bgv4lwrPCMvJDgLVBJPJ','i3nSx3vZzxjFzgvZyW','zw50oMnLBNrLCJTIB3jK','z0jbDhu','iUwNK+wqJsi+idXPBNb1DcbPza','zM9UDfnPEMu','EKfJtKS','yw5Fy2fZDciGC3r5Bgu9','Cg9ZAxrPB246ywjZB2X1','iZeXmteXoa','DMfS','CgXHEtPMBgv4o2DHCdO4','zgvYoJfWEcbZB2XPzca','z3nwz0K','CLzLBeq','odb2Aa','Dezyt3O','sMDYz2m','iKnVBNnVBgfZiIWIq291','pgrPDIbZDhLSzt0IyMfJ','CgXHEtPMBgv4o2DHCdO2','qNrACK8','8j+sVIdKV53LRzJLHAJPG6JORR7NVA7LLRv+pc9IDxq','AwqG','uu9Hs0S','y292zxi','CgfKzgLUzZO4ChGGmtzW','q3vbv3a','oJeWmcu7','y2fMEvO','BffvB0K','CMrjAKm','oYi+8j+tLIdLJ5NKUOVMQkhLVi88l3nWyw4','yKDKExq','CwHUwwi','rvnXDNC','zgLlvNC','iZfLmwuXzq','wgPUr0i','Ae9dDxy','BMfTzt0IC2XFC3rVCNKI','u3jsAgO','ywXeEgq','sfrjwwC','CMvTB3zL','AufMrgW','q0j6zuW','D0Tgwxq','CgfYC2u','uuDdshy','rhnsvxC','zxzLBNrZoM5VBMu7iJ48','mta2odvLC1jLvvi','vfHmBfm','tuDvrMS','vg5WyNa','sgDxuxO','6l+E5O6L5AsX6lsLoIa','y2HHBMDL','lNnSx2r5BL9Jyw5JzwXF','i3nSx25ZzNC','wwLcBeG','q3DPrLK','yKv6vKq','yxDzrhq','iJ48zgL2ihn0EwXLpsjM','zMXLEa','CMDPBI1IB3r0B206nNb4','C2v0sw50zxj2ywW','zgf0yq','pL88','iJ48yNv0Dg9UignSyxnZ','t3ryrNO','wuLsu1G','BL9ZDwiIigrHDgeTC3vI','zgrVExK','tLPPBLi','pgrPDIbPzd0IC2XFCg9Y','B2z0ifLHsgvPiIXTB25V','Exnsz3G','A2v5CW','C2XFDxnLCL9KzxnJ','oJmWjtSIpJXKAxyGC3r5','DgvTCgXHDguTy29SDw1U','C2XFyxjJAf9ZDciGzgf0','6l+E5O6L5AsX6lsL5zA1FIa','zsiGC3r5Bgu9iMzSzxG6','pVcFKR4G5l+D5A2ypc9IDxr0B24+pa','qKXxwvu','yNLxA0m','ruTuuhu','mtHWEa','i2u4ytG0ma','iNnSx2vKAxrFyNrUiIbK','Aw5NoJHWEcaXmhb4o2jV','sM5yEMW','zLzXs1e','ChG7BwfYz2LUoJzWEcaW','phnLBgvJDcbPzd0IC2XF','Du9zqNu','q2XOAfi','oYi+5y+w5RAipc9IDxr0B24+pa','B3r0B206nNb4oYi+pgLU','iIbZDhLSzt0IzM9UDc1Z','oYi+4PYfia','uM9rs2u','AgvPz2H0','twv4BK0','zM9UDc13zwLNAhq6nZaW','zM9UDc1ZAxPLoJLWEdSI','8j+oRefUAw1L','Ahn2yue','r1f3Bee','zhrOoJeWmcu7CgfKzgLU','C3bSyxK6zMXLEdTHBgLN','Dcb0ExbLpsjYywrPBYiG','s3Pxzxi','q3jhvMG','lNnSx3rHyL9IDg4','o2P1C3rPzNKTy29UDgvU','ios/NEwTMowLVEwvPUwwTx4G4PYO','BMrLEdO0mdaWmdT0B3a6','C3rHCNq','CfjgzgG','zwXFAgvHzgvYiIbZDhLS','iZaWzMzJyW','zxi6mNb4igrHC2HLzca','ChG7yM9YzgvYoJfWEcbZ','CZO2ChG7yMfJA2DYB3vU','EgXiwhu','Aw5RoJa7AgvPz2H0oJmW','Cg9ZAxrPB246zML4zwq7','zt0IzMXLEdOXo3bHzgrP','yNv0Dg9UignSyxnZpsjZ','whrKwMi','CgfYzw50','vxjPB1y','yMf0y2HFC2L6zq','pKrLzxbtzwvRpc9VChrP','DM16Bvy','i2mWnda0ma','5A+85ywL5BEL5l2C5Rwb','o2jVCMrLCJO','BJ48C3bHBIbPzd0IC2XF','pc9ZDhLSzt4','55sF5OIq5lITlI4U','s3L1A08','EfTKyxrHlwnOyxi9jW','zxi7ANvZDgLMEs1JB250','iKnVBNnVBgfZiIWIrMLY','pJXZzwXLy3qGAwq9iNnS','qxj3zwu','pc9ZzwXLy3q+','l2rPDJ4','o2zVBNqTC2L6ztOXmNb4','pv5FxJ0GvuKGDJiUmsbZ','EwTnExC','phrLEhrHCMvHigLKpsjZ','B3GIigLKpsjZBf9UC2z3','yNrU','zM9UDc1ZAxPLoJeWChG7','zgPWAeC','CuTswgC','BNLUDfy','qNrABg8','nNb4o2jHy2TNCM91BMq6','i2qWnJa3ma','D09hDvK','CJPWB2LUDgvYoYi+pgLT','C2fUCY1ZzxjPzG','psjKAxnWBgf5oMzSzxG7','iKHLBhzLDgLJysbozxvL','z1HPre0','yw5PBwvrDwfSAxr5uhjL','i3nSx2nVBxbFBw9Kzq','o2jVEc1ZAgfKB3C6','DhH0','mdaSmtuWldi1nsWWlJe1','yM9KEq','tMjorw8','B3GIigLKpsjZBf9Kzwj1','i3nSx3bVCNrF','iZnKmMiXzG','uePIvNy','q2PHuvK','iZvMytG4yW','C2L6ztO5ChG7y29SB3i6','oJrWEcaXmhb4o2jVCMrL','zM9UDa','rwvwu1u','6l+E5lIn5lIk5zA14OcM','zvHHquG','zMLUza','AvvRBMu','C3bHBIbZDhLSzt0IzM9U','BgLUzuHLAwDODa','oYi+pc9KAxy+','zZOZChGGnNb4o2jVCMrL','mcaYChGGmtzWEcbYz2jH','BdSIpG','oYi+6l+y5RkH5OMR5O+p5zA1FJWVzgL2pG','zM9wsgK','562j5B6f5Q2J5PAh','Chv0igLKpsjZBf93zL9U','thPts3e','BwvZC2fNzq','DuzUqve','zhjezw8','mcaXChGGohb4ihjNyMeO','yxjNAw4TDg9WoJrWEdSI','ys1JAgfYpsC','ExPwyKq','iZrHn2m1oq','C3vIC3rYAw5N','CM9VDa','C0jXC0u','A2DYB3vUzcWGBMv1DhjH','DLjUC0C','mhb4o2fSAwDUlwL0zw1Z','Dc1ZAxPLoJeWChG7y29S','DgvYo2zVBNqTC2L6ztOX','CLjgy08','CgX1z2LUt24','kfrFvcKG','yw4Iihn0EwXLpsjKAxnW','Bf9KEw5Fy2fUy2vSx2j0','wuXuDMK','pVcFK7CG55sF5OIq56Ul57Uypc9IDxr0B24','zgLZCgXHEq','yvfUyvC','quNLM57LPi3KUk0','sM52rhe','t0LTt3m','ywnZzei','iZmZmZm2nG','iNnSx3nHDMvFyNrUiIbK','i3nSx2nVBxbFC2nHBG','vgfgwvu','jtTSzwz0oJuWjtT0CMfU','z0jwC04','C0rcuMG','oJe7CgfKzgLUzZOXmNb4','oM5VBMu7yM9YzgvYlxjH','lwL0zw1ZoMnLBNrLCJTQ','suzSC3i','tuDSsNa','tM9TENm','DgfYz2v0','ChG7B3zLCMzSB3CTEtPH','EhrICuK','oYi+8j+tSsdMVkVNLlVMQkhLVi88l3nWyw4','EvjoAKe','ChG7AgvPz2H0oG','BtOXmhb4o2jVCMrLCI1I','q25fwgu','y2TNCM91BMq6','BM9UztSIpUwbT+AhKUwWJ+EmQZWVC3a','s3rPDxO','mNb4oYi+6lsF6z2I5O+q56s66k+npc9KAq','wMztBNy','AgLKzq','Dg9YEv0','o2zVBNqTD2vPz2H0oJyW','Bgv4oJe7CgfKzgLUzZOX','zu9kALy','BhLQwgG','DhfHthm','DujpwuS','zt0ICgfZC3DVCMqIihzH','EwvUtwy','wfDZuLq','DfjbD1i','wvvzugS','imk3iokAOcdPHy3NVA7MNkRLROZMIja','BM9ZCgfJztTMB250lxnP','zNnKrwy','y0vOAhe','AxPLoJe2ChG7y29SB3i6','C3r5Bgu9iG','y3vZDg9T','oMf1Dg87CgfKzgLUzZOX','ChzSD0y','psj0zxH0iIb2ywX1zt0I','z2DLCG','oYi+6l+y5RkH6igk6l+h5AsP5zA1FJWVzgL2','ignOzwnRzwq','t05VBwG','nhb4ide2ChG7iJ48l2rP','EdSIpUAwH+ACRoA4SUAFKZWVC3bHBJ4','CJTMB250lxnPEMu6mtrW','zsi+4PQH6iEQ5yQOpc9ZCgfUpJWV','mcaXChGGnhb4ihjNyMeO','A2DYB3vUzdPUB25Lo2n1','ueLAyw0','yxbpze0','ohb4idHWEcaWida7y3vY','vuv2BeO','C2v0sxrLBq','ywn0AxzL','ueH2ENe','oYi+pc9ZCgfUpJXZCgfU','8j+wVo+4J1Pjva','B2zM','o3rYyw5ZzM9YBtPZy2fS','yxrHlwnOyxi9iG','o2zVBNqTC2L6ztOXmhb4','y2HHCK5HBwu','DwfYq0e','uNz6rMi','oNzPC2LIBgu','DezAyLm','Dc13zwLNAhq6ndaWo2jH','ioA2PUIjSUwUJoAiKowwTx4G4PYO','khHFEcKG','BJ48yNv0Dg9UignSyxnZ','yxv0B0DLBG','pgrPDIbZDhLSzt0IDgv4','weLlvgi','iZvJnMi3yq','y2XPzw50wa','jtSIpJXIDxr0B24GAwq9','Efrlwuq','psjZBf9SB2DFy2XLyxiI','Bfjnshe','zwWIihn0EwXLpsi','B3i6Bw92ztTIB3jKzxiT','C2f2zv9Zzxr0Aw5NCYiG','iNnSx2nVBxbFz2vUiIbZ','i3nSx3bHBMvSx2jVzhK','oYi+5yg35OEs5Bcp54YRpc9KAxy+pgq','zgL1CZOXohb4ide4ChGG','DgTiqvy','pJWVC3bHBJ48l2rPDJ48','u0ThuKO','yxv4x3n0yxr1CYiGC3r5','ChjVzMLSzxm','5OMR5O+p5lITlI4U','nNb4oYi+8j+oQcdLPjBOP4i8l2rPDG','uwHLqKy','psjZBf9JBg9Zzv9ZDwiI','BwHuy1i','i2jMytG5na','yxrHlxrHyJ0IC2v0DgLU','r21bvfC','BhvLpsiIpUs4JEs9V+EuQoMIHoIUVJWVBW','5PEL5B+x5BEY5RIf56M65zA1FIdWN6E5','Ahr0CdOVl2XVy2fSAg9Z','y2TNCM91BMq6BM9UztTJ'];a0e=function(){return kS;};return a0e();}var a0b=(function(){var a0dH={a:0x738},a0dG={a:0x1e1,b:0x206,c:0x3d4,d:0x287,e:0x296,f:0x520,g:0x738,h:0x70e,i:0x6c6,j:0x8a3,k:0x633},a0dE={a:0x211,b:0x211,c:0x2cc,d:0x68d},bt=a0f,a={'CbEvc':function(c,d){return c+d;},'NqCgG':function(c,d){return c+d;},'hqUFa':bt(a0dH.a),'ClhhR':bt(0x3e8),'MuTlD':'mflVY'},b=!![];return function(c,d){var bv=bt;if(a['MuTlD']!=='GnNko'){var e=b?function(){var bu=a0f,f={'GUPQQ':function(h,i,j){return h(i,j);}};if(d){if(bu(a0dE.a)===bu(a0dE.b)){var g=d[bu(a0dE.c)](c,arguments);return d=null,g;}else e[bu(0x287)]({'color':f[bu(0x741)]})[bu(0x452)](g[bu(0x69c)]),f['GUPQQ'](h,'error',bu(a0dE.d));}}:function(){};return b=![],e;}else{var g=bv(a0dG.a)[bv(a0dG.b)]('|'),h=0x0;while(!![]){switch(g[h++]){case'0':var i=u[bv(a0dG.c)]();continue;case'1':v=i[bv(0x38d)];continue;case'2':x[bv(a0dG.d)]({'left':a[bv(a0dG.e)](y,'px'),'top':a[bv(a0dG.f)](z,'px'),'right':a[bv(0x425)],'bottom':bv(a0dG.g),'transform':bv(0x36c)});continue;case'3':q=r[bv(a0dG.h)];continue;case'4':p=!![];continue;case'5':s=t['clientY'];continue;case'6':if(n(i[bv(a0dG.i)])[bv(a0dG.j)](a[bv(a0dG.k)])[bv(0x40c)])return;continue;case'7':w=i[bv(0x426)];continue;}break;}}};}());(function(){var a0dN={a:0x503},a0dM={a:0x758,b:0x35b,c:0x501,d:0x895,e:0x81f},bw=a0f,a={'GyisE':bw(a0dN.a)+'Z_$][0-9a-zA-Z_'+bw(0x2f2),'xBjKL':function(b,c){return b(c);},'qHeBB':bw(0x5b0),'xyePj':function(b,c){return b+c;},'GrSwR':function(b){return b();},'Xdgkc':function(b,c,d){return b(c,d);}};a['Xdgkc'](a0b,this,function(){var bx=bw,b=new RegExp(bx(a0dM.a)+')'),c=new RegExp(a[bx(0x830)],'i'),d=a['xBjKL'](a0a,a[bx(0x312)]);!b[bx(a0dM.b)](d+'chain')||!c[bx(0x35b)](a[bx(a0dM.c)](d,bx(a0dM.d)))?d('0'):a[bx(a0dM.e)](a0a);})();}());import{slLog,slErr,slLogDump,getLogCount,slClearLogs}from'./log.js';import{settings,getDefaults,COLORS,INPUT_STYLE,BUTTON_STYLE,getSTContext,getSTHeaders,escapeHtml,saveSettings}from'./settings.js';import{loadWorkflowList,loadWorkflow,saveWorkflow,deleteWorkflow,fetchComfyModels,generateImage,STYLE_PRESETS}from'./comfyui.js';import{getProfiles,scanCharacterProfile,getCharacterName,deleteCharacterProfile,refineStaticProfile}from'./pipeline.js';import{hasCastCache,stopPolling,getScannerStatus}from'./scanner.js';function chkProf(){var a0dQ={a:0x29b,b:0x5ff,c:0x1dd,d:0x40c,e:0x5fd},by=a0f,a={'YPHsx':function(f,g){return f(g);},'xEwHc':function(f,g){return f===g;},'CBzeL':by(0x3d7)};try{if(by(a0dQ.a)!=='kzvjV'){var h=d['apply'](e,arguments);return f=null,h;}else{var b=JSON[by(a0dQ.b)](localStorage[by(a0dQ.c)]),c=b[by(0x71e)]||{},d=Object[by(0x61f)](c)[0x0];return d&&c[d]&&Object[by(0x61f)](c[d][by(0x2ed)]||{})[by(a0dQ.d)]>0x0;}}catch(g){if(a[by(0x23c)](a[by(a0dQ.e)],'HrZiB'))return![];else d[by(0x80c)]=a['YPHsx'](g,this)['val'](),f();}}function a0f(a,b){a=a-0x1cc;var c=a0e();var d=c[a];if(a0f['ALaJUB']===undefined){var e=function(i){var j='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var l='',m='',n=l+e;for(var o=0x0,p,q,r=0x0;q=i['charAt'](r++);~q&&(p=o%0x4?p*0x40+q:q,o++%0x4)?l+=n['charCodeAt'](r+0xa)-0xa!==0x0?String['fromCharCode'](0xff&p>>(-0x2*o&0x6)):o:0x0){q=j['indexOf'](q);}for(var s=0x0,t=l['length'];s<t;s++){m+='%'+('00'+l['charCodeAt'](s)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(m);};a0f['GYKsnJ']=e,a0f['QAEWJk']={},a0f['ALaJUB']=!![];}var f=c[0x0],g=a+f,h=a0f['QAEWJk'][g];if(!h){var i=function(j){this['GEFGLs']=j,this['LafXMD']=[0x1,0x0,0x0],this['NdoMXa']=function(){return'newState';},this['irxVyc']='\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*',this['WHjFcG']='[\x27|\x22].+[\x27|\x22];?\x20*}';};i['prototype']['OSTajT']=function(){var j=new RegExp(this['irxVyc']+this['WHjFcG']),k=j['test'](this['NdoMXa']['toString']())?--this['LafXMD'][0x1]:--this['LafXMD'][0x0];return this['OQbawu'](k);},i['prototype']['OQbawu']=function(j){if(!Boolean(~j))return j;return this['LViRcb'](this['GEFGLs']);},i['prototype']['LViRcb']=function(j){for(var k=0x0,l=this['LafXMD']['length'];k<l;k++){this['LafXMD']['push'](Math['round'](Math['random']())),l=this['LafXMD']['length'];}return j(this['LafXMD'][0x0]);},new i(a0f)['OSTajT'](),d=a0f['GYKsnJ'](d),a0f['QAEWJk'][g]=d;}else d=h;return d;}import{getQueueLength,clearQueue}from'./queue.js';var CAT_THEMES={'暖色猫窝':{'bg':a0bz(0x2c8),'card':a0bz(0x3aa),'accent':a0bz(0x1e4),'text':'#3d2b1f','sub':a0bz(0x888),'mute':a0bz(0x724),'line':a0bz(0x8f9),'green':'#5fa88c','red':a0bz(0x1e5),'yellow':'#e8a840','shadow':a0bz(0x695)+a0bz(0x51c)+')','radius':a0bz(0x251),'font':a0bz(0x484)+a0bz(0x4b3)+a0bz(0x8a2)+a0bz(0x30e),'borderStyle':'1px\x20solid'},'暗夜模式':{'bg':a0bz(0x7cf),'card':a0bz(0x2fe),'accent':a0bz(0x1e4),'text':a0bz(0x2ee),'sub':'#999','mute':a0bz(0x880),'line':a0bz(0x6b9),'green':a0bz(0x688),'red':a0bz(0x1e5),'yellow':a0bz(0x62b),'shadow':a0bz(0x695)+a0bz(0x4e8),'radius':a0bz(0x8db),'font':a0bz(0x484)+a0bz(0x4b3)+a0bz(0x8a2)+'\x22,sans-serif','borderStyle':a0bz(0x31a)},'古籍书卷':{'bg':'#f5f0e8','card':a0bz(0x395),'accent':a0bz(0x70d),'text':a0bz(0x54f),'sub':a0bz(0x201),'mute':a0bz(0x8f3),'line':a0bz(0x505),'green':a0bz(0x6a3),'red':a0bz(0x4d4),'yellow':a0bz(0x466),'shadow':a0bz(0x69f)+a0bz(0x3ee),'radius':a0bz(0x4e0),'font':a0bz(0x2c5)+a0bz(0x28c)+a0bz(0x905),'borderStyle':'1px\x20dashed'},'赛博朋克':{'bg':'#0a0a0a','card':a0bz(0x5d8),'accent':a0bz(0x64c),'text':a0bz(0x8f1),'sub':'#66aa66','mute':'#336633','line':'#00ffcc','green':a0bz(0x349),'red':a0bz(0x2ba),'yellow':a0bz(0x574),'shadow':a0bz(0x37c)+a0bz(0x538),'radius':a0bz(0x57d),'font':a0bz(0x664)+a0bz(0x879)+a0bz(0x61d)+a0bz(0x255),'borderStyle':a0bz(0x36f)},'樱花物语':{'bg':a0bz(0x307),'card':a0bz(0x3aa),'accent':a0bz(0x74b),'text':a0bz(0x330),'sub':a0bz(0x246),'mute':a0bz(0x7f3),'line':'#ffcdd8','green':a0bz(0x86e),'red':a0bz(0x675),'yellow':a0bz(0x4f3),'shadow':a0bz(0x3f3)+a0bz(0x889)+'12)','radius':a0bz(0x62a),'font':a0bz(0x484)+a0bz(0x5b5)+a0bz(0x4ed),'borderStyle':a0bz(0x75d)},'午夜星空':{'bg':a0bz(0x7e5),'card':a0bz(0x75b),'accent':'#ffd700','text':a0bz(0x551),'sub':'#8899aa','mute':a0bz(0x27a),'line':'#1e3a5f','green':'#4ea8a0','red':a0bz(0x4eb),'yellow':a0bz(0x8f0),'shadow':'0\x200\x2012px\x20rgba(1'+a0bz(0x680)+')','radius':a0bz(0x48b),'font':a0bz(0x484)+a0bz(0x5b5)+a0bz(0x4ed),'borderStyle':'1px\x20solid'},'极简素白':{'bg':'#fafafa','card':a0bz(0x3aa),'accent':a0bz(0x458),'text':a0bz(0x3ea),'sub':'#666666','mute':'#aaaaaa','line':a0bz(0x2ee),'green':a0bz(0x2af),'red':a0bz(0x65b),'yellow':'#c08040','shadow':a0bz(0x6f2)+a0bz(0x8e5),'radius':'6px','font':a0bz(0x67a)+a0bz(0x745)+a0bz(0x73e),'borderStyle':a0bz(0x31a)}},CAT=CAT_THEMES[a0bz(0x8e6)],TEXT_THEMES={'默认':{'font':a0bz(0x7eb),'lineHeight':a0bz(0x5bd),'color':'inherit','bg':a0bz(0x21b),'fontSize':a0bz(0x7eb)},'舒适阅读':{'font':'\x22Noto\x20Serif\x20SC\x22'+a0bz(0x4c2),'lineHeight':a0bz(0x336),'color':a0bz(0x685),'bg':a0bz(0x355),'fontSize':a0bz(0x2ab)},'紧凑模式':{'font':a0bz(0x484)+a0bz(0x678),'lineHeight':a0bz(0x5ae),'color':'#1a1a1a','bg':a0bz(0x21b),'fontSize':a0bz(0x3dc)},'暗纸护眼':{'font':a0bz(0x7eb),'lineHeight':a0bz(0x37d),'color':'#d0d0d0','bg':a0bz(0x5f4),'fontSize':a0bz(0x7eb)},'复古信笺':{'font':a0bz(0x5c2)+'i\x22,serif','lineHeight':a0bz(0x208),'color':a0bz(0x54f),'bg':a0bz(0x3fd),'fontSize':'15px'},'赛博终端':{'font':a0bz(0x5e1)+a0bz(0x7a0)+'pace','lineHeight':a0bz(0x859),'color':a0bz(0x349),'bg':a0bz(0x7a7),'fontSize':'13px'},'打字机':{'font':a0bz(0x5b1)+a0bz(0x534)+'monospace','lineHeight':'1.7','color':a0bz(0x3ea),'bg':a0bz(0x825),'fontSize':a0bz(0x251)}};function applyTheme(a){var a0dR={a:0x8e6},bA=a0bz;CAT=CAT_THEMES[a]||CAT_THEMES[bA(a0dR.a)];}function catFace(a){var a0dS={a:0x7a6,b:0x535,c:0x615},bB=a0bz,b={'LToEk':bB(0x495)};return{'idle':bB(0x447),'scanning':'o_o','queuing':b[bB(a0dS.a)],'busy':bB(a0dS.b),'error':bB(a0dS.c)}[a]||bB(0x447);}function toast(a,b){var a0e8={a:0x558,b:0x8ee,c:0x254,d:0x5be,e:0x66d,f:0x269,g:0x8bb,h:0x8ee,i:0x5be,j:0x683,k:0x383,l:0x609,m:0x57b,n:0x522,o:0x2dd,p:0x45f,q:0x442,r:0x8c3,s:0x74d,t:0x219,u:0x5ef,v:0x49b,w:0x903,x:0x2f8,y:0x27c,z:0x917,A:0x3e0,B:0x592,C:0x5fc,D:0x4b9,E:0x4ec,F:0x7e7,G:0x795,H:0x31f,I:0x8c4,J:0x452,K:0x388,L:0x31f,M:0x902,N:0x7e7,O:0x868,P:0x7c1,Q:0x25a,R:0x2ac,S:0x6d4,T:0x784,U:0x69d,V:0x7ec,W:0x4c6,X:0x7aa,Y:0x482,Z:0x4f9,a0:0x452,a1:0x6c9,a2:0x84e,a3:0x20c,a4:0x60f,a5:0x6bf,a6:0x752},a0e7={a:0x795,b:0x3f7,c:0x46c},a0e6={a:0x62f,b:0x5d9},bC=a0bz,c={'fVqKQ':function(f,g){return f(g);},'RRrKB':function(f){return f();},'DEcLZ':function(f,g){return f+g;},'VulxF':'<label\x20style=\x22d'+bC(a0e8.a)+'gn-items:center'+bC(a0e8.b)+bC(a0e8.c)+bC(a0e8.d)+bC(a0e8.e)+'\x22','zoKaM':bC(0x6ec),'WXwyk':'><span\x20style=\x22f'+bC(a0e8.f)+bC(a0e8.g),'LlrzI':bC(0x7a5)+'isplay:flex;ali'+bC(0x3fc)+bC(a0e8.h)+bC(0x254)+bC(a0e8.i)+bC(a0e8.j)+'g\x22','rlaFz':bC(0x417)+bC(0x209)+bC(a0e8.k),'Drwdt':bC(a0e8.l),'YbCZh':function(f,g){return f+g;},'JGMmn':bC(a0e8.m)+bC(0x25d)+bC(0x64e)+bC(a0e8.n),'VwLvJ':function(f,g){return f+g;},'yenMf':';border-radius:'+bC(0x25d)+bC(0x5a0)+bC(a0e8.o)+bC(a0e8.p),'EYyqO':';\x22>','TaCgb':bC(0x60b),'uFnAQ':function(f,g){return f+g;},'aQnaW':function(f,g){return f+g;},'kNxes':function(f,g){return f+g;},'jpTTl':function(f,g){return f+g;},'LaReH':'<div\x20style=\x22mar'+'gin-top:8px;\x22><'+bC(a0e8.q)+bC(0x641)+'n-items:center;'+'gap:8px;cursor:'+bC(a0e8.r)+bC(0x642)+'name=\x22sl_story\x22'+bC(a0e8.s)+bC(a0e8.t),'Biyru':'comic','eiYdj':bC(a0e8.u)+bC(a0e8.v)+bC(a0e8.w)+bC(0x750)+bC(a0e8.x)+'enter;gap:8px;c'+bC(a0e8.y)+'><input\x20type=\x22r'+'adio\x22\x20name=\x22sl_'+bC(a0e8.z)+bC(0x8f6),'xqnur':bC(0x76f),'sDBRh':'日志已清空喵~\x20🧹','GhpdZ':function(f,g){return f!==g;},'iAfDl':'=^_^=\x20','NdwSs':bC(0x708),'BDBZw':function(f,g){return f+g;},'awYDt':bC(a0e8.A),'XdExo':bC(0x20c)};try{if(c[bC(0x75f)](typeof toastr,'undefined')){if('bbqGT'!==bC(a0e8.B)){var d={'success':c[bC(a0e8.C)],'info':bC(0x7e8),'warning':bC(0x6ae),'error':c[bC(0x7c5)]};c[bC(a0e8.D)](toastr[a](d[a]||''),b);}else{var a0e5={a:0x755},g=(bC(0x578)+bC(a0e8.E))[bC(0x206)]('|'),h=0x0;while(!![]){switch(g[h++]){case'0':j+=c[bC(0x7e7)](c[bC(a0e8.F)](c[bC(0x72c)]+(B[bC(a0e8.G)]?c[bC(a0e8.H)]:''),c[bC(a0e8.I)]),C[bC(a0e8.J)])+(bC(0x1f1)+bC(0x445));continue;case'1':var i={'LVnKc':function(k,l){return k(l);}};continue;case'2':j+=c['DEcLZ'](c[bC(a0e8.K)],J[bC(0x755)]?c[bC(a0e8.L)]:'')+(bC(0x482)+bC(0x269)+bC(0x8bb))+K[bC(a0e8.J)]+c[bC(a0e8.M)];continue;case'3':U('#sl_debug')['on'](c[bC(0x4ff)],function(){var bD=bC;j[bD(a0e5.a)]=Z(this)['is'](':checked'),c[bD(0x73b)](a0);});continue;case'4':j+=c[bC(a0e8.F)](c[bC(a0e8.N)](c[bC(a0e8.F)](c[bC(a0e8.O)]('<div\x20style=\x22bac'+bC(a0e8.P),H[bC(0x1da)]),c['JGMmn']),I['line']),bC(a0e8.Q));continue;case'5':var j=c[bC(a0e8.R)](bC(0x5e2)+bC(0x7c1)+z[bC(0x1da)]+c[bC(0x6dc)]+A[bC(0x773)],c['EYyqO']);continue;case'6':L[bC(0x282)](j);continue;case'7':Q(bC(0x42f)+bC(a0e8.S))['on']('change',function(){var bE=bC;j['storyMode']=c[bE(a0e6.a)](Z,this)[bE(a0e6.b)](),a0();});continue;case'8':M(c[bC(a0e8.T)])['on'](bC(0x609),function(){var bF=bC;j[bF(a0e7.a)]=i[bF(a0e7.b)](Z,this)['is'](bF(a0e7.c)),a0();});continue;case'9':j+=c[bC(a0e8.U)](c[bC(0x6b4)](c[bC(a0e8.V)](c['jpTTl'](c[bC(a0e8.W)]+(D[bC(0x4f9)]!==c[bC(a0e8.X)]?c['zoKaM']:''),bC(a0e8.Y)+bC(0x269)+bC(0x8bb))+E['text'],c['eiYdj'])+(F[bC(a0e8.Z)]===c['Biyru']?c[bC(a0e8.L)]:''),c[bC(0x8c4)]),G[bC(a0e8.a0)])+(bC(a0e8.a1)+bC(0x49b)+bC(a0e8.a2));continue;}break;}}}else console[bC(0x752)](bC(a0e8.a3),a,b);}catch(g){'hRMOv'===c[bC(a0e8.a4)]?(d(),g['remove'](),f(c['xqnur'],c[bC(a0e8.a5)])):console[bC(a0e8.a6)](c[bC(0x882)],a,b);}}function esc(a){var a0e9={a:0x85a,b:0x843,c:0x84f},bG=a0bz,b={'RLtBf':bG(a0e9.a)};if(!a)return'';var c=document[bG(0x77d)](b[bG(a0e9.b)]);return c['textContent']=a,c[bG(a0e9.c)];}function escAttr(a){var a0ea={a:0x86b,b:0x77e,c:0x21a},bH=a0bz,b={'mIvYN':bH(a0ea.a),'cyloB':bH(0x33e),'ekZRP':bH(0x1ec)};if(!a)return'';return(''+a)['replace'](/&/g,b['mIvYN'])[bH(a0ea.b)](/"/g,b['cyloB'])[bH(0x77e)](/</g,bH(a0ea.c))['replace'](/>/g,b[bH(0x28d)]);}function sbtn(a){var a0ec={a:0x2ae,b:0x87e,c:0x5e9,d:0x2d8,e:0x39a,f:0x754,g:0x883,h:0x3d1},bI=a0bz,b={'iUYcM':function(d,e){return d+e;},'DIRvA':bI(a0ec.a)};return b[bI(a0ec.b)](b['iUYcM'](b['iUYcM'](b[bI(0x87e)](bI(a0ec.c)+bI(0x8c9)+bI(a0ec.d),CAT[bI(a0ec.e)]),b['DIRvA']),a),bI(a0ec.f)+'sor:pointer;fon'+bI(a0ec.g)+bI(a0ec.h));}function fiStyle(){var a0ef={a:0x57b,b:0x44f,c:0x20b,d:0x266,e:0x76d,f:0x430,g:0x430,h:0x618,i:0x588,j:0x1da,k:0x345,l:0x230},bJ=a0bz,a={'XrefL':function(b,c){return b+c;},'dFLIm':function(b,c){return b+c;},'YIRSX':bJ(0x4b7)+bJ(0x62d)+bJ(0x38c),'HwcfH':bJ(a0ef.a)+bJ(a0ef.b),'DTiyW':bJ(a0ef.c)+bJ(a0ef.d)+bJ(a0ef.e)};return a[bJ(a0ef.f)](a[bJ(a0ef.f)](a[bJ(a0ef.g)](a[bJ(0x3a6)](a[bJ(a0ef.h)],CAT[bJ(a0ef.i)]),'\x20')+CAT['line'],a[bJ(0x20d)])+CAT[bJ(a0ef.j)]+(bJ(0x669)+bJ(a0ef.k)),CAT[bJ(0x452)])+a[bJ(a0ef.l)];}var _panelEl=null,_compactEl=null,_expandedVisible=![],_compactTimer=null,_compDragMoved=![];(function(){var a0ej={a:0x760,b:0x212,c:0x6f5,d:0x54a,e:0x3a9},bK=a0bz,a={'ANLVG':function(d,f){return d!==f;},'apOdM':function(d,f){return d(f);},'mVQCX':function(d,f){return d+f;},'IgDjO':bK(a0ej.a)+'\x22return\x20this\x22)('+'\x20)'},b;try{if(a['ANLVG'](bK(0x6ca),bK(a0ej.b))){var c=a[bK(a0ej.c)](Function,a[bK(0x7d7)](bK(a0ej.d)+bK(0x2fa)+a[bK(a0ej.e)],');'));b=c();}else c[bK(0x4d8)](),d();}catch(f){b=window;}b[bK(0x613)](a0a,0x7d0);}());function createCompactBar(){var a0f1={a:0x757,b:0x4f0,c:0x738,d:0x59d,e:0x3e8,f:0x809,g:0x77f,h:0x6cb,i:0x5aa,j:0x72f,k:0x776,l:0x756,m:0x679,n:0x5a3,o:0x2f7,p:0x1d2,q:0x399,r:0x8ae,s:0x774,t:0x8e8,u:0x325,v:0x4fc,w:0x3e5,x:0x8c2,y:0x6f1,z:0x405,A:0x26c,B:0x716,C:0x316,D:0x5ba,E:0x8eb,F:0x381,G:0x2c7,H:0x48c,I:0x370,J:0x87b,K:0x3c7,L:0x56e,M:0x40c,N:0x2e0,O:0x5ff,P:0x46d,Q:0x4b0,R:0x738,S:0x2a4,T:0x549,U:0x4b4,V:0x298,W:0x449,X:0x36e,Y:0x8a8,Z:0x241,a0:0x3db,a1:0x54e,a2:0x1da,a3:0x588,a4:0x68b,a5:0x762,a6:0x7d8,a7:0x773,a8:0x897,a9:0x7b3,aa:0x83a,ab:0x1d9,ac:0x78a,ad:0x6e4,ae:0x668,af:0x4fb,ag:0x627,ah:0x2f5,ai:0x66f,aj:0x6fb,ak:0x861,al:0x55e,am:0x2a0,an:0x845,ao:0x412,ap:0x366,aq:0x59f,ar:0x4b4,as:0x406,at:0x646,au:0x2c6,av:0x621,aw:0x90c,ax:0x84e,ay:0x5ea,az:0x549,aA:0x50e,aB:0x225,aC:0x57b,aD:0x44f,aE:0x908,aF:0x452,aG:0x7fe,aH:0x810,aI:0x56d,aJ:0x56d,aK:0x550},a0f0={a:0x801,b:0x272,c:0x7e6,d:0x56f,e:0x5b8,f:0x4d8,g:0x49f,h:0x8a7,i:0x7fc,j:0x76f,k:0x4d2},a0eX={a:0x3be},a0eW={a:0x4d8,b:0x418,c:0x70a},a0eV={a:0x4d8},a0eS={a:0x2d5,b:0x649},a0eR={a:0x871,b:0x3bb,c:0x21f,d:0x332,e:0x3d4,f:0x6f8,g:0x508,h:0x38d},a0eP={a:0x852,b:0x7d8},a0eO={a:0x70e,b:0x6c6},bL=a0bz,a={'KTpmY':function(p,q){return p-q;},'ygGJO':function(p,q){return p>q;},'JGvOH':function(p,q){return p+q;},'lIeNq':bL(0x839),'znlfW':function(p,q){return p!==q;},'YbYbP':'qmBvL','bEzVD':bL(a0f1.a)+bL(a0f1.b),'TunfG':bL(a0f1.c),'TlnpF':function(p,q){return p(q);},'RxxBt':bL(0x45c),'pCdsE':bL(a0f1.d)+'move','cafyZ':'mouseup\x20touchen'+'d','bzDZx':bL(a0f1.e),'jedpg':bL(0x8d8),'rPoSG':'wJWOf','fkPcr':function(p,q){return p===q;},'fRmck':function(p,q){return p(q);},'QCmEy':function(p){return p();},'GQCOf':function(p,q,u){return p(q,u);},'YwcEr':function(p,q){return p!==q;},'mqjqw':bL(0x272),'DnBzW':bL(a0f1.f),'cSnfh':bL(0x75a),'eoUaf':bL(0x8a7),'alsPy':bL(0x71f),'UHLbq':function(p){return p();},'iNQYl':function(p){return p();},'iUkne':bL(a0f1.g),'rlOtF':'扫描失败喵…','NUnDA':function(p,q){return p+q;},'gSNcV':function(p,q){return p+q;},'RbVZn':function(p,q){return p+q;},'vmZhn':function(p,q){return p+q;},'auYcU':function(p,q){return p+q;},'FWxOi':function(p,q){return p+q;},'LNbpV':function(p,q){return p+q;},'RWpZo':bL(0x2a3),'jUbxn':bL(a0f1.h),'pgfMv':bL(0x67e),'qsueX':bL(0x65d),'ZuYie':bL(a0f1.i)+bL(0x85e)+bL(a0f1.j)+'x;flex-directio'+bL(a0f1.k),'HyKmD':function(p,q){return p+q;},'oBxuk':'<div\x20id=\x22sl_com'+bL(a0f1.l)+bL(a0f1.m)+'align-items:cen'+bL(a0f1.n)+bL(a0f1.o)+bL(0x714)+bL(0x313)+'d\x20','SGstj':function(p,q){return p+q;},'pfrfy':function(p,q){return p+q;},'wrGvA':function(p,q){return p+q;},'WAXQs':bL(a0f1.p)+'play:flex;align'+'-items:center;g'+'ap:4px;flex-wra'+'p:wrap;padding:'+bL(a0f1.q)+bL(a0f1.r)+'\x20','BLWYU':bL(a0f1.s)+bL(0x318)+bL(a0f1.t)+bL(a0f1.u)+bL(0x269)+bL(0x8bb),'XTCgI':bL(0x754)+bL(0x4a0)+bL(a0f1.v)+'v>','zqLgf':function(p,q){return p+q;},'PEGOC':';\x22><span\x20id=\x22sl'+bL(a0f1.w)+bL(0x2be)+'n\x20id=\x22sl_comp_q'+bL(0x56c)+'/span>\x20·\x20<span\x20'+bL(a0f1.x)+bL(a0f1.y)+bL(a0f1.z)+'_comp_event\x22\x20st'+bL(a0f1.A)+bL(0x52e),'CuAWp':function(p,q){return p+q;},'Drkkz':function(p,q){return p+q;},'drDeo':bL(0x1d2)+bL(0x73c)+bL(0x288)+bL(0x22b)+'0\x2012px;flex-shr'+bL(0x651)+bL(0x70f)+bL(a0f1.B)+bL(a0f1.C)+bL(a0f1.D)+bL(a0f1.E)+bL(a0f1.F)+bL(a0f1.G)+bL(0x56b)+':','FpKcq':bL(0x754)+bL(a0f1.H)+bL(0x79b)+'tton\x20id=\x22sl_com'+bL(0x40b)+bL(a0f1.I)+bL(0x3ff)+bL(a0f1.J)+'order:1px\x20solid'+'\x20','AnzYV':bL(a0f1.K)+bL(a0f1.L)+'</div></div>','NseLb':function(p,q){return p(q);},'eHhNt':bL(0x55b)+'btn','EtFNL':bL(0x436),'jPbDZ':bL(0x6bb),'YyngA':function(p){return p();}};if(_compactEl&&_compactEl['parent']()[bL(a0f1.M)])return;var c={'x':null,'y':null};try{var d=localStorage[bL(a0f1.N)](bL(0x3f8));if(d)c=JSON[bL(a0f1.O)](d);}catch(p){}var f=c['x']||null,g=c['y']||null,h=f!=null?a[bL(0x7d8)](f,'px'):'auto',i=g!=null?a[bL(a0f1.P)](g,'px'):bL(0x738),j=f!=null?a[bL(a0f1.Q)]:bL(0x890),k=g!=null?bL(a0f1.R):bL(0x890),m=0x140,n=Math[bL(a0f1.S)](m*0.75),o=a['NUnDA'](a[bL(0x4b4)](a[bL(0x298)](a[bL(a0f1.T)](a[bL(0x298)](a[bL(a0f1.U)](a[bL(a0f1.V)](a[bL(a0f1.V)](a[bL(a0f1.W)](a['vmZhn'](a[bL(0x439)](a[bL(a0f1.X)](a['FWxOi'](a['JGvOH'](a[bL(0x298)]('<div\x20id=\x22sl_com'+bL(0x342)+bL(0x90b)+'index:30000;bot'+bL(0x8b1),k),bL(0x4dc)),j),bL(a0f1.Y)),h)+a[bL(a0f1.Z)]+i+';width:',m)+a[bL(a0f1.a0)],n),bL(a0f1.a1))+CAT[bL(a0f1.a2)],bL(0x57b)),CAT['radius'])+a[bL(0x24a)],CAT[bL(0x537)])+a['qsueX']+CAT[bL(a0f1.a3)],'\x20'),CAT['line'])+bL(0x205)+CAT[bL(a0f1.a4)],bL(0x669)+bL(0x345)),CAT['text'])+a[bL(0x2b6)];o+=a[bL(a0f1.a5)](a['FWxOi'](a[bL(a0f1.a6)](a['HyKmD'](a[bL(0x8a9)],CAT[bL(a0f1.a7)]),bL(0x1f5)+bL(a0f1.a8)+bL(0x753)+bL(a0f1.a9)+'tyle=\x22font-size'+bL(0x4e7)+'ht:1;pointer-ev'+'ents:none;\x22>=^_'+bL(a0f1.aa)+'style=\x22font-wei'+bL(a0f1.ab)+bL(0x747)+bL(0x43c)+bL(0x6cf)+bL(0x769)+bL(0x515)+'tn\x22\x20style=\x22bord'+bL(0x43a)+bL(a0f1.ac)+':pointer;font-s'+bL(a0f1.ad)),CAT[bL(0x48a)]),bL(0x4d3)+bL(0x3cf)+bL(a0f1.ae)),o+=a[bL(0x449)](a['JGvOH'](a[bL(0x81c)](a[bL(a0f1.af)](a[bL(0x1e3)](a[bL(0x833)],CAT[bL(0x773)]),a[bL(a0f1.ag)])+CAT['text']+(bL(0x6d5)+bL(a0f1.ah)+'pan\x20id=\x22sl_comp'+bL(0x4f6)+bL(a0f1.ai)+'color:'),CAT[bL(0x59f)]),bL(a0f1.aj)+bL(a0f1.ak)+bL(0x326)+'ont-size:10px;\x22'+'></span><button'+bL(a0f1.al)+bL(0x6af)+'lay:none;font-s'+bL(a0f1.am)+bL(a0f1.an)+bL(a0f1.ao)+bL(a0f1.ap)+bL(0x400)),CAT[bL(a0f1.aq)])+a['XTCgI'],o+=a[bL(0x46d)](a[bL(0x549)](a[bL(a0f1.ar)](a['zqLgf']('<div\x20style=\x22pad'+'ding:0\x2012px;fle'+bL(a0f1.as)+bL(0x45a)+bL(0x595)+bL(a0f1.at)+bL(a0f1.au)+bL(a0f1.av)+bL(a0f1.aw)+'1px;color:',CAT['sub']),a['PEGOC']),CAT[bL(0x8ac)]),';margin-top:4px'+bL(0x42c)+bL(a0f1.ax)),o+=a[bL(a0f1.ay)](a[bL(a0f1.az)](a[bL(a0f1.aA)](a[bL(0x69e)]+CAT[bL(0x59f)]+a[bL(a0f1.aB)]+CAT[bL(0x773)],bL(a0f1.aC)+bL(a0f1.aD)+bL(a0f1.aE)+'or:'),CAT[bL(a0f1.aF)]),a['AnzYV']),_compactEl=jQuery(o)[bL(0x210)]('body'),(function(){var a0eN={a:0x532},bM=bL,q={'ESqvw':a[bM(0x60e)],'HhVgj':a[bM(0x4b0)],'GNBvE':function(B,C){var bN=bM;return a[bN(0x7d8)](B,C);},'ecAKU':function(B,C){var bO=bM;return a[bO(a0eN.a)](B,C);}},u=![],v,w,z,A;jQuery(a[bM(a0eS.a)])['on'](bM(0x308)+bM(a0eS.b),function(B){var bP=bM,C=q[bP(0x5f2)][bP(0x206)]('|'),D=0x0;while(!![]){switch(C[D++]){case'0':z=E[bP(0x38d)];continue;case'1':v=F[bP(a0eO.a)];continue;case'2':_compactEl['css']({'right':q[bP(0x3b6)],'bottom':bP(0x738),'left':q['GNBvE'](z,'px'),'top':q[bP(0x387)](A,'px')});continue;case'3':u=!![];continue;case'4':if(q['ecAKU'](jQuery,B[bP(a0eO.b)])['is']('button'))return;continue;case'5':var E=_compactEl[bP(0x3d4)]();continue;case'6':_compDragMoved=![];continue;case'7':var F=(B[bP(0x76b)]||[B])[0x0];continue;case'8':w=F[bP(0x584)];continue;case'9':B['preventDefault']();continue;case'10':A=E['top'];continue;}break;}}),jQuery(document)['on'](a['pCdsE'],function(B){var bQ=bM;if(!u)return;var C=(B['touches']||[B])[0x0];if(Math[bQ(a0eP.a)](a['KTpmY'](C[bQ(0x70e)],v))>0x2||a[bQ(0x268)](Math['abs'](C['clientY']-w),0x2))_compDragMoved=!![];_compactEl['css']({'left':a[bQ(0x86f)](a[bQ(a0eP.b)](z,C[bQ(0x70e)]),v)+'px','top':A+C[bQ(0x584)]-w+'px'});})['on'](a[bM(0x5ec)],function(){var bR=bM,B={'SKGRJ':a[bR(a0eR.a)]};if(a[bR(a0eR.b)](bR(0x340),a[bR(a0eR.c)]))(function(){return!![];}['constructor'](ymFqIT[bR(0x71c)]+bR(0x6ea))['call'](bR(a0eR.d)));else{if(!u)return;u=![];if(_compDragMoved){var C=_compactEl[bR(a0eR.e)]();try{localStorage[bR(a0eR.f)](bR(0x3f8),JSON[bR(a0eR.g)]({'x':C[bR(a0eR.h)],'y':C['top']}));}catch(E){}}}});}()),a[bL(a0f1.aG)](jQuery,'#sl_comp_header')['on'](bL(0x56d),function(q){var bS=bL,u=_compDragMoved;_compDragMoved=![];if(jQuery(q[bS(0x6c6)])['is'](a[bS(0x203)])||u)return;togglePanel();}),a[bL(0x532)](jQuery,a[bL(a0f1.aH)])['on'](bL(a0f1.aI),function(q){var bT=bL;q[bT(0x4d8)](),togglePanel();}),jQuery(bL(0x83d))['on'](bL(a0f1.aJ),function(q){var bU=bL;q[bU(a0eV.a)](),triggerGenAll();}),jQuery(a[bL(0x252)])['on']('click',function(q){var bV=bL;a[bV(0x88a)]===a[bV(0x8ff)]?b('0'):(q[bV(a0eW.a)](),settings[bV(0x70a)]=a[bV(a0eW.b)](settings[bV(a0eW.c)],0x1)?0x0:0x1,saveSettings(),refreshCompactBar());}),jQuery(a[bL(a0f1.aK)])['on'](bL(0x56d),async function(q){var bY=bL,u={'tQzfc':function(A,B){var bW=a0f;return a[bW(a0eX.a)](A,B);},'UYORy':function(A){return a['QCmEy'](A);},'csPGx':function(A,B,C){var bX=a0f;return a[bX(0x735)](A,B,C);}};if(a[bY(a0f0.a)](bY(a0f0.b),a[bY(0x7ae)])){var B=u[bY(0x7b9)](g,bY(0x797))[bY(0x5d9)]();if(!B)return;try{m[bY(0x5ff)](B),n['cWf']=B,u[bY(a0f0.c)](o),p(bY(0x76f),bY(a0f0.d));}catch(C){u[bY(a0f0.e)](j,bY(0x77f),bY(0x247));}}else{var v=a['DnBzW'][bY(0x206)]('|'),w=0x0;while(!![]){switch(v[w++]){case'0':var z=a['TlnpF'](jQuery,this);continue;case'1':q[bY(a0f0.f)]();continue;case'2':z[bY(a0f0.g)](bY(a0f0.h),![])[bY(0x452)](a['cSnfh']);continue;case'3':z[bY(0x49f)](a['eoUaf'],!![])[bY(0x452)](a['alsPy']);continue;case'4':a['UHLbq'](refreshCompactBar);continue;case'5':try{await a[bY(a0f0.i)](scanCharacterProfile),a['GQCOf'](toast,bY(a0f0.j),'扫描完成喵~\x20✨');}catch(B){a[bY(0x735)](toast,a[bY(0x690)],a[bY(a0f0.k)]);}continue;}break;}}}),_compactTimer=setInterval(refreshCompactBar,0xbb8),a[bL(0x86a)](refreshCompactBar);}function refreshCompactBar(){var a0fa={a:0x704,b:0x6fc,c:0x6d8,d:0x49e,e:0x3bf,f:0x436,g:0x248,h:0x452,i:0x84a,j:0x90f,k:0x6d3,l:0x8bc,m:0x2f3,n:0x4f4,o:0x8e1,p:0x544,q:0x2d4,r:0x46a,s:0x800,t:0x81b,u:0x287,v:0x699,w:0x807,x:0x67f,y:0x70a,z:0x766,A:0x1d3},bZ=a0bz,a={'mVtSf':'error','DgRQO':bZ(0x8a7),'YZyxF':bZ(a0fa.a),'AHIuz':bZ(0x85f),'gQiGw':function(i,j){return i(j);},'VJLBX':'#sl_comp_model','hdvEp':bZ(a0fa.b),'YUYPk':'#sl_comp_scan','TNPdm':bZ(0x4d6),'iIiox':function(i,j){return i(j);},'RAqPR':bZ(a0fa.c),'PpjEK':function(i,j){return i(j);},'jamde':bZ(a0fa.d)+'e','poVar':function(i,j){return i(j);},'XtdZb':bZ(0x6b5),'EyssK':function(i){return i();},'iMzON':function(i,j){return i+j;},'KXFeu':bZ(a0fa.e),'webrD':bZ(0x41f),'dniGE':bZ(a0fa.f),'KpprC':bZ(0x585),'ZSVfO':function(i,j){return i===j;},'KhIcT':'scanning','vkwLD':bZ(a0fa.g),'KpIxs':function(i,j){return i(j);}};if(!_compactEl||!_compactEl['is'](a[bZ(0x2d3)]))return;var b=getCharacterName()||'',c=!!b;jQuery('#sl_comp_char')[bZ(a0fa.h)](c?b:a[bZ(0x2fb)]),a[bZ(0x8bc)](jQuery,a[bZ(0x3ec)])['text'](c?settings['modelType']===bZ(a0fa.i)?bZ(0x63d):a[bZ(a0fa.j)]:'');var d=![];try{d=chkProf();}catch(i){}if(!c)a['gQiGw'](jQuery,bZ(0x49e)+'e')['text']('')[bZ(0x6d3)](),jQuery(a['YUYPk'])[bZ(a0fa.k)]();else{if(d)a[bZ(a0fa.l)](jQuery,bZ(0x49e)+'e')['text'](bZ(0x7f5))[bZ(0x287)](a[bZ(a0fa.m)],CAT['green'])[bZ(a0fa.n)](),a[bZ(a0fa.o)](jQuery,a['YUYPk'])['hide']();else{if(a[bZ(a0fa.p)]!==a['RAqPR']){c(a[bZ(a0fa.q)],'工作流空空如也喵~'),d['prop'](a[bZ(0x893)],![])['text'](bZ(a0fa.r));return;}else a[bZ(a0fa.s)](jQuery,a[bZ(a0fa.t)])[bZ(0x452)]('📋❌未扫描')[bZ(a0fa.u)](bZ(0x4d6),CAT[bZ(0x741)])[bZ(a0fa.n)](),a[bZ(0x354)](jQuery,a[bZ(0x6df)])['show']();}}var f=getScannerStatus();a[bZ(0x354)](jQuery,bZ(0x443))['text']({'off':bZ(0x884),'idle':'空闲','waiting_body':bZ(a0fa.v),'waiting_end':a[bZ(0x655)],'scanning':bZ(0x25f)}[f]||f);var g=a[bZ(a0fa.w)](getQueueLength);jQuery(bZ(0x4ae)+bZ(a0fa.x))[bZ(0x452)](a[bZ(0x877)](a['KXFeu'],g)),jQuery(bZ(0x67d))[bZ(a0fa.h)](settings[bZ(a0fa.y)]===0x1?bZ(0x1d3):a[bZ(a0fa.z)]),a[bZ(a0fa.o)](jQuery,a['dniGE'])[bZ(0x452)](settings['autoGen']===0x1?bZ(a0fa.A):a[bZ(a0fa.z)]);var h=a['KpprC'];if(a[bZ(0x53c)](f,'scanning'))h=a[bZ(0x547)];else{if(g>0x0)h=g>0x5?'busy':a[bZ(0x7f0)];}a['KpIxs'](jQuery,bZ(0x470))[bZ(a0fa.h)](a[bZ(0x800)](catFace,h));}function triggerGenAll(){var a0fj={a:0x811,b:0x59e,c:0x267,d:0x8e3},a0fi={a:0x7bd},c0=a0bz,a={'pMGuK':function(d,e){return d<e;},'AqIGM':function(d,e){return d>=e;},'wwpSr':c0(a0fj.a),'jZQCR':function(d,e){return d(e);},'ocCWG':function(d,e){return d===e;},'WdCXj':function(d,e,f){return d(e,f);},'pvTVf':function(d,e,f){return d(e,f);},'gLnlB':function(d,e){return d+e;},'BPWEI':c0(a0fj.b)},b=0x0;a[c0(0x29d)](jQuery,c0(0x561)+c0(0x264))[c0(0x258)](function(){var c1=c0,d=jQuery(this);a['pMGuK'](d['text']()['indexOf']('排队'),0x0)&&d[c1(0x452)]()[c1(0x496)]('🔄')<0x0&&a['AqIGM'](d[c1(0x452)]()[c1(0x496)](a[c1(a0fi.a)]),0x0)&&(d['trigger'](c1(0x56d)),b++);});if(a['ocCWG'](b,0x0))a['WdCXj'](toast,c0(a0fj.c),c0(0x4a9));else a['pvTVf'](toast,c0(0x76f),a['gLnlB'](c0(0x36b)+b,a[c0(a0fj.d)]));}function cancelAllQueue(){var a0fl={a:0x3a1},c2=a0bz,a={'UXhPw':function(b){return b();}};try{a[c2(a0fl.a)](clearQueue);}catch(b){}}function createExpandedPanel(){var a0fM={a:0x645,b:0x6f9,c:0x49c,d:0x36c,e:0x289,f:0x5e8,g:0x385,h:0x4e5,i:0x652,j:0x82b,k:0x57b,l:0x5b2,m:0x713,n:0x5e6,o:0x5cc,p:0x602,q:0x718,r:0x404,s:0x3cf,t:0x3f5,u:0x1eb,v:0x668,w:0x774,x:0x6d6,y:0x894,z:0x4a2,A:0x725,B:0x32c,C:0x6c0,D:0x72a,E:0x3ab,F:0x8bb,G:0x587,H:0x709,I:0x3ae,J:0x785,K:0x2e6,L:0x681,M:0x8e7,N:0x607,O:0x60d,P:0x345,Q:0x3f0,R:0x242,S:0x7f1,T:0x6bd,U:0x1ee,V:0x560,W:0x7c9,X:0x835,Y:0x4a5,Z:0x773,a0:0x452,a1:0x48a,a2:0x7f6,a3:0x5d7,a4:0x731,a5:0x50a,a6:0x327,a7:0x8ac,a8:0x42d,a9:0x5d7,aa:0x8b3,ab:0x506,ac:0x41b,ad:0x59f,ae:0x33f,af:0x5f1,ag:0x49d,ah:0x76c,ai:0x887,aj:0x2cd,ak:0x4b1,al:0x708},a0fL={a:0x76c,b:0x346,c:0x657},a0fF={a:0x4d8},a0fE={a:0x4d8},a0fD={a:0x614,b:0x4f7,c:0x68f,d:0x48a,e:0x320,f:0x287,g:0x59f,h:0x604,i:0x324},c3=a0bz,a={'tQICk':function(e,f){return e(f);},'bfaPM':c3(0x4e3),'PiJLj':c3(a0fM.a),'cprJO':c3(a0fM.b),'dfhMz':function(e,f){return e===f;},'TXLlS':'home','gDtpE':function(e,f){return e===f;},'gsVgI':'settings','RcQgg':function(e){return e();},'MWPgx':function(e){return e();},'iRLEp':c3(a0fM.c),'VEMQe':c3(0x7e8),'oriYB':c3(0x6ae),'bRaCE':function(e,f){return e+f;},'TaFYU':c3(a0fM.d),'HTRwj':c3(0x3e8),'SSyqR':c3(a0fM.e),'dGhuW':c3(a0fM.f),'RINQC':c3(0x76f),'RbECH':c3(a0fM.g),'nwcnS':c3(0x337),'GCCju':'nIxSn','AKGyV':'#sl_panel_heade'+'r','DQUJb':'mousemove','UrioV':c3(a0fM.h),'HgWQz':function(e,f){return e+f;},'DhgAx':function(e,f){return e+f;},'dkmir':function(e,f){return e+f;},'CwiFY':c3(a0fM.i)+c3(0x4f5)+c3(a0fM.j),'zpuIZ':c3(a0fM.k),'wPIHN':';display:none;f'+'lex-direction:c'+c3(a0fM.l)+'hidden;','AYDwx':c3(0x441)+c3(a0fM.m),'XuAcS':function(e,f){return e+f;},'gQPNr':function(e,f){return e+f;},'xsaJo':function(e,f){return e+f;},'pRFdh':function(e,f){return e+f;},'ykMyw':c3(0x441)+c3(0x64b)+'e=\x22position:rel'+'ative;padding:1'+'4px\x2020px\x2010px;d'+c3(0x558)+'gn-items:center'+';justify-conten'+'t:center;border'+c3(0x767)+c3(a0fM.n),'Cspjz':';cursor:move;fl'+c3(0x7a3)+'div\x20style=\x22disp'+c3(0x42e)+'items:center;ga'+c3(a0fM.o)+c3(a0fM.p)+c3(0x691)+'t-size:26px;\x22>='+c3(0x3a7)+'><div\x20style=\x22fo'+'nt-weight:700;f'+'ont-size:15px;c'+c3(0x8bb),'DmRBb':c3(a0fM.q)+'iv\x20style=\x22font-'+c3(0x689),'rqRdL':c3(a0fM.r)+c3(a0fM.s)+c3(0x668),'YJkbN':c3(0x441)+c3(0x4ea)+c3(a0fM.t)+'w-y:scroll;padd'+c3(a0fM.u)+c3(0x8ed)+c3(a0fM.v),'msCkT':function(e,f){return e+f;},'bvAwT':function(e,f){return e+f;},'mwfiB':c3(a0fM.w)+c3(0x616)+'=\x22sl_tab_btn\x20ac'+'tive\x22\x20data-tab='+'\x22home\x22\x20style=\x22f'+c3(a0fM.x)+'2px;border:none'+c3(a0fM.y)+c3(0x3cb)+c3(0x579)+c3(0x38e),'KfwRh':c3(0x6d5)+'0;border-top:2p'+'x\x20solid\x20','qhnYb':c3(a0fM.z)+c3(0x1d0)+'n><button\x20class'+'=\x22sl_tab_btn\x22\x20d'+c3(a0fM.A)+c3(a0fM.B)+c3(a0fM.C)+c3(0x8d4)+c3(a0fM.D)+'ursor:pointer;f'+c3(a0fM.E)+c3(a0fM.F),'kjzcJ':c3(a0fM.G)+'0;\x22>⚙️\x20设置</butto'+c3(a0fM.H)+'=\x22sl_tab_btn\x22\x20d'+c3(0x40e)+c3(0x625)+c3(0x525)+'border:none;bac'+c3(0x6f3)+c3(a0fM.I)+c3(a0fM.J)+'lor:','FgyVr':c3(a0fM.G)+c3(a0fM.K)+'n></div></div>','fVhvK':c3(a0fM.L),'hNuZd':function(e,f){return e(f);},'wcEpx':c3(0x56d),'kgHST':function(e,f){return e(f);},'iWCfJ':c3(a0fM.M),'mhTcR':'Coiuk'};if(_panelEl&&_panelEl[c3(0x656)]()['length'])return;var b=window['innerWidth']<0x258,c=a[c3(a0fM.N)](a[c3(0x7c9)](a[c3(a0fM.N)](a['dkmir'](a[c3(a0fM.O)]+CAT['bg']+a['zpuIZ']+CAT[c3(0x39a)],c3(0x7ad)+c3(0x4b8)+c3(0x437)+':')+CAT[c3(0x588)],'\x20'),CAT['line'])+c3(0x205)+CAT['font']+c3(a0fM.P)+CAT['text'],a['wPIHN']);c+=b?c3(a0fM.Q)+';right:0;height'+c3(a0fM.R)+c3(0x719)+c3(0x372):c3(a0fM.S)+'ght:80vh;top:50'+c3(a0fM.T)+c3(a0fM.U)+c3(a0fM.V);var d=a[c3(a0fM.N)](a[c3(a0fM.W)](a[c3(0x599)],c),'\x22>');d+=a[c3(0x25c)](a[c3(a0fM.X)](a[c3(0x3f9)](a['gQPNr'](a[c3(0x64a)](a[c3(0x3f9)](a[c3(a0fM.Y)](a[c3(0x66b)],CAT[c3(a0fM.Z)]),a[c3(0x8a0)]),CAT[c3(a0fM.a0)])+a[c3(0x4f2)]+CAT[c3(a0fM.a1)],c3(0x913)+c3(0x4cc)+c3(0x468)+c3(a0fM.a2)+'_panel\x22\x20style=\x22'+c3(a0fM.a3)+'te;right:14px;t'+'op:50%;transfor'+c3(a0fM.a4)+c3(a0fM.a5)+c3(a0fM.y)+c3(0x3cb)+c3(a0fM.a6)+c3(0x38e)),CAT[c3(a0fM.a7)])+(c3(0x863)+c3(0x303)+c3(a0fM.a8)+'tn_log\x22\x20style=\x22'+c3(a0fM.a9)+'te;right:40px;t'+c3(a0fM.aa)+'m:translateY(-5'+c3(0x50a)+c3(0x894)+'e;cursor:pointe'+c3(0x6f0)+'x;color:'),CAT['mute']),a['rqRdL']),d+=a[c3(a0fM.ab)],d+=a[c3(0x25c)](a['msCkT'](a[c3(a0fM.Y)](a[c3(a0fM.ac)](c3(0x441)+'el_tabs\x22\x20style='+c3(0x4af)+'order-top:1px\x20s'+'olid\x20',CAT[c3(0x773)])+a['mwfiB'],CAT[c3(a0fM.ad)])+a[c3(a0fM.ae)]+CAT[c3(0x59f)]+a[c3(a0fM.af)]+CAT[c3(0x48a)],a[c3(a0fM.ag)])+CAT['sub'],a[c3(0x47d)]),_panelEl=a[c3(a0fM.ah)](jQuery,d)[c3(0x210)](a[c3(a0fM.ai)]),_panelEl['on'](c3(0x56d),'.sl_tab_btn',function(){var c4=c3,e=a[c4(0x76c)](jQuery,this)[c4(a0fD.a)](a[c4(a0fD.b)]);_panelEl[c4(a0fD.c)](a['PiJLj'])[c4(0x3e2)](a[c4(0x347)])[c4(0x287)]({'color':CAT[c4(a0fD.d)],'fontWeight':c4(0x907),'borderTopColor':'transparent'}),jQuery(this)[c4(a0fD.e)](c4(0x6f9))[c4(a0fD.f)]({'color':CAT[c4(0x59f)],'fontWeight':c4(0x8fa),'borderTopColor':CAT[c4(a0fD.g)]});if(a[c4(0x5c3)](e,a[c4(a0fD.h)]))renderHomeTab();else{if(a[c4(0x480)](e,a[c4(0x5dc)]))a['RcQgg'](renderSettingsTab);else a[c4(a0fD.i)](renderArchiveTab);}}),a[c3(0x76e)](jQuery,'#sl_close_panel')['on'](a['wcEpx'],function(f){var c5=c3;f[c5(a0fE.a)](),hidePanel();}),a['kgHST'](jQuery,a[c3(0x48f)])['on'](a['wcEpx'],function(f){var c6=c3;f[c6(a0fF.a)](),a[c6(0x4d9)](showLogViewer);});if(!b){if(c3(a0fM.aj)===a[c3(0x723)]){var f={'success':a[c3(a0fM.ak)],'info':a[c3(0x3ad)],'warning':a[c3(0x23b)],'error':c3(a0fM.al)};e[f](f[g]||'')+d;}else(function(){var a0fK={a:0x8dd,b:0x394,c:0x516,d:0x68f,e:0x77e,f:0x8b4,g:0x2a6,h:0x29c,i:0x865,j:0x59f,k:0x282,l:0x65a,m:0x8b4},a0fH={a:0x1f4,b:0x584},a0fG={a:0x287,b:0x1f4,c:0x6bc,d:0x76c,e:0x8a3,f:0x38d},c7=c3,f=![],g,i,j,k;a[c7(a0fL.a)](jQuery,a[c7(0x73d)])['on'](c7(a0fL.b),function(l){var c8=c7,m='2|7|4|0|3|6|5|1'['split']('|'),n=0x0;while(!![]){switch(m[n++]){case'0':i=l['clientY'];continue;case'1':_panelEl[c8(a0fG.a)]({'left':j+'px','top':a[c8(a0fG.b)](k,'px'),'right':'auto','bottom':'auto','transform':a[c8(a0fG.c)]});continue;case'2':if(a[c8(a0fG.d)](jQuery,l['target'])[c8(a0fG.e)](a['HTRwj'])['length'])return;continue;case'3':var p=_panelEl[c8(0x3d4)]();continue;case'4':g=l['clientX'];continue;case'5':k=p['top'];continue;case'6':j=p[c8(a0fG.f)];continue;case'7':f=!![];continue;}break;}}),jQuery(document)['on'](a[c7(0x37e)],function(l){var c9=c7;if(!f)return;_panelEl[c9(0x287)]({'left':a[c9(0x1f4)](a[c9(a0fH.a)](j,l['clientX'])-g,'px'),'top':a['bRaCE'](a['bRaCE'](k,l[c9(a0fH.b)])-i,'px')});})['on'](a[c7(a0fL.c)],function(){var ca=c7,l={'Dkpwe':function(m){return m();},'wSJWF':function(m,n){return m+n;},'vqjHS':a[ca(0x22a)],'yRWet':a['dGhuW'],'aWXvD':ca(a0fK.a),'wOqiJ':ca(0x224),'vmzmV':a['RINQC'],'SGQEG':a['RbECH']};a[ca(a0fK.b)]!==a[ca(a0fK.c)]?f=![]:(k[l][ca(0x243)]=m[ca(0x29c)],l[ca(0x57c)](n),o[ca(a0fK.d)](l['wSJWF'](ca(0x684),p[ca(a0fK.e)](/[^a-zA-Z0-9\u4e00-\u9fff]/g,'_')))['css']({'backgroundImage':l[ca(a0fK.f)](l[ca(a0fK.g)]+q[ca(a0fK.h)],')'),'backgroundSize':l[ca(0x872)],'backgroundPosition':l[ca(a0fK.i)],'border':l[ca(0x8b4)](l[ca(0x4f8)],r[ca(a0fK.j)]),'color':'transparent'})[ca(a0fK.k)](''),s(l[ca(a0fK.l)],l[ca(a0fK.m)](t,l[ca(0x79d)])));});}());}}function togglePanel(){var cb=a0bz,a={'mZaez':function(b){return b();}};if(!_panelEl)a['mZaez'](createExpandedPanel);_expandedVisible?hidePanel():a[cb(0x72b)](showPanel);}function showPanel(){var a0fS={a:0x611,b:0x5de,c:0x206,d:0x41d,e:0x287,f:0x738,g:0x5de,h:0x777},a0fR={a:0x287,b:0x6b3,c:0x428},cc=a0bz,a={'zvtkz':cc(a0fS.a),'AXMuY':'50%','MBkPg':cc(0x358)+'-50%)','kAXqg':cc(a0fS.b),'IvQbT':function(e){return e();},'GYAwd':function(e){return e();}},b='0|4|3|2|1|5|6'[cc(a0fS.c)]('|'),c=0x0;while(!![]){switch(b[c++]){case'0':var d={'HWZZJ':a[cc(0x5c1)]};continue;case'1':_panelEl[cc(a0fS.d)](0xc8,function(){var cd=cc;_panelEl[cd(a0fR.a)](cd(a0fR.b),d[cd(a0fR.c)]);});continue;case'2':_panelEl[cc(a0fS.e)]({'left':cc(0x49a),'top':a['AXMuY'],'right':cc(a0fS.f),'bottom':cc(a0fS.f),'transform':a['MBkPg'],'maxHeight':a['kAXqg'],'height':cc(a0fS.g),'width':cc(0x402),'flexDirection':cc(0x321)});continue;case'3':_expandedVisible=!![];continue;case'4':if(!_panelEl)a[cc(a0fS.h)](createExpandedPanel);continue;case'5':_compactEl&&_compactEl[cc(0x6d3)]();continue;case'6':a['GYAwd'](renderHomeTab);continue;}break;}}function hidePanel(){var a0fU={a:0x707,b:0x8cc,c:0x32a,d:0x789,e:0x35f,f:0x681,g:0x35f,h:0x7b1},ce=a0bz,a={'fYIAT':function(b){return b();},'CDOBi':'success','IFlsr':ce(a0fU.a),'KcCNi':ce(a0fU.b)};_expandedVisible=![],_panelEl&&(a[ce(0x438)]===ce(a0fU.c)?(n[o][ce(a0fU.d)]=p[ce(a0fU.e)],q[r]['body']=s[ce(a0fU.f)],t[u]['anchor']=v[ce(a0fU.g)][ce(0x5a2)](0x0,0x50),a['fYIAT'](w),x(a[ce(a0fU.h)],y+a[ce(0x6c3)]),z()):(_panelEl[ce(0x5fb)](),_panelEl=null)),_compactEl&&_compactEl['show'](),refreshCompactBar();}function renderHomeTab(){var a0gz={a:0x77f,b:0x732,c:0x3d0,d:0x864,e:0x65c,f:0x25a,g:0x612,h:0x280,i:0x72d,j:0x22e,k:0x1d2,l:0x5a0,m:0x275,n:0x5d6,o:0x90a,p:0x57b,q:0x34b,r:0x389,s:0x1e7,t:0x7fd,u:0x55c,v:0x216,w:0x7fd,x:0x7d6,y:0x59b,z:0x84e,A:0x1dc,B:0x519,C:0x40c,D:0x7c8,E:0x377,F:0x7d4,G:0x80c,H:0x7c0,I:0x52a,J:0x359,K:0x26f,L:0x836,M:0x51b,N:0x5f5,O:0x919,P:0x874,Q:0x813,R:0x360,S:0x6c1,T:0x45b,U:0x292,V:0x668,W:0x25e,X:0x3b0,Y:0x3b0,Z:0x7c1,a0:0x6ed,a1:0x676,a2:0x3b0,a3:0x452,a4:0x4ab,a5:0x6a8,a6:0x4c9,a7:0x253,a8:0x4c8,a9:0x273,aa:0x48a,ab:0x4ce,ac:0x84a,ad:0x7e1,ae:0x1d3,af:0x3a5,ag:0x793,ah:0x26a,ai:0x59f,aj:0x3b5,ak:0x6cd,al:0x33b,am:0x6da,an:0x68c,ao:0x6da,ap:0x773,aq:0x5f5,ar:0x253,as:0x368,at:0x6a8,au:0x486,av:0x50b,aw:0x6a6,ax:0x2d1,ay:0x61b,az:0x47a,aA:0x806,aB:0x7da,aC:0x5c7,aD:0x3f6,aE:0x705,aF:0x2e1,aG:0x8f2,aH:0x492,aI:0x73a,aJ:0x59c,aK:0x368,aL:0x311,aM:0x300,aN:0x8ac,aO:0x31b,aP:0x420,aQ:0x6e0,aR:0x6fd,aS:0x5a6,aT:0x559,aU:0x6fd,aV:0x2f1,aW:0x6fd,aX:0x5a6,aY:0x1cc,aZ:0x6fd,b0:0x650,b1:0x6d9,b2:0x421,b3:0x593,b4:0x650},a0gy={a:0x245,b:0x31c,c:0x206,d:0x2ca,e:0x4c1,f:0x3b0,g:0x4fd,h:0x6d7,i:0x7ca,j:0x253,k:0x210,l:0x434,m:0x5fb,n:0x692,o:0x5d4,p:0x462,q:0x4a6},a0gx={a:0x3f2,b:0x5fb,c:0x5d9,d:0x47a},a0gu={a:0x452,b:0x76f,c:0x510,d:0x2c9,e:0x62e,f:0x452},a0gt={a:0x28f,b:0x5a6},cf=a0bz,a={'fLVtO':cf(0x56d),'dQMsm':function(s){return s();},'PFOob':'disabled','VMvOH':'扫描中...','nXrtx':function(s,t,u){return s(t,u);},'kZvDK':function(s){return s();},'EhiQj':function(s,t,u){return s(t,u);},'JnXzl':cf(a0gz.a),'KYAAr':cf(a0gz.b),'EJBqk':cf(0x260),'CnEXe':function(s,t){return s(t);},'GItOt':function(s,t){return s+t;},'fZhpF':function(s,t){return s+t;},'eOJjV':'\x20!important;','gnuJw':cf(a0gz.c),'uyzMj':function(s,t){return s(t);},'gGjSA':function(s,t){return s+t;},'nFWkA':'<style\x20id=\x27sl_t'+cf(0x8ab),'uVbGs':cf(0x65f),'wKFYt':function(s,t){return s+t;},'oZHhe':function(s,t){return s+t;},'cqrPh':function(s,t){return s+t;},'yvQfA':cf(a0gz.d),'FCUNh':cf(0x717),'kxHQt':function(s){return s();},'CQAii':function(s,t){return s>t;},'wyyxS':cf(0x850),'rsZJW':'连接\x20ComfyUI','Fdvex':cf(a0gz.e),'MqvbS':cf(0x8de),'HPFwY':function(s,t){return s+t;},'omOhX':'<div\x20style=\x22bac'+'kground:','XjnGB':cf(a0gz.f),'ubIIu':'<div\x20style=\x22fon'+cf(0x37a)+cf(0x896)+cf(a0gz.g)+cf(0x57f)+cf(0x7cd),'uiZsO':function(s,t){return s<t;},'wOGuY':function(s,t){return s+t;},'FFaJZ':function(s,t){return s+t;},'FaSXx':function(s,t){return s+t;},'ONomh':cf(0x57b)+cf(0x34b)+'px\x2014px;margin-'+'bottom:10px;bor'+'der:1px\x20solid\x20','ntoOu':cf(0x3c8)+cf(a0gz.h),'WrKxs':function(s,t){return s+t;},'rGETq':function(s,t){return s+t;},'vRnsG':function(s,t){return s+t;},'gwKvp':function(s,t){return s+t;},'cyYSg':function(s,t){return s+t;},'Mkejb':cf(0x63d),'ZNYpH':cf(0x6fc),'aLspM':cf(a0gz.i),'WCcli':function(s,t){return s===t;},'zUuoC':cf(0x41f),'CONPw':cf(0x597),'smGFC':cf(a0gz.j),'wyyBJ':function(s,t){return s+t;},'nlbil':cf(a0gz.k)+cf(0x5da)+cf(a0gz.l)+'m:10px;flex-wra'+cf(0x7bb)+cf(a0gz.m)+cf(a0gz.n)+'\x22','ERkQG':cf(a0gz.o)+cf(0x26d)+cf(0x788)+cf(0x4c4),'rlmVx':cf(0x50f)+cf(0x7f8),'uBOYK':function(s,t){return s+t;},'EeVSU':function(s,t){return s+t;},'AiIMC':cf(a0gz.p)+cf(a0gz.q)+cf(a0gz.r)+cf(a0gz.s)+cf(0x8d6),'bcYQC':cf(a0gz.t)+cf(0x8b5)+cf(0x7d6),'sBqsE':';\x22>插件主题</span><'+cf(0x827)+'i_theme\x22\x20style='+'\x22','NZinR':cf(a0gz.u),'MrHtC':cf(a0gz.v),'StHRi':function(s,t){return s+t;},'pltyN':function(s,t){return s+t;},'tFZbS':cf(0x565)+'style=\x22font-siz'+cf(0x43f),'aUMTk':function(s,t){return s+t;},'ecPog':function(s,t){return s+t;},'IgyhC':function(s,t){return s===t;},'uyAHr':cf(0x44d)+cf(0x84e),'YkLlA':function(s,t){return s+t;},'wvKet':cf(a0gz.w)+cf(0x6aa)+cf(a0gz.x),'JpVSy':';text-align:cen'+cf(a0gz.y),'CZfbd':cf(0x200),'Sxgcw':cf(a0gz.z),'coXPo':cf(a0gz.A)+'gs','pfIfY':cf(0x512)+'st','MDuSd':cf(0x8a5),'xlHXu':'change','tqaLs':cf(0x421),'gGyJY':cf(a0gz.B)},b=a[cf(0x311)](jQuery,a['FCUNh']);if(!b[cf(a0gz.C)])return;var c=a['kxHQt'](getCharacterName)||cf(a0gz.D),d=![];try{d=chkProf();}catch(s){}var f=a['kxHQt'](getScannerStatus),g=a[cf(a0gz.E)](getQueueLength),j=!!(settings[cf(a0gz.F)]&&settings[cf(a0gz.G)]),k=!!settings['cUrl'],l=!!(settings[cf(0x2c0)]&&a[cf(a0gz.H)](settings[cf(0x2c0)][cf(0x40c)],0x32)),m=j&&k&&l&&d,n='';if(!m){var o=[{'l':a[cf(a0gz.I)],'ok':j},{'l':a[cf(a0gz.J)],'ok':k},{'l':a[cf(a0gz.K)],'ok':l},{'l':a['MqvbS'],'ok':d}];n+=a['HPFwY'](a[cf(0x529)]+CAT[cf(0x1da)],cf(0x57b)+'12px;padding:12'+cf(0x389)+cf(a0gz.L)+cf(a0gz.M))+CAT[cf(0x59f)]+a[cf(a0gz.N)],n+=a['ubIIu'];for(var p=0x0;a[cf(0x3c0)](p,o['length']);p++)n+=a[cf(0x3b0)](a[cf(0x676)]('<div\x20style=\x22pad'+'ding:2px\x200;font'+cf(a0gz.O)+'r:'+(o[p]['ok']?CAT[cf(0x44c)]:CAT[cf(0x48a)])+a[cf(a0gz.N)],o[p]['ok']?'✅':'☐')+'\x20',o[p]['l'])+'</div>';n+=a['FFaJZ'](cf(a0gz.P)+'goto_settings\x22\x20'+cf(a0gz.Q)+cf(a0gz.R)+cf(0x55d)+cf(a0gz.S)+'dius:8px;backgr'+cf(a0gz.T)+CAT['accent'],';color:#fff;cur'+'sor:pointer;fon'+cf(0x5a8)+cf(a0gz.U)+cf(0x375)+cf(a0gz.V));}n+=a[cf(a0gz.W)](a[cf(a0gz.X)](a[cf(0x273)](a[cf(a0gz.Y)]('<div\x20style=\x22bac'+cf(a0gz.Z),CAT[cf(0x1da)]),a[cf(a0gz.a0)]),CAT[cf(0x773)]),cf(0x25a)),n+=a[cf(a0gz.a1)](a[cf(0x4bd)](a[cf(a0gz.a2)](cf(0x7fd)+cf(0x37a)+cf(0x3cc)+cf(0x4ca),CAT[cf(a0gz.a3)])+a[cf(a0gz.a4)],a[cf(0x6cd)](esc,c)),'</div>'),n+=a['WrKxs'](a['rGETq'](a[cf(a0gz.a5)](a['gwKvp'](a[cf(a0gz.a6)](a[cf(a0gz.a7)](a[cf(a0gz.a8)](a[cf(a0gz.a9)](cf(a0gz.t)+cf(0x8b5)+'or:',CAT[cf(a0gz.aa)])+';\x22>',settings[cf(a0gz.ab)]===cf(a0gz.ac)?a['Mkejb']:a[cf(a0gz.ad)]),a['aLspM'])+(a['WCcli'](settings[cf(0x70a)],0x1)?cf(a0gz.ae):a['zUuoC']),'\x20·\x20档案：'),d?a[cf(a0gz.af)]:a['smGFC']),cf(a0gz.ag)),g),cf(0x35c)),n+=a[cf(a0gz.ah)](a[cf(0x2db)]+a[cf(0x6cd)](sbtn,CAT[cf(a0gz.ai)])+a[cf(a0gz.aj)],a[cf(a0gz.ak)](sbtn,CAT[cf(0x44c)]))+a[cf(a0gz.al)],n+=a[cf(a0gz.am)](a[cf(a0gz.an)](a[cf(a0gz.ao)](a['omOhX'],CAT[cf(0x1da)]),a['AiIMC'])+CAT[cf(a0gz.ap)],a[cf(a0gz.aq)]),n+=a[cf(a0gz.ar)](a[cf(a0gz.as)](a[cf(a0gz.at)](a[cf(0x3b7)],CAT['sub'])+(cf(0x3c8)+cf(0x720)+'><div\x20style=\x22di'+cf(0x279)+cf(0x904)+cf(0x1f0)+cf(0x7c7)+cf(a0gz.au)+cf(a0gz.av))+CAT[cf(0x452)],a[cf(a0gz.aw)]),fiStyle())+(cf(a0gz.ax)+cf(0x492));for(var q in CAT_THEMES)n+=a[cf(0x5fe)](a[cf(a0gz.ay)]+escAttr(q)+'\x22'+(settings[cf(a0gz.az)]===q?cf(a0gz.aA):'')+'>'+q,a[cf(a0gz.aB)]);n+=a[cf(a0gz.aC)](a[cf(a0gz.aD)](a[cf(a0gz.aE)]+CAT[cf(0x452)],cf(0x7e0)+cf(0x6ef)+cf(0x631)+cf(a0gz.aF)+cf(a0gz.aG))+fiStyle(),'width:auto;min-'+cf(a0gz.aH));for(var r in TEXT_THEMES)n+=a[cf(a0gz.aI)](a[cf(a0gz.aJ)](a['ecPog'](a[cf(a0gz.aK)](a[cf(a0gz.ay)]+a[cf(a0gz.aL)](escAttr,r),'\x22'),a[cf(0x8dc)](settings[cf(0x7ca)],r)?cf(0x806):''),'>'),r)+a[cf(0x7da)];n+=a[cf(a0gz.aM)],n+=a[cf(0x831)](a['wvKet']+CAT[cf(a0gz.aN)]+a[cf(a0gz.aO)]+({'off':cf(0x884),'idle':'空闲','waiting_body':'等待正文','waiting_end':cf(0x6b5),'scanning':cf(0x7d3)}[f]||f)+a[cf(a0gz.aP)]+g+'\x20张'+(m?'':cf(a0gz.aQ)),a['Sxgcw']),b[cf(0x282)](n),b[cf(a0gz.aR)]('click',cf(a0gz.A)+'gs')['on'](a[cf(a0gz.aS)],a[cf(a0gz.aT)],function(){var cg=cf;_panelEl['find'](cg(0x557)+cg(a0gt.a)+'\x22]')['trigger'](a[cg(a0gt.b)]);}),b[cf(a0gz.aU)](a[cf(a0gz.aS)],a[cf(a0gz.aV)])['on']('click',a[cf(a0gz.aV)],async function(){var ch=cf;if(ch(0x3e4)!==ch(0x494)){var t=jQuery(this);t[ch(0x49f)](a['PFOob'],!![])[ch(a0gu.a)](a[ch(0x58f)]);try{await a[ch(0x4fe)](scanCharacterProfile),a['nXrtx'](toast,ch(a0gu.b),ch(a0gu.c)),a[ch(0x53d)](renderHomeTab),a['kZvDK'](refreshCompactBar);}catch(u){a[ch(a0gu.d)](toast,a[ch(a0gu.e)],a['KYAAr']);}t['prop']('disabled',![])[ch(a0gu.f)](ch(0x444));}else c[ch(0x4d8)](),a[ch(0x4fe)](d);}),b[cf(a0gz.aW)](a[cf(a0gz.aX)],a[cf(0x1cc)])['on'](cf(0x56d),a[cf(a0gz.aY)],triggerGenAll),b[cf(a0gz.aZ)](a[cf(a0gz.b0)],a[cf(a0gz.b1)])['on']('change',cf(a0gz.b2),function(){var ci=cf,t=a[ci(a0gx.a)][ci(0x206)]('|'),u=0x0;while(!![]){switch(t[u++]){case'0':a[ci(0x53d)](hidePanel);continue;case'1':_compactEl&&(_compactEl[ci(a0gx.b)](),_compactEl=null,a[ci(0x6cd)](clearInterval,_compactTimer));continue;case'2':a[ci(0x6cd)](applyTheme,v);continue;case'3':var v=jQuery(this)[ci(a0gx.c)]();continue;case'4':setTimeout(function(){w['UKUAA'](createCompactBar),showPanel();},0x96);continue;case'5':saveSettings();continue;case'6':var w={'UKUAA':function(x){return x();}};continue;case'7':settings[ci(a0gx.d)]=v;continue;}break;}}),b[cf(a0gz.aW)](a[cf(0x650)],a[cf(a0gz.b3)])['on'](a[cf(a0gz.b4)],'#sl_text_theme',function(){var cj=cf,t=(cj(a0gy.a)+cj(a0gy.b))[cj(a0gy.c)]('|'),u=0x0;while(!![]){switch(t[u++]){case'0':var v=cj(a0gy.d)+cj(a0gy.e)+cj(0x3ac);continue;case'1':saveSettings();continue;case'2':v+='}';continue;case'3':if(w[cj(0x4d6)])v+=a[cj(0x253)](a[cj(0x3b0)]('color:',w[cj(0x4d6)]),a[cj(0x6d7)]);continue;case'4':if(w['bg'])v+=a[cj(0x3b0)](a[cj(a0gy.f)](a[cj(a0gy.g)],w['bg']),a[cj(a0gy.h)]);continue;case'5':settings[cj(a0gy.i)]=jQuery(this)['val']();continue;case'6':a['uyzMj'](jQuery,a[cj(a0gy.j)](a[cj(0x273)](a['nFWkA'],v),a['uVbGs']))[cj(a0gy.k)](cj(a0gy.l));continue;case'7':a['uyzMj'](jQuery,'#sl_text_theme_'+cj(0x287))[cj(a0gy.m)]();continue;case'8':var w=TEXT_THEMES[settings[cj(a0gy.i)]]||TEXT_THEMES['默认'];continue;case'9':if(w[cj(a0gy.n)])v+=a[cj(0x5fe)](cj(0x35d),w['lineHeight'])+a['eOJjV'];continue;case'10':if(w[cj(0x68b)])v+=a[cj(a0gy.j)]('font-family:',w['font'])+a[cj(a0gy.h)];continue;case'11':if(w[cj(a0gy.o)])v+=a['oZHhe'](a['cqrPh'](a[cj(a0gy.p)],w[cj(0x5d4)]),cj(a0gy.q));continue;}break;}});}function renderSettingsTab(){var a0gQ={a:0x5e2,b:0x7c1,c:0x1e0,d:0x87a,e:0x836,f:0x55c,g:0x7fd,h:0x8b5,i:0x214,j:0x782,k:0x3bd,l:0x4c4,m:0x1d7,n:0x8ca,o:0x7d2,p:0x2ce,q:0x2e9,r:0x709,s:0x878,t:0x4c4,u:0x5f0,v:0x771,w:0x1da,x:0x389,y:0x540,z:0x8bb,A:0x452,B:0x596,C:0x49b,D:0x460,E:0x5e2,F:0x7a4,G:0x7fd,H:0x665,I:0x802,J:0x823,K:0x806,L:0x271,M:0x3de,N:0x836,O:0x25a,P:0x536,Q:0x48a,R:0x52f,S:0x52b,T:0x5f0,U:0x75e,V:0x34b,W:0x67c,X:0x698,Y:0x8f7,Z:0x48a,a0:0x82f,a1:0x796,a2:0x80e,a3:0x2a1,a4:0x59f,a5:0x842,a6:0x42b,a7:0x3d8,a8:0x1fc,a9:0x874,aa:0x47b,ab:0x6ac,ac:0x282,ad:0x517},ck=a0bz,a={'kkFJn':function(e,f){return e(f);},'kwFBl':'#sl_panel_body','bGdyt':function(e,f){return e+f;},'LAXJy':ck(a0gQ.a)+ck(a0gQ.b),'vlXma':ck(a0gQ.c)+'=\x22display:flex;'+ck(0x217)+ck(0x5bf)+'sor:pointer;\x22><'+ck(0x43d)+ck(a0gQ.d)+'lugin_on\x22','iCADo':function(e,f){return e!==f;},'XkiNY':function(e,f){return e+f;},'sxsCc':ck(0x57b)+ck(0x34b)+ck(0x389)+ck(a0gQ.e)+ck(0x5db),'YKeUy':';\x22>','tGEhJ':function(e,f){return e+f;},'VMMgF':ck(0x858),'pRiGI':'>🖼️\x20ZIT</option>'+ck(a0gQ.f)+ck(0x3b9),'LKefs':function(e,f){return e===f;},'TMcMN':'anime','fPcme':function(e,f){return e+f;},'jvLXn':function(e,f){return e+f;},'vEZdW':function(e,f){return e+f;},'SMvUa':ck(a0gQ.g)+ck(a0gQ.h)+'or:','qTCoE':';margin-bottom:'+ck(a0gQ.i)+'div><input\x20id=\x22'+ck(a0gQ.j)+ck(0x35a)+ck(a0gQ.k),'IaoCQ':ck(a0gQ.l),'SnJxW':ck(a0gQ.m)+ck(0x51d),'ANHaB':function(e,f){return e+f;},'LvNWc':function(e,f){return e+f;},'edhzJ':ck(a0gQ.n),'pywti':';margin-bottom:'+ck(a0gQ.o)+ck(0x53a)+ck(0x58b)+ck(0x77b)+ck(0x4c0),'foVHi':'margin-bottom:6'+ck(a0gQ.p),'DkKHq':function(e,f){return e+f;},'Fpykc':function(e,f){return e(f);},'kQAIg':ck(0x1d7)+ck(0x29e),'taUev':function(e,f){return e+f;},'uqilt':ck(a0gQ.q)+ck(a0gQ.r)+ck(a0gQ.s)+ck(0x910)+ck(a0gQ.t),'KCwMg':ck(0x7bf)+'n>','wReAs':function(e,f){return e+f;},'tFXOz':function(e,f){return e+f;},'sTFGD':ck(0x2ae),'rRFcO':';color:#fff;cur'+'sor:pointer;fon'+'t-size:14px;fon'+ck(0x292)+ck(0x5e5)+ck(0x5ac)},b=a[ck(0x517)](jQuery,a['kwFBl']),c=fiStyle(),d='';d+=a['bGdyt'](a[ck(0x5f0)](a['bGdyt'](a['bGdyt'](a[ck(a0gQ.u)](a[ck(a0gQ.v)],CAT[ck(a0gQ.w)]),ck(0x57b)+'10px;padding:10'+ck(a0gQ.x)+ck(0x836)+'der:1px\x20solid\x20'),CAT['line'])+a[ck(a0gQ.y)]+(a['iCADo'](settings[ck(0x6ad)],![])?ck(0x6ec):''),ck(0x482)+ck(0x269)+ck(a0gQ.z))+CAT[ck(a0gQ.A)],ck(a0gQ.B)+ck(a0gQ.C)),d+=a['XkiNY'](a[ck(a0gQ.D)](ck(a0gQ.E)+ck(0x7c1),CAT[ck(a0gQ.w)]),a['sxsCc'])+CAT['line']+a[ck(0x90d)],d+=a[ck(a0gQ.D)](a[ck(0x7a4)](a[ck(a0gQ.F)](ck(a0gQ.G)+ck(a0gQ.h)+ck(0x7d6)+CAT['sub']+(ck(0x3c8)+ck(0x5a7)+ck(a0gQ.H)+'_model_type\x22\x20st'+ck(0x1f6)),c),ck(a0gQ.I)+ck(a0gQ.J))+(settings['modelType']===a['VMMgF']?ck(a0gQ.K):'')+a[ck(a0gQ.L)],a[ck(0x487)](settings[ck(0x4ce)],a[ck(a0gQ.M)])?ck(0x806):'')+('>🎬\x20Anime</optio'+'n></select></di'+'v>'),d+=a[ck(0x771)]+CAT[ck(0x1da)]+(';border-radius:'+ck(0x34b)+ck(0x389)+ck(a0gQ.N)+ck(0x5db))+CAT[ck(0x773)]+ck(a0gQ.O),d+=a[ck(0x536)](a[ck(a0gQ.P)](a[ck(0x24d)](a[ck(0x7b0)](a[ck(0x906)],CAT[ck(a0gQ.Q)])+a['qTCoE']+escAttr(settings[ck(a0gQ.R)]||''),a[ck(a0gQ.S)]),c),a[ck(0x1df)]),d+=a[ck(0x42b)](a[ck(a0gQ.T)](a[ck(0x536)](a[ck(0x7b0)](a[ck(a0gQ.U)](a[ck(a0gQ.u)](ck(0x1fd)+'me_opts\x22\x20style='+'\x22background:',CAT[ck(a0gQ.w)]),ck(0x57b)+ck(a0gQ.V)+ck(0x389)+ck(0x836)+'der:1px\x20solid\x20'),CAT['line']),';'),settings[ck(0x4ce)]===ck(0x84a)?'':a[ck(0x8bd)]),'\x22>'),d+=a[ck(0x906)]+CAT[ck(a0gQ.Q)]+a['pywti']+escAttr(settings[ck(a0gQ.W)+ck(0x915)]||'')+'\x22\x20style=\x22'+c+a[ck(a0gQ.X)],d+=a[ck(a0gQ.Y)](ck(0x7fd)+'t-size:11px;col'+'or:'+CAT[ck(a0gQ.Z)]+(ck(0x3c8)+'2px;\x22>艺术家标签</di'+ck(a0gQ.a0)+ck(0x218)+'type=\x22text\x22\x20val'+ck(a0gQ.a1))+a[ck(a0gQ.a2)](escAttr,settings[ck(a0gQ.a3)]||'')+ck(0x4c4)+c,a['kQAIg']),d+=a[ck(0x53e)](a['jvLXn']('<div\x20style=\x22dis'+'play:grid;grid-'+'template-column'+'s:1fr\x201fr;gap:8'+ck(0x5a0)+ck(0x34e)+'n\x20class=\x22sl_ope'+ck(0x619)+'=\x22aux\x22\x20style=\x22',sbtn(CAT[ck(a0gQ.a4)])),a[ck(0x38a)])+sbtn(CAT[ck(a0gQ.a4)])+(ck(0x527)+ck(a0gQ.a5)+'v>'),d+=a[ck(a0gQ.a6)](ck(a0gQ.a7)+'sl_open_sub\x22\x20da'+ck(0x582)+'d\x22\x20style=\x22width'+ck(0x5eb)+sbtn(CAT[ck(0x48a)]),a[ck(a0gQ.a8)]),d+=a['wReAs'](a[ck(0x5df)]('<div\x20style=\x22mar'+ck(0x27f)+ck(a0gQ.a9)+ck(0x715)+'style=\x22width:10'+ck(0x1d6)+';border:none;bo'+ck(a0gQ.aa),CAT[ck(0x39a)])+a[ck(0x786)]+CAT['accent'],a[ck(a0gQ.ab)]),b[ck(a0gQ.ac)](d),a[ck(a0gQ.ad)](bindSettingsEvents,b);}function bindSettingsEvents(a){var a0h6={a:0x46c,b:0x76f,c:0x8c7,d:0x86c,e:0x6fd,f:0x609,g:0x77a,h:0x44a,i:0x609,j:0x533,k:0x382,l:0x838,m:0x56d,n:0x51e,o:0x862,p:0x56d},a0h4={a:0x88b,b:0x52f,c:0x350,d:0x364,e:0x4de,f:0x496,g:0x452},a0h3={a:0x2a1,b:0x5d9},a0h2={a:0x915,b:0x1d4},a0h1={a:0x817,b:0x52f,c:0x5d9},a0h0={a:0x257,b:0x30c,c:0x4ce,d:0x556},a0gZ={a:0x556},cl=a0bz,c={'RNSeX':cl(a0h6.a),'vXFSC':function(d){return d();},'gRZfr':function(d,e){return d===e;},'GwESA':cl(0x84a),'GvCDQ':cl(0x3e7),'ukDPr':function(d,e){return d(e);},'ddzYr':function(d,e){return d(e);},'IEUvr':function(d,e){return d>=e;},'PHvzq':function(d,e){return d!==e;},'jnRZk':'TAOyn','LczpA':cl(0x3da),'Ixnqi':function(d,e,f){return d(e,f);},'aTsFT':cl(a0h6.b),'TbhEc':'全部保存好啦喵~\x20✨','EnfqZ':function(d,e){return d(e);},'oqVAs':cl(0x609),'QdTXC':cl(0x77a),'DFMFz':'#sl_model_type','kxooh':cl(0x838),'mekJJ':cl(a0h6.c)+'ix','diSkF':cl(0x8c0)+'t','KjerB':cl(a0h6.d)+'gs','YZcaD':cl(0x56d)};a[cl(a0h6.e)](cl(a0h6.f),cl(a0h6.g))['on'](c[cl(0x2f4)],c[cl(a0h6.h)],function(){var cm=cl;settings[cm(0x6ad)]=jQuery(this)['is'](c[cm(0x89d)]),c[cm(a0gZ.a)](saveSettings);}),a[cl(a0h6.e)]('change',cl(0x8b2))['on'](cl(a0h6.i),c[cl(a0h6.j)],function(){var cn=cl;settings[cn(0x4ce)]=jQuery(this)['val'](),jQuery(cn(a0h0.a))[cn(a0h0.b)](c[cn(0x3dd)](settings[cn(a0h0.c)],c[cn(0x46b)])),c[cn(a0h0.d)](saveSettings);}),a[cl(0x6fd)](c['kxooh'],c[cl(0x2e4)])['on'](c[cl(a0h6.k)],cl(a0h6.c)+'ix',function(){var co=cl,d={'NWWAO':co(a0h1.a)};co(0x721)!==c['GvCDQ']?(settings[co(a0h1.b)]=jQuery(this)[co(a0h1.c)](),saveSettings()):a[co(0x287)]({'transform':d[co(0x39f)],'opacity':'1'});}),a[cl(0x6fd)](c['kxooh'],cl(0x38b)+'x')['on'](cl(a0h6.l),'#sl_anime_prefi'+'x',function(){var cp=cl;settings[cp(0x67c)+cp(a0h2.a)]=c[cp(a0h2.b)](jQuery,this)['val'](),c[cp(0x556)](saveSettings);}),a['off'](c[cl(0x382)],cl(0x8c0)+'t')['on'](cl(a0h6.l),c[cl(0x7a8)],function(){var cq=cl;settings[cq(a0h3.a)]=jQuery(this)[cq(a0h3.b)](),saveSettings();}),a[cl(a0h6.e)](cl(a0h6.m),c['KjerB'])['on']('click',cl(0x86c)+'gs',function(){var cr=cl;if(c[cr(0x6fa)](c[cr(a0h4.a)],c['LczpA']))settings[cr(a0h4.b)]=jQuery(cr(0x8c7)+'ix')[cr(0x5d9)](),saveSettings(),c[cr(a0h4.c)](toast,c[cr(a0h4.d)],c[cr(a0h4.e)]);else{var e=c['ddzYr'](c,this);e[cr(0x452)]()[cr(a0h4.f)]('排队')<0x0&&e['text']()[cr(0x496)]('🔄')<0x0&&c[cr(0x58c)](e[cr(a0h4.g)]()['indexOf']('生成图片'),0x0)&&(e[cr(0x310)](cr(0x56d)),e++);}}),a[cl(0x6fd)](c[cl(a0h6.n)],cl(a0h6.o))['on'](cl(a0h6.p),'.sl_open_sub',function(){var cs=cl;c['EnfqZ'](openSubPanel,jQuery(this)[cs(0x614)]('sub'));});}function openSubPanel(a){var a0he={a:0x6c2,b:0x343,c:0x914,d:0x8d3,e:0x2ef,f:0x291,g:0x215,h:0x847,i:0x799,j:0x799,k:0x240,l:0x616,m:0x722,n:0x465,o:0x5b6,p:0x59f,q:0x452,r:0x71b,s:0x6e7,t:0x6ee,u:0x5bc,v:0x5cf,w:0x3cd,x:0x2bb,y:0x39a,z:0x3f1,A:0x63f,B:0x545,C:0x787},ct=a0bz,b={'wAPHz':function(i,j){return i+j;},'PULVa':function(i,j){return i+j;},'nLwQs':ct(0x1d2)+'play:flex;align'+ct(a0he.a)+ct(a0he.b)+ct(0x856)+'adding:12px\x2016p'+ct(a0he.c)+':1px\x20solid\x20','fLFbA':';font-weight:60'+ct(0x53f)+ct(0x552)+'font-weight:700'+ct(a0he.d)+ct(0x345),'DBZhA':ct(0x6fe)+ct(a0he.e)+ct(0x900)+ct(a0he.f)+'se-out,opacity\x20'+ct(a0he.g)+'>','SBixe':function(i,j,k){return i(j,k);},'Tnpbp':function(i,j){return i(j);},'GQwlA':function(i,j){return i(j);},'GZdRH':ct(a0he.h),'hydDO':'click','xacvC':'scale(1)'},c=ct(0x740)[ct(0x206)]('|'),d=0x0;while(!![]){switch(c[d++]){case'0':var e=jQuery(f)[ct(0x210)]('#sl_panel');continue;case'1':f+=b[ct(0x284)](b[ct(a0he.i)](b[ct(a0he.j)](b[ct(a0he.k)]+CAT[ct(0x773)]+(ct(0x774)+ct(a0he.l)+ct(a0he.m)+'\x20style=\x22border:'+ct(0x8a4)+ct(0x81e)+ct(a0he.n)+ct(a0he.o)),CAT[ct(a0he.p)]),b[ct(0x2c3)])+CAT[ct(a0he.q)],ct(0x6fb)+ct(a0he.r)+'div\x20id=\x22sl_sub_'+'body\x22\x20style=\x22fl'+ct(0x3b3)+ct(a0he.s)+ct(a0he.t)+ct(0x3df));continue;case'2':var f=ct(0x798)+ct(0x2fc)+ct(0x5d7)+ct(0x822)+ct(0x463)+ct(0x4e9)+CAT['bg']+(ct(a0he.u)+ct(a0he.v)+ct(a0he.w)+ct(a0he.x)+':')+CAT[ct(a0he.y)]+b[ct(a0he.z)];continue;case'3':b['SBixe'](fillSubPanel,a,b[ct(0x606)](jQuery,ct(0x524)));continue;case'4':b[ct(0x606)](requestAnimationFrame,function(){var cu=ct;e[cu(0x287)]({'transform':g[cu(0x661)],'opacity':'1'});});continue;case'5':b[ct(a0he.A)](jQuery,b[ct(a0he.B)])['on'](b[ct(a0he.C)],function(){closeSubPanel(e);});continue;case'6':var g={'KyukO':b['xacvC']};continue;}break;}}function closeSubPanel(a){var a0hh={a:0x851,b:0x22d},cv=a0bz,b={'IrqOf':cv(a0hh.a),'WGJDN':function(c,d,e){return c(d,e);}};a['css']({'transform':b[cv(a0hh.b)],'opacity':'0','transition':cv(0x3a3)+cv(0x589)+cv(0x33a)}),b['WGJDN'](setTimeout,function(){a['remove']();},0x78);}function fillSubPanel(a,b){var a0j4={a:0x5e9,b:0x74a,c:0x3d1,d:0x608,e:0x81d,f:0x2a5,g:0x323,h:0x213,i:0x7d5,j:0x4d0,k:0x30b,l:0x306,m:0x677,n:0x8e2,o:0x5ab,p:0x499,q:0x43e,r:0x34f,s:0x478,t:0x84e,u:0x498,v:0x234,w:0x820,x:0x838,y:0x5bb,z:0x56f,A:0x3a2,B:0x401,C:0x41e,D:0x56d,E:0x8e9,F:0x7af,G:0x2e7,H:0x3c8,I:0x528,J:0x237,K:0x7a1,L:0x806,M:0x3c8,N:0x4c4,O:0x75c,P:0x6db,Q:0x3c8,R:0x3bd,S:0x7f2,T:0x24e,U:0x48d,V:0x2bf,W:0x763,X:0x459,Y:0x834,Z:0x3c4,a0:0x379,a1:0x1d2,a2:0x8f8,a3:0x378,a4:0x69a,a5:0x57b,a6:0x4c5,a7:0x66f,a8:0x21e,a9:0x7fd,aa:0x7d6,ab:0x44f,ac:0x500,ad:0x2d0,ae:0x78d,af:0x41a,ag:0x6c7,ah:0x488,ai:0x644,aj:0x667,ak:0x51f,al:0x736,am:0x329,an:0x8ec,ao:0x384,ap:0x7c3,aq:0x238,ar:0x1f1,as:0x39b,at:0x8c3,au:0x74d,av:0x49b,aw:0x2f8,ax:0x2b7,ay:0x917,az:0x7c1,aA:0x7a5,aB:0x3fc,aC:0x8ee,aD:0x417,aE:0x6d4,aF:0x270,aG:0x29f,aH:0x4a4,aI:0x567,aJ:0x7d9,aK:0x8d9,aL:0x4bb,aM:0x632,aN:0x5d2,aO:0x54b,aP:0x610,aQ:0x6c8,aR:0x514,aS:0x48a,aT:0x2ea,aU:0x8a1,aV:0x87c,aW:0x48a,aX:0x8a1,aY:0x1e9,aZ:0x7ab,b0:0x58e,b1:0x4a4,b2:0x43b,b3:0x414,b4:0x59f,b5:0x71d,b6:0x423,b7:0x554,b8:0x301,b9:0x54b,ba:0x7e9,bb:0x2ff,bc:0x424,bd:0x344,be:0x1e9,bf:0x6de,bg:0x7cc,bh:0x5d2,bi:0x653,bj:0x1da,bk:0x345,bl:0x452,bz:0x693,dn:0x1d8,dp:0x2d9,dq:0x778,dr:0x30d,ds:0x523,dt:0x1f2,du:0x408,dv:0x504,dw:0x7b6,dx:0x792,dy:0x5e0,dz:0x2c0,dA:0x1d2,dB:0x5e3,dC:0x630,dD:0x8b8,dE:0x5e0,dF:0x7fb,dG:0x59f,dH:0x58d,dI:0x4c0,dJ:0x1fa,dK:0x44c,dL:0x2f9,dM:0x90c,dN:0x23e,dO:0x383,dP:0x8c8,dQ:0x5f6,dR:0x7df,dS:0x727,dT:0x276,dU:0x4be,dV:0x27b,dW:0x47e,dX:0x55c,dY:0x216,dZ:0x629,e0:0x451,e1:0x73f,e2:0x78b,e3:0x338,e4:0x56d,e5:0x56d,e6:0x8ef,e7:0x898,e8:0x7b2,e9:0x3a8,ea:0x84b,eb:0x39c,ec:0x353,ed:0x5e2,ee:0x7c1,ef:0x558,eg:0x3fc,eh:0x254,ei:0x6ec,ej:0x7ff,ek:0x3a4,el:0x1ed,em:0x4f9,en:0x84b,eo:0x4f9,ep:0x6ec,eq:0x2bc,er:0x5f6,es:0x64e,et:0x773,eu:0x250,ev:0x7f7,ew:0x768,ex:0x6ec,ey:0x8bb,ez:0x497,eA:0x609,eB:0x220,eC:0x5fa},a0j2={a:0x2cc},a0j1={a:0x46c},a0j0={a:0x4f9},a0iZ={a:0x61e,b:0x580,c:0x795},a0iY={a:0x88c},a0iW={a:0x765,b:0x4df},a0iV={a:0x6f4,b:0x5d9,c:0x6c6,d:0x76f,e:0x74e},a0iU={a:0x916,b:0x310,c:0x744},a0iT={a:0x76f,b:0x918},a0iS={a:0x357,b:0x338,c:0x76f,d:0x712,e:0x281},a0iR={a:0x7fb,b:0x5d9,c:0x870,d:0x227,e:0x374,f:0x712,g:0x6b6,h:0x236,i:0x1f3},a0iQ={a:0x818,b:0x5d9,c:0x6e2,d:0x3ce},a0iP={a:0x5d9,b:0x3e3,c:0x3b4,d:0x3fe,e:0x3b4,f:0x2c1,g:0x5c0,h:0x334,i:0x493,j:0x742,k:0x4ba,l:0x2c1,m:0x2c1,n:0x2d7,o:0x639,p:0x658,q:0x356,r:0x751,s:0x44b,t:0x637,u:0x40c,v:0x89c,w:0x622,x:0x5b7,y:0x29f,z:0x309,A:0x743,B:0x48a,C:0x4a3,D:0x1fa,E:0x5f6,F:0x301,G:0x85d,H:0x629,I:0x794,J:0x452,K:0x63a,L:0x6aa,M:0x33c,N:0x6fd,O:0x474,P:0x838,Q:0x521,R:0x282,S:0x2da,T:0x741,U:0x6a2,V:0x837},a0iO={a:0x5d9,b:0x614,c:0x2c1,d:0x35b,e:0x5d9,f:0x508,g:0x508,h:0x374},a0iN={a:0x5f6,b:0x34d,c:0x1cf},a0iM={a:0x5c6,b:0x380,c:0x2d6,d:0x8d7,e:0x761,f:0x239,g:0x314,h:0x77e,i:0x77e,j:0x210,k:0x681,l:0x56d,m:0x49f,n:0x226,o:0x78e,p:0x28b,q:0x892,r:0x287,s:0x1f9,t:0x6b6,u:0x741,v:0x74c,w:0x90e,x:0x624,y:0x90e,z:0x452,A:0x477,B:0x7ba},a0iH={a:0x5f8},a0iE={a:0x5f8,b:0x49f,c:0x8a7,d:0x452,e:0x5f6,f:0x30d,g:0x77e,h:0x68e,i:0x236,j:0x32b,k:0x508,l:0x48d,m:0x44c,n:0x6b6,o:0x4e6,p:0x77f,q:0x8d5,r:0x90e,s:0x8d2,t:0x440,u:0x287,v:0x741,w:0x68d,x:0x2ae,y:0x263,z:0x734},a0iD={a:0x35e,b:0x5d9},a0iB={a:0x374},a0iz={a:0x2ea,b:0x5d9},a0iy={a:0x7d4,b:0x5d9},cw=a0bz,c={'SrRhj':function(g,i){return g(i);},'WyeSR':function(g,i){return g(i);},'qacmm':function(g){return g();},'GCFcb':function(g,i){return g!==i;},'uGtyN':cw(0x791),'XaEbg':cw(a0j4.a)+cw(0x8c9)+'order-radius:','dTDzO':';color:#fff;cur'+cw(a0j4.b)+'t-size:12px;fon'+cw(a0j4.c),'DsRUw':cw(0x576),'tBHGt':'测试中...','hOCuv':function(g,i){return g+i;},'kaspj':function(g,i){return g(i);},'ojRxB':'#sl_aux_url','eXaAH':cw(0x36d)+'ns','OPKMr':'Authorization','BCpnJ':function(g,i){return g+i;},'OIayH':function(g,i,j){return g(i,j);},'mfbnw':'POST','cSomD':'user','JnvDq':cw(0x76f),'sbWhd':function(g,i){return g+i;},'KaGbz':cw(a0j4.d),'YtxLo':cw(a0j4.e),'Zkozj':cw(a0j4.f),'ieGow':'disabled','zgvbG':cw(0x7ba),'SBnrY':function(g,i){return g(i);},'JDqMe':cw(a0j4.g)+'e','bDboX':cw(0x36c),'cFglY':cw(0x867)+'ition:fixed;z-i'+cw(a0j4.h)+cw(a0j4.i)+cw(a0j4.j)+cw(0x21c)+'ba(0,0,0,0.85);'+'display:flex;al'+cw(a0j4.k)+cw(a0j4.l)+'nt:center;curso'+cw(a0j4.m)+cw(0x3eb),'NQTkN':function(g,i){return g(i);},'pqbZL':cw(a0j4.n)+'ing','nzBBI':cw(a0j4.o)+'n','SaxCl':'ComfyUI\x20连上啦~\x20✨','MerBv':function(g,i){return g+i;},'FNolh':'HTTP\x20','YPDdH':cw(a0j4.p),'QOaKK':cw(0x77f),'dkGAm':cw(0x28e)+cw(0x37b)+cw(0x433),'feaHH':cw(0x2dc)+'x;border-radius'+cw(a0j4.q)+cw(a0j4.r)+'\x22>','gBVsN':function(g,i){return g(i);},'ujMfd':cw(0x797),'jqnSk':function(g,i){return g(i);},'PIZam':function(g,i){return g(i);},'RJWeY':'info','jjYxa':cw(a0j4.s),'bwVMB':function(g,i){return g!=i;},'rqXhe':function(g,i){return g!=i;},'MgKSP':function(g,i){return g+i;},'sRrxh':function(g,i){return g+i;},'FxXMW':cw(0x41c),'rTkhl':function(g,i){return g+i;},'XITwR':function(g,i){return g(i);},'VRKRq':cw(a0j4.t),'GdvaC':function(g,i){return g+i;},'uOYBu':function(g,i){return g+i;},'AVZbJ':cw(a0j4.u)+cw(a0j4.v)+cw(0x78f),'EKTPu':function(g,i){return g(i);},'MexnM':';box-sizing:bor'+cw(0x249)+'>','SBsim':function(g,i){return g+i;},'DFvOc':cw(a0j4.w)+';\x22>没有可编辑参数喵~</d'+cw(0x573),'mHmPp':function(g,i){return g+i;},'JuAuU':'.sl_wf_param','gSvIR':cw(a0j4.x),'tLulG':cw(a0j4.y)+'~\x20','yzVbD':function(g,i){return g(i);},'nLqUj':function(g,i){return g(i);},'fsdEf':function(g,i,j){return g(i,j);},'Ktiuz':cw(a0j4.z),'fUzrZ':cw(0x247),'gSnca':cw(a0j4.A),'rrBqG':function(g,i){return g(i);},'xtbqI':function(g,i){return g+i;},'lRMHq':function(g,i,j){return g(i,j);},'EobeZ':cw(a0j4.B),'ZNBot':function(g,i){return g(i);},'ckTyT':cw(0x44e),'pKaRT':function(g,i){return g(i);},'uPTYc':function(g,i){return g+i;},'vCOjz':cw(0x855),'zQZvk':cw(0x815),'WUqcV':cw(a0j4.C),'lkRyZ':cw(a0j4.D),'ysRgx':function(g,i){return g===i;},'MYVOY':cw(0x7ed),'ArWcV':function(g,i,j){return g(i,j);},'PqBVZ':cw(a0j4.E),'Lvgmm':function(g){return g();},'GViWa':cw(a0j4.F),'mlarO':function(g){return g();},'auUbe':function(g,i){return g+i;},'WiTCi':function(g,i){return g+i;},'XVfrv':cw(a0j4.G)+cw(0x54b)+'\x22><div\x20style=\x22f'+'ont-size:11px;c'+cw(0x8bb),'gZJrT':cw(a0j4.H)+cw(a0j4.I)+cw(a0j4.J)+'sl_aux_provider'+cw(0x4c4),'fCNuA':cw(0x659)+cw(0x3c3)+cw(0x79f),'vaQaC':cw(0x3d6),'jzMbK':cw(0x2e2)+cw(a0j4.K)+'\x22custom\x22','IEEDa':cw(0x6e6),'SDulC':cw(a0j4.L),'eSQbD':cw(0x3e9)+'select></div>','gBAtu':function(g,i){return g+i;},'QlPtq':function(g,i){return g+i;},'nyntV':cw(a0j4.M)+cw(0x7e4)+cw(0x4d7)+'l_aux_url\x22\x20type'+cw(0x6e9),'JdDpe':cw(a0j4.N),'aXZfC':cw(0x1e9),'RZNMZ':cw(a0j4.H)+cw(a0j4.O)+'div><input\x20id=\x22'+cw(0x586)+cw(a0j4.P)+cw(0x261),'iiGpa':function(g,i){return g+i;},'pWQui':function(g,i){return g+i;},'yEsqt':function(g,i){return g+i;},'iOtBS':function(g,i){return g+i;},'SIDOC':function(g,i){return g+i;},'uOCaT':function(g,i){return g+i;},'BKkfO':cw(a0j4.Q)+'2px;\x22>角色卡分析模型</'+'div><input\x20id=\x22'+cw(0x3d2)+cw(0x83f)+cw(a0j4.R),'aMNjX':cw(a0j4.S)+'>','QcMzM':cw(a0j4.T)+'r','dDNow':'#sl_aux_key','VkRaw':cw(a0j4.U),'mLiqK':cw(0x1f8)+'el','vUgCo':'#sl_test_aux','kbsQo':cw(0x590),'rYaVw':cw(0x3c8)+cw(a0j4.V)+cw(0x55a)+cw(0x81a)+'\x22\x20type=\x22text\x22\x20v'+cw(a0j4.W),'mKOnJ':function(g,i){return g+i;},'tRAwR':'<div\x20style=\x22dis'+cw(0x5da)+'px;align-items:'+cw(0x378)+'ottom:8px;\x22><bu'+cw(a0j4.X)+cw(a0j4.Y)+'\x22','cjfjC':function(g,i){return g(i);},'gZsYm':cw(0x376)+cw(0x65e)+cw(0x231)+cw(a0j4.Z)+cw(a0j4.a0),'ussxR':function(g,i){return g+i;},'vNAAm':function(g,i){return g+i;},'nirKA':cw(a0j4.a1)+cw(0x5e3)+cw(a0j4.a2)+cw(a0j4.a3)+cw(0x635)+cw(a0j4.a4)+cw(0x46f)+cw(0x290),'BtZlo':cw(a0j4.a5)+'6px;font-size:1'+cw(0x23f),'okslM':function(g,i){return g+i;},'TyiEm':cw(0x66f)+cw(a0j4.a6)+'<button\x20id=\x22sl_'+cw(0x283)+cw(0x8f2),'hMXOH':cw(a0j4.a7)+cw(a0j4.a8)+cw(0x84e),'CLwVn':cw(a0j4.a9)+cw(0x8b5)+cw(a0j4.aa),'vtSaS':function(g,i){return g+i;},'nZSii':cw(0x57b)+cw(a0j4.ab),'IOUuq':';font-family:mo'+cw(0x6e1)+cw(0x50b),'Jgrgc':function(g,i){return g(i);},'wrwGl':cw(a0j4.ac),'QHKcZ':cw(a0j4.a7)+'\x22>📁\x20导入JSON</but'+'ton><input\x20type'+cw(0x3ed)+cw(0x286)+cw(0x2a7)+cw(a0j4.ad)+cw(0x8b8)+cw(a0j4.ae)+'style=\x22','qrBOf':cw(0x594)+cw(a0j4.af)+cw(a0j4.a7)+cw(0x57e),'RvzFb':';max-height:200'+cw(a0j4.ag)+cw(a0j4.ah)+cw(0x5a4),'iNtzT':function(g,i){return g+i;},'qknCG':';margin-bottom:'+cw(0x328)+'><select\x20id=\x22sl'+'_style_preset\x22\x20'+cw(0x6e5),'lBzqU':cw(a0j4.ai),'aSTJX':function(g,i){return g+i;},'RDSNm':function(g,i){return g+i;},'SvTQI':function(g,i){return g+i;},'cCMHU':cw(a0j4.aj),'bbCKP':function(g,i){return g+i;},'skWHJ':function(g,i){return g+i;},'ZVZQM':function(g,i){return g+i;},'cMcrK':cw(0x1d7)+cw(a0j4.ak)+cw(a0j4.al),'QnYkx':function(g,i){return g(i);},'nZROt':cw(a0j4.am),'YZGIu':cw(a0j4.an),'cfOoY':cw(a0j4.ao),'eeRFP':function(g,i){return g(i);},'LyeMX':function(g,i){return g(i);},'JHkcg':cw(0x609),'sotSp':cw(a0j4.ap)+'t','vZHfx':function(g,i){return g(i);},'KyiDN':'#sl_neg','cVNdJ':function(g,i){return g===i;},'LZQAw':cw(0x562),'YTesg':cw(a0j4.aq),'MRyqp':cw(a0j4.a5)+cw(0x25d)+cw(0x5a0)+cw(0x2dd)+cw(0x45f),'Arwee':cw(0x25a),'fVFLj':function(g,i){return g+i;},'wiEsZ':cw(a0j4.ar)+cw(0x445),'szoWl':function(g,i){return g+i;},'iQAdE':function(g,i){return g+i;},'WHBmW':function(g,i){return g+i;},'OtXFz':'<div\x20style=\x22mar'+'gin-top:8px;\x22><'+'label\x20style=\x22di'+cw(0x641)+cw(a0j4.as)+'gap:8px;cursor:'+cw(a0j4.at)+'t\x20type=\x22radio\x22\x20'+cw(0x5f7)+cw(a0j4.au)+'ve\x22','CWKAr':function(g,i){return g!==i;},'cWyLP':cw(0x5ef)+cw(a0j4.av)+'<div><label\x20sty'+cw(0x750)+cw(a0j4.aw)+'enter;gap:8px;c'+'ursor:pointer;\x22'+'><input\x20type=\x22r'+cw(a0j4.ax)+cw(a0j4.ay)+'omic\x22','PgTUB':cw(0x335),'wMnsW':cw(0x482)+cw(0x269)+'olor:','tykos':cw(0x6c9)+cw(a0j4.av)+cw(0x84e),'hoHqo':cw(0x5e2)+cw(a0j4.az),'reinu':function(g,i){return g+i;},'BYkmX':function(g,i){return g+i;},'ATXXg':cw(a0j4.aA)+cw(0x558)+cw(a0j4.aB)+cw(a0j4.aC)+cw(0x254)+cw(0x5be)+cw(0x683)+'g\x22','dKSjC':cw(a0j4.aD)+cw(0x209)+cw(0x383),'KOgaM':function(g,i){return g(i);},'BKMWk':cw(0x42f)+cw(a0j4.aE),'DshPS':function(g,i){return g(i);},'HTIYg':cw(0x74f)},d=c[cw(a0j4.aF)](fiStyle);if(a===cw(0x1ef)){var e=c[cw(0x3fb)](c[cw(0x632)](c[cw(a0j4.aG)](c['xtbqI'](c['WiTCi'](c['MerBv'](c[cw(0x39e)](c[cw(a0j4.aH)]+CAT['sub'],c[cw(0x8e4)]),d),cw(0x802)+cw(a0j4.aI)),settings[cw(0x7d9)]===cw(0x305)?cw(0x806):''),c['fCNuA'])+(settings[cw(a0j4.aJ)]===c['vaQaC']?cw(0x806):'')+c[cw(0x3ef)],settings['auxProvider']===c[cw(a0j4.aK)]?c[cw(a0j4.aL)]:''),c[cw(0x5b4)]);e+=c[cw(a0j4.aM)](c[cw(a0j4.aN)](c['GdvaC'](c[cw(0x5ad)](cw(0x2e7)+cw(a0j4.aO)+cw(a0j4.aP)+'ont-size:11px;c'+'olor:',CAT[cw(0x48a)])+c[cw(0x672)],escAttr(settings['auxUrl']||'')),c[cw(0x8a1)])+d,c['aXZfC']),e+=c[cw(a0j4.aQ)](c[cw(0x5f6)]('<div\x20style=\x22mar'+'gin-bottom:8px;'+cw(a0j4.aP)+cw(a0j4.aR)+cw(0x8bb)+CAT[cw(a0j4.aS)],c[cw(0x3a0)]),escAttr(settings[cw(a0j4.aT)]||''))+c[cw(a0j4.aU)]+d+cw(0x1e9),e+=c[cw(0x4e2)](c['gBAtu'](c[cw(a0j4.aV)](c[cw(0x3c5)](c['XVfrv'],CAT[cw(a0j4.aW)]),cw(a0j4.H)+cw(0x23a)+'iv><input\x20id=\x22s'+'l_aux_model\x22\x20ty'+'pe=\x22text\x22\x20value'+'=\x22'),escAttr(settings[cw(0x80c)]||''))+c[cw(a0j4.aX)],d)+cw(a0j4.aY),e+=c[cw(a0j4.aZ)](c[cw(0x1d8)](c[cw(a0j4.b0)](c[cw(a0j4.b1)],CAT[cw(0x48a)])+c[cw(0x26b)],escAttr(settings[cw(a0j4.b2)]||''))+c[cw(0x8a1)],d)+cw(0x1e9),e+=cw(a0j4.a1)+cw(0x5da)+cw(a0j4.a2)+cw(0x3af)+'n\x20id=\x22sl_test_a'+'ux\x22\x20style=\x22'+c[cw(a0j4.b3)](sbtn,CAT[cw(a0j4.b4)])+(cw(0x376)+'n><span\x20id=\x22sl_'+cw(a0j4.b5)+cw(0x90c)+cw(a0j4.b6))+CAT[cw(a0j4.aS)]+c[cw(a0j4.b7)],b[cw(0x282)](e),c['pKaRT'](jQuery,c[cw(0x80b)])['on'](cw(0x609),function(){var cx=cw;settings['auxProvider']=jQuery(this)[cx(0x5d9)](),saveSettings();}),c[cw(0x6be)](jQuery,c[cw(0x20a)])['on'](c[cw(0x474)],function(){var cy=cw;settings[cy(a0iy.a)]=c[cy(0x5f8)](jQuery,this)[cy(a0iy.b)](),saveSettings();}),jQuery(c['dDNow'])['on'](c[cw(0x474)],function(){var cz=cw;settings[cz(a0iz.a)]=c['WyeSR'](jQuery,this)[cz(a0iz.b)](),c[cz(0x374)](saveSettings);}),jQuery(c[cw(0x89a)])['on']('change\x20input',function(){var cA=cw;settings['auxModel']=jQuery(this)[cA(0x5d9)](),c[cA(0x374)](saveSettings);}),jQuery(c['mLiqK'])['on'](c['gSvIR'],function(){var cB=cw;settings[cB(0x43b)]=jQuery(this)[cB(0x5d9)](),c[cB(a0iB.a)](saveSettings);}),jQuery(c['vUgCo'])['on'](cw(0x56d),async function(){var cC=cw,g=jQuery(this),i=c[cC(a0iE.a)](jQuery,c[cC(0x601)]);g[cC(a0iE.b)](cC(a0iE.c),!![])[cC(a0iE.d)](c[cC(0x8c6)]);try{var j=c[cC(a0iE.e)]((c[cC(a0iE.f)](jQuery,c['ojRxB'])['val']()||'')[cC(a0iE.g)](/\/+$/,''),c[cC(a0iE.h)]),k=jQuery('#sl_aux_key')['val'](),l={'Content-Type':cC(0x5ab)+'n'};if(k)l[c['OPKMr']]=c[cC(a0iE.i)](cC(0x32f),k);var m=await c[cC(0x849)](fetch,j,{'method':c[cC(a0iE.j)],'headers':l,'body':JSON[cC(a0iE.k)]({'model':jQuery(cC(a0iE.l))['val']()||cC(0x8cd),'messages':[{'role':c['cSomD'],'content':'hi'}],'max_tokens':0x3,'stream':![]})});if(m['ok'])i[cC(0x287)]({'color':CAT[cC(a0iE.m)]})[cC(0x452)](cC(0x7dc)),c['OIayH'](toast,c[cC(a0iE.n)],cC(0x4b5));else{var n=await m[cC(a0iE.d)]()[cC(0x542)](function(){var cD=cC,o={'GtrHX':function(p){return p();}};if(c['GCFcb'](c[cD(a0iD.a)],cD(0x791)))d['stylePreset']=e(this)[cD(a0iD.b)](),o['GtrHX'](f);else return'';});i['css']({'color':CAT[cC(0x741)]})[cC(0x452)](c['sbWhd'](cC(a0iE.o),m[cC(0x90e)])),c[cC(0x849)](toast,cC(a0iE.p),c[cC(0x236)](c[cC(a0iE.q)],m[cC(a0iE.r)]));}}catch(o){if(c[cC(a0iE.s)]!==c[cC(a0iE.t)])i[cC(a0iE.u)]({'color':CAT[cC(a0iE.v)]})[cC(0x452)](o[cC(0x69c)]),toast(cC(0x77f),cC(a0iE.w));else return c[cC(0x393)]+c['radius']+cC(a0iE.x)+d+c[cC(a0iE.y)];}g[cC(a0iE.b)](c['ieGow'],![])[cC(0x452)](c[cC(a0iE.z)]);});}else{if(a===c[cw(0x7fa)]){var e=c[cw(a0j4.b8)](cw(0x2e7)+cw(a0j4.b9)+'\x22><div\x20style=\x22f'+'ont-size:11px;c'+cw(0x8bb)+CAT[cw(0x48a)]+c[cw(a0j4.ba)],c[cw(a0j4.bb)](escAttr,settings[cw(a0j4.bc)]||cw(0x729)+cw(a0j4.bd)))+c[cw(0x8a1)]+d+cw(a0j4.be);e+=c['QlPtq'](c[cw(0x783)](c[cw(a0j4.bf)],c['cjfjC'](sbtn,CAT[cw(0x59f)]))+c[cw(a0j4.bg)],CAT['sub'])+(cw(a0j4.S)+'>'),e+=c[cw(0x7f4)](c[cw(a0j4.bh)](c[cw(0x31d)](c[cw(0x1ce)],escAttr(settings[cw(0x591)]||''))+('\x22\x20placeholder=\x22'+'工作流名称（可选）\x22\x20styl'+cw(a0j4.bi)+cw(0x3fa)+'er:1px\x20solid\x20'),CAT[cw(0x773)])+c[cw(0x673)]+CAT[cw(a0j4.bj)]+cw(a0j4.bk)+CAT[cw(a0j4.bl)],cw(a0j4.bz)),e+=c[cw(a0j4.dn)](c[cw(0x396)](cw(0x1d2)+'play:flex;gap:4'+cw(0x5a0)+cw(a0j4.dp)+cw(a0j4.dq)+cw(0x4c4),c[cw(a0j4.dr)](sbtn,CAT[cw(0x48a)]))+c[cw(0x8fc)]+c[cw(a0j4.ds)](sbtn,CAT['green'])+('font-size:10px;'+'\x22>💾\x20另存</button>'+cw(0x874)+cw(a0j4.dt))+sbtn(CAT[cw(0x741)]),c[cw(a0j4.du)]),e+=c['CLwVn']+CAT['sub']+(';margin-bottom:'+'2px;\x22>工作流\x20JSON<'+'/div>'),e+=c[cw(0x5f6)](c['mHmPp'](c[cw(a0j4.dv)](c['sRrxh'](cw(0x66c)+cw(0x50c)+cw(a0j4.dw)+cw(0x640)+cw(0x4cd)+cw(0x45f),CAT['line']),c[cw(0x531)])+CAT[cw(0x1da)],c[cw(0x4c3)])+CAT[cw(0x452)],cw(a0j4.dx)+'l;box-sizing:bo'+cw(0x304))+c[cw(a0j4.dy)](esc,settings[cw(a0j4.dz)]||'')+c[cw(0x4a7)],e+=c[cw(0x632)](c[cw(0x632)](c[cw(a0j4.aV)](cw(a0j4.dA)+cw(a0j4.dB)+cw(a0j4.dC)+cw(a0j4.dD)+'sl_wf_import_bt'+cw(0x1cd)+c[cw(a0j4.dE)](sbtn,CAT[cw(a0j4.aW)])+c[cw(0x489)],c[cw(a0j4.dF)](sbtn,CAT[cw(a0j4.dG)])),cw(0x38f)+'n><button\x20id=\x22s'+cw(a0j4.dH)+cw(a0j4.dI))+c[cw(a0j4.dJ)](sbtn,CAT[cw(a0j4.dK)])+('\x22>💾\x20保存工作流</butt'+'on><span\x20id=\x22sl'+cw(a0j4.dL)+cw(a0j4.dM)+cw(a0j4.dN))+CAT[cw(0x48a)],';align-self:cen'+cw(0x31e)+cw(a0j4.dO)),e+=c['qrBOf']+CAT[cw(a0j4.aS)]+c[cw(0x703)],e+=c[cw(a0j4.dP)](c['okslM'](c[cw(a0j4.dQ)](cw(0x7fd)+cw(0x8b5)+cw(a0j4.aa)+CAT[cw(a0j4.aS)],c[cw(a0j4.dR)]),d),cw(0x539)+cw(0x84d)+cw(a0j4.dS)+cw(a0j4.dT));for(var f in STYLE_PRESETS){if(c[cw(a0j4.dU)](c[cw(a0j4.dV)],cw(a0j4.dW))){if(f)e+=c['aSTJX'](c['RDSNm'](c[cw(0x87c)](c[cw(0x317)](c[cw(0x42a)](c[cw(0x396)](cw(a0j4.dX),escAttr(f)),'\x22'),settings['stylePreset']===f?c[cw(0x4bb)]:''),'>'),esc(f)),cw(a0j4.dY));}else{var i=d[cw(0x2cc)](e,arguments);return f=null,i;}}e+=c[cw(0x244)],e+=c['bbCKP'](c[cw(0x2bc)](c['ZVZQM'](cw(0x7fd)+cw(0x8b5)+cw(0x7d6),CAT[cw(a0j4.aS)])+(';margin-bottom:'+cw(0x6d1)+'v><input\x20id=\x22sl'+cw(0x2bd)+'t\x22\x20value=\x22')+c[cw(a0j4.dZ)](escAttr,settings[cw(0x453)]||''),'\x22\x20style=\x22')+d,c[cw(a0j4.e0)]),b[cw(0x282)](e),c[cw(0x414)](jQuery,cw(0x28b))['on'](c[cw(0x474)],function(){var cE=cw;settings[cE(0x424)]=c['SBnrY'](jQuery,this)[cE(0x5d9)](),saveSettings();}),c[cw(0x398)](jQuery,cw(a0j4.e1))['on'](c['lkRyZ'],async function(){var a0iJ={a:0x79a,b:0x5fb},cH=cw,i={'QNhYM':function(o,p){var cF=a0f;return c[cF(0x5f8)](o,p);},'rVelD':function(o,p){var cG=a0f;return c[cG(a0iH.a)](o,p);},'VMuDH':c[cH(0x407)],'gqdXW':c['bDboX'],'UEZXi':function(o,p){return o+p;},'ZTLgk':c[cH(0x55f)],'UDDgm':cH(a0iM.a)+cH(a0iM.b)+cH(a0iM.c)+cH(a0iM.d)+'ox-shadow:0\x204px'+cH(a0iM.e)+'0,0.5);\x22></div>'};if(cH(0x518)===cH(0x8d0)){var p=i['rVelD'](m,this)[cH(0x287)](i[cH(a0iM.f)]);if(!p||p===i[cH(a0iM.g)])return;var q=p[cH(a0iM.h)](/^url\(["']?/,'')[cH(a0iM.i)](/["']?\)$/,'');i[cH(0x5dd)](e,i[cH(0x371)](i['ZTLgk']+q,i[cH(0x5b3)]))[cH(a0iM.j)](cH(a0iM.k))['on'](cH(a0iM.l),function(){var cI=cH;i[cI(a0iJ.a)](p,this)[cI(a0iJ.b)]();});}else{var j=jQuery(this),k=c[cH(0x523)](jQuery,cH(0x583)+'s');j[cH(a0iM.m)](c[cH(0x32e)],!![])['text'](cH(0x875));try{var l=await c[cH(0x849)](fetch,c[cH(a0iM.n)],{'method':c[cH(0x32b)],'headers':Object[cH(a0iM.o)]({'Content-Type':c['nzBBI']},getSTHeaders()),'body':JSON[cH(0x508)]({'url':jQuery(cH(a0iM.p))['val']()})});if(l['ok']){if('rkfSl'===cH(0x6e8))return'';else{var m=await l[cH(a0iM.q)]()[cH(0x542)](function(){return{};});k[cH(a0iM.r)]({'color':CAT['green']})['text'](cH(0x27e)+(m[cH(a0iM.s)]?'\x20('+m[cH(0x1f9)]+')':'')),toast(c[cH(a0iM.t)],c[cH(0x229)]);}}else{var n=await l[cH(0x452)]()[cH(0x542)](function(){return'';});k[cH(a0iM.r)]({'color':CAT[cH(a0iM.u)]})[cH(0x452)](c[cH(a0iM.v)](c['FNolh'],l[cH(a0iM.w)])),c['OIayH'](toast,cH(0x77f),cH(a0iM.x)+l[cH(a0iM.y)]);}}catch(q){k[cH(0x287)]({'color':CAT[cH(0x741)]})[cH(a0iM.z)](c[cH(a0iM.A)]),c[cH(0x849)](toast,c[cH(0x5e7)],cH(0x1f7));}j[cH(0x49f)]('disabled',![])['text'](cH(a0iM.B));}}),jQuery('#sl_analyze_wf')['on'](cw(a0j4.D),function(){var cJ=cw,i=c[cJ(0x6f4)](jQuery,c['ujMfd'])[cJ(a0iP.a)]();if(!i){toast(c[cJ(a0iP.b)],c[cJ(0x569)]);return;}try{var j=JSON[cJ(0x5ff)](i),l=[],m={};for(var n in j){var o=j[n];if(!o||!o[cJ(a0iP.c)])continue;l[cJ(a0iP.d)](o[cJ(a0iP.e)]);if(/KSampler/i['test'](o['class_type'])&&o[cJ(a0iP.f)]){if(c['bwVMB'](o['inputs'][cJ(a0iP.g)],null))m[cJ(0x5c0)]=o[cJ(0x2c1)]['steps'];if(c[cJ(a0iP.h)](o['inputs']['cfg'],null))m['cfg']=o[cJ(0x2c1)][cJ(a0iP.i)];if(c[cJ(0x45e)](o[cJ(0x2c1)]['seed'],null))m['seed']=o['inputs'][cJ(a0iP.j)];if(o[cJ(0x2c1)][cJ(a0iP.k)]!=null)m['denoise']=o[cJ(a0iP.l)][cJ(0x4ba)];}if(/EmptyLatent|Latent/i[cJ(0x35b)](o['class_type'])&&o[cJ(a0iP.m)]){if(c[cJ(0x45e)](o[cJ(0x2c1)][cJ(0x2d7)],null))m[cJ(a0iP.n)]=o['inputs']['width'];if(o[cJ(0x2c1)]['height']!=null)m[cJ(0x639)]=o[cJ(0x2c1)][cJ(a0iP.o)];if(o['inputs']['batch_size']!=null)m['batch']=o['inputs'][cJ(a0iP.p)];}}var p=c[cJ(a0iP.q)](c[cJ(a0iP.r)](c[cJ(0x5f6)](cJ(a0iP.s)+'lor:',CAT['green']),cJ(a0iP.t))+l[cJ(a0iP.u)]+c[cJ(0x52c)],l[cJ(0x40a)](function(x){var cK=cJ;return c[cK(a0iN.a)](c[cK(a0iN.b)]+CAT['bg']+c[cK(a0iN.c)],x)+cK(0x837);})[cJ(0x79c)]('\x20')),q='',r=Object[cJ(0x61f)](m);if(r[cJ(a0iP.u)]){var s={'steps':'步数','cfg':cJ(a0iP.v),'seed':'种子','denoise':'降噪','width':'宽度','height':'高度','batch':'批次'};q+='<div\x20style=\x22dis'+cJ(0x1e2)+cJ(a0iP.w)+cJ(0x8df)+'ap:6px;margin-t'+cJ(a0iP.x);for(var t=0x0;t<r[cJ(a0iP.u)];t++){var u=r[t],w=m[u];q+=c[cJ(0x5f6)](c[cJ(a0iP.y)](cJ(a0iP.z)+cJ(a0iP.A)+cJ(0x38e),CAT[cJ(a0iP.B)])+(';margin-bottom:'+cJ(a0iP.C)),c[cJ(a0iP.D)](esc,s[u]||u))+c[cJ(0x427)],q+=c[cJ(a0iP.E)](c[cJ(a0iP.F)](c[cJ(0x301)](c[cJ(0x632)](c[cJ(0x8cb)]+c[cJ(a0iP.G)](escAttr,u)+cJ(0x290),c[cJ(a0iP.H)](escAttr,w))+(cJ(a0iP.I)+'100%;padding:6p'+cJ(0x5c9)+'x\x20solid\x20')+CAT['line'],cJ(0x57b)+'6px;font-size:1'+'2px;background:'),CAT['card']),';color:')+CAT[cJ(a0iP.J)]+c[cJ(a0iP.K)];}q+=c[cJ(0x427)];}else q=c['SBsim'](cJ(0x7fd)+cJ(a0iP.L)+cJ(0x7d6),CAT[cJ(0x8ac)])+c[cJ(a0iP.M)];c[cJ(0x5f8)](jQuery,'#sl_node_list')['html'](c[cJ(0x39e)](p,q)),c['SBnrY'](jQuery,c[cJ(0x2c4)])[cJ(a0iP.N)](c[cJ(a0iP.O)])['on'](cJ(a0iP.P),function(){var cL=cJ;try{var x=c['gBVsN'](jQuery,c[cL(0x87f)])[cL(a0iO.a)](),y=JSON['parse'](x),z=jQuery(this)[cL(a0iO.b)]('pk'),A=c[cL(0x414)](jQuery,this)['val']();for(var B in y){var C=y[B];if(!C||!C[cL(a0iO.c)])continue;var D={'steps':/KSampler/i,'cfg':/KSampler/i,'seed':/KSampler/i,'denoise':/KSampler/i,'width':/EmptyLatent|Latent/i,'height':/EmptyLatent|Latent/i,'batch':/EmptyLatent|Latent/i};if(D[z]&&D[z][cL(0x35b)](C[cL(0x3b4)])&&C['inputs'][z]!=null){C[cL(a0iO.c)][z]=/^\d+$/[cL(0x35b)](A)?parseInt(A):/^\d+\.\d+$/[cL(a0iO.d)](A)?c[cL(0x6f4)](parseFloat,A):A;break;}}jQuery(c[cL(0x87f)])[cL(a0iO.e)](JSON[cL(a0iO.f)](y)),settings[cL(0x2c0)]=JSON[cL(a0iO.g)](y),c[cL(a0iO.h)](saveSettings);}catch(E){}});}catch(x){jQuery(cJ(a0iP.Q))[cJ(a0iP.R)](c[cJ(0x2da)](c[cJ(a0iP.S)](c['uOYBu'](cJ(a0iP.s)+'lor:',CAT[cJ(a0iP.T)]),c['tLulG']),c[cJ(a0iP.U)](esc,x['message']))+cJ(a0iP.V));}}),jQuery(c[cw(0x8c5)])['on'](c[cw(a0j4.e2)],function(){var cM=cw,i=c[cM(a0iQ.a)](jQuery,c['ujMfd'])[cM(a0iQ.b)]();if(!i)return;try{JSON[cM(0x5ff)](i),settings[cM(0x2c0)]=i,c[cM(0x374)](saveSettings),c[cM(a0iQ.c)](toast,c[cM(0x6b6)],c[cM(0x6d0)]);}catch(j){c[cM(a0iQ.c)](toast,c[cM(0x5e7)],c[cM(a0iQ.d)]);}});if(!settings[cw(a0j4.e3)])settings[cw(a0j4.e3)]={};jQuery(c['YZGIu'])['on'](cw(a0j4.e4),function(){var cN=cw,i=c['gSnca']['split']('|'),j=0x0;while(!![]){switch(i[j++]){case'0':var k=c[cN(a0iR.a)](jQuery,cN(0x401))[cN(a0iR.b)]()||c['xtbqI'](cN(a0iR.c),Date[cN(a0iR.d)]());continue;case'1':settings[cN(0x591)]=k;continue;case'2':c[cN(a0iR.e)](saveSettings);continue;case'3':c[cN(a0iR.f)](toast,c[cN(a0iR.g)],c[cN(a0iR.h)](cN(a0iR.i),k));continue;case'4':settings['workflows'][k]=jQuery('#sl_comfy_wf')[cN(a0iR.b)]();continue;}break;}}),jQuery('#sl_wf_load')['on'](cw(a0j4.e5),function(){var cO=cw,i=jQuery(c[cO(a0iS.a)])['val']();settings[cO(a0iS.b)][i]?(c['ZNBot'](jQuery,cO(0x797))['val'](settings[cO(0x338)][i]),toast(cO(a0iS.c),c['hOCuv'](cO(0x598),i))):c[cO(a0iS.d)](toast,'info',c[cO(a0iS.e)]);}),jQuery(c['cfOoY'])['on'](c['lkRyZ'],function(){var cP=cw,i=c[cP(0x898)](jQuery,c['EobeZ'])['val']();settings[cP(0x338)][i]&&(delete settings[cP(0x338)][i],saveSettings(),c[cP(0x6e2)](toast,cP(a0iT.a),c[cP(0x22f)](cP(a0iT.b),i)));}),c[cw(a0j4.e6)](jQuery,'#sl_wf_import_b'+'tn')['on'](c[cw(0x78b)],function(){var cQ=cw;c[cQ(a0iU.a)]!==c[cQ(0x2eb)]?jQuery(c[cQ(0x54c)])[cQ(a0iU.b)](c[cQ(0x78b)]):b(cQ(0x77f),cQ(a0iU.c));}),c[cw(0x3d9)](jQuery,cw(a0j4.C))['on'](c['JHkcg'],function(){var cR=cw,i=this[cR(a0iW.a)][0x0];if(!i)return;var j=new FileReader();j[cR(a0iW.b)]=function(k){var cS=cR;c[cS(0x61e)](c[cS(0x869)],cS(0x7ed))?(c[cS(a0iV.a)](jQuery,c[cS(0x87f)])[cS(a0iV.b)](k[cS(a0iV.c)][cS(0x322)]),c[cS(0x4cb)](toast,cS(a0iV.d),c[cS(a0iV.e)])):c=d();},j[cR(0x3c1)](i);}),c[cw(a0j4.e7)](jQuery,c['sotSp'])['on'](c[cw(a0j4.e8)],function(){settings['stylePreset']=jQuery(this)['val'](),saveSettings();}),c[cw(a0j4.e9)](jQuery,c[cw(0x262)])['on']('change\x20input',function(){var cT=cw;settings[cT(0x453)]=c['rrBqG'](jQuery,this)[cT(0x5d9)](),c[cT(a0iY.a)](saveSettings);});}else{if(c[cw(a0j4.ea)](a,c[cw(0x566)])){if(c['cVNdJ'](c[cw(a0j4.eb)],c[cw(0x39c)])){var e=c[cw(a0j4.ec)](cw(a0j4.ed)+cw(a0j4.ee),CAT[cw(a0j4.bj)])+c[cw(0x7d0)]+CAT[cw(0x773)]+c[cw(0x666)];e+=c[cw(0x3c6)](c[cw(0x317)](c['MerBv'](cw(0x7a5)+cw(a0j4.ef)+cw(a0j4.eg)+cw(0x8ee)+cw(a0j4.eh)+cw(0x5be)+cw(0x66d)+'\x22',settings[cw(0x795)]?cw(a0j4.ei):'')+(cw(0x482)+'ont-size:12px;c'+'olor:'),CAT['text']),c[cw(a0j4.ej)]),e+=c[cw(a0j4.ek)](c[cw(0x88e)](c['QlPtq'](c[cw(0x7dd)](c[cw(0x617)]+(c[cw(a0j4.el)](settings[cw(a0j4.em)],cw(0x335))?cw(0x6ec):''),'><span\x20style=\x22f'+'ont-size:12px;c'+cw(0x8bb)),CAT['text']),c[cw(0x367)]),c[cw(a0j4.en)](settings[cw(a0j4.eo)],c[cw(0x7bc)])?cw(a0j4.ep):'')+c['wMnsW']+CAT[cw(0x452)]+c[cw(0x772)],e+=c[cw(a0j4.eq)](c[cw(a0j4.er)](c[cw(0x8b7)](c[cw(0x2a9)]+CAT[cw(a0j4.bj)],cw(a0j4.a5)+cw(0x25d)+cw(a0j4.es)+cw(0x522)),CAT[cw(a0j4.et)]),c['Arwee']),e+=c[cw(a0j4.eu)](c[cw(a0j4.ev)](c[cw(a0j4.ew)]+(settings['debugMode']?cw(a0j4.ex):'')+(cw(0x482)+'ont-size:12px;c'+cw(a0j4.ey)),CAT[cw(a0j4.bl)]),c[cw(a0j4.ez)]),b['html'](e),jQuery('#sl_nsfw')['on'](cw(a0j4.eA),function(){var cU=cw;if(c[cU(a0iZ.a)](c['GViWa'],cU(a0iZ.b))){var k=d[cU(0x3d4)]();try{g['setItem'](cU(0x3f8),e[cU(0x508)]({'x':k[cU(0x38d)],'y':k['top']}));}catch(l){}}else settings[cU(a0iZ.c)]=jQuery(this)['is'](':checked'),saveSettings();}),c[cw(a0j4.eB)](jQuery,c[cw(0x456)])['on'](c['JHkcg'],function(){var cV=cw;settings[cV(a0j0.a)]=jQuery(this)[cV(0x5d9)](),c[cV(0x88c)](saveSettings);}),c[cw(0x348)](jQuery,c[cw(a0j4.eC)])['on']('change',function(){var cW=cw;settings[cW(0x755)]=jQuery(this)['is'](cW(a0j1.a)),c[cW(0x374)](saveSettings);});}else{var j=g?function(){var cX=cw;if(j){var u=q[cX(a0j2.a)](r,arguments);return s=null,u;}}:function(){};return l=![],j;}}}}}function renderArchiveTab(){var a0jS={a:0x297,b:0x669,c:0x28a,d:0x4ac,e:0x82a,f:0x7c6,g:0x57a,h:0x5a0,i:0x3c9,j:0x4cf,k:0x61c,l:0x794,m:0x8ce,n:0x663,o:0x5d1,p:0x700,q:0x475,r:0x7ce,s:0x3c8,t:0x1d2,u:0x2df,v:0x555,w:0x63c,x:0x62c,y:0x6ff,z:0x3f4,A:0x63c,B:0x8ba,C:0x345,D:0x792,E:0x654,F:0x908,G:0x7d6,H:0x634,I:0x70b,J:0x4ca,K:0x2d0,L:0x25a,M:0x548,N:0x6ff,O:0x814,P:0x626,Q:0x6b0,R:0x4c7,S:0x6eb,T:0x37a,U:0x2a2,V:0x573,W:0x5d3,X:0x59a,Y:0x700,Z:0x6ce,a0:0x293,a1:0x40c,a2:0x701,a3:0x415,a4:0x48a,a5:0x701,a6:0x2ed,a7:0x804,a8:0x365,a9:0x8f4,aa:0x20f,ab:0x27d,ac:0x464,ad:0x85c,ae:0x746,af:0x57b,ag:0x74a,ah:0x706,ai:0x575,aj:0x853,ak:0x30a,al:0x61f,am:0x846,an:0x773,ao:0x5a1,ap:0x435,aq:0x2b5,ar:0x61a,as:0x2cb,at:0x891,au:0x82c,av:0x824,aw:0x1fe,ax:0x59f,ay:0x84e,az:0x30f,aA:0x781,aB:0x7b4,aC:0x285,aD:0x6aa,aE:0x2b4,aF:0x726,aG:0x7fd,aH:0x3b8,aI:0x467,aJ:0x61a,aK:0x6f7,aL:0x8fe,aM:0x4c4,aN:0x63e,aO:0x34c,aP:0x5f3,aQ:0x232,aR:0x4aa,aS:0x764,aT:0x7a2,aU:0x571,aV:0x7c4,aW:0x351,aX:0x700,aY:0x87d,aZ:0x814,b0:0x45d,b1:0x2e3,b2:0x6ba,b3:0x44c,b4:0x636,b5:0x7ac,b6:0x8ea,b7:0x8f5,b8:0x873,b9:0x490,ba:0x1da,bb:0x2cb,bc:0x37a,bd:0x369,be:0x452,bf:0x7fd,bg:0x7d6,bh:0x86d,bi:0x507,bj:0x671,bk:0x63c,bl:0x361,bz:0x5ed,dn:0x391,dp:0x82e,dq:0x513,dr:0x448,ds:0x4db,dt:0x553,du:0x5c4,dv:0x3c2,dw:0x295,dx:0x696,dy:0x83b,dz:0x5f9,dA:0x68a,dB:0x392,dC:0x57b,dD:0x674,dE:0x908,dF:0x48a,dG:0x6c4,dH:0x8ac,dI:0x682,dJ:0x1da,dK:0x39d,dL:0x773,dM:0x733,dN:0x4ad,dO:0x6b8,dP:0x58a,dQ:0x7be,dR:0x2b9,dS:0x40d,dT:0x235,dU:0x773,dV:0x345,dW:0x816,dX:0x509,dY:0x452,dZ:0x1de,e0:0x362,e1:0x4a8},cY=a0bz,a={'SMwwS':function(n,o){return n(o);},'yMZSU':function(n){return n();},'xvenz':function(n,o){return n+o;},'vrRbD':cY(0x70b)+cY(a0jS.a)+'padding:20px;co'+cY(0x4ca),'gIkZX':cY(a0jS.b)+cY(a0jS.c)+cY(a0jS.d)+'天窗口再回来看看吧~</div'+'>','AnVnj':'<div\x20style=\x22dis'+cY(a0jS.e)+cY(0x5a0)+cY(0x6cc)+cY(0x48e)+'\x20','ozFiA':cY(0x25a),'THKTc':cY(a0jS.f)+cY(a0jS.g),'xLagF':function(n,o){return n+o;},'caxSX':cY(0x5ce)+'h_static\x22>','unIdd':function(n,o){return n+o;},'EZqEy':';border-radius:'+cY(0x25b)+cY(a0jS.h)+cY(0x2dd)+'x\x20solid\x20','MmSWf':'<div\x20style=\x22dis'+cY(a0jS.i)+cY(0x6a9)+cY(a0jS.j),'ddoyy':function(n,o){return n+o;},'qpahH':function(n,o){return n+o;},'LIsvu':cY(a0jS.k)+'t_','qQWyw':function(n,o){return n(o);},'qpnCl':cY(a0jS.l)+'80px;height:110'+cY(0x351)+cY(0x64f)+'d:','MeUPZ':cY(a0jS.m)+cY(0x89f)+cY(a0jS.n)+cY(a0jS.o)+cY(0x64d),'xTKYD':cY(a0jS.p)+cY(0x345),'HOfIb':';text-align:cen'+cY(0x759)+cY(0x411),'JWxPx':cY(0x323)+cY(a0jS.q),'CodKq':function(n,o){return n+o;},'fCRfc':cY(a0jS.r)+cY(0x8fb)+cY(0x88d)+cY(0x63b)+';font-size:12px'+';color:','Yxcfk':'</div>','kFGjL':function(n,o){return n+o;},'asBRR':cY(a0jS.s)+cY(0x7b4),'jmewI':function(n,o){return n(o);},'XWnKK':function(n,o){return n>o;},'jFYmZ':function(n,o){return n+o;},'GmATW':function(n,o){return n+o;},'PYeTe':function(n,o){return n+o;},'fRCug':function(n,o){return n(o);},'UEvlJ':function(n,o){return n+o;},'AbNKR':cY(a0jS.t)+cY(0x82a)+cY(a0jS.u)+cY(0x432)+cY(a0jS.v)+cY(0x256)+cY(0x4c7),'eJzEo':function(n,o){return n(o);},'xCfEM':'\x22\x20style=\x22','efwYA':cY(a0jS.w)+cY(0x6b2)+cY(0x2e3)+cY(a0jS.x)+cY(a0jS.y),'hsvaA':cY(a0jS.w)+cY(a0jS.z)+'button\x20class=\x22s'+'l_refine_btn\x22\x20d'+cY(a0jS.y),'QGCHv':function(n,o){return n(o);},'BtZrO':cY(a0jS.A)+cY(0x3e1)+cY(a0jS.B),'diKVw':function(n,o){return n+o;},'YGwPp':function(n,o){return n+o;},'OYzOL':function(n,o){return n+o;},'OImOs':function(n,o){return n+o;},'djphG':function(n,o){return n+o;},'nrLzv':function(n,o){return n+o;},'qfjnX':cY(a0jS.C),'YWEch':cY(a0jS.D)+cY(0x696),'ccblA':cY(0x63c)+'>💾\x20保存</button><'+cY(a0jS.E)+'l_cancel_btn\x22\x20d'+cY(0x6ff),'qbuVP':cY(0x57b)+'6px;background:'+cY(a0jS.F)+cY(a0jS.G),'lwjEc':cY(0x3c7)+cY(a0jS.H)+'/div></div></di'+'v></div></div>','OMOYn':function(n,o){return n+o;},'MGlJp':cY(a0jS.I)+cY(0x297)+cY(0x4b6)+cY(a0jS.J),'rxuKQ':cY(0x77c)+cY(0x697),'cEhhq':cY(0x5ce)+cY(0x429)+cY(a0jS.K)+cY(a0jS.L),'PDDjr':function(n,o){return n+o;},'hlIJS':function(n,o){return n+o;},'gXiDM':cY(0x5e2)+cY(0x7c1),'acsdB':function(n,o){return n+o;},'vrTMO':function(n,o){return n+o;},'mXVcs':cY(0x2c2)+cY(0x8bf)+cY(a0jS.M),'Hvnpj':function(n,o){return n+o;},'vOALu':function(n,o){return n+o;},'qKRXg':'<button\x20class=\x22'+cY(0x899)+cY(0x302),'BVPTo':function(n,o){return n+o;},'lQUoI':function(n,o){return n+o;},'LYYSF':function(n,o){return n+o;},'tgVMJ':function(n,o){return n+o;},'QAShy':function(n,o){return n+o;},'lyGKL':function(n,o){return n+o;},'HdfIk':cY(0x7a2)+cY(0x3bc)+cY(a0jS.N),'Qgoyl':function(n,o){return n(o);},'urOKK':function(n,o){return n(o);},'EUsCb':cY(0x700)+cY(0x2ae),'UVstD':cY(a0jS.O)+'\x20style=\x22display'+':flex;gap:4px;m'+cY(0x6a0)+cY(0x2e3)+'\x22sl_dyn_save_bt'+cY(0x4c7),'alDxd':'font-size:9px;\x22'+cY(a0jS.P)+cY(0x654)+cY(a0jS.Q)+cY(a0jS.R),'YcjfH':cY(0x77c)+cY(a0jS.S)+'>','NbNEo':function(n,o){return n+o;},'NryGZ':'<div\x20style=\x22fon'+cY(a0jS.T)+cY(a0jS.U)+cY(0x4ca),'zWuch':cY(0x3c8)+cY(0x1d5)+cY(a0jS.V),'XwsSW':function(n,o){return n+o;},'kTxNp':function(n,o){return n+o;},'VMDts':function(n,o){return n+o;},'odmEC':function(n,o){return n+o;},'jkXRU':cY(0x3ba)+cY(a0jS.W)+cY(a0jS.X)+cY(0x222)+cY(0x261),'pYLlF':function(n,o){return n(o);},'SQySi':'\x22\x20style=\x22paddin'+cY(0x694)+cY(0x40d)+'rder:1px\x20solid\x20','tjDdE':cY(a0jS.Y)+';width:200px;ba'+cY(a0jS.Z),'HvDXY':';\x22\x20placeholder='+cY(a0jS.a0),'rkSCW':function(n,o){return n+o;},'bOhkY':function(n,o){return n+o;},'oOeyJ':function(n,o){return n(o);},'RZznH':'font-size:10px;'+'\x22>🔍\x20重新扫描角色卡</bu'+cY(0x53b)},b=a['SMwwS'](jQuery,'#sl_panel_body');if(!b[cY(a0jS.a1)])return;var c=a[cY(0x7ee)](getProfiles);if(!c||!c[cY(a0jS.a2)]){b[cY(0x282)](a['xvenz'](a[cY(0x2b5)](a[cY(a0jS.a3)],CAT[cY(a0jS.a4)]),a[cY(0x5a5)]));return;}var d=c[cY(0x6a5)][c[cY(a0jS.a5)]][cY(a0jS.a6)]||{},e=c[cY(0x204)][cY(0x5c5)]||{},f='';f+=a[cY(0x36a)]+CAT['line']+a[cY(0x363)],f+=a[cY(0x2b5)](cY(0x3d8)+'sl_arch_st\x20acti'+cY(a0jS.a7)+cY(a0jS.a8)+'g:8px\x2016px;bord'+cY(0x412)+cY(a0jS.a9)+cY(a0jS.aa)+cY(0x6ab)+cY(a0jS.ab)+cY(a0jS.ac)+':'+CAT[cY(0x59f)],a['THKTc']),f+=a[cY(0x857)]('<button\x20class=\x22'+cY(0x623)+'a-ast=\x221\x22\x20style'+cY(a0jS.ad)+cY(a0jS.ae)+cY(a0jS.af)+cY(0x6f6)+cY(a0jS.ag)+cY(0x5a8)+cY(a0jS.ah)+cY(a0jS.ai)+'arent;color:',CAT[cY(0x48a)])+(cY(a0jS.aj)+cY(a0jS.ak)),f+=a[cY(0x511)];if(Object[cY(a0jS.al)](d)[cY(a0jS.a1)])for(var g in d){var i=d[g],j=i['static']||'',k=i['body']||'',l=i[cY(0x243)]||'';f+=a[cY(0x435)](a[cY(0x2b5)]('<div\x20style=\x22bac'+cY(0x7c1),CAT['card'])+a[cY(a0jS.am)],CAT[cY(a0jS.an)])+';\x22>',f+=a[cY(a0jS.ao)],f+=a[cY(a0jS.ap)](a[cY(a0jS.aq)](a['xvenz'](a[cY(0x2b5)](a[cY(a0jS.ar)](a[cY(a0jS.as)](a['LIsvu'],a[cY(0x34c)](escAttr,g)['replace'](/[^a-zA-Z0-9\u4e00-\u9fff]/g,'_'))+a['qpnCl']+CAT['bg'],a[cY(a0jS.at)]),CAT[cY(0x773)])+a[cY(0x710)]+CAT[cY(0x48a)],a[cY(0x7ea)]),l?a[cY(a0jS.au)]+l+(cY(0x749)+cY(0x54d)+cY(0x7f9)+cY(a0jS.av)+cY(a0jS.aw))+CAT[cY(a0jS.ax)]+(cY(0x89e)+'ent;'):'')+'\x22>'+(l?'':'立绘'),cY(a0jS.ay)),f+=a[cY(a0jS.az)](a[cY(a0jS.aA)],CAT[cY(0x452)])+(cY(0x3c8)+cY(a0jS.aB))+esc(g)+a[cY(0x873)];if(j)f+=a[cY(a0jS.az)](a[cY(a0jS.aC)]('<div\x20style=\x22fon'+cY(a0jS.aD)+'or:',CAT['text']),a[cY(a0jS.aE)])+a[cY(0x7ef)](esc,j)[cY(0x6a4)](0x0,0x78)+(a['XWnKK'](j[cY(0x40c)],0x78)?cY(0x20e):'')+a['Yxcfk'];if(k)f+=a['jFYmZ'](a[cY(a0jS.aF)](a['xvenz'](a[cY(0x4aa)](cY(a0jS.aG)+cY(a0jS.aH)+'r:',CAT[cY(a0jS.a4)]),cY(a0jS.aI)),a[cY(0x4e4)](esc,k)[cY(0x6a4)](0x0,0x3c)),cY(0x84e));f+=a[cY(a0jS.aJ)](a[cY(0x857)](a[cY(0x435)](a[cY(a0jS.aK)](a[cY(a0jS.aK)](a[cY(a0jS.aL)]+a[cY(0x8b6)](escAttr,g)+a['xCfEM'],sbtn(CAT['accent']))+a[cY(0x4bc)],escAttr(g))+cY(a0jS.aM),sbtn(CAT['sub']))+a[cY(a0jS.aN)]+a[cY(0x600)](escAttr,g)+'\x22\x20style=\x22',a[cY(a0jS.aO)](sbtn,CAT['yellow'])),a[cY(0x5e4)]),f+=a[cY(a0jS.aP)](a[cY(a0jS.aQ)](a['PYeTe'](a[cY(a0jS.aR)](a[cY(a0jS.az)](a['OYzOL'](a[cY(0x6b7)](a[cY(0x670)](a[cY(a0jS.aS)](a[cY(0x285)](a['kFGjL'](cY(a0jS.aT)+'edit_box\x22\x20data-'+cY(0x7e3)+escAttr(g),cY(0x2b8)+'y:none;margin-t'+cY(a0jS.aU)+cY(0x829)+'dit_ta\x22\x20data-ch'+cY(0x476)),escAttr(g)),cY(a0jS.l)+cY(0x553)+cY(a0jS.aV)+cY(a0jS.aW)+cY(0x3c2)+'x\x20solid\x20'),CAT[cY(0x773)])+(cY(a0jS.aX)+';background:')+CAT['bg'],a[cY(a0jS.aY)])+CAT[cY(0x452)]+a[cY(0x840)]+esc(j),cY(a0jS.aZ)+cY(0x37f)+cY(a0jS.b0)+cY(0x6a0)+cY(a0jS.b1)+cY(a0jS.b2)+cY(0x6ff)),escAttr(g)),cY(0x4c4))+sbtn(CAT[cY(a0jS.b3)]),a[cY(0x563)]),escAttr(g))+(cY(a0jS.b4)+'ize:9px;padding'+cY(0x68a)+cY(0x392)),CAT[cY(0x773)])+a[cY(0x422)]+CAT['sub']+a[cY(a0jS.b5)];}else f+=a[cY(a0jS.aP)](a[cY(a0jS.b6)](a[cY(0x6c4)],CAT[cY(0x8ac)]),a[cY(a0jS.b7)]);f+=a[cY(a0jS.b8)],f+=a[cY(0x6e3)];if(Object[cY(0x61f)](e)['length'])for(var m in e){if(!e[m])continue;f+=a[cY(a0jS.b9)](a[cY(0x4ef)](a[cY(0x67b)]+CAT[cY(a0jS.ba)],a[cY(0x846)])+CAT[cY(a0jS.an)],a['ozFiA']),f+=a['hlIJS'](a[cY(0x4ef)](a[cY(a0jS.bb)](a[cY(0x6b8)](cY(0x7fd)+cY(a0jS.bc)+cY(a0jS.bd)+cY(0x4ca),CAT[cY(a0jS.be)]),a['asBRR']),a[cY(0x4e4)](esc,m)),'</div>'),f+=a[cY(0x775)](cY(a0jS.bf)+'t-size:10px;col'+cY(a0jS.bg)+CAT[cY(a0jS.be)],a[cY(0x812)])+esc(e[m])+cY(0x84e),f+=a[cY(a0jS.bh)](a[cY(0x670)](a[cY(a0jS.bi)](a[cY(a0jS.bj)],escAttr(m)),cY(0x4c4)),a['SMwwS'](sbtn,CAT[cY(0x48a)]))+(cY(a0jS.bk)+cY(0x1ea)),f+=a['BVPTo'](a[cY(a0jS.bl)](a[cY(0x2cb)](a[cY(a0jS.bz)](a[cY(a0jS.dn)](a['tgVMJ'](a['PDDjr'](a[cY(a0jS.dp)](a[cY(a0jS.b9)](a['GmATW'](a['PYeTe'](a[cY(a0jS.dq)](a[cY(0x8af)],a[cY(0x83b)](escAttr,m))+('\x22\x20style=\x22displa'+'y:none;margin-t'+cY(0x571)+cY(a0jS.dr)+cY(a0jS.ds)+cY(0x4d1))+a[cY(0x33d)](escAttr,m),'\x22\x20style=\x22width:'+cY(a0jS.dt)+cY(a0jS.du)+cY(a0jS.aW)+cY(a0jS.dv)+'x\x20solid\x20'),CAT['line'])+a[cY(a0jS.dw)],CAT['bg']),';color:')+CAT[cY(0x452)],cY(a0jS.D)+cY(a0jS.dx))+esc(e[m]),a[cY(0x331)])+escAttr(m),cY(a0jS.aM))+a[cY(a0jS.dy)](sbtn,CAT[cY(0x44c)]),a[cY(a0jS.dz)])+a[cY(0x34c)](escAttr,m),cY(0x636)+'ize:9px;padding'+cY(a0jS.dA)+cY(a0jS.dB)),CAT['line'])+(cY(a0jS.dC)+cY(a0jS.dD)+cY(a0jS.dE)+cY(a0jS.G))+CAT[cY(a0jS.dF)],cY(0x3c7)+';\x22>取消</button><'+'/div></div></di'+'v>');}else f+=a['unIdd'](a['djphG'](a[cY(a0jS.dG)],CAT[cY(a0jS.dH)]),a['YcjfH']);f+=cY(0x84e),f+=a[cY(a0jS.dI)](a[cY(0x513)](cY(0x5e2)+'kground:'+CAT[cY(a0jS.dJ)],';border-radius:'+'10px;padding:10'+cY(a0jS.dK)+'0px;border:1px\x20'+'solid\x20'),CAT[cY(a0jS.dL)])+';\x22>',f+=a[cY(a0jS.dM)]+CAT['text']+a['zWuch'],f+=a[cY(0x8e0)](a[cY(a0jS.dN)](a['LYYSF'](a[cY(a0jS.dO)](a[cY(0x491)](a[cY(a0jS.aF)](a[cY(a0jS.dP)](a[cY(a0jS.aS)](cY(a0jS.dQ)+'ser_name\x22\x20type='+'\x22text\x22\x20value=\x22',escAttr(settings[cY(a0jS.dR)]||''))+(cY(0x365)+cY(0x694)+cY(a0jS.dS)+cY(a0jS.dT)),CAT[cY(a0jS.dU)])+(cY(0x700)+';width:120px;ba'+cY(0x6ce)),CAT[cY(0x1da)]),cY(a0jS.dV)),CAT[cY(0x452)]),a[cY(a0jS.dW)])+a['pYLlF'](escAttr,settings[cY(0x7b5)]||'')+a[cY(0x805)],CAT[cY(a0jS.an)])+a[cY(a0jS.dX)]+CAT[cY(0x1da)]+a['qfjnX'],CAT[cY(a0jS.dY)])+a[cY(a0jS.dZ)],f+=a['rkSCW'](a[cY(a0jS.e0)](cY(0x874)+cY(0x471)+'\x20style=\x22',a[cY(a0jS.e1)](sbtn,CAT[cY(0x59f)])),a[cY(0x2b0)]),b[cY(0x282)](f),bindArchiveEvents(b);}function bindArchiveEvents(a){var a0ks={a:0x4b5,b:0x541,c:0x1fb,d:0x21b,e:0x647,f:0x8a7,g:0x707,h:0x265,i:0x77f,j:0x5e8,k:0x224,l:0x385,m:0x6c5,n:0x72e,o:0x662,p:0x1e6,q:0x7d1,r:0x76f,s:0x3d3,t:0x510,u:0x7b8,v:0x56d,w:0x66e,x:0x526,y:0x89b,z:0x6fd,A:0x901,B:0x24f,C:0x52d,D:0x56d,E:0x294,F:0x56d,G:0x46e,H:0x779,I:0x56d,J:0x512,K:0x76a},a0kr={a:0x287,b:0x854,c:0x2ec,d:0x77e,e:0x473,f:0x30b,g:0x306,h:0x403},a0kp={a:0x452,b:0x71f,c:0x83c,d:0x76f,e:0x26e,f:0x5b9},a0ko={a:0x2b9,b:0x3ca,c:0x5d0,d:0x5d9},a0kn={a:0x614,b:0x68f,c:0x5d9,d:0x204,e:0x7a9,f:0x5a9,g:0x452,h:0x2b1,i:0x741},a0km={a:0x68f,b:0x8fd,c:0x223,d:0x5ee,e:0x6d3},a0kl={a:0x8c1,b:0x223,c:0x614,d:0x297,e:0x8ac},a0kk={a:0x473},a0ki={a:0x1d1,b:0x6a5,c:0x701,d:0x2ed,e:0x469,f:0x61f,g:0x40c,h:0x450,i:0x29c,j:0x502,k:0x85b,l:0x2cc,m:0x8a7},a0kg={a:0x7e2,b:0x789,c:0x71a,d:0x5d9,e:0x686,f:0x221,g:0x681,h:0x748,i:0x4a1,j:0x76f,k:0x770,l:0x277,m:0x744,n:0x832,o:0x8a7},a0kf={a:0x2aa,b:0x614,c:0x5ee,d:0x6b1,e:0x5d9,f:0x701,g:0x577,h:0x206,i:0x83c,j:0x789},a0kd={a:0x24b,b:0x4da,c:0x1d1,d:0x6d3},a0kc={a:0x68f,b:0x614},a0kb={a:0x76f,b:0x876,c:0x44c,d:0x452,e:0x572,f:0x911,g:0x206,h:0x2ec,i:0x23d,j:0x333,k:0x907},cZ=a0bz,c={'LfSzQ':cZ(a0ks.a),'uKFtJ':cZ(0x876),'kgSco':cZ(a0ks.b),'oAdSq':function(d,e){return d(e);},'FUZds':'#fff','XQRzu':cZ(a0ks.c),'uwvap':function(d,e){return d===e;},'UXdGG':cZ(a0ks.d),'wdSXb':function(d,e){return d+e;},'rdIjC':'char','YLTvi':cZ(0x8d1)+cZ(0x6a1),'hotOh':cZ(0x8aa),'aGwGQ':function(d){return d();},'QFhxZ':cZ(a0ks.e),'hgzHu':cZ(0x78c),'tkHAV':function(d,e){return d+e;},'PJbVv':cZ(a0ks.f),'oFrvF':function(d){return d();},'oSeIf':function(d,e,f){return d(e,f);},'DSdcQ':function(d,e){return d+e;},'OTdbC':cZ(a0ks.g),'KJIBa':cZ(0x2e5),'xpDSn':cZ(a0ks.h),'lmmYP':function(d,e,f){return d(e,f);},'ZipWr':cZ(0x4f1)+cZ(0x79e)+cZ(0x5cd)+cZ(0x6a7)+'l\x20expression','xgbOd':cZ(a0ks.i),'LbXhP':'📷\x20生成立绘','HIkaF':function(d,e,f){return d(e,f);},'KzWer':function(d,e){return d+e;},'IUfwI':function(d,e){return d+e;},'yqqHx':cZ(a0ks.j),'RHvpB':cZ(a0ks.k),'YxXLJ':function(d,e,f){return d(e,f);},'MGUFk':cZ(a0ks.l),'SGyRl':cZ(0x780),'ZfSnv':function(d,e){return d!==e;},'vdTnN':cZ(a0ks.m),'IZxGw':cZ(a0ks.n)+cZ(a0ks.o),'jPkrs':function(d,e){return d+e;},'fxoyE':function(d,e){return d(e);},'JLCqe':cZ(0x397),'sxgCo':cZ(a0ks.p)+cZ(a0ks.q),'GpmdY':cZ(0x848),'jMyMp':cZ(a0ks.r),'xQklC':cZ(a0ks.s),'QabEG':function(d){return d();},'XhmHO':'VnkQv','LxsLY':cZ(a0ks.t),'Tjcoi':cZ(a0ks.u),'MnxwT':'background-imag'+'e','XFZEA':function(d,e){return d(e);},'WUZDr':cZ(0x681),'ldVOG':cZ(a0ks.v),'CTYuT':cZ(0x23d),'dkINm':cZ(0x2cf),'gjRVb':'.sl_dyn_cancel_'+cZ(a0ks.w),'SjzPc':cZ(a0ks.x)+'n','jSOua':cZ(0x838),'PlBwX':cZ(a0ks.y)+cZ(0x620),'fqFnK':cZ(0x512)+cZ(0x228),'BJfVw':'[id^=sl_port_]'};a[cZ(a0ks.z)](c[cZ(a0ks.A)],c[cZ(0x4b2)])['on'](cZ(0x56d),c[cZ(0x4b2)],function(){var d0=cZ,d={'sawVv':d0(a0kb.a),'NMxFM':c[d0(0x431)]};if(d0(a0kb.b)!==c[d0(0x4bf)])d['css']({'color':e[d0(a0kb.c)]})[d0(a0kb.d)](d0(0x7dc)),f(d[d0(a0kb.e)],d[d0(a0kb.f)]);else{var e=c[d0(0x446)][d0(a0kb.g)]('|'),f=0x0;while(!![]){switch(e[f++]){case'0':c['oAdSq'](jQuery,this)[d0(0x287)]({'background':CAT['accent'],'color':c['FUZds'],'fontWeight':d0(0x8fa)});continue;case'1':a[d0(0x68f)](c[d0(0x479)])[d0(0x30c)](c[d0(a0kb.h)](g,0x0));continue;case'2':a[d0(0x68f)](d0(a0kb.i))['css']({'background':c[d0(a0kb.j)],'color':CAT[d0(0x48a)],'fontWeight':d0(a0kb.k)});continue;case'3':var g=parseInt(jQuery(this)[d0(0x614)]('ast'));continue;case'4':a[d0(0x68f)]('#sl_arch_dynami'+'c')[d0(0x30c)](g===0x1);continue;}break;}}}),a['off'](cZ(0x56d),cZ(0x24f))['on'](c[cZ(0x901)],cZ(a0ks.B),function(){var d1=cZ;a[d1(a0kc.a)](d1(0x278)+d1(0x4da)+jQuery(this)[d1(a0kc.b)]('char')+'\x27]')['toggle']();}),a[cZ(0x6fd)]('click',cZ(0x341))['on'](cZ(a0ks.v),cZ(0x341),function(){var d2=cZ;a['find'](c[d2(a0kd.a)]('.sl_edit_box[da'+d2(a0kd.b)+jQuery(this)[d2(0x614)](d2(a0kd.c)),'\x27]'))[d2(a0kd.d)]();}),a['off'](c['ldVOG'],cZ(0x2cf))['on'](c[cZ(0x901)],c[cZ(a0ks.C)],function(){var a0ke={a:0x24b},d4=cZ,d={'zAcNK':function(j,k){var d3=a0f;return c[d3(a0ke.a)](j,k);}};if(d4(a0kf.a)===d4(0x2aa)){var e=jQuery(this)[d4(a0kf.b)](c[d4(a0kf.c)]),f=a[d4(0x68f)](c[d4(0x24b)](c[d4(a0kf.d)],e)+'\x27]')[d4(a0kf.e)](),g=getProfiles();if(g&&g[d4(0x6a5)][g[d4(0x701)]]&&g[d4(0x6a5)][g[d4(0x701)]][d4(0x2ed)]&&g[d4(0x6a5)][g[d4(a0kf.f)]]['cast'][e]){var h=c[d4(a0kf.g)][d4(a0kf.h)]('|'),i=0x0;while(!![]){switch(h[i++]){case'0':c['aGwGQ'](saveSettings);continue;case'1':c[d4(a0kf.i)](renderArchiveTab);continue;case'2':g['root'][g[d4(a0kf.f)]]['cast'][e][d4(0x748)]=f[d4(0x5a2)](0x0,0x50);continue;case'3':g['root'][g[d4(a0kf.f)]]['cast'][e][d4(a0kf.j)]=f;continue;case'4':toast('success',e+c[d4(0x315)]);continue;}break;}}}else{if(!i)return;j[d4(0x287)]({'left':d[d4(0x5d5)](d['zAcNK'](k,l[d4(0x70e)])-m,'px'),'top':d[d4(0x5d5)](n,o['clientY'])-p+'px'});}}),a[cZ(0x6fd)](c['ldVOG'],cZ(0x2f0))['on'](cZ(a0ks.D),'.sl_refine_btn',async function(){var d5=cZ,d=jQuery(this)[d5(0x614)]('char'),f=c[d5(a0kg.a)](jQuery,this),g=c[d5(0x83c)](getProfiles),h=g&&g[d5(0x6a5)][g['charName']]&&g[d5(0x6a5)][g[d5(0x701)]]['cast'];if(!h||!h[d]){toast(d5(0x77f),c[d5(0x8be)]);return;}var i=h[d][d5(a0kg.b)]||'',j=a[d5(0x68f)](c[d5(a0kg.c)](d5(0x8d1)+d5(0x6a1),d)+'\x27]')[d5(a0kg.d)]()||i;f['prop'](c[d5(a0kg.e)],!![])[d5(0x452)](d5(a0kg.f));try{var k=await refineStaticProfile(g['charName'],d,i,j);k?(h[d]['static']=k[d5(0x35f)],h[d][d5(a0kg.g)]=k['body'],h[d][d5(a0kg.h)]=k['rigid']['slice'](0x0,0x50),c[d5(a0kg.i)](saveSettings),c['oSeIf'](toast,d5(a0kg.j),c['DSdcQ'](d,c[d5(a0kg.k)])),c[d5(0x4a1)](renderArchiveTab)):c[d5(a0kg.l)](toast,d5(0x77f),d5(a0kg.m));}catch(l){c['oSeIf'](toast,d5(0x77f),c[d5(a0kg.n)]);}f[d5(0x49f)](d5(a0kg.o),![])[d5(0x452)](c[d5(0x886)]);}),a[cZ(a0ks.z)](cZ(0x56d),cZ(a0ks.E))['on'](c[cZ(0x901)],cZ(a0ks.E),async function(){var d6=cZ,d=jQuery(this)[d6(0x614)](d6(a0ki.a)),f=jQuery(this),g=c['aGwGQ'](getProfiles),h=g&&g[d6(a0ki.b)][g[d6(a0ki.c)]]&&g['root'][g['charName']][d6(a0ki.d)];if(!h||!h[d]||!h[d][d6(0x789)]){c['lmmYP'](toast,d6(0x77f),d6(0x568));return;}var i=h[d][d6(0x789)],j=h[d][d6(0x681)]||'',k=i+(j?',\x20'+j:'')+c[d6(a0ki.e)];f[d6(0x49f)](c[d6(0x686)],!![])['text'](d6(0x660));try{var l=JSON['parse'](settings['cWf']||'{}');if(!Object[d6(a0ki.f)](l)[d6(a0ki.g)]){toast(c[d6(0x530)],'工作流空空如也喵~'),f[d6(0x49f)]('disabled',![])['text'](c[d6(0x4dd)]);return;}var m=await c[d6(a0ki.h)](generateImage,l,k);m&&m[d6(a0ki.i)]&&(h[d][d6(0x243)]=m[d6(0x29c)],saveSettings(),a['find'](c[d6(0x3d5)](d6(0x684),d['replace'](/[^a-zA-Z0-9\u4e00-\u9fff]/g,'_')))[d6(0x287)]({'backgroundImage':c['KzWer'](c['IUfwI']('url(',m[d6(0x29c)]),')'),'backgroundSize':c[d6(0x841)],'backgroundPosition':d6(0x8dd),'border':c[d6(0x808)]+CAT['accent'],'color':'transparent'})['html'](''),c['YxXLJ'](toast,'success',d+c[d6(0x605)]));}catch(n){if('IgrfT'!==d6(0x2ad))c['lmmYP'](toast,c[d6(0x530)],c[d6(a0ki.j)]);else return function(p){}[d6(0x4d5)](d6(a0ki.k))[d6(a0ki.l)]('counter');}f['prop'](d6(a0ki.m),![])[d6(0x452)](c[d6(0x4dd)]);}),a[cZ(a0ks.z)](cZ(a0ks.F),'.sl_dyn_edit_bt'+'n')['on'](c[cZ(0x901)],'.sl_dyn_edit_bt'+'n',function(){var d8=cZ,d={'gIAFv':function(e,f){return e+f;},'QQqQc':function(e,f){var d7=a0f;return c[d7(a0kk.a)](e,f);},'XrgxO':d8(0x77c)+';\x22>还没扫描喵~</div>'};c[d8(0x6d2)](c[d8(a0kl.a)],d8(0x638))?a[d8(0x68f)](c[d8(a0kl.b)]+jQuery(this)[d8(a0kl.c)]('char')+'\x27]')['toggle']():c+=d[d8(0x7c2)](d[d8(0x352)](d8(0x70b)+d8(a0kl.d)+d8(0x4b6)+d8(0x4ca),d[d8(a0kl.e)]),d['XrgxO']);}),a[cZ(0x6fd)](cZ(a0ks.F),c[cZ(a0ks.G)])['on'](c[cZ(0x901)],cZ(0x60a)+cZ(0x66e),function(){var d9=cZ;a[d9(a0km.a)](c[d9(0x643)](c[d9(a0km.b)](c[d9(a0km.c)],jQuery(this)[d9(0x614)](c[d9(a0km.d)])),'\x27]'))[d9(a0km.e)]();}),a[cZ(0x6fd)](c[cZ(0x901)],c[cZ(a0ks.H)])['on'](c[cZ(a0ks.A)],cZ(0x526)+'n',function(){var da=cZ,d=c['fxoyE'](jQuery,this)[da(a0kn.a)]('char'),e=a[da(a0kn.b)](c['sxgCo']+d+'\x27]')[da(a0kn.c)](),f=c[da(0x4a1)](getProfiles);f&&f['chat']&&f[da(a0kn.d)]['dynamics']&&('ZHwiX'===c[da(a0kn.e)]?(f[da(0x204)]['dynamics'][d]=e,saveSettings(),c[da(0x450)](toast,c[da(0x299)],d+'\x20动态保存啦喵~\x20✨'),renderArchiveTab()):(c[da(a0kn.f)](d,'#sl_comp_profil'+'e')[da(a0kn.g)](c[da(a0kn.h)])[da(0x287)](da(0x4d6),e[da(a0kn.i)])[da(0x4f4)](),f(da(0x6bb))[da(0x4f4)]()));}),a['off'](c[cZ(0x80a)],c['PlBwX'])['on'](c['jSOua'],c['PlBwX'],function(){var db=cZ;settings[db(a0ko.a)]=a['find'](c[db(a0ko.b)])[db(0x5d9)](),settings['userDesc']=a['find'](db(a0ko.c))[db(a0ko.d)](),c[db(0x26e)](saveSettings);}),a['off'](cZ(a0ks.I),c[cZ(0x7b7)])['on'](cZ(0x56d),cZ(a0ks.J)+cZ(0x228),async function(){var dc=cZ;if(dc(0x546)===c[dc(0x7de)])return![];else{var d=c[dc(0x5a9)](jQuery,this);d['prop'](c['PJbVv'],!![])[dc(a0kp.a)](dc(a0kp.b));try{await c[dc(a0kp.c)](scanCharacterProfile),c['lmmYP'](toast,dc(a0kp.d),c[dc(0x202)]),c[dc(a0kp.e)](renderArchiveTab),refreshCompactBar();}catch(g){c[dc(0x277)](toast,c[dc(0x530)],c[dc(0x8a6)]);}d[dc(0x49f)](dc(0x8a7),![])['text'](dc(a0kp.f));}}),a['off']('click',c[cZ(a0ks.K)])['on'](cZ(a0ks.I),c[cZ(a0ks.K)],function(){var dd=cZ,d=c['oAdSq'](jQuery,this)[dd(a0kr.a)](c[dd(a0kr.b)]);if(!d||c[dd(a0kr.c)](d,'none'))return;var e=d[dd(0x77e)](/^url\(["']?/,'')[dd(a0kr.d)](/["']?\)$/,'');c['XFZEA'](jQuery,c[dd(a0kr.e)]('<div\x20style=\x22pos'+'ition:fixed;z-i'+dd(0x213)+dd(0x7d5)+'100%;height:100'+dd(0x21c)+'ba(0,0,0,0.85);'+dd(0x3e6)+dd(a0kr.f)+dd(a0kr.g)+'nt:center;curso'+'r:pointer;\x22><im'+'g\x20src=\x22',e)+(dd(0x5c6)+'dth:90vw;max-he'+'ight:90vh;borde'+dd(0x8d7)+'ox-shadow:0\x204px'+'\x2030px\x20rgba(0,0,'+dd(a0kr.h)))['appendTo'](c[dd(0x1ff)])['on'](c['ldVOG'],function(){var de=dd;c['oAdSq'](jQuery,this)[de(0x5fb)]();});});}function showLogViewer(){var a0kD={a:0x826,b:0x728,c:0x233,d:0x7d5,e:0x4d0,f:0x21c,g:0x57b,h:0x47f,i:0x82d,j:0x5af,k:0x25a,l:0x2e8,m:0x373,n:0x1d2,o:0x5e3,p:0x83e,q:0x56a,r:0x461,s:0x3b1,t:0x457,u:0x3c7,v:0x345,w:0x2c2,x:0x1da,y:0x4fa,z:0x319,A:0x73c,B:0x6c2,C:0x343,D:0x8b0,E:0x413,F:0x452,G:0x8b9,H:0x687,I:0x7ce,J:0x866,K:0x390,L:0x452,M:0x6dd,N:0x5cb,O:0x573,P:0x210,Q:0x56d,R:0x543,S:0x2fd,T:0x7db},a0kB={a:0x481},a0kA={a:0x737,b:0x61f,c:0x2ed,d:0x40c},df=a0bz,a={'uJzyc':df(a0kD.a),'LDMSy':df(0x564),'KPOxa':function(e,f,g){return e(f,g);},'ghwVw':df(a0kD.b),'GrVdJ':function(e){return e();},'LzSKq':df(0x274),'qxoVs':df(0x867)+df(a0kD.c)+df(0x648)+df(a0kD.d)+df(a0kD.e)+df(a0kD.f)+df(0x84c)+df(0x558)+df(0x3fc)+';justify-conten'+df(0x32d),'mwOxr':function(e,f){return e+f;},'PlMio':df(a0kD.g),'iIDtH':df(a0kD.h)+df(a0kD.i)+df(0x885)+'isplay:flex;fle'+df(a0kD.j)+df(0x485)+df(0x2a8)+':0\x208px\x2040px\x20rgb'+'a(0,0,0,0.3);\x22>','yGXeF':df(a0kD.k),'BMINq':function(e,f){return e+f;},'ToZLj':function(e,f){return e+f;},'adOiz':df(a0kD.l),'CjaQY':df(a0kD.m),'pdYex':df(a0kD.n)+df(a0kD.o)+df(a0kD.p)+df(0x711)+df(a0kD.q),'lRTsp':function(e,f){return e(f);},'YiBlH':df(0x1db)+df(a0kD.r)+df(0x874)+'log_close\x22\x20styl'+df(a0kD.s)+df(a0kD.t)+df(a0kD.u)+';font-size:18px'+df(a0kD.v),'XWsRT':df(a0kD.w)+'e-wrap;line-hei'+df(0x21d),'DUPLu':function(e,f){return e(f);},'btdRu':df(0x56d)},b=a['GrVdJ'](slLogDump)||a[df(0x69b)],c=a[df(0x912)];c+=a[df(0x319)]('<div\x20style=\x22bac'+'kground:',CAT[df(a0kD.x)])+a[df(a0kD.y)]+CAT[df(0x39a)]+a[df(0x47c)],c+=a[df(a0kD.z)](df(0x1d2)+df(a0kD.A)+df(a0kD.B)+df(a0kD.C)+df(0x856)+'adding:12px\x2016p'+df(0x914)+df(0x22c),CAT[df(0x773)])+a[df(0x51a)],c+=a[df(0x259)](a[df(a0kD.z)](a['ToZLj'](df(a0kD.D)+df(a0kD.E)+'ont-size:14px;c'+df(0x8bb),CAT[df(a0kD.F)]),a[df(a0kD.G)])+getLogCount(),a[df(a0kD.H)]),c+=a[df(0x483)]+a['lRTsp'](sbtn,CAT['red'])+a[df(0x60c)]+CAT[df(0x8ac)]+(df(0x34a)+df(0x581)),c+=a['mwOxr'](a[df(0x739)](df(a0kD.I)+df(0x416)+'auto;padding:12'+df(a0kD.J)+df(0x455)+df(a0kD.K)+':'+CAT[df(a0kD.L)],a[df(a0kD.M)]),esc(b))+(df(a0kD.N)+df(a0kD.O));var d=a[df(0x543)](jQuery,c)[df(a0kD.P)](df(0x681));a['DUPLu'](jQuery,'#sl_log_close')['on'](df(a0kD.Q),function(){var dg=df;if(a[dg(a0kA.a)]!==a['LDMSy'])d[dg(0x5fb)]();else try{var f=i['parse'](j['sillab_settings']),g=f['profiles']||{},i=k[dg(a0kA.b)](g)[0x0];return i&&g[i]&&l[dg(0x61f)](g[i][dg(a0kA.c)]||{})[dg(a0kA.d)]>0x0;}catch(j){return![];}}),a[df(a0kD.R)](jQuery,df(a0kD.S))['on'](a[df(a0kD.T)],function(){var dh=df;slClearLogs(),d[dh(0x5fb)](),a['KPOxa'](toast,dh(0x76f),a[dh(a0kB.a)]);}),d['on']('click',function(f){var di=df;if(f[di(0x6c6)]===this)d[di(0x5fb)]();});}export function buildUI(a){var dj=a0bz,b={'yAAUj':function(c,d){return c(d);}};b[dj(0x80f)](slLog,dj(0x66a)+'tart');if(settings[dj(0x47a)])b[dj(0x80f)](applyTheme,settings[dj(0x47a)]);createCompactBar(),createExpandedPanel();}function a0a(a){var a0kR={a:0x2b3,b:0x803,c:0x839,d:0x6ea},a0kQ={a:0x570,b:0x80d,c:0x70c,d:0x386,e:0x2cc,f:0x844,g:0x5ca,h:0x702,i:0x4d5,j:0x881,k:0x40f,l:0x2cc,m:0x410},dk=a0bz,b={'XIKTb':function(d){return d();},'toNcA':dk(0x2d2),'PxGKB':dk(a0kR.a),'ITVhQ':dk(a0kR.b),'ewOtT':dk(0x628),'lYdWS':dk(0x85b),'lshlY':function(d,e){return d+e;},'lmddX':function(d,e){return d/e;},'uarCA':function(d,e){return d%e;},'Xikan':dk(a0kR.c),'NZWsj':dk(a0kR.d),'KRSDE':'action','XeFPo':function(d,e){return d+e;},'AbdGb':function(d,e){return d(e);}};function c(d){var dl=dk;if(typeof d===b['PxGKB']){if(b[dl(a0kQ.a)]===b[dl(a0kQ.b)])b[dl(a0kQ.c)](b);else return function(f){}[dl(0x4d5)](b[dl(a0kQ.d)])[dl(a0kQ.e)](dl(0x8da));}else b[dl(a0kQ.f)]('',b[dl(a0kQ.g)](d,d))['length']!==0x1||b[dl(a0kQ.h)](d,0x14)===0x0?function(){var dm=dl,f={'oiWMU':function(g){return g();}};if(dm(0x2d2)===b['toNcA'])return!![];else c=f['oiWMU'](d);}[dl(a0kQ.i)](b[dl(0x844)](b[dl(0x8ad)],b[dl(a0kQ.j)]))['call'](b[dl(0x860)]):function(){return![];}['constructor'](b[dl(a0kQ.k)](b[dl(0x8ad)],b[dl(0x881)]))[dl(a0kQ.l)]('stateObject');b[dl(a0kQ.m)](c,++d);}try{if(a)return c;else b[dk(0x410)](c,0x0);}catch(d){}}
+// ===================================================
+//  偷懒小猫 v2.1 — 三Tab面板 + 可拖动状态条
+// ===================================================
+
+import { slLog, slErr, slLogDump, getLogCount, slClearLogs } from "./log.js";
+import {
+  settings,
+  getDefaults,
+  COLORS,
+  INPUT_STYLE,
+  BUTTON_STYLE,
+  getSTContext,
+  getSTHeaders,
+  escapeHtml,
+  saveSettings,
+} from "./settings.js";
+import {
+  loadWorkflowList,
+  loadWorkflow,
+  saveWorkflow,
+  deleteWorkflow,
+  fetchComfyModels,
+  generateImage,
+  STYLE_PRESETS,
+} from "./comfyui.js";
+import {
+  getProfiles,
+  scanCharacterProfile,
+  getCharacterName,
+  deleteCharacterProfile,
+  refineStaticProfile,
+} from "./pipeline.js";
+import { hasCastCache, stopPolling, getScannerStatus } from "./scanner.js";
+function chkProf() {
+  try {
+    var s = JSON.parse(localStorage.sillab_settings);
+    var pf = s.profiles || {};
+    var cn = Object.keys(pf)[0];
+    return cn && pf[cn] && Object.keys(pf[cn].cast || {}).length > 0;
+  } catch (e) {
+    return false;
+  }
+}
+
+import { getQueueLength, clearQueue } from "./queue.js";
+
+var CAT_THEMES = {
+  暖色猫窝: {
+    bg: "#fff8f0",
+    card: "#ffffff",
+    accent: "#f0834c",
+    text: "#3d2b1f",
+    sub: "#8c6e5a",
+    mute: "#bfa894",
+    line: "#e8d5c4",
+    green: "#5fa88c",
+    red: "#e05555",
+    yellow: "#e8a840",
+    shadow: "0 2px 16px rgba(100,60,30,0.10)",
+    radius: "14px",
+    font: '"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif',
+    borderStyle: "1px solid",
+  },
+  暗夜模式: {
+    bg: "#1a1a2e",
+    card: "#252540",
+    accent: "#f0834c",
+    text: "#e0e0e0",
+    sub: "#999",
+    mute: "#666",
+    line: "#333366",
+    green: "#5fa88c",
+    red: "#e05555",
+    yellow: "#e8a840",
+    shadow: "0 2px 16px rgba(0,0,0,0.4)",
+    radius: "12px",
+    font: '"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif',
+    borderStyle: "1px solid",
+  },
+  古籍书卷: {
+    bg: "#f5f0e8",
+    card: "#faf7f0",
+    accent: "#5c6b7a",
+    text: "#2c1810",
+    sub: "#6b5a4e",
+    mute: "#a89880",
+    line: "#c8b8a0",
+    green: "#4a7c59",
+    red: "#a04040",
+    yellow: "#c09050",
+    shadow: "0 1px 8px rgba(60,40,20,0.08)",
+    radius: "2px",
+    font: '"Noto Serif SC","SimSun","KaiTi",serif',
+    borderStyle: "1px dashed",
+  },
+  赛博朋克: {
+    bg: "#0a0a0a",
+    card: "#111118",
+    accent: "#00ffcc",
+    text: "#ccffcc",
+    sub: "#66aa66",
+    mute: "#336633",
+    line: "#00ffcc",
+    green: "#00ff66",
+    red: "#ff3366",
+    yellow: "#ffcc00",
+    shadow: "0 0 20px rgba(0,255,204,0.3)",
+    radius: "4px",
+    font: '"Consolas","Fira Code","Microsoft YaHei",monospace',
+    borderStyle: "2px solid",
+  },
+  樱花物语: {
+    bg: "#fff0f5",
+    card: "#ffffff",
+    accent: "#ff8fab",
+    text: "#4a2030",
+    sub: "#8b6070",
+    mute: "#c0a0b0",
+    line: "#ffcdd8",
+    green: "#7fa88c",
+    red: "#d06070",
+    yellow: "#e8b060",
+    shadow: "0 2px 14px rgba(200,100,130,0.12)",
+    radius: "18px",
+    font: '"Noto Sans SC","PingFang SC",sans-serif',
+    borderStyle: "1px dotted",
+  },
+  午夜星空: {
+    bg: "#0d1b2a",
+    card: "#1b2838",
+    accent: "#ffd700",
+    text: "#e8e8f0",
+    sub: "#8899aa",
+    mute: "#556677",
+    line: "#1e3a5f",
+    green: "#4ea8a0",
+    red: "#c06060",
+    yellow: "#e8c040",
+    shadow: "0 0 12px rgba(100,150,255,0.15)",
+    radius: "10px",
+    font: '"Noto Sans SC","PingFang SC",sans-serif',
+    borderStyle: "1px solid",
+  },
+  极简素白: {
+    bg: "#fafafa",
+    card: "#ffffff",
+    accent: "#333333",
+    text: "#1a1a1a",
+    sub: "#666666",
+    mute: "#aaaaaa",
+    line: "#e0e0e0",
+    green: "#4a8c6a",
+    red: "#c04040",
+    yellow: "#c08040",
+    shadow: "0 1px 4px rgba(0,0,0,0.06)",
+    radius: "6px",
+    font: '"Helvetica Neue","PingFang SC",sans-serif',
+    borderStyle: "1px solid",
+  },
+};
+var CAT = CAT_THEMES["暖色猫窝"];
+var TEXT_THEMES = {
+  "\u9ed8\u8ba4": {
+    font: "inherit",
+    lineHeight: "1.6",
+    color: "inherit",
+    bg: "transparent",
+    fontSize: "inherit",
+  },
+  "\u8212\u9002\u9605\u8bfb": {
+    font: '"Noto Serif SC","SimSun",serif',
+    lineHeight: "2.0",
+    color: "#3d2b1f",
+    bg: "#fffaf5",
+    fontSize: "15px",
+  },
+  "\u7d27\u51d1\u6a21\u5f0f": {
+    font: '"Noto Sans SC",sans-serif',
+    lineHeight: "1.4",
+    color: "#1a1a1a",
+    bg: "transparent",
+    fontSize: "13px",
+  },
+  "\u6697\u7eb8\u62a4\u773c": {
+    font: "inherit",
+    lineHeight: "1.7",
+    color: "#d0d0d0",
+    bg: "#1e1e1e",
+    fontSize: "inherit",
+  },
+  "\u590d\u53e4\u4fe1\u7b3a": {
+    font: '"KaiTi","STKaiti",serif',
+    lineHeight: "1.8",
+    color: "#2c1810",
+    bg: "#faf3e0",
+    fontSize: "15px",
+  },
+  "\u8d5b\u535a\u7ec8\u7aef": {
+    font: '"Consolas","Courier New",monospace',
+    lineHeight: "1.5",
+    color: "#00ff66",
+    bg: "#0a0a0a",
+    fontSize: "13px",
+  },
+  "\u6253\u5b57\u673a": {
+    font: '"Courier Prime","Courier New",monospace',
+    lineHeight: "1.7",
+    color: "#1a1a1a",
+    bg: "#fafaf5",
+    fontSize: "14px",
+  },
+};
+function applyTheme(n) {
+  CAT = CAT_THEMES[n] || CAT_THEMES["暖色猫窝"];
+}
+function catFace(s) {
+  return (
+    {
+      idle: "=^_^=",
+      scanning: "o_o",
+      queuing: "^_^",
+      busy: "*o*",
+      error: ">_<",
+    }[s] || "=^_^="
+  );
+}
+function toast(t, m) {
+  try {
+    if (typeof toastr !== "undefined") {
+      var faces = {
+        success: "=^_^= ",
+        info: "(=^_^=) ",
+        warning: "(T_T) ",
+        error: "(x_x) ",
+      };
+      toastr[t](faces[t] || "") + m;
+    } else console.log("[sillab]", t, m);
+  } catch (e) {
+    console.log("[sillab]", t, m);
+  }
+}
+function esc(s) {
+  if (!s) return "";
+  var d = document.createElement("div");
+  d.textContent = s;
+  return d.innerHTML;
+}
+function escAttr(s) {
+  if (!s) return "";
+  return ("" + s)
+    .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+function sbtn(c) {
+  return (
+    "padding:8px 16px;border:none;border-radius:" +
+    CAT.radius +
+    ";background:" +
+    c +
+    ";color:#fff;cursor:pointer;font-size:12px;font-weight:600;"
+  );
+}
+function fiStyle() {
+  return (
+    "width:100%;padding:8px 10px;border:" +
+    CAT.borderStyle +
+    " " +
+    CAT.line +
+    ";border-radius:8px;background:" +
+    CAT.card +
+    ";font-size:12px;color:" +
+    CAT.text +
+    ";box-sizing:border-box;outline:none;"
+  );
+}
+var _panelEl = null,
+  _compactEl = null,
+  _expandedVisible = false,
+  _compactTimer = null,
+  _compDragMoved = false;
+
+function createCompactBar() {
+  if (_compactEl && _compactEl.parent().length) return;
+  var saved = { x: null, y: null };
+  try {
+    var s = localStorage.getItem("sl_compact_pos");
+    if (s) saved = JSON.parse(s);
+  } catch (e) {}
+  var x = saved.x || null,
+    y = saved.y || null,
+    l = x != null ? x + "px" : "auto",
+    t = y != null ? y + "px" : "auto",
+    r = x != null ? "auto" : "16px",
+    b = y != null ? "auto" : "16px",
+    W = 320,
+    H = Math.round(W * 0.75);
+  var bar =
+    '<div id="sl_compact" style="position:fixed;z-index:30000;bottom:' +
+    b +
+    ";right:" +
+    r +
+    ";left:" +
+    l +
+    ";top:" +
+    t +
+    ";width:" +
+    W +
+    "px;height:" +
+    H +
+    "px;background:" +
+    CAT.card +
+    ";border-radius:" +
+    CAT.radius +
+    ";box-shadow:" +
+    CAT.shadow +
+    ";border:" +
+    CAT.borderStyle +
+    " " +
+    CAT.line +
+    ";font-family:" +
+    CAT.font +
+    ";font-size:12px;color:" +
+    CAT.text +
+    ';user-select:none;overflow:hidden;display:flex;flex-direction:column;">';
+  bar +=
+    '<div id="sl_comp_header" style="display:flex;align-items:center;padding:10px 12px 8px;cursor:move;border-bottom:1px solid ' +
+    CAT.line +
+    ';gap:8px;flex-shrink:0;height:20%;"><span id="sl_cat_icon" style="font-size:20px;line-height:1;pointer-events:none;">=^_^=</span><span style="font-weight:700;font-size:13px;flex:1;pointer-events:none;">偷懒小猫</span><button id="sl_comp_panel_btn" style="border:none;background:none;cursor:pointer;font-size:16px;color:' +
+    CAT.sub +
+    ';padding:2px 4px;">📋</button></div>';
+  bar +=
+    '<div style="display:flex;align-items:center;gap:4px;flex-wrap:wrap;padding:0 12px;border-bottom:1px solid ' +
+    CAT.line +
+    ';flex-shrink:0;height:20%;"><span id="sl_comp_char" style="font-size:12px;color:' +
+    CAT.text +
+    ';font-weight:600;">--</span><span id="sl_comp_model" style="font-size:10px;color:' +
+    CAT.accent +
+    ';"></span><span id="sl_comp_profile" style="font-size:10px;"></span><button id="sl_comp_scan" style="display:none;font-size:10px;padding:2px 10px;border:none;border-radius:4px;background:' +
+    CAT.accent +
+    ';color:#fff;cursor:pointer;">🔍扫描</button></div>';
+  bar +=
+    '<div style="padding:0 12px;flex-shrink:0;display:flex;flex-direction:column;justify-content:center;height:30%;"><div style="font-size:11px;color:' +
+    CAT.sub +
+    ';"><span id="sl_comp_status">空闲</span> · <span id="sl_comp_queue_txt">排队 0</span> · <span id="sl_comp_mode">⚡自动</span></div><div id="sl_comp_event" style="font-size:10px;color:' +
+    CAT.mute +
+    ';margin-top:4px;">« 就绪 »</div></div>';
+  bar +=
+    '<div style="display:flex;align-items:center;gap:6px;padding:0 12px;flex-shrink:0;height:30%;"><button id="sl_comp_gen" style="flex:1;font-size:12px;padding:0;height:36px;border:none;border-radius:8px;background:' +
+    CAT.accent +
+    ';color:#fff;cursor:pointer;">⚡ 排图</button><button id="sl_comp_auto" style="flex:1;font-size:12px;padding:0;height:36px;border:1px solid ' +
+    CAT.line +
+    ";border-radius:8px;background:transparent;color:" +
+    CAT.text +
+    ';cursor:pointer;">⚡自动</button></div></div>';
+  _compactEl = jQuery(bar).appendTo("body");
+  (function () {
+    var dragging = false,
+      sx,
+      sy,
+      ox,
+      oy;
+    jQuery("#sl_comp_header").on("mousedown touchstart", function (e) {
+      if (jQuery(e.target).is("button")) return;
+      e.preventDefault();
+      dragging = true;
+      _compDragMoved = false;
+      var p = (e.touches || [e])[0];
+      sx = p.clientX;
+      sy = p.clientY;
+      var o = _compactEl.offset();
+      ox = o.left;
+      oy = o.top;
+      _compactEl.css({
+        right: "auto",
+        bottom: "auto",
+        left: ox + "px",
+        top: oy + "px",
+      });
+    });
+    jQuery(document)
+      .on("mousemove touchmove", function (e) {
+        if (!dragging) return;
+        var p = (e.touches || [e])[0];
+        if (Math.abs(p.clientX - sx) > 2 || Math.abs(p.clientY - sy) > 2)
+          _compDragMoved = true;
+        _compactEl.css({
+          left: ox + p.clientX - sx + "px",
+          top: oy + p.clientY - sy + "px",
+        });
+      })
+      .on("mouseup touchend", function () {
+        if (!dragging) return;
+        dragging = false;
+        if (_compDragMoved) {
+          var o = _compactEl.offset();
+          try {
+            localStorage.setItem(
+              "sl_compact_pos",
+              JSON.stringify({ x: o.left, y: o.top }),
+            );
+          } catch (e) {}
+        }
+      });
+  })();
+  jQuery("#sl_comp_header").on("click", function (e) {
+    var was = _compDragMoved;
+    _compDragMoved = false;
+    if (jQuery(e.target).is("button") || was) return;
+    togglePanel();
+  });
+  jQuery("#sl_comp_panel_btn").on("click", function (e) {
+    e.stopPropagation();
+    togglePanel();
+  });
+  jQuery("#sl_comp_gen").on("click", function (e) {
+    e.stopPropagation();
+    triggerGenAll();
+  });
+  jQuery("#sl_comp_auto").on("click", function (e) {
+    e.stopPropagation();
+    settings.autoGen = settings.autoGen === 1 ? 0 : 1;
+    saveSettings();
+    refreshCompactBar();
+  });
+  jQuery("#sl_comp_scan").on("click", async function (e) {
+    e.stopPropagation();
+    var b = jQuery(this);
+    b.prop("disabled", true).text("扫描中...");
+    try {
+      await scanCharacterProfile();
+      toast("success", "扫描完成喵~ ✨");
+    } catch (e2) {
+      toast("error", "扫描失败喵…");
+    }
+    b.prop("disabled", false).text("🔍扫描");
+    refreshCompactBar();
+  });
+  _compactTimer = setInterval(refreshCompactBar, 3000);
+  refreshCompactBar();
+}
+
+function refreshCompactBar() {
+  if (!_compactEl || !_compactEl.is(":visible")) return;
+  var cn = getCharacterName() || "";
+  var hasChat = !!cn;
+  jQuery("#sl_comp_char").text(hasChat ? cn : "未进入聊天");
+  jQuery("#sl_comp_model").text(
+    hasChat ? (settings.modelType === "anime" ? "🎬Anime" : "🖼️ZIT") : "",
+  );
+  var hasProf = false;
+  try {
+    hasProf = chkProf();
+  } catch (e) {}
+  if (!hasChat) {
+    jQuery("#sl_comp_profile").text("").hide();
+    jQuery("#sl_comp_scan").hide();
+  } else if (hasProf) {
+    jQuery("#sl_comp_profile")
+      .text("📋✅已扫描")
+      .css("color", CAT.green)
+      .show();
+    jQuery("#sl_comp_scan").hide();
+  } else {
+    jQuery("#sl_comp_profile").text("📋❌未扫描").css("color", CAT.red).show();
+    jQuery("#sl_comp_scan").show();
+  }
+  var ss = getScannerStatus();
+  jQuery("#sl_comp_status").text(
+    {
+      off: "已关闭",
+      idle: "空闲",
+      waiting_body: "等待正文",
+      waiting_end: "AI回复中",
+      scanning: "分析中",
+    }[ss] || ss,
+  );
+  var ql = getQueueLength();
+  jQuery("#sl_comp_queue_txt").text("排队 " + ql);
+  jQuery("#sl_comp_mode").text(settings.autoGen === 1 ? "⚡自动" : "🖐手动");
+  jQuery("#sl_comp_auto").text(settings.autoGen === 1 ? "⚡自动" : "🖐手动");
+  var cs = "idle";
+  if (ss === "scanning") cs = "scanning";
+  else if (ql > 0) cs = ql > 5 ? "busy" : "queuing";
+  jQuery("#sl_cat_icon").text(catFace(cs));
+}
+function triggerGenAll() {
+  var c = 0;
+  jQuery(".sl_img_btn[data-prompt]").each(function () {
+    var b = jQuery(this);
+    if (
+      b.text().indexOf("排队") < 0 &&
+      b.text().indexOf("🔄") < 0 &&
+      b.text().indexOf("生成图片") >= 0
+    ) {
+      b.trigger("click");
+      c++;
+    }
+  });
+  if (c === 0) toast("info", "没有待生成的图片喵~");
+  else toast("success", "已排队 " + c + " 张图片喵~ ✨");
+}
+function cancelAllQueue() {
+  try {
+    clearQueue();
+  } catch (e) {}
+}
+
+function createExpandedPanel() {
+  if (_panelEl && _panelEl.parent().length) return;
+  var isM = window.innerWidth < 600,
+    ps =
+      "position:fixed;z-index:10000;background:" +
+      CAT.bg +
+      ";border-radius:" +
+      CAT.radius +
+      ";box-shadow:0 4px 32px rgba(0,0,0,0.2);border:" +
+      CAT.borderStyle +
+      " " +
+      CAT.line +
+      ";font-family:" +
+      CAT.font +
+      ";color:" +
+      CAT.text +
+      ";display:none;flex-direction:column;overflow:hidden;";
+  ps += isM
+    ? "bottom:0;left:0;right:0;height:70vh;border-radius:18px 18px 0 0;"
+    : "width:540px;height:80vh;top:50%;left:50%;transform:translate(-50%,-50%);";
+  var h = '<div id="sl_panel" style="' + ps + '">';
+  h +=
+    '<div id="sl_panel_header" style="position:relative;padding:14px 20px 10px;display:flex;align-items:center;justify-content:center;border-bottom:1px solid ' +
+    CAT.line +
+    ';cursor:move;flex-shrink:0;"><div style="display:flex;align-items:center;gap:10px;pointer-events:none;"><span style="font-size:26px;">=^_^=</span><div><div style="font-weight:700;font-size:15px;color:' +
+    CAT.text +
+    ';">偷懒小猫</div><div style="font-size:9px;color:' +
+    CAT.sub +
+    ';">SillyImage Lab v2.1</div></div></div><button id="sl_close_panel" style="position:absolute;right:14px;top:50%;transform:translateY(-50%);border:none;background:none;cursor:pointer;font-size:18px;color:' +
+    CAT.mute +
+    ';padding:4px 8px;">✕</button><button id="sl_btn_log" style="position:absolute;right:40px;top:50%;transform:translateY(-50%);border:none;background:none;cursor:pointer;font-size:14px;color:' +
+    CAT.mute +
+    ';padding:4px 6px;">📋</button></div>';
+  h +=
+    '<div id="sl_panel_body" style="flex:1;overflow-y:scroll;padding:16px 18px;min-height:0;"></div>';
+  h +=
+    '<div id="sl_panel_tabs" style="display:flex;border-top:1px solid ' +
+    CAT.line +
+    ';flex-shrink:0;"><button class="sl_tab_btn active" data-tab="home" style="flex:1;padding:12px;border:none;background:none;cursor:pointer;font-size:13px;color:' +
+    CAT.accent +
+    ";font-weight:600;border-top:2px solid " +
+    CAT.accent +
+    ';margin-top:-1px;">🏠 首页</button><button class="sl_tab_btn" data-tab="settings" style="flex:1;padding:12px;border:none;background:none;cursor:pointer;font-size:13px;color:' +
+    CAT.sub +
+    ';font-weight:400;">⚙️ 设置</button><button class="sl_tab_btn" data-tab="archive" style="flex:1;padding:12px;border:none;background:none;cursor:pointer;font-size:13px;color:' +
+    CAT.sub +
+    ';font-weight:400;">📋 档案</button></div></div>';
+  _panelEl = jQuery(h).appendTo("body");
+  _panelEl.on("click", ".sl_tab_btn", function () {
+    var tab = jQuery(this).data("tab");
+    _panelEl.find(".sl_tab_btn").removeClass("active").css({
+      color: CAT.sub,
+      fontWeight: "400",
+      borderTopColor: "transparent",
+    });
+    jQuery(this).addClass("active").css({
+      color: CAT.accent,
+      fontWeight: "600",
+      borderTopColor: CAT.accent,
+    });
+    if (tab === "home") renderHomeTab();
+    else if (tab === "settings") renderSettingsTab();
+    else renderArchiveTab();
+  });
+  jQuery("#sl_close_panel").on("click", function (e) {
+    e.stopPropagation();
+    hidePanel();
+  });
+  jQuery("#sl_btn_log").on("click", function (e) {
+    e.stopPropagation();
+    showLogViewer();
+  });
+  if (!isM) {
+    (function () {
+      var dragging = false,
+        sx,
+        sy,
+        px,
+        py;
+      jQuery("#sl_panel_header").on("mousedown", function (e) {
+        if (jQuery(e.target).closest("button").length) return;
+        dragging = true;
+        sx = e.clientX;
+        sy = e.clientY;
+        var o = _panelEl.offset();
+        px = o.left;
+        py = o.top;
+        _panelEl.css({
+          left: px + "px",
+          top: py + "px",
+          right: "auto",
+          bottom: "auto",
+          transform: "none",
+        });
+      });
+      jQuery(document)
+        .on("mousemove", function (e) {
+          if (!dragging) return;
+          _panelEl.css({
+            left: px + e.clientX - sx + "px",
+            top: py + e.clientY - sy + "px",
+          });
+        })
+        .on("mouseup", function () {
+          dragging = false;
+        });
+    })();
+  }
+}
+function togglePanel() {
+  if (!_panelEl) createExpandedPanel();
+  _expandedVisible ? hidePanel() : showPanel();
+}
+function showPanel() {
+  if (!_panelEl) createExpandedPanel();
+  _expandedVisible = true;
+  _panelEl.css({
+    left: "50%",
+    top: "50%",
+    right: "auto",
+    bottom: "auto",
+    transform: "translate(-50%,-50%)",
+    maxHeight: "80vh",
+    height: "80vh",
+    width: "540px",
+    flexDirection: "column",
+  });
+  _panelEl.fadeIn(200, function () {
+    _panelEl.css("display", "flex");
+  });
+  _compactEl && _compactEl.hide();
+  renderHomeTab();
+}
+function hidePanel() {
+  _expandedVisible = false;
+  if (_panelEl) {
+    _panelEl.remove();
+    _panelEl = null;
+  }
+  _compactEl && _compactEl.show();
+  refreshCompactBar();
+}
+
+function renderHomeTab() {
+  var body = jQuery("#sl_panel_body");
+  if (!body.length) return;
+  var cn = getCharacterName() || "未选择角色",
+    hp = false;
+  try {
+    hp = chkProf();
+  } catch (e) {}
+  var ss = getScannerStatus(),
+    ql = getQueueLength(),
+    ha = !!(settings.auxUrl && settings.auxModel),
+    hc = !!settings.cUrl,
+    hw = !!(settings.cWf && settings.cWf.length > 50),
+    allReady = ha && hc && hw && hp,
+    h = "";
+  if (!allReady) {
+    var steps = [
+      { l: "连接 AI助理", ok: ha },
+      { l: "连接 ComfyUI", ok: hc },
+      { l: "导入工作流", ok: hw },
+      { l: "扫描角色卡", ok: hp },
+    ];
+    h +=
+      '<div style="background:' +
+      CAT.card +
+      ";border-radius:12px;padding:12px 14px;margin-bottom:10px;border:2px solid " +
+      CAT.accent +
+      ';">';
+    h +=
+      '<div style="font-weight:700;font-size:13px;margin-bottom:6px;">=^_^= 欢迎喵~ 完成下面几步就能用啦</div>';
+    for (var i = 0; i < steps.length; i++)
+      h +=
+        '<div style="padding:2px 0;font-size:11px;color:' +
+        (steps[i].ok ? CAT.green : CAT.sub) +
+        ';">' +
+        (steps[i].ok ? "✅" : "☐") +
+        " " +
+        steps[i].l +
+        "</div>";
+    h +=
+      '<button id="sl_goto_settings" style="margin-top:6px;padding:6px 14px;border:none;border-radius:8px;background:' +
+      CAT.accent +
+      ';color:#fff;cursor:pointer;font-size:11px;font-weight:600;">去设置 →</button></div>';
+  }
+  h +=
+    '<div style="background:' +
+    CAT.card +
+    ";border-radius:12px;padding:12px 14px;margin-bottom:10px;border:1px solid " +
+    CAT.line +
+    ';">';
+  h +=
+    '<div style="font-weight:700;font-size:14px;color:' +
+    CAT.text +
+    ';margin-bottom:4px;">👤 ' +
+    esc(cn) +
+    "</div>";
+  h +=
+    '<div style="font-size:11px;color:' +
+    CAT.sub +
+    ';">' +
+    (settings.modelType === "anime" ? "🎬Anime" : "🖼️ZIT") +
+    " · " +
+    (settings.autoGen === 1 ? "⚡自动" : "🖐手动") +
+    " · 档案：" +
+    (hp ? "✅已扫描" : "❌未扫描") +
+    " · 排队：" +
+    ql +
+    "张</div></div>";
+  h +=
+    '<div style="display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap;"><button id="sl_btn_scan_cast" style="' +
+    sbtn(CAT.accent) +
+    '">🔍 扫描角色喵~</button><button id="sl_btn_gen_all" style="' +
+    sbtn(CAT.green) +
+    '">⚡ 一键排图</button></div>';
+  h +=
+    '<div style="background:' +
+    CAT.card +
+    ";border-radius:12px;padding:12px 14px;margin-bottom:8px;border:1px solid " +
+    CAT.line +
+    ';">';
+  h +=
+    '<div style="font-size:11px;color:' +
+    CAT.sub +
+    ';margin-bottom:6px;">🎨 外观</div><div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;"><span style="font-size:11px;color:' +
+    CAT.text +
+    ';">插件主题</span><select id="sl_ui_theme" style="' +
+    fiStyle() +
+    'width:auto;min-width:100px;">';
+  for (var tk in CAT_THEMES)
+    h +=
+      '<option value="' +
+      escAttr(tk) +
+      '"' +
+      (settings.uiTheme === tk ? " selected" : "") +
+      ">" +
+      tk +
+      "</option>";
+  h +=
+    '</select><span style="font-size:11px;color:' +
+    CAT.text +
+    ';margin-left:8px;">文本渲染</span><select id="sl_text_theme" style="' +
+    fiStyle() +
+    'width:auto;min-width:100px;">';
+  for (var tk2 in TEXT_THEMES)
+    h +=
+      '<option value="' +
+      escAttr(tk2) +
+      '"' +
+      (settings.textTheme === tk2 ? " selected" : "") +
+      ">" +
+      tk2 +
+      "</option>";
+  h += "</select></div></div>";
+  h +=
+    '<div style="font-size:10px;color:' +
+    CAT.mute +
+    ';text-align:center;">📊 ' +
+    ({
+      off: "已关闭",
+      idle: "空闲",
+      waiting_body: "等待正文",
+      waiting_end: "AI回复中",
+      scanning: "分析中喵~",
+    }[ss] || ss) +
+    " · 📥 排队 " +
+    ql +
+    " 张" +
+    (allReady ? "" : " · ⚠ 配置未完成") +
+    "</div>";
+  body.html(h);
+  body
+    .off("click", "#sl_goto_settings")
+    .on("click", "#sl_goto_settings", function () {
+      _panelEl.find('.sl_tab_btn[data-tab="settings"]').trigger("click");
+    });
+  body
+    .off("click", "#sl_btn_scan_cast")
+    .on("click", "#sl_btn_scan_cast", async function () {
+      var b = jQuery(this);
+      b.prop("disabled", true).text("扫描中...");
+      try {
+        await scanCharacterProfile();
+        toast("success", "扫描完成喵~ ✨");
+        renderHomeTab();
+        refreshCompactBar();
+      } catch (e) {
+        toast("error", "扫描失败喵… (╥﹏╥)");
+      }
+      b.prop("disabled", false).text("🔍 扫描角色喵~");
+    });
+  body
+    .off("click", "#sl_btn_gen_all")
+    .on("click", "#sl_btn_gen_all", triggerGenAll);
+  body.off("change", "#sl_ui_theme").on("change", "#sl_ui_theme", function () {
+    var name = jQuery(this).val();
+    hidePanel();
+    settings.uiTheme = name;
+    applyTheme(name);
+    saveSettings();
+    if (_compactEl) {
+      _compactEl.remove();
+      _compactEl = null;
+      clearInterval(_compactTimer);
+    }
+    setTimeout(function () {
+      createCompactBar();
+      showPanel();
+    }, 150);
+  });
+  body
+    .off("change", "#sl_text_theme")
+    .on("change", "#sl_text_theme", function () {
+      settings.textTheme = jQuery(this).val();
+      saveSettings();
+      // 全局注入文本主题CSS
+      var theme = TEXT_THEMES[settings.textTheme] || TEXT_THEMES["默认"];
+      var css = ".mes_text,.mes.last_mes .mes_text{";
+      if (theme.font) css += "font-family:" + theme.font + " !important;";
+      if (theme.lineHeight)
+        css += "line-height:" + theme.lineHeight + " !important;";
+      if (theme.color) css += "color:" + theme.color + " !important;";
+      if (theme.bg) css += "background:" + theme.bg + " !important;";
+      if (theme.fontSize) css += "font-size:" + theme.fontSize + " !important;";
+      css += "}";
+      jQuery("#sl_text_theme_css").remove();
+      jQuery("<style id='sl_text_theme_css'>" + css + "</style>").appendTo(
+        "head",
+      );
+    });
+}
+
+function renderSettingsTab() {
+  var body = jQuery("#sl_panel_body"),
+    fi = fiStyle(),
+    h = "";
+  h +=
+    '<div style="background:' +
+    CAT.card +
+    ";border-radius:10px;padding:10px 14px;margin-bottom:10px;border:1px solid " +
+    CAT.line +
+    ';"><label style="display:flex;align-items:center;gap:8px;cursor:pointer;"><input type="checkbox" id="sl_plugin_on"' +
+    (settings.pluginOn !== false ? " checked" : "") +
+    '><span style="font-size:12px;color:' +
+    CAT.text +
+    ';">✅ 插件开启</span></label></div>';
+  h +=
+    '<div style="background:' +
+    CAT.card +
+    ";border-radius:12px;padding:12px 14px;margin-bottom:10px;border:1px solid " +
+    CAT.line +
+    ';">';
+  h +=
+    '<div style="font-size:11px;color:' +
+    CAT.sub +
+    ';margin-bottom:2px;">模型类型</div><select id="sl_model_type" style="' +
+    fi +
+    '"><option value="zit"' +
+    (settings.modelType === "zit" ? " selected" : "") +
+    '>🖼️ ZIT</option><option value="anime"' +
+    (settings.modelType === "anime" ? " selected" : "") +
+    ">🎬 Anime</option></select></div>";
+  h +=
+    '<div style="background:' +
+    CAT.card +
+    ";border-radius:12px;padding:12px 14px;margin-bottom:10px;border:1px solid " +
+    CAT.line +
+    ';">';
+  h +=
+    '<div style="font-size:11px;color:' +
+    CAT.sub +
+    ';margin-bottom:2px;">📝 前置提示词</div><input id="sl_prompt_prefix" type="text" value="' +
+    escAttr(settings.promptPrefix || "") +
+    '" style="' +
+    fi +
+    '" placeholder="留空则不生效"></div>';
+  h +=
+    '<div id="sl_anime_opts" style="background:' +
+    CAT.card +
+    ";border-radius:12px;padding:12px 14px;margin-bottom:10px;border:1px solid " +
+    CAT.line +
+    ";" +
+    (settings.modelType === "anime" ? "" : "display:none;") +
+    '">';
+  h +=
+    '<div style="font-size:11px;color:' +
+    CAT.sub +
+    ';margin-bottom:2px;">质量前缀</div><input id="sl_anime_prefix" type="text" value="' +
+    escAttr(settings.animeQualityPrefix || "") +
+    '" style="' +
+    fi +
+    'margin-bottom:6px;">';
+  h +=
+    '<div style="font-size:11px;color:' +
+    CAT.sub +
+    ';margin-bottom:2px;">艺术家标签</div><input id="sl_anime_artist" type="text" value="' +
+    escAttr(settings.animeArtist || "") +
+    '" style="' +
+    fi +
+    '" placeholder="留空则不使用"></div>';
+  h +=
+    '<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px;"><button class="sl_open_sub" data-sub="aux" style="' +
+    sbtn(CAT.accent) +
+    '">🧠 AI助理</button><button class="sl_open_sub" data-sub="comfy" style="' +
+    sbtn(CAT.accent) +
+    '">🎨 ComfyUI & 工作流</button></div>';
+  h +=
+    '<button class="sl_open_sub" data-sub="advanced" style="width:100%;' +
+    sbtn(CAT.sub) +
+    '">⚙️ 高级选项</button>';
+  h +=
+    '<div style="margin-top:12px;"><button id="sl_save_settings" style="width:100%;padding:12px;border:none;border-radius:' +
+    CAT.radius +
+    ";background:" +
+    CAT.accent +
+    ';color:#fff;cursor:pointer;font-size:14px;font-weight:600;">💾 保存全部设置喵~</button></div>';
+  body.html(h);
+  bindSettingsEvents(body);
+}
+function bindSettingsEvents(b) {
+  b.off("change", "#sl_plugin_on").on("change", "#sl_plugin_on", function () {
+    settings.pluginOn = jQuery(this).is(":checked");
+    saveSettings();
+  });
+  b.off("change", "#sl_model_type").on("change", "#sl_model_type", function () {
+    settings.modelType = jQuery(this).val();
+    jQuery("#sl_anime_opts").toggle(settings.modelType === "anime");
+    saveSettings();
+  });
+  b.off("change input", "#sl_prompt_prefix").on(
+    "change input",
+    "#sl_prompt_prefix",
+    function () {
+      settings.promptPrefix = jQuery(this).val();
+      saveSettings();
+    },
+  );
+  b.off("change input", "#sl_anime_prefix").on(
+    "change input",
+    "#sl_anime_prefix",
+    function () {
+      settings.animeQualityPrefix = jQuery(this).val();
+      saveSettings();
+    },
+  );
+  b.off("change input", "#sl_anime_artist").on(
+    "change input",
+    "#sl_anime_artist",
+    function () {
+      settings.animeArtist = jQuery(this).val();
+      saveSettings();
+    },
+  );
+  b.off("click", "#sl_save_settings").on(
+    "click",
+    "#sl_save_settings",
+    function () {
+      settings.promptPrefix = jQuery("#sl_prompt_prefix").val();
+      saveSettings();
+      toast("success", "全部保存好啦喵~ ✨");
+    },
+  );
+  b.off("click", ".sl_open_sub").on("click", ".sl_open_sub", function () {
+    openSubPanel(jQuery(this).data("sub"));
+  });
+}
+
+function openSubPanel(type) {
+  var h =
+    '<div id="sl_sub_panel" style="position:absolute;top:0;left:0;right:0;bottom:0;background:' +
+    CAT.bg +
+    ";display:flex;flex-direction:column;z-index:10;border-radius:" +
+    CAT.radius +
+    ';transform:scale(0.5);opacity:0;transition:transform .15s ease-out,opacity .15s ease-out;">';
+  h +=
+    '<div style="display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:1px solid ' +
+    CAT.line +
+    ';flex-shrink:0;"><button class="sl_close_sub" style="border:none;background:none;cursor:pointer;font-size:16px;color:' +
+    CAT.accent +
+    ';font-weight:600;">← 返回</button><span style="font-weight:700;font-size:13px;color:' +
+    CAT.text +
+    ';"></span><span></span></div><div id="sl_sub_body" style="flex:1;overflow-y:auto;padding:14px 16px;"></div></div>';
+  var sub = jQuery(h).appendTo("#sl_panel");
+  jQuery(".sl_close_sub").on("click", function () {
+    closeSubPanel(sub);
+  });
+  fillSubPanel(type, jQuery("#sl_sub_body"));
+  requestAnimationFrame(function () {
+    sub.css({ transform: "scale(1)", opacity: "1" });
+  });
+}
+function closeSubPanel(sub) {
+  sub.css({
+    transform: "scale(0.5)",
+    opacity: "0",
+    transition: "transform .1s ease-in,opacity .1s ease-in",
+  });
+  setTimeout(function () {
+    sub.remove();
+  }, 120);
+}
+
+function fillSubPanel(type, body) {
+  var fi = fiStyle();
+  if (type === "aux") {
+    var h =
+      '<div style="margin-bottom:8px;"><div style="font-size:11px;color:' +
+      CAT.sub +
+      ';margin-bottom:2px;">AI 提供商</div><select id="sl_aux_provider" style="' +
+      fi +
+      '"><option value="deepseek"' +
+      (settings.auxProvider === "deepseek" ? " selected" : "") +
+      '>DeepSeek</option><option value="gemini"' +
+      (settings.auxProvider === "gemini" ? " selected" : "") +
+      '>Gemini</option><option value="custom"' +
+      (settings.auxProvider === "custom" ? " selected" : "") +
+      ">自定义</option></select></div>";
+    h +=
+      '<div style="margin-bottom:8px;"><div style="font-size:11px;color:' +
+      CAT.sub +
+      ';margin-bottom:2px;">API 地址</div><input id="sl_aux_url" type="text" value="' +
+      escAttr(settings.auxUrl || "") +
+      '" style="' +
+      fi +
+      '"></div>';
+    h +=
+      '<div style="margin-bottom:8px;"><div style="font-size:11px;color:' +
+      CAT.sub +
+      ';margin-bottom:2px;">API Key</div><input id="sl_aux_key" type="password" value="' +
+      escAttr(settings.auxKey || "") +
+      '" style="' +
+      fi +
+      '"></div>';
+    h +=
+      '<div style="margin-bottom:8px;"><div style="font-size:11px;color:' +
+      CAT.sub +
+      ';margin-bottom:2px;">聊天分析模型</div><input id="sl_aux_model" type="text" value="' +
+      escAttr(settings.auxModel || "") +
+      '" style="' +
+      fi +
+      '"></div>';
+    h +=
+      '<div style="margin-bottom:8px;"><div style="font-size:11px;color:' +
+      CAT.sub +
+      ';margin-bottom:2px;">角色卡分析模型</div><input id="sl_profile_model" type="text" value="' +
+      escAttr(settings.profileModel || "") +
+      '" style="' +
+      fi +
+      '"></div>';
+    h +=
+      '<div style="display:flex;gap:8px;align-items:center;"><button id="sl_test_aux" style="' +
+      sbtn(CAT.accent) +
+      '">🔌 测试连接</button><span id="sl_aux_status" style="font-size:11px;color:' +
+      CAT.sub +
+      ';"></span></div>';
+    body.html(h);
+    jQuery("#sl_aux_provider").on("change", function () {
+      settings.auxProvider = jQuery(this).val();
+      saveSettings();
+    });
+    jQuery("#sl_aux_url").on("change input", function () {
+      settings.auxUrl = jQuery(this).val();
+      saveSettings();
+    });
+    jQuery("#sl_aux_key").on("change input", function () {
+      settings.auxKey = jQuery(this).val();
+      saveSettings();
+    });
+    jQuery("#sl_aux_model").on("change input", function () {
+      settings.auxModel = jQuery(this).val();
+      saveSettings();
+    });
+    jQuery("#sl_profile_model").on("change input", function () {
+      settings.profileModel = jQuery(this).val();
+      saveSettings();
+    });
+    jQuery("#sl_test_aux").on("click", async function () {
+      var b = jQuery(this),
+        s = jQuery("#sl_aux_status");
+      b.prop("disabled", true).text("测试中...");
+      try {
+        var url =
+            (jQuery("#sl_aux_url").val() || "").replace(/\/+$/, "") +
+            "/chat/completions",
+          key = jQuery("#sl_aux_key").val(),
+          hd = { "Content-Type": "application/json" };
+        if (key) hd["Authorization"] = "Bearer " + key;
+        var r = await fetch(url, {
+          method: "POST",
+          headers: hd,
+          body: JSON.stringify({
+            model: jQuery("#sl_aux_model").val() || "default",
+            messages: [{ role: "user", content: "hi" }],
+            max_tokens: 3,
+            stream: false,
+          }),
+        });
+        if (r.ok) {
+          s.css({ color: CAT.green }).text("连接成功喵~ ✨");
+          toast("success", "AI助理连接成功~");
+        } else {
+          var t = await r.text().catch(function () {
+            return "";
+          });
+          s.css({ color: CAT.red }).text("HTTP " + r.status);
+          toast("error", "连接失败: " + r.status);
+        }
+      } catch (e) {
+        s.css({ color: CAT.red }).text(e.message);
+        toast("error", "连不上喵…");
+      }
+      b.prop("disabled", false).text("🔌 测试连接");
+    });
+  } else if (type === "comfy") {
+    var h =
+      '<div style="margin-bottom:8px;"><div style="font-size:11px;color:' +
+      CAT.sub +
+      ';margin-bottom:2px;">ComfyUI 地址</div><input id="sl_comfy_url" type="text" value="' +
+      escAttr(settings.cUrl || "http://localhost:8181") +
+      '" style="' +
+      fi +
+      '"></div>';
+    h +=
+      '<div style="display:flex;gap:8px;align-items:center;margin-bottom:8px;"><button id="sl_test_comfy" style="' +
+      sbtn(CAT.accent) +
+      '">🔌 测试连接</button><span id="sl_comfy_status" style="font-size:11px;color:' +
+      CAT.sub +
+      ';"></span></div>';
+    h +=
+      '<div style="display:flex;gap:6px;align-items:center;margin-bottom:6px;"><input id="sl_wf_name" type="text" value="' +
+      escAttr(settings.cWfName || "") +
+      '" placeholder="工作流名称（可选）" style="flex:1;padding:6px 8px;border:1px solid ' +
+      CAT.line +
+      ";border-radius:6px;font-size:11px;background:" +
+      CAT.card +
+      ";color:" +
+      CAT.text +
+      ';"></div>';
+    h +=
+      '<div style="display:flex;gap:4px;margin-bottom:4px;"><button id="sl_wf_load" style="' +
+      sbtn(CAT.sub) +
+      'font-size:10px;">📂 加载</button><button id="sl_wf_save_as" style="' +
+      sbtn(CAT.green) +
+      'font-size:10px;">💾 另存</button><button id="sl_wf_del" style="' +
+      sbtn(CAT.red) +
+      'font-size:10px;">🗑 删除</button></div>';
+    h +=
+      '<div style="font-size:11px;color:' +
+      CAT.sub +
+      ';margin-bottom:2px;">工作流 JSON</div>';
+    h +=
+      '<textarea id="sl_comfy_wf" rows="5" style="width:100%;padding:8px;border:1px solid ' +
+      CAT.line +
+      ";border-radius:8px;background:" +
+      CAT.card +
+      ";font-family:monospace;font-size:11px;color:" +
+      CAT.text +
+      ';resize:vertical;box-sizing:border-box;">' +
+      esc(settings.cWf || "") +
+      "</textarea>";
+    h +=
+      '<div style="display:flex;gap:6px;margin:6px 0;"><button id="sl_wf_import_btn" style="' +
+      sbtn(CAT.sub) +
+      'font-size:10px;">📁 导入JSON</button><input type="file" id="sl_wf_import" accept=".json" style="display:none;"><button id="sl_analyze_wf" style="' +
+      sbtn(CAT.accent) +
+      '">🔍 解析节点</button><button id="sl_save_wf" style="' +
+      sbtn(CAT.green) +
+      '">💾 保存工作流</button><span id="sl_wf_status" style="font-size:10px;color:' +
+      CAT.sub +
+      ';align-self:center;"></span></div>';
+    h +=
+      '<div id="sl_node_list" style="font-size:10px;color:' +
+      CAT.sub +
+      ';max-height:200px;overflow-y:auto;margin-bottom:8px;"></div>';
+    h +=
+      '<div style="font-size:11px;color:' +
+      CAT.sub +
+      ';margin-bottom:4px;">画风预设</div><select id="sl_style_preset" style="' +
+      fi +
+      'margin-bottom:8px;"><option value="">不使用预设</option>';
+    for (var sk in STYLE_PRESETS) {
+      if (sk)
+        h +=
+          '<option value="' +
+          escAttr(sk) +
+          '"' +
+          (settings.stylePreset === sk ? " selected" : "") +
+          ">" +
+          esc(sk) +
+          "</option>";
+    }
+    h += "</select>";
+    h +=
+      '<div style="font-size:11px;color:' +
+      CAT.sub +
+      ';margin-bottom:2px;">负面提示词</div><input id="sl_neg" type="text" value="' +
+      escAttr(settings.neg || "") +
+      '" style="' +
+      fi +
+      '" placeholder="worst quality, lowres...">';
+    body.html(h);
+    jQuery("#sl_comfy_url").on("change input", function () {
+      settings.cUrl = jQuery(this).val();
+      saveSettings();
+    });
+    jQuery("#sl_test_comfy").on("click", async function () {
+      var b = jQuery(this),
+        s = jQuery("#sl_comfy_status");
+      b.prop("disabled", true).text("测试中...");
+      try {
+        var r = await fetch("/api/sd/comfy/ping", {
+          method: "POST",
+          headers: Object.assign(
+            { "Content-Type": "application/json" },
+            getSTHeaders(),
+          ),
+          body: JSON.stringify({ url: jQuery("#sl_comfy_url").val() }),
+        });
+        if (r.ok) {
+          var d = await r.json().catch(function () {
+            return {};
+          });
+          s.css({ color: CAT.green }).text(
+            "已连接" + (d.device ? " (" + d.device + ")" : ""),
+          );
+          toast("success", "ComfyUI 连上啦~ ✨");
+        } else {
+          var txt = await r.text().catch(function () {
+            return "";
+          });
+          s.css({ color: CAT.red }).text("HTTP " + r.status);
+          toast("error", "连接失败喵~ " + r.status);
+        }
+      } catch (e) {
+        s.css({ color: CAT.red }).text("连不上");
+        toast("error", "连不上喵… (╥﹏╥)");
+      }
+      b.prop("disabled", false).text("🔌 测试连接");
+    });
+    jQuery("#sl_analyze_wf").on("click", function () {
+      var raw = jQuery("#sl_comfy_wf").val();
+      if (!raw) {
+        toast("info", "请先粘贴工作流 JSON 喵~");
+        return;
+      }
+      try {
+        var wf = JSON.parse(raw),
+          nodes = [],
+          params = {};
+        for (var nid in wf) {
+          var nd = wf[nid];
+          if (!nd || !nd.class_type) continue;
+          nodes.push(nd.class_type);
+          if (/KSampler/i.test(nd.class_type) && nd.inputs) {
+            if (nd.inputs.steps != null) params.steps = nd.inputs.steps;
+            if (nd.inputs.cfg != null) params.cfg = nd.inputs.cfg;
+            if (nd.inputs.seed != null) params.seed = nd.inputs.seed;
+            if (nd.inputs.denoise != null) params.denoise = nd.inputs.denoise;
+          }
+          if (/EmptyLatent|Latent/i.test(nd.class_type) && nd.inputs) {
+            if (nd.inputs.width != null) params.width = nd.inputs.width;
+            if (nd.inputs.height != null) params.height = nd.inputs.height;
+            if (nd.inputs.batch_size != null)
+              params.batch = nd.inputs.batch_size;
+          }
+        }
+        var nh =
+            '<span style="color:' +
+            CAT.green +
+            ';">✅ ' +
+            nodes.length +
+            " 个节点：</span> " +
+            nodes
+              .map(function (n) {
+                return (
+                  '<span style="display:inline-block;background:' +
+                  CAT.bg +
+                  ';padding:1px 6px;border-radius:3px;margin:1px;font-size:9px;">' +
+                  n +
+                  "</span>"
+                );
+              })
+              .join(" "),
+          ph = "",
+          pk = Object.keys(params);
+        if (pk.length) {
+          var labels = {
+            steps: "步数",
+            cfg: "CFG",
+            seed: "种子",
+            denoise: "降噪",
+            width: "宽度",
+            height: "高度",
+            batch: "批次",
+          };
+          ph +=
+            '<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-top:6px;">';
+          for (var pi = 0; pi < pk.length; pi++) {
+            var k = pk[pi],
+              v = params[k];
+            ph +=
+              '<div><div style="font-size:10px;color:' +
+              CAT.sub +
+              ';margin-bottom:2px;">' +
+              esc(labels[k] || k) +
+              "</div>";
+            ph +=
+              '<input class="sl_wf_param" data-pk="' +
+              escAttr(k) +
+              '" value="' +
+              escAttr(v) +
+              '" style="width:100%;padding:6px 8px;border:1px solid ' +
+              CAT.line +
+              ";border-radius:6px;font-size:12px;background:" +
+              CAT.card +
+              ";color:" +
+              CAT.text +
+              ';box-sizing:border-box;"></div>';
+          }
+          ph += "</div>";
+        } else {
+          ph =
+            '<div style="font-size:10px;color:' +
+            CAT.mute +
+            ';margin-top:4px;">没有可编辑参数喵~</div>';
+        }
+        jQuery("#sl_node_list").html(nh + ph);
+        jQuery(".sl_wf_param")
+          .off("change input")
+          .on("change input", function () {
+            try {
+              var raw2 = jQuery("#sl_comfy_wf").val(),
+                wf2 = JSON.parse(raw2),
+                pk2 = jQuery(this).data("pk"),
+                nv = jQuery(this).val();
+              for (var nid2 in wf2) {
+                var nd2 = wf2[nid2];
+                if (!nd2 || !nd2.inputs) continue;
+                var cmap = {
+                  steps: /KSampler/i,
+                  cfg: /KSampler/i,
+                  seed: /KSampler/i,
+                  denoise: /KSampler/i,
+                  width: /EmptyLatent|Latent/i,
+                  height: /EmptyLatent|Latent/i,
+                  batch: /EmptyLatent|Latent/i,
+                };
+                if (
+                  cmap[pk2] &&
+                  cmap[pk2].test(nd2.class_type) &&
+                  nd2.inputs[pk2] != null
+                ) {
+                  nd2.inputs[pk2] = /^\d+$/.test(nv)
+                    ? parseInt(nv)
+                    : /^\d+\.\d+$/.test(nv)
+                      ? parseFloat(nv)
+                      : nv;
+                  break;
+                }
+              }
+              jQuery("#sl_comfy_wf").val(JSON.stringify(wf2));
+              settings.cWf = JSON.stringify(wf2);
+              saveSettings();
+            } catch (e) {}
+          });
+      } catch (e) {
+        jQuery("#sl_node_list").html(
+          '<span style="color:' +
+            CAT.red +
+            ';">❌ JSON 格式错误喵~ ' +
+            esc(e.message) +
+            "</span>",
+        );
+      }
+    });
+    jQuery("#sl_save_wf").on("click", function () {
+      var raw = jQuery("#sl_comfy_wf").val();
+      if (!raw) return;
+      try {
+        JSON.parse(raw);
+        settings.cWf = raw;
+        saveSettings();
+        toast("success", "工作流保存好啦喵~ ✨");
+      } catch (e) {
+        toast("error", "JSON 格式不对喵…");
+      }
+    });
+    if (!settings.workflows) settings.workflows = {};
+    jQuery("#sl_wf_save_as").on("click", function () {
+      var n = jQuery("#sl_wf_name").val() || "wf_" + Date.now();
+      settings.workflows[n] = jQuery("#sl_comfy_wf").val();
+      settings.cWfName = n;
+      saveSettings();
+      toast("success", "已保存: " + n);
+    });
+    jQuery("#sl_wf_load").on("click", function () {
+      var n = jQuery("#sl_wf_name").val();
+      if (settings.workflows[n]) {
+        jQuery("#sl_comfy_wf").val(settings.workflows[n]);
+        toast("success", "已加载: " + n);
+      } else {
+        toast("info", "输入名称后点加载喵~");
+      }
+    });
+    jQuery("#sl_wf_del").on("click", function () {
+      var n = jQuery("#sl_wf_name").val();
+      if (settings.workflows[n]) {
+        delete settings.workflows[n];
+        saveSettings();
+        toast("success", "已删除: " + n);
+      }
+    });
+    jQuery("#sl_wf_import_btn").on("click", function () {
+      jQuery("#sl_wf_import").trigger("click");
+    });
+    jQuery("#sl_wf_import").on("change", function () {
+      var file = this.files[0];
+      if (!file) return;
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        jQuery("#sl_comfy_wf").val(e.target.result);
+        toast("success", "导入成功喵~ ✨");
+      };
+      reader.readAsText(file);
+    });
+    jQuery("#sl_style_preset").on("change", function () {
+      settings.stylePreset = jQuery(this).val();
+      saveSettings();
+    });
+    jQuery("#sl_neg").on("change input", function () {
+      settings.neg = jQuery(this).val();
+      saveSettings();
+    });
+  } else if (type === "advanced") {
+    var h =
+      '<div style="background:' +
+      CAT.card +
+      ";border-radius:10px;padding:12px;margin-bottom:8px;border:1px solid " +
+      CAT.line +
+      ';">';
+    h +=
+      '<label style="display:flex;align-items:center;gap:8px;cursor:pointer;"><input type="checkbox" id="sl_nsfw"' +
+      (settings.nsfwEnhance ? " checked" : "") +
+      '><span style="font-size:12px;color:' +
+      CAT.text +
+      ';">🔞 NSFW 增强模式</span></label>';
+    h +=
+      '<div style="margin-top:8px;"><label style="display:flex;align-items:center;gap:8px;cursor:pointer;"><input type="radio" name="sl_story" value="narrative"' +
+      (settings.storyMode !== "comic" ? " checked" : "") +
+      '><span style="font-size:12px;color:' +
+      CAT.text +
+      ';">📖 叙事模式</span></label></div><div><label style="display:flex;align-items:center;gap:8px;cursor:pointer;"><input type="radio" name="sl_story" value="comic"' +
+      (settings.storyMode === "comic" ? " checked" : "") +
+      '><span style="font-size:12px;color:' +
+      CAT.text +
+      ';">📱 漫画模式</span></label></div></div>';
+    h +=
+      '<div style="background:' +
+      CAT.card +
+      ";border-radius:10px;padding:12px;border:1px solid " +
+      CAT.line +
+      ';">';
+    h +=
+      '<label style="display:flex;align-items:center;gap:8px;cursor:pointer;"><input type="checkbox" id="sl_debug"' +
+      (settings.debugMode ? " checked" : "") +
+      '><span style="font-size:12px;color:' +
+      CAT.text +
+      ';">🐛 Debug 模式</span></label></div>';
+    body.html(h);
+    jQuery("#sl_nsfw").on("change", function () {
+      settings.nsfwEnhance = jQuery(this).is(":checked");
+      saveSettings();
+    });
+    jQuery("input[name=sl_story]").on("change", function () {
+      settings.storyMode = jQuery(this).val();
+      saveSettings();
+    });
+    jQuery("#sl_debug").on("change", function () {
+      settings.debugMode = jQuery(this).is(":checked");
+      saveSettings();
+    });
+  }
+}
+
+function renderArchiveTab() {
+  var body = jQuery("#sl_panel_body");
+  if (!body.length) return;
+  var pf = getProfiles();
+  if (!pf || !pf.charName) {
+    body.html(
+      '<div style="text-align:center;padding:20px;color:' +
+        CAT.sub +
+        ';font-size:12px;">还没进入聊天喵~ (｡•́︿•̀｡)<br><br>先去聊天窗口再回来看看吧~</div>',
+    );
+    return;
+  }
+  var cast = pf.root[pf.charName].cast || {},
+    dynamics = pf.chat.dynamics || {},
+    h = "";
+  h +=
+    '<div style="display:flex;gap:4px;margin-bottom:10px;border-bottom:2px solid ' +
+    CAT.line +
+    ';">';
+  h +=
+    '<button class="sl_arch_st active" data-ast="0" style="padding:8px 16px;border:none;border-radius:8px 8px 0 0;cursor:pointer;font-size:11px;font-weight:600;background:' +
+    CAT.accent +
+    ';color:#fff;">📋 静态档案</button>';
+  h +=
+    '<button class="sl_arch_st" data-ast="1" style="padding:8px 16px;border:none;border-radius:8px 8px 0 0;cursor:pointer;font-size:11px;font-weight:400;background:transparent;color:' +
+    CAT.sub +
+    ';">💬 动态档案</button></div>';
+  h += '<div id="sl_arch_static">';
+  if (Object.keys(cast).length) {
+    for (var ck in cast) {
+      if (ck === 'User') continue; // User独立显示
+      var cv = cast[ck],
+        anchor = cv.static || "",
+        bodyT = cv.body || "",
+        purl = cv.portrait || "";
+      h +=
+        '<div style="background:' +
+        CAT.card +
+        ";border-radius:10px;padding:10px;margin-bottom:8px;border:1px solid " +
+        CAT.line +
+        ';">';
+      h += '<div style="display:flex;gap:10px;align-items:flex-start;">';
+      h +=
+        '<div id="sl_port_' +
+        escAttr(ck).replace(/[^a-zA-Z0-9\u4e00-\u9fff]/g, "_") +
+        '" style="width:80px;height:110px;border-radius:6px;background:' +
+        CAT.bg +
+        ";display:flex;align-items:center;justify-content:center;border:2px dashed " +
+        CAT.line +
+        ";font-size:10px;color:" +
+        CAT.sub +
+        ";text-align:center;flex-shrink:0;" +
+        (purl
+          ? "background-image:url(" +
+            purl +
+            ");background-size:cover;background-position:top center;border:2px solid " +
+            CAT.accent +
+            ";color:transparent;"
+          : "") +
+        '">' +
+        (purl ? "" : "立绘") +
+        "</div>";
+      h +=
+        '<div style="flex:1;min-width:0;"><div style="font-weight:700;font-size:12px;color:' +
+        CAT.text +
+        ';margin-bottom:4px;">' +
+        esc(ck) +
+        "</div>";
+      if (anchor)
+        h +=
+          '<div style="font-size:10px;color:' +
+          CAT.text +
+          ';margin-bottom:4px;">' +
+          esc(anchor).substring(0, 120) +
+          (anchor.length > 120 ? "..." : "") +
+          "</div>";
+      if (bodyT)
+        h +=
+          '<div style="font-size:9px;color:' +
+          CAT.sub +
+          ';">身形: ' +
+          esc(bodyT).substring(0, 60) +
+          "</div>";
+      h +=
+        '<div style="display:flex;gap:4px;margin-top:4px;flex-wrap:wrap;"><button class="sl_port_btn" data-char="' +
+        escAttr(ck) +
+        '" style="' +
+        sbtn(CAT.accent) +
+        'font-size:9px;">📷 生成立绘</button><button class="sl_edit_btn" data-char="' +
+        escAttr(ck) +
+        '" style="' +
+        sbtn(CAT.sub) +
+        'font-size:9px;">✏️ 编辑</button><button class="sl_refine_btn" data-char="' +
+        escAttr(ck) +
+        '" style="' +
+        sbtn(CAT.yellow) +
+        'font-size:9px;">✨ AI润色</button></div>';
+      h +=
+        '<div class="sl_edit_box" data-char="' +
+        escAttr(ck) +
+        '" style="display:none;margin-top:6px;"><textarea class="sl_edit_ta" data-char="' +
+        escAttr(ck) +
+        '" style="width:100%;min-height:60px;padding:6px;border-radius:6px;border:1px solid ' +
+        CAT.line +
+        ";font-size:10px;background:" +
+        CAT.bg +
+        ";color:" +
+        CAT.text +
+        ';resize:vertical;">' +
+        esc(anchor) +
+        '</textarea><div style="display:flex;gap:4px;margin-top:4px;"><button class="sl_save_btn" data-char="' +
+        escAttr(ck) +
+        '" style="' +
+        sbtn(CAT.green) +
+        'font-size:9px;">💾 保存</button><button class="sl_cancel_btn" data-char="' +
+        escAttr(ck) +
+        '" style="font-size:9px;padding:4px 10px;border:1px solid ' +
+        CAT.line +
+        ";border-radius:6px;background:transparent;color:" +
+        CAT.sub +
+        ';cursor:pointer;">取消</button></div></div></div></div></div>';
+    }
+  } else {
+    var meta = pf.root[pf.charName].meta || {};
+    if (meta.cardType === '世界观卡') {
+      h += '<div style="text-align:center;padding:16px;color:' + CAT.mute + ';font-size:11px;">🌐 此卡为世界观卡<br>角色由对话中动态生成喵~</div>';
+      if (meta.coreChar) h += '<div style="text-align:center;font-size:10px;color:' + CAT.accent + ';">核心角色: ' + esc(meta.coreChar) + '</div>';
+    } else {
+      h += '<div style="text-align:center;padding:16px;color:' + CAT.mute + ';font-size:11px;">还没扫描喵~</div>';
+    }
+  }
+  h += "</div>";
+  h += '<div id="sl_arch_dynamic" style="display:none;">';
+  if (Object.keys(dynamics).length) {
+    for (var dk in dynamics) {
+      if (!dynamics[dk]) continue;
+      h +=
+        '<div style="background:' +
+        CAT.card +
+        ";border-radius:10px;padding:10px;margin-bottom:8px;border:1px solid " +
+        CAT.line +
+        ';">';
+      h +=
+        '<div style="font-weight:700;font-size:12px;color:' +
+        CAT.text +
+        ';margin-bottom:4px;">' +
+        esc(dk) +
+        "</div>";
+      h +=
+        '<div style="font-size:10px;color:' +
+        CAT.text +
+        ';white-space:pre-wrap;margin-bottom:4px;">' +
+        esc(dynamics[dk]) +
+        "</div>";
+      h +=
+        '<button class="sl_dyn_edit_btn" data-char="' +
+        escAttr(dk) +
+        '" style="' +
+        sbtn(CAT.sub) +
+        'font-size:9px;">✏️ 编辑</button>';
+      h +=
+        '<div class="sl_dyn_edit_box" data-char="' +
+        escAttr(dk) +
+        '" style="display:none;margin-top:6px;"><textarea class="sl_dyn_edit_ta" data-char="' +
+        escAttr(dk) +
+        '" style="width:100%;min-height:50px;padding:6px;border-radius:6px;border:1px solid ' +
+        CAT.line +
+        ";font-size:10px;background:" +
+        CAT.bg +
+        ";color:" +
+        CAT.text +
+        ';resize:vertical;">' +
+        esc(dynamics[dk]) +
+        '</textarea><div style="display:flex;gap:4px;margin-top:4px;"><button class="sl_dyn_save_btn" data-char="' +
+        escAttr(dk) +
+        '" style="' +
+        sbtn(CAT.green) +
+        'font-size:9px;">💾 保存</button><button class="sl_dyn_cancel_btn" data-char="' +
+        escAttr(dk) +
+        '" style="font-size:9px;padding:4px 10px;border:1px solid ' +
+        CAT.line +
+        ";border-radius:6px;background:transparent;color:" +
+        CAT.sub +
+        ';cursor:pointer;">取消</button></div></div></div>';
+    }
+  } else {
+    h +=
+      '<div style="text-align:center;padding:16px;color:' +
+      CAT.mute +
+      ';font-size:11px;">还没聊过天喵~</div>';
+  }
+  h += "</div>";
+  h +=
+    '<div style="background:' +
+    CAT.card +
+    ";border-radius:10px;padding:10px;margin-top:10px;border:1px solid " +
+    CAT.line +
+    ';">';
+  h +=
+    '<div style="font-weight:700;font-size:11px;color:' +
+    CAT.text +
+    ';margin-bottom:4px;">👤 User</div>';
+  var userProfile = pf.root[pf.charName].userProfile || '';
+  if (userProfile) {
+    h += '<div style="font-size:10px;color:' + CAT.text + ';margin-bottom:6px;white-space:pre-wrap;">' + esc(userProfile).substring(0,200) + '</div>';
+  }
+  h +=
+    '<input id="sl_user_name" type="text" value="' +
+    escAttr(settings.userName || "") +
+    '" style="padding:3px 6px;border-radius:4px;border:1px solid ' +
+    CAT.line +
+    ";font-size:10px;width:120px;background:" +
+    CAT.card +
+    ";color:" +
+    CAT.text +
+    ';" placeholder="姓名"> <input id="sl_user_desc" type="text" value="' +
+    escAttr(settings.userDesc || "") +
+    '" style="padding:3px 6px;border-radius:4px;border:1px solid ' +
+    CAT.line +
+    ";font-size:10px;width:200px;background:" +
+    CAT.card +
+    ";color:" +
+    CAT.text +
+    ';" placeholder="外貌">';
+  h +=
+    '<button id="sl_btn_scan_cast2" style="' +
+    sbtn(CAT.accent) +
+    'font-size:10px;">🔍 重新扫描角色卡</button></div>';
+  body.html(h);
+  bindArchiveEvents(body);
+}
+function bindArchiveEvents(b) {
+  b.off("click", ".sl_arch_st").on("click", ".sl_arch_st", function () {
+    var st = parseInt(jQuery(this).data("ast"));
+    b.find(".sl_arch_st").css({
+      background: "transparent",
+      color: CAT.sub,
+      fontWeight: "400",
+    });
+    jQuery(this).css({
+      background: CAT.accent,
+      color: "#fff",
+      fontWeight: "600",
+    });
+    b.find("#sl_arch_static").toggle(st === 0);
+    b.find("#sl_arch_dynamic").toggle(st === 1);
+  });
+  b.off("click", ".sl_edit_btn").on("click", ".sl_edit_btn", function () {
+    b.find(
+      ".sl_edit_box[data-char='" + jQuery(this).data("char") + "']",
+    ).toggle();
+  });
+  b.off("click", ".sl_cancel_btn").on("click", ".sl_cancel_btn", function () {
+    b.find(
+      ".sl_edit_box[data-char='" + jQuery(this).data("char") + "']",
+    ).hide();
+  });
+  b.off("click", ".sl_save_btn").on("click", ".sl_save_btn", function () {
+    var cn = jQuery(this).data("char"),
+      newText = b.find(".sl_edit_ta[data-char='" + cn + "']").val(),
+      pf = getProfiles();
+    if (
+      pf &&
+      pf.root[pf.charName] &&
+      pf.root[pf.charName].cast &&
+      pf.root[pf.charName].cast[cn]
+    ) {
+      pf.root[pf.charName].cast[cn].static = newText;
+      pf.root[pf.charName].cast[cn].anchor = newText.slice(0, 80);
+      saveSettings();
+      toast("success", cn + " 保存好啦喵~ ✨");
+      renderArchiveTab();
+    }
+  });
+  b.off("click", ".sl_refine_btn").on(
+    "click",
+    ".sl_refine_btn",
+    async function () {
+      var cn = jQuery(this).data("char"),
+        btn = jQuery(this),
+        pf = getProfiles(),
+        cast = pf && pf.root[pf.charName] && pf.root[pf.charName].cast;
+      if (!cast || !cast[cn]) {
+        toast("error", "没有档案喵…");
+        return;
+      }
+      var orig = cast[cn].static || "",
+        edit = b.find(".sl_edit_ta[data-char='" + cn + "']").val() || orig;
+      btn.prop("disabled", true).text("润色中...");
+      try {
+        var r = await refineStaticProfile(pf.charName, cn, orig, edit);
+        if (r) {
+          cast[cn].static = r.rigid;
+          cast[cn].body = r.body;
+          cast[cn].anchor = r.rigid.slice(0, 80);
+          saveSettings();
+          toast("success", cn + " 润色完成喵~ ✨");
+          renderArchiveTab();
+        } else {
+          toast("error", "润色失败喵… (╥﹏╥)");
+        }
+      } catch (e) {
+        toast("error", "润色出错喵…");
+      }
+      btn.prop("disabled", false).text("✨ AI润色");
+    },
+  );
+  b.off("click", ".sl_port_btn").on("click", ".sl_port_btn", async function () {
+    var cn = jQuery(this).data("char"),
+      btn = jQuery(this),
+      pf = getProfiles(),
+      cast = pf && pf.root[pf.charName] && pf.root[pf.charName].cast;
+    if (!cast || !cast[cn] || !cast[cn].static) {
+      toast("error", "没有静态档案喵…");
+      return;
+    }
+    var anchor = cast[cn].static,
+      bodyT = cast[cn].body || "";
+    var prompt =
+      anchor +
+      (bodyT ? ", " + bodyT : "") +
+      ", standing, front view, full body, simple background, neutral expression";
+    btn.prop("disabled", true).text("生成中...");
+    try {
+      var wf = JSON.parse(settings.cWf || "{}");
+      if (!Object.keys(wf).length) {
+        toast("error", "工作流空空如也喵~");
+        btn.prop("disabled", false).text("📷 生成立绘");
+        return;
+      }
+      var result = await generateImage(wf, prompt);
+      if (result && result.url) {
+        cast[cn].portrait = result.url;
+        saveSettings();
+        b.find("#sl_port_" + cn.replace(/[^a-zA-Z0-9\u4e00-\u9fff]/g, "_"))
+          .css({
+            backgroundImage: "url(" + result.url + ")",
+            backgroundSize: "cover",
+            backgroundPosition: "top center",
+            border: "2px solid " + CAT.accent,
+            color: "transparent",
+          })
+          .html("");
+        toast("success", cn + " 立绘生成好啦喵~ ✨");
+      }
+    } catch (e) {
+      toast("error", "立绘生成失败喵… (╥﹏╥)");
+    }
+    btn.prop("disabled", false).text("📷 生成立绘");
+  });
+  b.off("click", ".sl_dyn_edit_btn").on(
+    "click",
+    ".sl_dyn_edit_btn",
+    function () {
+      b.find(
+        ".sl_dyn_edit_box[data-char='" + jQuery(this).data("char") + "']",
+      ).toggle();
+    },
+  );
+  b.off("click", ".sl_dyn_cancel_btn").on(
+    "click",
+    ".sl_dyn_cancel_btn",
+    function () {
+      b.find(
+        ".sl_dyn_edit_box[data-char='" + jQuery(this).data("char") + "']",
+      ).hide();
+    },
+  );
+  b.off("click", ".sl_dyn_save_btn").on(
+    "click",
+    ".sl_dyn_save_btn",
+    function () {
+      var cn = jQuery(this).data("char"),
+        newT = b.find(".sl_dyn_edit_ta[data-char='" + cn + "']").val(),
+        pf = getProfiles();
+      if (pf && pf.chat && pf.chat.dynamics) {
+        pf.chat.dynamics[cn] = newT;
+        saveSettings();
+        toast("success", cn + " 动态保存啦喵~ ✨");
+        renderArchiveTab();
+      }
+    },
+  );
+  b.off("change input", "#sl_user_name,#sl_user_desc").on(
+    "change input",
+    "#sl_user_name,#sl_user_desc",
+    function () {
+      settings.userName = b.find("#sl_user_name").val();
+      settings.userDesc = b.find("#sl_user_desc").val();
+      saveSettings();
+    },
+  );
+  b.off("click", "#sl_btn_scan_cast2").on(
+    "click",
+    "#sl_btn_scan_cast2",
+    async function () {
+      var btn = jQuery(this);
+      btn.prop("disabled", true).text("扫描中...");
+      try {
+        await scanCharacterProfile();
+        toast("success", "扫描完成喵~ ✨");
+        renderArchiveTab();
+        refreshCompactBar();
+      } catch (e) {
+        toast("error", "扫描失败喵…");
+      }
+      btn.prop("disabled", false).text("🔍 重新扫描角色卡");
+    },
+  );
+  b.off("click", "[id^=sl_port_]").on("click", "[id^=sl_port_]", function () {
+    var bg = jQuery(this).css("background-image");
+    if (!bg || bg === "none") return;
+    var url = bg.replace(/^url\(["']?/, "").replace(/["']?\)$/, "");
+    jQuery(
+      '<div style="position:fixed;z-index:30001;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);display:flex;align-items:center;justify-content:center;cursor:pointer;"><img src="' +
+        url +
+        '" style="max-width:90vw;max-height:90vh;border-radius:12px;box-shadow:0 4px 30px rgba(0,0,0,0.5);"></div>',
+    )
+      .appendTo("body")
+      .on("click", function () {
+        jQuery(this).remove();
+      });
+  });
+}
+
+function showLogViewer() {
+  var logText = slLogDump() || "暂无日志喵~";
+  var h =
+    '<div style="position:fixed;z-index:40000;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);display:flex;align-items:center;justify-content:center;">';
+  h +=
+    '<div style="background:' +
+    CAT.card +
+    ";border-radius:" +
+    CAT.radius +
+    ';width:90vw;max-width:700px;max-height:80vh;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,0.3);">';
+  h +=
+    '<div style="display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:1px solid ' +
+    CAT.line +
+    ';">';
+  h +=
+    '<span style="font-weight:700;font-size:14px;color:' +
+    CAT.text +
+    ';">📋 插件日志 (' +
+    getLogCount() +
+    " 条)</span>";
+  h +=
+    '<div style="display:flex;gap:6px;"><button id="sl_log_clear" style="' +
+    sbtn(CAT.red) +
+    'font-size:11px;">🗑 清空</button><button id="sl_log_close" style="border:none;background:none;cursor:pointer;font-size:18px;color:' +
+    CAT.mute +
+    ';">✕</button></div></div>';
+  h +=
+    '<div style="flex:1;overflow-y:auto;padding:12px;font-family:monospace;font-size:11px;color:' +
+    CAT.text +
+    ';white-space:pre-wrap;line-height:1.5;">' +
+    esc(logText) +
+    "</div></div></div>";
+  var modal = jQuery(h).appendTo("body");
+  jQuery("#sl_log_close").on("click", function () {
+    modal.remove();
+  });
+  jQuery("#sl_log_clear").on("click", function () {
+    slClearLogs();
+    modal.remove();
+    toast("success", "日志已清空喵~ 🧹");
+  });
+  modal.on("click", function (e) {
+    if (e.target === this) modal.remove();
+  });
+}
+
+export function buildUI(extSettings) {
+  slLog("=^_^= UI v2.1 start");
+  if (settings.uiTheme) applyTheme(settings.uiTheme);
+  createCompactBar();
+  createExpandedPanel();
+}
