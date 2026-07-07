@@ -156,6 +156,7 @@ export async function scanCharacterProfile() {
     // 不再因无描述报错，由 PRO LLM 自行分析卡类型
 
     var userDesc = settings.userDesc || '';
+    var cardUserDesc = '';
     // 读取ST persona描述（酒馆的User设定）
     var stPersonaDesc = '';
     try {
