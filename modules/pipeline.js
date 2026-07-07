@@ -112,11 +112,12 @@ export function getUserName() {
 
 // ── 手动🔍 扫描角色卡档案喵~ (๑•̀ㅂ•́)و✧（合并 User 档案） ──
 export async function scanCharacterProfile() {
+    slLog('🔍SCAN-START: 开始扫描');
     var profiles = getProfiles();
-    if (!profiles || !profiles.charName) { toastr.error('未检测到当前角色'); return null; }
+    if (!profiles || !profiles.charName) { slLog('🔍SCAN-FAIL: profiles为空或无charName'); toastr.error('未检测到当前角色'); return null; }
     var charName = profiles.charName;
 
-    if (!settings.auxUrl || (!settings.profileModel && !settings.auxModel)) { toastr.error('请先在🧠 AI助理设置模型喵~ (｡•́︿•̀｡)'); return null; }
+    if (!settings.auxUrl || (!settings.profileModel && !settings.auxModel)) { slLog('🔍SCAN-FAIL: 模型未配置 auxUrl='+!!settings.auxUrl+' profileModel='+(settings.profileModel||'')+' auxModel='+(settings.auxModel||'')); toastr.error('请先在🧠 AI助理设置模型喵~ (｡•́︿•̀｡)'); return null; }
 
     // 收集角色卡描述
     var description = '';
