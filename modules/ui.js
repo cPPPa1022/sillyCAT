@@ -723,7 +723,9 @@ function renderHomeTab() {
     sbtn(CAT.accent) +
     '">🔍 扫描角色喵~</button><button id="sl_btn_gen_all" style="' +
     sbtn(CAT.green) +
-    '">⚡ 一键排图</button></div>';
+    '">⚡ 一键排图</button><button id="sl_btn_clear_cache" style="' +
+    sbtn(CAT.red) +
+    '">🗑 清除缓存</button></div>';
   h +=
     '<div style="background:' +
     CAT.card +
@@ -803,6 +805,15 @@ function renderHomeTab() {
   body
     .off("click", "#sl_btn_gen_all")
     .on("click", "#sl_btn_gen_all", triggerGenAll);
+  body.off("click", "#sl_btn_clear_cache").on("click", "#sl_btn_clear_cache", function () {
+    if (!confirm("确定要清除当前角色卡的全部缓存吗？\n\n包括：角色档案、聊天缓存、图片缓存。\n\n清除后需重新扫描喵…")) return;
+    if (!confirm("真的确定吗？这个操作回不来的喵！")) return;
+    deleteCharacterProfile(true);
+    toast("warning", "档案全部删掉了喵… (｡•́︿•̀｡)");
+    setTimeout(function () { toast("info", "请点击扫描按钮重新生成档案喵~ ✨"); }, 1000);
+    renderHomeTab();
+    refreshCompactBar();
+  });
   body.off("change", "#sl_ui_theme").on("change", "#sl_ui_theme", function () {
     var name = jQuery(this).val();
     hidePanel();
