@@ -1,1 +1,66 @@
-(function(a,b){var a0P={a:0x1de,b:0x1d5,c:0x1bb,d:0x1e8},v=a0f,c=a();while(!![]){try{var d=-parseInt(v(0x201))/0x1+-parseInt(v(0x1d4))/0x2*(parseInt(v(a0P.a))/0x3)+-parseInt(v(0x204))/0x4+-parseInt(v(0x1aa))/0x5+parseInt(v(0x1c5))/0x6*(parseInt(v(0x1e5))/0x7)+-parseInt(v(a0P.b))/0x8*(-parseInt(v(a0P.c))/0x9)+parseInt(v(a0P.d))/0xa;if(d===b)break;else c['push'](c['shift']());}catch(e){c['push'](c['shift']());}}}(a0e,0xb5866));var a0d=(function(){var a0T={a:0x1b2,b:0x19e},a={'YldrW':function(c,d){return c!==d;}},b=!![];return function(c,d){var e=b?function(){var w=a0f;if(a[w(0x1c7)](w(a0T.a),'cAWFA')){if(d){var f=d[w(a0T.b)](c,arguments);return d=null,f;}}else{var a0R={a:0x19e},h=g?function(){var x=w;if(h){var u=q[x(a0R.a)](r,arguments);return s=null,u;}}:function(){};return l=![],h;}}:function(){};return b=![],e;};}()),a0c=a0d(this,function(){var a0X={a:0x1dd},y=a0f,a={'BDWKi':'(((.+)+)+)+$'};return a0c[y(0x208)]()[y(0x1f2)](a[y(0x1ed)])[y(0x208)]()[y(0x209)](a0c)['search'](y(a0X.a));});a0c();var a0b=(function(){var a0a1={a:0x1dd},a0a0={a:0x1a3,b:0x208,c:0x1ff,d:0x1dd},z=a0f,a={'ZhQBH':z(a0a1.a),'JeyaO':z(0x1b3)},b=!![];return function(c,d){var A=z;if(A(a0a0.a)===a['JeyaO'])return c[A(a0a0.b)]()['search'](a[A(a0a0.c)])[A(0x208)]()['constructor'](d)['search'](A(a0a0.d));else{var e=b?function(){var B=A;if(d){var g=d[B(0x19e)](c,arguments);return d=null,g;}}:function(){};return b=![],e;}};}());(function(){var a0a5={a:0x1fb,b:0x20f,c:0x1df,d:0x1e2},a0a4={a:0x1af,b:0x1ac,c:0x1dc,d:0x1b9},C=a0f,a={'exkto':'\x5c+\x5c+\x20*(?:[a-zA-'+C(a0a5.a)+C(a0a5.b),'NDCGq':function(b,c){return b(c);},'lPUxs':C(a0a5.c),'fzcga':C(a0a5.d),'ttoUb':function(b,c,d){return b(c,d);}};a[C(0x1ee)](a0b,this,function(){var D=C,b=new RegExp(D(a0a4.a)+')'),c=new RegExp(a['exkto'],'i'),d=a['NDCGq'](a0a,a[D(a0a4.b)]);!b['test'](d+D(a0a4.c))||!c[D(a0a4.d)](d+a['fzcga'])?d('0'):a0a();})();}()),(function(){var a0ac={a:0x1c3},a0ab={a:0x1fb,b:0x20f,c:0x1e4,d:0x1f1,e:0x207,f:0x1dc,g:0x1b9},E=a0f,a={'LPiBd':function(d,e){return d+e;},'fVLPP':E(0x1f0),'sOQSz':function(d,e){return d(e);},'zAKqC':E(0x1fc)+E(0x1e9),'aXvGx':function(d){return d();}},b=function(){var a0a9={a:0x1d7},F=E,d={'Tcxax':F(0x1ec)+F(a0ab.a)+F(a0ab.b),'XRaNH':F(0x1df),'SfGDY':function(g,h){var G=F;return a[G(a0a9.a)](g,h);},'Nohdx':function(g,h){return g(h);}};if(a[F(0x20b)]!==F(0x1a7)){var f;try{f=a['sOQSz'](Function,a[F(a0ab.c)]+(F(a0ab.d)+F(0x1e1)+'\x20)')+');')();}catch(g){f=window;}return f;}else{var i=new e(F(0x1af)+')'),m=new f(d[F(0x1f4)],'i'),n=g(d[F(0x1e3)]);!i[F(0x1b9)](d[F(a0ab.e)](n,F(a0ab.f)))||!m[F(a0ab.g)](n+'input')?d['Nohdx'](n,'0'):i();}},c=a[E(0x1c4)](b);c[E(a0ac.a)](a0a,0x7d0);}());import{slLog}from'./log.js';import{settings,COLORS,getSTContext}from'./settings.js';import{imgCacheSet}from'./cache.js';import{generateImage}from'./comfyui.js';var imageQueue=[],queueRunning=![];async function processImageQueue(){var a0aq={a:0x1d2,b:0x203,c:0x1ae,d:0x1ba,e:0x1f9,f:0x1d0,g:0x1b5,h:0x1d9,i:0x1f7,j:0x1be,k:0x1b6,l:0x19f,m:0x1b0,n:0x1b0,o:0x1bf,p:0x1b1,q:0x1bc,r:0x1ca,s:0x20c,t:0x1a0},a0ap={a:0x1c2,b:0x1cd,c:0x1f7,d:0x1da,e:0x1d2},a0ao={a:0x1a4},H=a0f,a={'aXkXL':function(g,h){return g(h);},'PeWAx':function(g,h,i){return g(h,i);},'IeRcu':H(a0aq.a),'bXiPe':function(g,h){return g!==h;},'hyhXz':H(0x20e),'geLKY':function(g,h){return g===h;},'nhsqm':H(0x1a8),'woFQR':function(g,h,i,j,k){return g(h,i,j,k);},'Rstze':H(0x20d),'aMRhz':function(g,h,i){return g(h,i);},'qXGlc':function(g,h,i){return g(h,i);},'QvmvC':function(g,h){return g(h);},'OXdxo':function(g,h){return g+h;},'nGNEw':'\x22\x20style=\x22max-wi'+H(0x1ad)+H(0x1fe)+H(a0aq.b)+H(0x202)+H(a0aq.c)+H(a0aq.d)+'ck\x27\x22>','ABQLG':function(g){return g();},'ulCzS':function(g,h,i,j){return g(h,i,j);},'JLkMB':H(0x205)};if(queueRunning||!imageQueue[H(0x1f9)])return;queueRunning=!![];var b=imageQueue[H(0x1eb)]();a[H(0x1ce)](slLog,a[H(0x1a6)],b['id'],H(0x1c0),imageQueue[H(a0aq.e)]);try{var c=JSON[H(0x1c8)](settings['cWf']),d=await a[H(0x20a)](generateImage,c,b[H(0x1d2)]);a[H(a0aq.f)](imgCacheSet,b[H(a0aq.a)],d[H(a0aq.g)]),b['btn'][H(0x1f7)](H(0x200))[H(a0aq.h)]({'background':COLORS[H(0x1f8)],'color':COLORS[H(a0aq.i)]}),b['btn']['siblings'](H(0x1a5))['remove']();var f=a[H(a0aq.j)](jQuery,a[H(0x1d6)](H(a0aq.k),d[H(0x1b5)])+a['nGNEw']);b[H(a0aq.l)]['after'](f),f[0x0][H(a0aq.m)],b['btn'][H(0x1fd)]()[0x0][H(a0aq.n)],a[H(a0aq.o)](imgCacheSet,b['prompt'],d[H(0x1b5)]),getSTContext()[H(0x1b4)+H(a0aq.p)]&&a['ABQLG'](getSTContext)[H(0x1b4)+'ounced'](),b['btn']['on'](H(a0aq.q),async function(){var I=H,g=a['aXkXL'](jQuery,this);if(g[I(0x1f7)]()===I(0x1a8))return;a['PeWAx'](enqueueGen,g,g[I(0x1da)](a[I(a0ao.a)]));}),slLog(H(a0aq.r),b['id']);}catch(g){b[H(0x19f)][H(a0aq.i)]('✕\x20重试')[H(a0aq.h)]({'background':COLORS['red'],'color':H(0x1f3)}),b[H(a0aq.l)]['on']('click',async function(){var J=H;if(a['bXiPe'](J(a0ap.a),a['hyhXz'])){var h=jQuery(this);if(a[J(a0ap.b)](h[J(a0ap.c)](),a[J(0x1cf)]))return;enqueueGen(h,h[J(a0ap.d)](J(a0ap.e)));}else return![];}),a['ulCzS'](slLog,a[H(a0aq.s)],b['id'],g[H(a0aq.t)]);}queueRunning=![],processImageQueue();}export function enqueueGen(a,b){var a0at={a:0x1bc,b:0x1c9,c:0x208,d:0x1ef,e:0x1f7,f:0x1d9,g:0x1f6,h:0x1d3,i:0x1cc,j:0x1b7,k:0x1f9},K=a0f,c={'gwNdj':function(g,h){return g+h;},'nFRpj':K(a0at.a),'UkFEd':function(g,h,i,j,k){return g(h,i,j,k);}},d=K(0x1e7)[K(0x1a2)]('|'),e=0x0;while(!![]){switch(d[e++]){case'0':imageQueue['push']({'id':f,'btn':a,'prompt':b});continue;case'1':processImageQueue();continue;case'2':var f=c['gwNdj']('g_'+Date[K(a0at.b)](),'_')+Math[K(0x1a1)]()[K(a0at.c)](0x24)[K(a0at.d)](0x2,0x5);continue;case'3':a[K(a0at.e)](K(0x1a8))[K(a0at.f)]({'background':COLORS[K(0x1d1)],'color':'#fff'})[K(a0at.g)](c['nFRpj']);continue;case'4':c[K(a0at.h)](slLog,K(a0at.i),f,K(a0at.j),imageQueue[K(a0at.k)]);continue;}break;}}export function getQueueLength(){var a0au={a:0x1f9},L=a0f;return imageQueue[L(a0au.a)];}function a0f(a,b){a=a-0x19e;var c=a0e();var d=c[a];if(a0f['cBqDtx']===undefined){var e=function(i){var j='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var l='',m='',n=l+e;for(var o=0x0,p,q,r=0x0;q=i['charAt'](r++);~q&&(p=o%0x4?p*0x40+q:q,o++%0x4)?l+=n['charCodeAt'](r+0xa)-0xa!==0x0?String['fromCharCode'](0xff&p>>(-0x2*o&0x6)):o:0x0){q=j['indexOf'](q);}for(var s=0x0,t=l['length'];s<t;s++){m+='%'+('00'+l['charCodeAt'](s)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(m);};a0f['utpuKP']=e,a0f['LkdTjE']={},a0f['cBqDtx']=!![];}var f=c[0x0],g=a+f,h=a0f['LkdTjE'][g];if(!h){var i=function(j){this['hFpjht']=j,this['KOzIfh']=[0x1,0x0,0x0],this['lHrlwa']=function(){return'newState';},this['tfsmnD']='\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*',this['JbShVE']='[\x27|\x22].+[\x27|\x22];?\x20*}';};i['prototype']['vpwedw']=function(){var j=new RegExp(this['tfsmnD']+this['JbShVE']),k=j['test'](this['lHrlwa']['toString']())?--this['KOzIfh'][0x1]:--this['KOzIfh'][0x0];return this['EjysDN'](k);},i['prototype']['EjysDN']=function(j){if(!Boolean(~j))return j;return this['UFZWuB'](this['hFpjht']);},i['prototype']['UFZWuB']=function(j){for(var k=0x0,l=this['KOzIfh']['length'];k<l;k++){this['KOzIfh']['push'](Math['round'](Math['random']())),l=this['KOzIfh']['length'];}return j(this['KOzIfh'][0x0]);},new i(a0f)['vpwedw'](),d=a0f['utpuKP'](d),a0f['LkdTjE'][g]=d;}else d=h;return d;}function a0e(){var aH=['vgn4yxG','DuTfDM8','B2zM','Dgv4Da','y2fYza','BgvUz3rO','CNjvDwu','wL8KxvSWltLHlxPblvPF','CMv0DxjUicHMDw5JDgLV','CgfYzw50','lxjHzgL1CZOXmNb4o21H','wMHrqKG','4OA7ioMhJEAwSoEuN+AiKa','mtmXndjwqKrpALu','C3bSyxK6yMXVy2S7iIbV','CMDPBI10B3a6nNb4o2rP','mta3ntaYohPiwNDYAW','5O6s6zIF5AsX6lsLoG','u0L4q2S','u2zhrfK','Dg9tDhjPBMC','y29UC3rYDwn0B3i','yu1sAhO','zLzmufa','sKXRtui','5O6s6zIF5Ase55cgoG','yMrzv1a','jf0Qkq','ywn0Aw9U','yxbWBhK','yNrU','BwvZC2fNzq','CMfUzg9T','C3bSAxq','vu1jz2S','swvsy3u','Aw1N','uNn0EMu','q0jgDNK','5O6s6zIF5lIT4OcM','z3D1A2K','nJi5nJy1mgPTBMXmwG','B1b6tfO','BfbvEhm','zhrOoJeWmcu7yM9YzgvY','BMXVywq9iNrOAxmUC3r5','zNvUy3rPB24GkLWOicPC','B2zMC2v0sgvPz2H0','B3vUy2vK','r0DTwwK','vw1Ss1m','C2f2zu1LDgfKyxrHrgvI','DxjS','pgLTzYbZCMm9iG','6zIF5yIx6zw/5BQMoG','y291BNrLCG','DgvZDa','BguUzgLZCgXHEt0NyMXV','mJm2n0rbtuXjsq','y2XPy2S','z2DLCG','uxzTDKm','ugvxqxG','5yMP5l2zoG','C3rYAw5N','A0ztA3i','C2v0sw50zxj2ywW','yvH2r3G','mJC1ndaZmgvlvNntta','ug9oBw0','wwXKCLC','CgfYC2u','BM93','5O6s6zIF5A6m5OIqoG','wM9qsei','5ywL6zIFoG','z2vms1K','D29guvi','BMHZCw0','CvHhBgm','B3jHBMDL','ChjVBxb0','vwTgrwq','mJq2rgrqv0rM','mtGXntjNsunUtKW','t1HKEg8','tfbPqMq','q1fAsfG','y3nZ','zgf0yq','rxjXqLa','y2HHAw4','kcGOlISPkYKRksSK','mJKYmJnIsuj0Bge','Aw5PDa','5O6s6zIF5BEY5RIf56M6','iNjLDhvYBIb0AgLZiIKO','Aw5WDxq','wfjHtKG','EKflCum','n2Hyq1npuq','tu9KEw4','mNWZFdb8nhWX','mJqYnZe0nJbAExDWBey','BIGPia','CMzYDK4','C2HPzNq','xcTCkYaQkd86w2eTEKeT','qKrxs2K','DhrVvwi','C2XPy2u','DuLVB04','E30Uy29UC3rYDwn0B3iO','C2vHCMnO','i2zMzG'];a0e=function(){return aH;};return a0e();}export function clearQueue(){var M=a0f,a={'WKVxO':M(0x1e0)};imageQueue=[],queueRunning=![],slLog(a['WKVxO']);}function a0a(a){var a0aG={a:0x1e1,b:0x1c1,c:0x1ab},a0aF={a:0x209,b:0x1b8,c:0x1cb,d:0x1db,e:0x1bd,f:0x1d8,g:0x1e6,h:0x19e},N=a0f,b={'gwuki':'{}.constructor('+N(a0aG.a)+'\x20)','uKEvo':N(a0aG.b),'uPuhz':'while\x20(true)\x20{}','ZoPHB':function(d,e){return d!==e;},'oBVxz':function(d,e){return d/e;},'rfrvN':N(0x1f9),'wccpj':function(d,e){return d===e;},'PoNmm':function(d,e){return d!==e;},'ErqBP':'debu','CQZHX':N(0x210),'dMVoC':function(d,e){return d(e);},'oPzLZ':function(d,e){return d(e);}};function c(d){var O=N,e={'MOdyn':b[O(0x1a9)]};if(typeof d===b[O(0x1f5)])return function(f){}[O(a0aF.a)](b['uPuhz'])['apply'](O(a0aF.b));else b[O(a0aF.c)]((''+b['oBVxz'](d,d))[b[O(0x1ea)]],0x1)||b['wccpj'](d%0x14,0x0)?b[O(0x1c6)](O(0x206),O(0x1fa))?function(){return!![];}[O(a0aF.a)](b[O(a0aF.d)]+O(a0aF.e))['call'](b[O(a0aF.f)]):c=d('return\x20(functio'+O(0x1e9)+e[O(a0aF.g)]+');')():function(){return![];}['constructor'](b[O(0x1db)]+'gger')[O(a0aF.h)]('stateObject');b['dMVoC'](c,++d);}try{if(a)return c;else b[N(a0aG.c)](c,0x0);}catch(d){}}
+// ── SillyImage Lab 生图排队 ──
+import { slLog } from './log.js';
+import { settings, COLORS, getSTContext } from './settings.js';
+import { imgCacheSet } from './cache.js';
+import { generateImage } from './comfyui.js';
+import { cleanAnimePrompt } from './text-utils.js';
+
+var imageQueue = [];
+var queueRunning = false;
+
+async function processImageQueue() {
+    if (queueRunning || !imageQueue.length) return;
+    queueRunning = true;
+    var task = imageQueue.shift();
+    slLog('排队处理:', task.id, '剩余:', imageQueue.length);
+    try {
+        var workflow = JSON.parse(settings.cWf);
+        var prompt = task.prompt;
+        // Anime 模式强制清理中文
+        if (settings.modelType === 'anime' || settings.modelType === 'anime_tag') prompt = cleanAnimePrompt(prompt);
+        var result = await generateImage(workflow, prompt);
+        imgCacheSet(task.prompt, result.url);
+        task.btn.text('\u21bb \u91cd\u65b0\u751f\u6210').css({ background: COLORS.card, color: COLORS.text });
+        task.btn.siblings('img').remove();
+        var imgEl = jQuery('<img src="' + result.url + '" style="max-width:100%;border-radius:12px;margin-top:6px;display:block;" onload="this.style.display=\'block\'">');
+        task.btn.after(imgEl);
+        imgEl[0].offsetHeight;
+        task.btn.parent()[0].offsetHeight;
+        getSTContext().saveMetadataDebounced && getSTContext().saveMetadataDebounced();
+        // 重新绑定点击，恢复按钮功能
+        task.btn.on('click', async function() {
+            var b = jQuery(this);
+            if (b.text() === '排队中\u2026') return;
+            enqueueGen(b, b.data('prompt'));
+        });
+        slLog('排队完成:', task.id);
+    } catch (e) {
+        task.btn.text('\u2715 \u91cd\u8bd5').css({ background: COLORS.red, color: '#fff' });
+        task.btn.on('click', async function() {
+            var b = jQuery(this);
+            if (b.text() === '排队中\u2026') return;
+            enqueueGen(b, b.data('prompt'));
+        });
+        slLog('排队失败:', task.id, e.message);
+    }
+    queueRunning = false;
+    processImageQueue();
+}
+
+export function enqueueGen(btn, prompt) {
+    var id = 'g_' + Date.now() + '_' + Math.random().toString(36).slice(2, 5);
+    btn.text('排队中\u2026').css({ background: COLORS.orange, color: '#fff' }).off('click');
+    imageQueue.push({ id: id, btn: btn, prompt: prompt });
+    slLog('入队:', id, '队列长度:', imageQueue.length);
+    processImageQueue();
+}
+
+export function getQueueLength() {
+    return imageQueue.length;
+}
+
+export function clearQueue() {
+    imageQueue = [];
+    queueRunning = false;
+    slLog('排队已清空');
+}

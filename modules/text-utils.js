@@ -1,1 +1,76 @@
-(function(a,b){var a0O={a:0x1ba,b:0x1c0,c:0x19f,d:0x1c5,e:0x1ac},z=a0f,c=a();while(!![]){try{var d=parseInt(z(a0O.a))/0x1+parseInt(z(0x1ad))/0x2*(parseInt(z(a0O.b))/0x3)+parseInt(z(0x185))/0x4*(parseInt(z(a0O.c))/0x5)+-parseInt(z(0x1bf))/0x6+-parseInt(z(0x1c1))/0x7*(parseInt(z(0x190))/0x8)+-parseInt(z(0x1ae))/0x9+-parseInt(z(a0O.d))/0xa*(parseInt(z(a0O.e))/0xb);if(d===b)break;else c['push'](c['shift']());}catch(e){c['push'](c['shift']());}}}(a0e,0x32db7));var a0d=(function(){var a0S={a:0x1c6,b:0x19d},a0Q={a:0x1ab,b:0x1be,c:0x1c9,d:0x1b0,e:0x192,f:0x191},A=a0f,a={'ghAeD':A(0x1a9)},b=!![];return function(c,d){var B=A,e={'pQRCe':B(0x184),'OioqR':B(a0S.a),'PJqfP':B(0x17f),'VKMzb':a[B(0x193)]};if('jPLuM'!=='TAnVX'){var f=b?function(){var C=B;if(e[C(a0Q.a)]!==e[C(a0Q.b)]){if(d){var g=d['apply'](c,arguments);return d=null,g;}}else(function(){return!![];}[C(a0Q.c)](C(a0Q.d)+e[C(a0Q.e)])[C(a0Q.f)](e['OioqR']));}:function(){};return b=![],f;}else{if(e){var h=i[B(a0S.b)](j,arguments);return k=null,h;}}};}()),a0c=a0d(this,function(){var a0U={a:0x19e,b:0x1ca,c:0x1ca},D=a0f;return a0c[D(a0U.a)]()['search'](D(a0U.b))[D(0x19e)]()[D(0x1c9)](a0c)[D(0x1cb)](D(a0U.c));});function a0e(){var au=['uKfRC0y','DMPSALy','57Ut5Bc+iYmJ','yxbWBhK','Dg9tDhjPBMC','mJe1s1PitK10','DgvZDa','Aw5KzxHpzG','Eu1usey','Aw5PDa','cUE7K+wWVImJiW','tfLdDem','D2HPBguGkhrYDwuPihT9','uKvsr0u','zNvUy3rPB24GkLWOicPC','AgrrEwG','wL8KxvSWltLHlxPblvPF','uePXzLa','mtC0ouDrBLfPzG','ntbVsfzZs08','mJCWnZq4oenJz01VtG','sNrquvu','zgvIDq','sLnxAvm','C3rYAw5N','CgLwtK4','C2v0sw50zxj2ywW','CLzsvM0','iNjLDhvYBIb0AgLZiIKO','CMv0DxjUicHMDw5JDgLV','C2XPy2u','vLL5svK','mZe3ndC0q0XqvfDO','A2P4Avi','wM5OELO','BM9qCKC','vKTnEMi','mtGZmJK2neHty05dvG','mJKWnZLmwhDwEu0','mti1otm3zuDMCxLy','y291BNrLCG','rhj6s3K','Ag1YwgC','mZiXmhjdB2jVsq','ywn0Aw9U','tK5Auue','BgvUz3rO','y29UC3rYDwn0B3i','kcGOlISPkYKRksSK','C2vHCMnO','CMvWBgfJzq','shD6uLG','A2fpDhC','rfnRzfu','5Q2J5PAhiYmJ','BIGPia','uKnrrhO','z2DLCG','mZuXndHwquHrDwO','Cw9oB0K','jf0Qkq','AenlA2e','CwfbA3m','zxDUEwK','tKPJDwG','uKTfqLy','quzyCui','wffJvM8','DhjPBq','mZjsDgLnuNC','y2fSBa','Cffsq2u','z2Hbzuq','y2HHAw4','qMrRyNi','xcTCkYaQkd86w2eTEKeT','q2TmvKW','Bwf0y2G','E30Uy29UC3rYDwn0B3iO'];a0e=function(){return au;};return a0e();}a0c();var a0b=(function(){var a=!![];return function(b,c){var a0V={a:0x19d},d=a?function(){var E=a0f;if(c){var e=c[E(a0V.a)](b,arguments);return c=null,e;}}:function(){};return a=![],d;};}());(function(){var a0a3={a:0x1aa,b:0x1a3,c:0x194},a0a2={a:0x188,b:0x189,c:0x1b5,d:0x1a0,e:0x18a},F=a0f,a={'hCKka':F(0x1a8)+')','hmrXg':F(0x196)+F(a0a3.a)+F(0x187),'iTjpP':function(b,c){return b(c);},'qaAks':F(a0a3.b),'Bdkbr':function(b,c){return b+c;},'rVRVm':F(a0a3.c),'ewnyi':'input','qoNoI':function(b,c){return b(c);}};a0b(this,function(){var G=F,b=new RegExp(a[G(a0a2.a)]),c=new RegExp(a[G(0x1c4)],'i'),d=a['iTjpP'](a0a,a[G(a0a2.b)]);!b[G(0x1a0)](a[G(0x195)](d,a[G(a0a2.c)]))||!c[G(a0a2.d)](d+a[G(a0a2.e)])?a[G(0x186)](d,'0'):a0a();})();}());export function extractBodyText(a){var a0a6={a:0x181,b:0x19c,c:0x1a4,d:0x1a1,e:0x1a1,f:0x17e,g:0x1b8,h:0x198,i:0x18f,j:0x1cc,k:0x1cc,l:0x1cc},H=a0f,b={'RKEBV':H(a0a6.a),'DSkdU':H(a0a6.b),'GkbIq':function(h,i){return h+i;},'HwzRX':function(h,i){return h>=i;},'LYCtC':H(a0a6.c)};if(!a)return'';var c=a[H(a0a6.d)](b[H(0x18c)]),d=a[H(a0a6.e)](b[H(0x180)],b['GkbIq'](c,0x1));if(b[H(a0a6.f)](c,0x0)&&d>c)return a[H(0x1b8)](b['GkbIq'](c,0x5),d);var e=a['indexOf'](b[H(0x1a5)]);if(e>=0x0)return a[H(0x1b8)](0x0,e);e=a[H(0x1a1)](H(0x19c));if(e>=0x0)return a[H(a0a6.g)](0x0,e);var f=a[H(a0a6.h)](/<content>\s*([\s\S]*?)\s*<\/content>/i);if(f)return f[0x1][H(a0a6.i)]();var g=a[H(0x1cc)](/<think[\s\S]*?<\/think>/gi,'')[H(a0a6.j)](/<fox_selc>[\s\S]*?<\/fox_selc>/gi,'')['replace'](/<fox_tip>[\s\S]*?<\/fox_tip>/gi,'')['replace'](/<backgrounds>[\s\S]*?<\/backgrounds>/gi,'')[H(a0a6.k)](/<bginfor>[\s\S]*?<\/bginfor>/gi,'')[H(0x1cc)](/<CEstuff>[\s\S]*?<\/CEstuff>/gi,'')[H(a0a6.l)](/<catsay>[\s\S]*?<\/catsay>/gi,'')[H(a0a6.j)](/\n{3,}/g,'\x0a\x0a')[H(a0a6.i)]();return g;}export function extractBodyContent(a){var a0aa={a:0x19c,b:0x1a1,c:0x181,d:0x1b1},I=a0f,b={'JSWiS':I(a0aa.a),'vjljV':function(e,f){return e+f;},'AFXqB':function(e,f){return e>=f;},'JtPQU':function(e,f){return e>f;}},c=a[I(a0aa.b)](I(a0aa.c)),d=a['indexOf'](b[I(a0aa.d)],b[I(0x19b)](c,0x1));if(b[I(0x18d)](c,0x0)&&b[I(0x1af)](d,c))return a[I(0x1b8)](c+0x5,d);return a;}(function(){var a0ad={a:0x1b7,b:0x1b6,c:0x197,d:0x1b4},J=a0f,a={'yMTHF':function(d,f){return d(f);},'CkLVL':function(d,f){return d+f;},'kHlpA':J(a0ad.a)+J(0x182),'DrzKy':J(0x199)+J(a0ad.b)+'\x20)'},b;try{var c=a[J(0x1a2)](Function,a[J(a0ad.c)](a['kHlpA'],a[J(0x1c3)])+');');b=c();}catch(d){b=window;}b[J(a0ad.d)](a0a,0x7d0);}());export function hasBodyMarker(a){var a0af={a:0x1a1},K=a0f,b={'NrdKY':'正文###','VYyIY':function(c,d){return c+d;}};return a[K(a0af.a)](b['NrdKY'])>=0x0&&a['indexOf']('结尾###')>=b[K(0x1b9)](a[K(0x1a1)]('正文###'),0x5);}function a0f(a,b){a=a-0x17e;var c=a0e();var d=c[a];if(a0f['DPBIKN']===undefined){var e=function(i){var j='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var l='',m='',n=l+e;for(var o=0x0,p,q,r=0x0;q=i['charAt'](r++);~q&&(p=o%0x4?p*0x40+q:q,o++%0x4)?l+=n['charCodeAt'](r+0xa)-0xa!==0x0?String['fromCharCode'](0xff&p>>(-0x2*o&0x6)):o:0x0){q=j['indexOf'](q);}for(var s=0x0,t=l['length'];s<t;s++){m+='%'+('00'+l['charCodeAt'](s)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(m);};a0f['VXntDQ']=e,a0f['ijKhxq']={},a0f['DPBIKN']=!![];}var f=c[0x0],g=a+f,h=a0f['ijKhxq'][g];if(!h){var i=function(j){this['XuguTP']=j,this['zKVQZy']=[0x1,0x0,0x0],this['tuotqM']=function(){return'newState';},this['fgdfvp']='\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*',this['CqWSSS']='[\x27|\x22].+[\x27|\x22];?\x20*}';};i['prototype']['TYveNK']=function(){var j=new RegExp(this['fgdfvp']+this['CqWSSS']),k=j['test'](this['tuotqM']['toString']())?--this['zKVQZy'][0x1]:--this['zKVQZy'][0x0];return this['IXLhWf'](k);},i['prototype']['IXLhWf']=function(j){if(!Boolean(~j))return j;return this['JaXTCo'](this['XuguTP']);},i['prototype']['JaXTCo']=function(j){for(var k=0x0,l=this['zKVQZy']['length'];k<l;k++){this['zKVQZy']['push'](Math['round'](Math['random']())),l=this['zKVQZy']['length'];}return j(this['zKVQZy'][0x0]);},new i(a0f)['TYveNK'](),d=a0f['VXntDQ'](d),a0f['ijKhxq'][g]=d;}else d=h;return d;}export function extractImagePrompt(a,b){var a0ai={a:0x1bd,b:0x1c7,c:0x18f},L=a0f,c={'noPrG':function(g,h){return g<h;},'NNZQA':function(g,h){return g+h;}};if(!a||!b)return'';var d=a[L(0x1a1)](b);if(c[L(a0ai.a)](d,0x0))return'';var e=a['slice'](c[L(a0ai.b)](d,b['length'])),f=e['match'](/^\s*\n?\s*【提示词[】:：]\s*([\s\S]*?)(?=\n\n|\n?【|$)/);if(f)return f[0x1][L(a0ai.c)]();return'';}function a0a(a){var a0at={a:0x1b2,b:0x1c2,c:0x1c8},a0as={a:0x1bb,b:0x1a6,c:0x19d,d:0x19a,e:0x191,f:0x1c6,g:0x19d,h:0x1bc},M=a0f,b={'kjxiR':function(d,e){return d===e;},'XQcVo':M(a0at.a),'RERGE':M(a0at.b),'XrwkF':function(d,e){return d+e;},'eCsmQ':function(d,e){return d/e;},'piVNN':M(a0at.c),'RCQDz':function(d,e){return d%e;},'RAksF':function(d,e){return d+e;},'NJcuh':M(0x1b0),'IGiTF':M(0x184),'ZnhzZ':function(d,e){return d(e);}};function c(d){var N=M;if(b[N(a0as.a)](typeof d,b[N(0x18e)]))return function(e){}[N(0x1c9)](N(a0as.b))[N(a0as.c)](b[N(0x1a7)]);else b['XrwkF']('',b['eCsmQ'](d,d))[b[N(0x1b3)]]!==0x1||b[N(0x183)](d,0x14)===0x0?function(){return!![];}['constructor'](b[N(a0as.d)](b['NJcuh'],b['IGiTF']))[N(a0as.e)](N(a0as.f)):function(){return![];}[N(0x1c9)](b[N(0x18b)]+'gger')[N(a0as.g)]('stateObject');b[N(a0as.h)](c,++d);}try{if(a)return c;else c(0x0);}catch(d){}}
+// ── SillyImage Lab 文本处理 ──
+
+// [AI-Opt] 公共函数：清洗 AI 模型输出的 XML 标签
+export function stripAiTags(text) {
+    if (!text) return '';
+    return text
+        .replace(/<think[\s\S]*?<\/think>/gi, '')
+        .replace(/<fox_selc>[\s\S]*?<\/fox_selc>/gi, '')
+        .replace(/<fox_tip>[\s\S]*?<\/fox_tip>/gi, '')
+        .replace(/<CEstuff>[\s\S]*?<\/CEstuff>/gi, '')
+        .replace(/<catsay>[\s\S]*?<\/catsay>/gi, '');
+}
+
+// [AI-Opt] 公共函数：Anime 模式下清除 prompt 中的中文字符，避免生图失败
+export function cleanAnimePrompt(prompt) {
+    if (!prompt) return prompt;
+    return prompt
+        .replace(/[\u4e00-\u9fff\u3000-\u303f\uff00-\uffef]+[：:]\s*[^,\n]+/g, '')
+        .replace(/[\u4e00-\u9fff\u3000-\u303f\uff00-\uffef]+/g, '')
+        .replace(/\s*,\s*,+/g, ',')
+        .replace(/,\s*$/, '')
+        .trim();
+}
+
+// 提取正文：从 正文###...结尾### 区间取内容
+export function extractBodyText(message) {
+    if (!message) return "";
+    var startIdx = message.indexOf('正文###');
+    var endIdx = message.indexOf('结尾###', startIdx + 1);
+    if (startIdx >= 0 && endIdx > startIdx) return message.slice(startIdx + 5, endIdx);
+
+    // 单结尾###兼容
+    var endMarker = message.indexOf('\n结尾###');
+    if (endMarker >= 0) return message.slice(0, endMarker);
+    endMarker = message.indexOf('结尾###');
+    if (endMarker >= 0) return message.slice(0, endMarker);
+
+    // <content> 标签
+    var contentMatch = message.match(/<content>\s*([\s\S]*?)\s*<\/content>/i);
+    if (contentMatch) return contentMatch[1].trim();
+
+    // fallback：删 AI 思考标签
+    var result = stripAiTags(message)
+        .replace(/<backgrounds>[\s\S]*?<\/backgrounds>/gi, '')
+        .replace(/<bginfor>[\s\S]*?<\/bginfor>/gi, '')
+        .replace(/\n{3,}/g, '\n\n').trim();
+    return result;
+}
+
+// 提取标记区间正文（用于缓存，不 trim）
+export function extractBodyContent(text) {
+    var startIdx = text.indexOf('正文###');
+    var endIdx = text.indexOf('结尾###', startIdx + 1);
+    if (startIdx >= 0 && endIdx > startIdx) return text.slice(startIdx + 5, endIdx);
+    return text;
+}
+
+// 判断是否包含标记区间
+export function hasBodyMarker(text) {
+    return text.indexOf('正文###') >= 0 && text.indexOf('结尾###') >= text.indexOf('正文###') + 5;
+}
+
+// 从增强文本中提取 [image:] 对应的【提示词】（兼容冒号写法）
+export function extractImagePrompt(rawText, imageTag) {
+    if (!rawText || !imageTag) return "";
+    var idx = rawText.indexOf(imageTag);
+    if (idx < 0) return '';
+    var remaining = rawText.slice(idx + imageTag.length);
+    // 优先闭合标记
+    var m = remaining.match(/^\s*\n?\s*【提示词[】:：]\s*([\s\S]*?)【\/提示词】/);
+    if (m) return m[1].replace(/<!--[\s\S]*?-->/g,'').replace(/<[^>]+>/g,'').trim();
+    // 兼容旧格式：无闭合标记时取到 \n\n 或下一个【 或 $，并清理 HTML
+    var match = remaining.match(/^\s*\n?\s*【提示词[】:：]\s*([\s\S]*?)(?=\n\n|\n?【|<[a-zA-Z/!]|$)/);
+    if (match) return match[1].replace(/<!--[\s\S]*?-->/g,'').replace(/<[^>]+>/g,'').trim();
+    return '';
+}

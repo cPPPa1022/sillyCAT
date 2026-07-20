@@ -1,1 +1,209 @@
-var a0Z=a0f;(function(a,b){var a0ad={a:0x11e,b:0x11b,c:0x12a,d:0xdf},R=a0f,c=a();while(!![]){try{var d=-parseInt(R(0xa2))/0x1*(parseInt(R(0xef))/0x2)+-parseInt(R(0xe6))/0x3*(-parseInt(R(a0ad.a))/0x4)+parseInt(R(a0ad.b))/0x5+-parseInt(R(a0ad.c))/0x6+parseInt(R(a0ad.d))/0x7+-parseInt(R(0x122))/0x8+-parseInt(R(0xca))/0x9;if(d===b)break;else c['push'](c['shift']());}catch(e){c['push'](c['shift']());}}}(a0e,0x77859));var a0d=(function(){var S=a0f,a={'GGtZt':S(0x102)},b=!![];return function(c,d){var a0ae={a:0x109},e=b?function(){var T=a0f;if('WyqDV'!==a[T(a0ae.a)])return!![];else{if(d){var f=d[T(0x142)](c,arguments);return d=null,f;}}}:function(){};return b=![],e;};}()),a0c=a0d(this,function(){var a0ai={a:0x15a},U=a0f;return a0c[U(0x15a)]()[U(0xba)](U(0xec))[U(a0ai.a)]()['constructor'](a0c)[U(0xba)](U(0xec));});function a0f(a,b){a=a-0x84;var c=a0e();var d=c[a];if(a0f['AhJVps']===undefined){var e=function(i){var j='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var l='',m='',n=l+e;for(var o=0x0,p,q,r=0x0;q=i['charAt'](r++);~q&&(p=o%0x4?p*0x40+q:q,o++%0x4)?l+=n['charCodeAt'](r+0xa)-0xa!==0x0?String['fromCharCode'](0xff&p>>(-0x2*o&0x6)):o:0x0){q=j['indexOf'](q);}for(var s=0x0,t=l['length'];s<t;s++){m+='%'+('00'+l['charCodeAt'](s)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(m);};a0f['MsIzod']=e,a0f['KzcShy']={},a0f['AhJVps']=!![];}var f=c[0x0],g=a+f,h=a0f['KzcShy'][g];if(!h){var i=function(j){this['RxCLaD']=j,this['JsUHZN']=[0x1,0x0,0x0],this['ySgOYM']=function(){return'newState';},this['YVqLiO']='\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*',this['jcXqvu']='[\x27|\x22].+[\x27|\x22];?\x20*}';};i['prototype']['BxVVzb']=function(){var j=new RegExp(this['YVqLiO']+this['jcXqvu']),k=j['test'](this['ySgOYM']['toString']())?--this['JsUHZN'][0x1]:--this['JsUHZN'][0x0];return this['JCzmXA'](k);},i['prototype']['JCzmXA']=function(j){if(!Boolean(~j))return j;return this['lJbAyh'](this['RxCLaD']);},i['prototype']['lJbAyh']=function(j){for(var k=0x0,l=this['JsUHZN']['length'];k<l;k++){this['JsUHZN']['push'](Math['round'](Math['random']())),l=this['JsUHZN']['length'];}return j(this['JsUHZN'][0x0]);},new i(a0f)['BxVVzb'](),d=a0f['MsIzod'](d),a0f['KzcShy'][g]=d;}else d=h;return d;}a0c();function a0e(){var bm=['rhbTrhq','mZG5otq0mvr4sMPZyW','55QU5ywl5PAV5y2H6ycAm0tPO47MOlZVViZMN5tLKOZLHAJLSydLHyK','5AsN55Y8552B57k+6iE06AUy5ywj77Ym5P+u5zkm5Rwb55wf57Q/5P2H77Ym','5PEG6l6t5yE6','z0jKD0W','iNjLDhvYBIb0AgLZiIKO','DhjPBq','mtvRugvhCLq','A1fkB0O','5zU+54Mh5BEY5lIk5lYGoG','yMfZzty0oG','BMqGD2HPDgxVViXZy3jLzw4','5PYx5AkO57Q/77Ym572r54k557Q46zI05B2X6lsO5OsF77Ym5yAz5A6E5lQ6','kcGOlISPkYKRksSK','C3vJy2vZCW','yKvHrgO','odm2mNLuqwX4ua','zsbZDhLSzE+8Jdje77Ymy2vSia','tvb0Cvi','l3DVCMTMBg93CW','y2fSBa','AYbSAw5LC++8JgHHBMqTzhi','B21WDoMvV+w6PJ0','ywn0Aw9U','qw5PBwuG57k+6iE05BMZ5RAc77YA5PEL5PYS44kI44ol','6BUs57EA77Ym44ov44oP44od44oi5B2P6iMY77Ym6A6U44ke44gl44gQ6iMY','A1Lcv20','C2XPy2u','ANnVBG','Dgv4Da','q2Txsge','qw5PBwuG6lwB55kq55kq77YA6lwB55kq54+E6io254Mh','C2jJDha','6lsO5OsF77Ym5RIf5PMW6BUr6iMY6l2U5BUt57Q/77Ym57QV6iMY5BMZ5RAc','y09iCfq','v3LXrfy','C3rHDhvZ','AhvVt3i','rurru1K','s3rfzMG','5B2X77Ym5l2o5AsA6l655B2I56Ul5l2t6ycG5z6l','AMrVDvK','r0D0wNq','AuX6Dxa','z2vUv2y6ioAYOEAjVUwiScvWCM9T','C3rYAw5NAwz5','qw5PBwuGmI41roERI+s9K++8MUs/NEEvMq','44oH44k544k/44kK44oR77Ym44k744oR55s76kQ/77Ym44gp44gJ44gn44kk','i3nSx3n0EwXLx3bYzxnL','tfnuwfG','E30Uy29UC3rYDwn0B3iO','6AUy5ywj77Ym6ycA6ycp5RIf5PAW','5yAz5A6Em0tMUllMN5pVViXqqLlNIANNKiBNUQFMNzdOTkG','C2v0sw50zxj2ywW','uuvdre0','Aw5KzxHpzG','44oH44k544k/44kK44oR77Ym5y6A5Agx44kkW5FJGRVJG6VNLlVMT7FLKiG','zgvIDq','zM9YrwfJAa','y1DM','ndGZnZGZmffQu3bTsW','ihnLBgvJDgvK','yxbWzw5K','nty5nZiWAernAvfm','BgDss0y','Aw5WDxq','CwjVrxC','mte3mtiYneTjrKPeCW','BgvUz3rO','xcTCkYaQkd86w2eTEKeT','5PIo5lQU5Asn5y+K6ywn6iMY77Ym6lwB55kq55kq5BMZ5RAc','uwvTA08','t1rKuwO','C2HHzgLUz++8JhzPyNjHBNq','Aw5PDa','ntC0odm2mg9zDxvjCa','Cg5N','C3rYAw5N','vvDstgK','i3nSx3DM','4PYNica','ufrRuwC','qLfLv1K','i3nSx3DMx3nLBa','AuniBfm','zNL1Exe','D0z6sw8','CMvWBgfJzq','zw1WDhK','jf0Qkq','B3fxD0K','y2HHAw4','Avb2v1O','6lwB55kq55kq5BMZ5RAc6iMY5z2x6l6555wm77Ym56gS6l655yIg5Bgc6zI0','y2XPChm','y29UC3rYDwn0B3i','z2L1uuG','AvvLrgq','DMfLCW','yxbWBhK','D3nJr1m','Dg9UzsbZAgfKAw5N77YmAw4','Bw9UB2nOCM9TzsbTyw5N','DvbpCxe','C2v0DgLUz3m','54wN77Ym5QYH6kgO6z2I5PwJ5Bce6lsO5OsF77Ym5zor5ywj6BUp5zYF6lsO','r2PeCKu','tuH0Ee0','zNvUy3rPB24GkLWOicPC','BwvZC2fNzq','5lIk5lYG5yIWifnuiowKSEI0PE+8JoMzJEE6P+s9V+EuQca','ue9tva','y1LhzLa','qw5PBwuGuEEjIoIqJoEZU++8MUwKP+wKTowWJ+I6QW','EKflyxu','DeLKwuO','AxnbCNjHEq','zwfLCvC','Esb2Axn1ywW','BM93','77Ym6lAf5yAz5A6E6lsO5OsF','ChvZAa','CMvXDwLYzwq','Dg9tDhjPBMC','Dw5LDhm','y0zsruu','pg9WDgLVBJ7WN5ocipcFK4iG5yQG6l295AsX','6iMY5z2x77Ym56gS6l655yIg5Bgc6zI05B2X','sxzNt3O','ChjVBxb0uhjLzML4','44kW44oP44oh44o844k344oN44oZ77Ym57Mk57sW44gQ57EA55s777Ym6ycp','iokgKIa','77Ym5ywO5Bga5ywj54wN77Ym55YF5A6E57Uh54MP5lIo55QU6ikK57Q555cg','Aw5Lyxj077Ymyw5PBwuGA2u','C3r5BgvqCMvZzxq','y3jLyxrLrwXLBwvUDa','6ycG5z6l77Ym5PIo5B+R57QV6iMY5z2x','CMfUzg9T','BhHjshK','whjeALG','v0rAu2C','ChqLlcdNM7tMJQxOPOBNM5BOIOlNGRKG','Dgv4DenVBNrLBNq','zM9YBwf0','w3nPBgXHyL0Gz2vUzxjH','BIGPia','tfjJA3K','u0vmy1q','zMXVB3i','s1ruwNm','qu1NAMO','wvbxrMi','5BMZ5RAc5AgR6iMY77Ym6l275B6U6io254Mh6Akx57ks','y2XHC3nFDhLWzq','l2fWAs9Zzc9JB21MEq','y2HLy2TWB2LUDhm','yxbWBgLJyxrPB24VANnV','EKnmt1G','q2TPueC','5PA55lQ654MP6AQO55U477Ym5yw46zUf5zU96Aoo6ywn6iMY77Ym5Rc05AkO','ALPZC2O','re9n','qxbjCKy','y1vYBa','77Ym56Ul5l2t5OsF44gc44kl6zMW5B2X77Ym5P+u44kj44gl44gQ5PIo5PQx','ysbZDhLSzE+8JgjSywnRige','swP4tvm','zgf0yq','Aw5WDxrZ','wM9Tsgu','DMfS','q3jHqwG','nJzorvbZqxa','l29IAMvJDf9PBMzV','CgfYC2u','5B2P57Q457Q555cg77Ym6iEQ54s25PMv5P+t6l+h5RIH','yxnZAwDU','wKXiyLu','DgvjBwfNzsdOOQVOSipNLkGSihbY','igXPBMvZ77Ymy3jVC3nOyxq','l2rLBgv0zs13B3jRzMXV','ignVBg9YC++8JgnSzwfUigW','5y6A5RAc5Rk555s76Aoo5Qc877Ym5yIU5yIa56Yu6kEM6ikm55cg77Ym5lQA','CMv0DxjUicHMDw5JDgLV','pc9VChrPB24+','zgL2','Bg9N','55M954gW5Bgc5QYH5yIg5PIo77Ym57sG5O+p57Q46lsO5OsF77Ym5OMl57Uy','pg9WDgLVBIb2ywX1zt0I','tu5lvvy','qKnsuvK','BKHprMG','5PYQ6ywn572UienVBwz5vuKG5zYW5z2a','revcvuCG55s76Aoo6Ake6k6+5yc8oIdJGiW','z2DLCG','qw5PBwuG5PEL5PYS5yQO55s777YAyw5PBq','C2vHCMnO','Bw9KzwXZ','yw5vzxK','DgvZDa','5PYx6l2U5BUt57Q/77Ym5Asn5y+K5l2o6AwX5zkm6ywn6iMY77Ym5AsN5z2x','zgf0ytPPBwfNzs8','tM16qMq','8j+tGIdLIQdOVB3LPB3LLABLLRv+icJVVAhIGklmGog0LY0P','lcdLRzJLNkJPOOtORR7OOAG6ia','AMDmwNK','Aw5JBhvKzxm','vLv3Dxm','v2zQDe4','6lsO5OsF5y6A5RAc','zvHote4','ywPkAeK','mZmWmti4mwvVEffZsG','ANfdu3C','ze16y1u','5Rc05B2P55s76Aoo5Qc877Ym5y2k6ycp5PIo5y+G6iMY5Rc055Ev77Ym5Rc0','5Q+u5l6l77Ym5zYg5RAM566a5Rsb57Q/5P2H77Ym5OMb5BMZ5yYw5y+V54IX','5lIk6iMY77Ym57Ug6iw757Q/56I/77Ym5P+u5ywj77Ym57k+6iE055Y86yoO','y1DMtMfTzq','CLj1qM8','wNv2q04','zw5LCMf0zq','y2JVViZPU5hNMB3MVkVNLlS','77Ym57Ug6iw76io254Mh6Akx57ks77Ym5Asn5y+K5yAz5A6E6lsO5OsF','C3rHDgvpyMPLy3q','5OsF77Ym5zYg5RAM5y2H6ycA6ycG5z6l','zxfhz0i','wL8KxvSWltLHlxPblvPF','yLL6sha','serLDgW','v2DMsKe','qw5PBwuGotdLUBtKU6pPRztMS5xLSjhLPBpVVjO'];a0e=function(){return bm;};return a0e();}var a0b=(function(){var a=!![];return function(b,c){var d=a?function(){var V=a0f;if(c){var e=c[V(0x142)](b,arguments);return c=null,e;}}:function(){};return a=![],d;};}());(function(){var a0aq={a:0xb8,b:0x88,c:0x14b,d:0x129},a0ap={a:0x140,b:0xc9,c:0x13e,d:0x14a,e:0x121,f:0xb4,g:0x124,h:0xf1,i:0xbd,j:0x149},W=a0f,a={'iUeDd':W(a0aq.a),'ajJhI':W(0xf6),'cFREE':W(a0aq.b),'BCRQY':W(a0aq.c)+')','MPtqR':W(a0aq.d),'PmxHC':W(0x13a),'GjDrE':function(b,c){return b(c);}};a0b(this,function(){var X=W,b={'MHtxM':a[X(a0ap.a)],'qboEw':a[X(a0ap.b)]};if(a['cFREE']!==a[X(0x15c)])(function(){return!![];}[X(a0ap.c)](X(0x118)+b[X(a0ap.d)])[X(0xf3)](b[X(a0ap.e)]));else{var c=new RegExp(a[X(a0ap.f)]),d=new RegExp(X(a0ap.g)+X(0xd9)+X(0x138),'i'),e=a0a(a[X(a0ap.h)]);!c[X(a0ap.i)](e+a['PmxHC'])||!d[X(0xbd)](e+'input')?a[X(a0ap.j)](e,'0'):a0a();}})();}()),(function(){var a0au={a:0x111,b:0xe4,c:0xad,d:0x87,e:0x12d},Y=a0f,a={'aSTmI':function(d,f){return d(f);},'oeguO':function(d,f){return d+f;},'UWRLi':Y(a0au.a)+Y(a0au.b)+'\x20)','QECDM':function(d){return d();}},b;try{var c=a['aSTmI'](Function,a['oeguO'](Y(a0au.c)+Y(a0au.d)+a[Y(a0au.e)],');'));b=a[Y(0x115)](c);}catch(d){b=window;}b[Y(0x114)](a0a,0x7d0);}());import{slLog}from'./log.js';import{settings,getSTHeaders,saveSettings}from'./settings.js';import{uploadImageToST}from'./cache.js';export var STYLE_PRESETS={'':'','柯达金200胶片质感，暖黄色调，细腻胶片颗粒，复古写实质感':'柯达金200胶片质感，暖黄色调'+a0Z(0xd5),'水墨写意画，宣纸质感，墨色浓淡晕染，大面积留白，东方写意意境':'水墨写意画，宣纸质感，墨色浓淡'+'晕染，大面积留白，东方写意意境','水彩画风格，半透明叠色水痕，水彩纸纹理，自然晕染过渡':a0Z(0xcd)+a0Z(0xa5),'厚涂油画风格，刮刀笔触肌理，亚麻布纹理，厚重色彩堆叠':a0Z(0xac)+'麻布纹理，厚重色彩堆叠','铅笔素描风格，细腻排线塑造，黑白灰层次分明，素描纸质感，手绘质感':'铅笔素描风格，细腻排线塑造，黑'+a0Z(0xb1)+'质感','Anime\x20赛璐璐：赛璐珞胶片质感，清晰黑色轮廓线，纯色平涂色块，硬边分层阴影':a0Z(0xfe)+a0Z(0x100)+a0Z(0x15e),'Anime\x20日系轻小说：anime\x20style，2D，赛璐璐上色，细腻线稿，柔光，精致眼部高光，通透清新':'Anime\x20日系轻小说：ani'+'me\x20style，2D，赛璐璐'+a0Z(0xcf)+a0Z(0x112),'Anime\x20日本动画：anime\x20style，2D，cel\x20shading，vibrant\x20colors，clean\x20lineart，anime\x20key\x20visual':a0Z(0xb9)+a0Z(0xf0)+a0Z(0x128)+a0Z(0xab)+a0Z(0x164)+a0Z(0x155),'Anime\x20精致平涂：日本アニメスタイル，セル画調，くっきり黒線，フラット彩色，鮮やかな色彩，ベタ塗り色面，クリーンな線画':a0Z(0xf7)+a0Z(0x10e)+a0Z(0xf8)+'彩，ベタ塗り色面，クリーンな線'+'画','Anime\x20立体精致：日本アニメスタイル，厚塗り×セル画混合，立体感ある陰影，柔らかな明暗グラデーション，繊細な線画，透明感':'Anime\x20立体精致：日本アニ'+a0Z(0x117)+a0Z(0x9a)+a0Z(0x161)+'明感','monochrome\x20manga\x20style，black\x20and\x20white，screentone\x20shading，ink\x20lines，hand-drawn\x20comic，speed\x20lines，crosshatch，黑白漫画':a0Z(0x145)+a0Z(0x9b)+a0Z(0xea)+a0Z(0x144)+a0Z(0xf4)+'awn\x20comic，speed'+a0Z(0xa9)+a0Z(0xd4),'monochrome\x20manga\x20style，black\x20and\x20white，screentone\x20shading，ink\x20lines，hand-drawn\x20comic，speed\x20lines，crosshatch，黑白漫画':a0Z(0x145)+'a\x20style，black\x20a'+'nd\x20white，screen'+a0Z(0x144)+a0Z(0xf4)+'awn\x20comic，speed'+a0Z(0xa9)+a0Z(0xd4),'Anime\x20Q版萌系：大头小身比例，圆润简洁线条，扁平化可爱造型，明快纯色块':a0Z(0x150)+a0Z(0xce)+a0Z(0x167),'Anime\x202.5D立体：保留赛璐璐平涂色块边界，硬边分层阴影，低多边形立体造型':a0Z(0x10d)+a0Z(0x13c)+a0Z(0x107),'国风厚涂插画，工笔白描线稿，东方人物骨相，典雅国风配色，水墨质感厚涂':'国风厚涂插画，工笔白描线稿，东'+a0Z(0x95)+a0Z(0xc7),'皮克斯卡通3D风格，柔和全局光照，次表面散射质感，哑光黏土质感，圆润卡通造型':a0Z(0xe0)+a0Z(0x148)+a0Z(0xd7),'写实3D渲染，PBR物理级材质，全局光照，真实织物与皮肤纹理，超写实质感':a0Z(0x113)+a0Z(0x163)+a0Z(0x157),'Anime\x20昭和赛璐璐：粗黑硬朗轮廓线，复古低饱和配色，大块平涂填色，轻微胶片颗粒':'Anime\x20昭和赛璐璐：粗黑硬'+a0Z(0xbe)+a0Z(0x8e),'Anime\x2090年代少年漫：硬朗墨线，网点纸阴影质感，写实人物比例，手绘漫画质感':'Anime\x2090年代少年漫：硬'+a0Z(0xeb)+'物比例，手绘漫画质感','Anime\x2090年代魔法少女：大眼睛精致高光，柔和流畅线条，明亮复古配色，赛璐璐平涂':a0Z(0xdd)+a0Z(0xe1)+a0Z(0x125)};async function comfyFetch(a,b){var a0aA={a:0xae,b:0x14e,c:0x127,d:0xee,e:0x143,f:0xfc,g:0xfc,h:0xa4,i:0xd0,j:0x98,k:0xb2},a0=a0Z,c={'RatNi':function(g,h){return g===h;},'ApIrF':function(g,h){return g+h;},'ghRzL':function(g,h){return g(h);},'zCLOX':a0(a0aA.a),'bEaDj':function(g,h){return g+h;},'wTQri':a0(0x90),'EDQSY':a0(a0aA.b),'tIdYJ':a0(0x92)+'n','wscGS':function(g,h){return g||h;},'uPOqq':a0(a0aA.c)},d=await fetch(c[a0(a0aA.d)](c['wTQri'],a),{'method':c[a0(0x105)],'headers':Object['assign']({'Content-Type':c[a0(0x152)]},getSTHeaders()),'body':JSON['stringify'](c[a0(a0aA.e)](b,{}))});if(!d['ok']){var f=await d[a0(a0aA.f)]();throw new Error(f['slice'](0x0,0x1f4));}var f=await d[a0(a0aA.g)]();if(!f||!f[a0(0xe5)]())return{'ok':!![]};try{return JSON[a0(a0aA.h)](f);}catch(g){if(c[a0(0x146)]!==a0(0x127)){var i=c['RatNi'](h,i[a0(a0aA.i)])?'\x20selected':'';j[a0(0x11d)](c[a0(a0aA.j)](c[a0(a0aA.j)](a0(a0aA.k)+k(l)+'\x22',i),'>')+c['ghRzL'](m,n)+c[a0(0x93)]);}else return f;}}export async function loadWorkflowList(){var a0aF={a:0x132,b:0x137,c:0xd8,d:0x16a,e:0xdb},a1=a0Z,a={'rRuBo':function(g,h){return g(h);},'iCHlS':a1(0xf2),'qYMui':a1(0x11c),'CraAh':function(g,h){return g+h;},'CkWHa':function(g,h){return g+h;},'eqGgB':a1(0xb2),'XrDjX':'</option>','sbctp':function(g,h){return g(h);},'HDetl':a1(a0aF.a),'QPliB':a1(0x15d)+'败</option>'};try{var b=await a['rRuBo'](comfyFetch,a[a1(0x133)]),c=a[a1(0xd1)]($,'#sl_wf_sel');c[a1(a0aF.b)]();for(var d of b){var f=d===settings['cWfName']?a['qYMui']:'';c['append'](a[a1(0xa1)](a['CraAh'](a[a1(0xfd)](a['CkWHa'](a[a1(a0aF.c)],escapeHtml(d)),'\x22'),f)+'>'+escapeHtml(d),a[a1(a0aF.d)]));}}catch(g){a[a1(0xff)]($,a[a1(a0aF.e)])['html'](a['QPliB']);}}export async function loadWorkflow(a){var a0aJ={a:0xc1,b:0x12f,c:0x12c,d:0x11a,e:0xd0,f:0xc8,g:0x12e,h:0xed},a2=a0Z,b={'ZuvCN':'/workflow','eXNLN':function(e){return e();},'zNuyU':function(e,f){return e(f);},'LOgAq':function(e,f){return e+f;},'anUey':a2(a0aJ.a)+a2(a0aJ.b)},c=await comfyFetch(b[a2(0xd2)],{'file_name':a}),d=typeof c===a2(a0aJ.c)?c:JSON['stringify'](c);settings[a2(a0aJ.d)]=d,settings[a2(a0aJ.e)]=a,b[a2(a0aJ.f)](saveSettings),b['zNuyU']($,a2(a0aJ.g))[a2(0xa0)](d),toastr[a2(a0aJ.h)](b['LOgAq'](b[a2(0xbc)],a));}export async function saveWorkflow(a,b){var a0aL={a:0x11a},a3=a0Z,c={'WfjtN':function(d,e,f){return d(e,f);}};settings[a3(a0aL.a)]=b,settings[a3(0xd0)]=a,saveSettings(),await c[a3(0xc6)](comfyFetch,'/save-workflow',{'file_name':a,'workflow':b});}export async function deleteWorkflow(a){var a0aN={a:0xda},a4=a0Z,b={'bYzHp':function(c){return c();}};await comfyFetch(a4(0xaa)+'w',{'file_name':a}),settings[a4(0xd0)]===a&&(settings['cWfName']=''),b[a4(a0aN.a)](saveSettings);}export async function fetchComfyModels(){var a0aS={a:0xb6,b:0x15b,c:0x9f,d:0xa3,e:0xfb,f:0x120,g:0x159,h:0x123,i:0x153,j:0xbd,k:0x130,l:0x119,m:0xbb,n:0x141,o:0x135},a0aR={a:0xc4,b:0x158},a5=a0Z,a={'AMgjj':a5(a0aS.a),'YPWFb':function(m,n){return m(n);},'ZomHe':function(m,n){return m+n;},'PTkQg':a5(a0aS.b),'wFzIo':function(m){return m();}},b=(settings['cUrl']||'')[a5(0x136)](/\/+$/,'');if(!b)throw new Error(a[a5(0x8c)]);var c=await a[a5(0x8d)](fetch,a[a5(a0aS.c)](b,a5(a0aS.d)));if(!c['ok'])throw new Error('ComfyUI\x20返回\x20'+c[a5(0x103)]);var d=await c[a5(a0aS.e)](),e={'checkpoints':[],'unets':[],'clips':[],'vaes':[]};for(var f in d){var g=d[f];if(!g||!g[a5(0x120)]||!g[a5(a0aS.f)][a5(a0aS.g)])continue;for(var h in g['input']['required']){var i=g['input']['required'][h];if(!Array[a5(0x153)](i)||i[a5(a0aS.h)]<0x2)continue;var j=i[0x0];if(!Array[a5(a0aS.i)](j))continue;var l=null;if(/checkpoint|ckpt_name/i[a5(0xbd)](h))l=a5(0x91);else{if(/unet_name/i[a5(a0aS.j)](h))l=a[a5(a0aS.k)];else{if(/clip_name|text_encoder/i['test'](h))l=a5(0x13d);else{if(/vae_name/i['test'](h))l='vaes';}}}if(l)j[a5(a0aS.l)](function(n){var a6=a5;if(!e[l][a6(a0aR.a)](n))e[l][a6(a0aR.b)](n);});}}return settings[a5(a0aS.m)]={'unet':e[a5(0x91)],'clip':e[a5(0x13d)],'vae':e[a5(a0aS.n)],'lora':[]},a[a5(a0aS.o)](saveSettings),settings['models'];}export async function generateImage(a,b){var a0bc={a:0xb8,b:0xb7,c:0xc2,d:0x12c,e:0x162,f:0x92,g:0x12b,h:0xb0,i:0xa8,j:0xc5,k:0x116,l:0x116,m:0xcc,n:0xcc,o:0x160,p:0xc5,q:0x101,r:0x126,s:0x116,t:0xde,u:0x9e,v:0x153,w:0xbd,x:0x89,y:0x153,z:0x123,A:0xb5,B:0x15a,C:0xec,D:0x8f,E:0xbd,F:0xcb,G:0xdc,H:0x168,I:0xa6,J:0x99,K:0xfa,L:0xd0,M:0xfb,N:0x9d,O:0xb3,P:0xbf,Q:0x9d,Z:0xe8},a7=a0Z,c={'UUmQF':'前置提示词:\x20','nHOFh':a7(a0bc.a),'lgRKF':function(z,A){return z+A;},'VUwus':function(x,y){return x(y);},'fyuyq':function(z,A){return z>=A;},'fttRb':function(z,A){return z!==A;},'dMzcU':'SoMJn','iPvWZ':a7(a0bc.b),'zAKau':a7(a0bc.c),'LSTXX':function(z,A){return z+A;},'WHFoS':function(z,A){return z+A;},'cOHpT':function(z,A){return z===A;},'OTQaR':'QemkO','HnzwX':a7(a0bc.d),'DpmDt':'Yflkd','MDgTE':function(z,A){return z+A;},'qMxFA':function(z,A){return z===A;},'IjxMS':function(x,y){return x(y);},'jqCSw':function(z,A){return z+A;},'eaeqW':a7(0x10b)+a7(0x16c),'KtEfh':a7(a0bc.e),'WgfJA':function(z,A){return z+A;},'nTDpI':a7(a0bc.f)+'n','jZssj':function(x){return x();},'OXXJn':a7(0xa7),'MNKUV':function(z,A){return z+A;},'WDZSg':a7(a0bc.g),'oqWwI':function(x,y){return x(y);},'NmzBd':function(x,y,z){return x(y,z);},'lxIHy':a7(0x14d)+a7(0xe9)};console[a7(a0bc.h)](c[a7(0x11f)](a7(0x86)+a7(a0bc.i)+a7(0xf5),b['length']));var d=(c[a7(a0bc.j)](jQuery,'#sl_style_prese'+'t')['length']?jQuery(a7(0x10f)+'t')['val']():'')||'',f=d||settings[a7(0x165)]||'';if(f){if(!STYLE_PRESETS[f]){var g=null;for(var h in STYLE_PRESETS){if(h[a7(a0bc.k)](f[a7(0xfa)](0x0,0xf))>=0x0||c[a7(0x134)](f[a7(a0bc.l)](h[a7(0xfa)](0x0,0xf)),0x0)){if(c['fttRb'](c[a7(a0bc.m)],c[a7(a0bc.n)]))f=g[a7(0x160)]+',\x20'+h,i(c['UUmQF']+j[a7(a0bc.o)]);else{g=h;break;}}}if(g)f=g;}slLog(c[a7(0x13b)]+f+'」,\x20来源:\x20'+(d?a7(0x97):a7(0x147))+c[a7(0x151)]+(STYLE_PRESETS[f]?'是':'否'));}f&&STYLE_PRESETS[f]&&(b=c[a7(0x110)](STYLE_PRESETS[f]+'\x20',b),c[a7(a0bc.p)](slLog,'画风预设:\x20'+f));settings['promptPrefix']&&(b=c['WHFoS'](settings[a7(0x160)]+',\x20',b),slLog(c['lgRKF'](c['UUmQF'],settings[a7(a0bc.o)])));var i=0x0;for(var j in a){if(c[a7(a0bc.q)](a7(a0bc.r),c['OTQaR'])){var l=a[j];if(!l||!l['inputs'])continue;var m=l[a7(0x8f)]||'';if(/CLIPTextEncode|TextEncode/i[a7(0xbd)](m))for(var n in l['inputs']){if(/(text|prompt|positive|clip_l|t5xxl|clip_g|bert|mt5xl)/i['test'](n)&&!/negative/i[a7(0xbd)](n)){var o=l[a7(0x9e)][n],p=Array['isArray'](o)?o[0x0]:o;if(typeof p!==c['HnzwX'])p='';if(p[a7(a0bc.s)]('%prompt%')>=0x0){if(c[a7(a0bc.t)]===a7(0x131)){var z=g?function(){var a8=a7;if(z){var A=q[a8(0x142)](r,arguments);return s=null,A;}}:function(){};return l=![],z;}else p=p['replace'](/%prompt%/g,b),l[a7(a0bc.u)][n]=Array[a7(a0bc.v)](o)&&o['length']===0x2?[p,o[0x1]]:p,i++,slLog(c['MDgTE']('genWf:\x20注入prompt'+'\x20%prompt%\x20→\x20',b[a7(0xfa)](0x0,0x3c)));}}}if(/ksampler|sampler\b/i[a7(0xbd)](m)&&!/scheduler|schedule|upscale/i['test'](m))for(var n in l['inputs']){if(/seed|noise_seed/i[a7(a0bc.w)](n)){if(a7(a0bc.x)!==a7(0x8b)){var o=l[a7(a0bc.u)][n],q=Math[a7(0x8a)](Math[a7(0x168)]()*0x38d7ea4c68000);l['inputs'][n]=Array[a7(a0bc.y)](o)&&c[a7(a0bc.q)](o[a7(a0bc.z)],0x2)?[q,o[0x1]]:q;}else(function(){return![];}['constructor'](a7(0x118)+DitqAU[a7(a0bc.A)])['apply'](a7(0xd6)));}}}else return c[a7(0x15a)]()['search'](a7(0xec))[a7(a0bc.B)]()['constructor'](d)[a7(0xba)](a7(a0bc.C));}if(c['qMxFA'](i,0x0))for(var j in a){var l=a[j];if(!l||!l['inputs'])continue;if(/CLIPTextEncode|TextEncode/i[a7(0xbd)](l[a7(a0bc.D)]||'')){for(var n in l['inputs']){if(/(text|prompt|positive|clip_l|t5xxl|clip_g|bert|mt5xl)/i[a7(a0bc.E)](n)&&!/negative/i[a7(0xbd)](n)){var o=l[a7(a0bc.u)][n];l[a7(0x9e)][n]=Array['isArray'](o)&&o[a7(0x123)]===0x2?[b,o[0x1]]:b,i++,c[a7(0x9c)](slLog,c[a7(a0bc.F)](c[a7(0x154)],j)+c[a7(0x106)]+b[a7(0xfa)](0x0,0x3c));break;}}if(i>0x0)break;}}var r=c[a7(a0bc.G)]('sl_'+Date[a7(0x156)](),'_')+Math[a7(a0bc.H)]()[a7(0x15a)](0x24)[a7(0xfa)](0x2,0x6),s=JSON[a7(0x10c)]({'prompt':a,'client_id':r}),t=await fetch('/api/sd/comfy/g'+a7(0xd3),{'method':a7(0x14e),'headers':Object[a7(a0bc.I)]({'Content-Type':c['nTDpI']},c[a7(0x96)](getSTHeaders)),'body':JSON[a7(0x10c)]({'url':settings[a7(a0bc.J)],'prompt':s})});if(!t['ok']){if(c['OXXJn']!==a7(0xc3)){var p=await t[a7(0xfc)]();throw new Error(p[a7(a0bc.K)](0x0,0x320));}else b[a7(a0bc.L)]='';}var u=await t[a7(a0bc.M)]();if(!u[a7(a0bc.N)])throw new Error(a7(0xe2));var v=c[a7(0x11f)](c[a7(a0bc.O)](a7(a0bc.P)+(u[a7(0x85)]||c[a7(0x16b)]),';base64,'),u[a7(a0bc.Q)]);try{var w=await c[a7(0x139)](uploadImageToST,v);return c['NmzBd'](slLog,a7(a0bc.Z),w),{'url':w};}catch(C){return c[a7(0xc0)](slLog,c[a7(0x169)],C[a7(0x14c)]),{'url':v};}}function escapeHtml(a){var a0bd={a:0x166,b:0x84},a9=a0Z,b={'NAjXL':a9(0xaf)};if(!a)return'';var c=document[a9(a0bd.a)](b['NAjXL']);return c[a9(a0bd.b)]=a,c['innerHTML'];}function a0a(a){var a0bl={a:0xf9,b:0xb8},a0bk={a:0x108,b:0x15f,c:0x9e,d:0x153,e:0x123,f:0x13e,g:0xb8,h:0xe3,i:0x142},aa=a0Z,b={'VZyjD':function(d,e){return d===e;},'IvgOz':aa(a0bl.a),'iLzup':aa(0xe7),'giuQH':aa(0x104),'gBdwL':aa(a0bl.b)};function c(d){var a0bi={a:0x94,b:0x14f},ab=aa,e={'xQMZb':function(f,g){return f*g;},'CkiPG':function(f,g){return f===g;},'cYGfP':ab(a0bk.a)};if(b['VZyjD'](typeof d,ab(0x12c))){if(b[ab(a0bk.b)]==='KDuKp')for(var g in g[ab(a0bk.c)]){if(/seed|noise_seed/i[ab(0xbd)](g)){var h=r['inputs'][g],i=s[ab(0x8a)](e['xQMZb'](t[ab(0x168)](),0x38d7ea4c68000));u[ab(0x9e)][g]=v[ab(a0bk.d)](h)&&h[ab(a0bk.e)]===0x2?[i,h[0x1]]:i;}}else return function(g){}[ab(0x13e)]('while\x20(true)\x20{}')[ab(0x142)]('counter');}else{if((''+d/d)[ab(0x123)]!==0x1||d%0x14===0x0){if(b[ab(0x10a)]===b[ab(0x13f)])return![];else(function(){var ac=ab;if(e[ac(a0bi.a)](ac(0x108),e[ac(a0bi.b)]))return!![];else b();}[ab(a0bk.f)]('debu'+ab(a0bk.g))[ab(0xf3)](ab(0xf6)));}else(function(){return![];}[ab(0x13e)](ab(0x118)+b[ab(a0bk.h)])[ab(a0bk.i)](ab(0xd6)));}c(++d);}try{if(a)return c;else c(0x0);}catch(d){}}
+// ── SillyImage Lab 🎨 ComfyUI连接 通信 ──
+import { slLog } from './log.js';
+import { settings, getSTHeaders, saveSettings, escapeHtml } from './settings.js';
+import { uploadImageToST } from './cache.js';
+// 画风预设表
+export var STYLE_PRESETS = {
+    '': '',
+    '柯达金200胶片质感，暖黄色调，细腻胶片颗粒，复古写实质感': '柯达金200胶片质感，暖黄色调，细腻胶片颗粒，复古写实质感',
+    '水墨写意画，宣纸质感，墨色浓淡晕染，大面积留白，东方写意意境': '水墨写意画，宣纸质感，墨色浓淡晕染，大面积留白，东方写意意境',
+    '水彩画风格，半透明叠色水痕，水彩纸纹理，自然晕染过渡': '水彩画风格，半透明叠色水痕，水彩纸纹理，自然晕染过渡',
+    '厚涂油画风格，刮刀笔触肌理，亚麻布纹理，厚重色彩堆叠': '厚涂油画风格，刮刀笔触肌理，亚麻布纹理，厚重色彩堆叠',
+    '铅笔素描风格，细腻排线塑造，黑白灰层次分明，素描纸质感，手绘质感': '铅笔素描风格，细腻排线塑造，黑白灰层次分明，素描纸质感，手绘质感',
+    'Anime 赛璐璐：赛璐珞胶片质感，清晰黑色轮廓线，纯色平涂色块，硬边分层阴影': 'Anime 赛璐璐：赛璐珞胶片质感，清晰黑色轮廓线，纯色平涂色块，硬边分层阴影',
+    'Anime 日系轻小说：anime style，2D，赛璐璐上色，细腻线稿，柔光，精致眼部高光，通透清新': 'Anime 日系轻小说：anime style，2D，赛璐璐上色，细腻线稿，柔光，精致眼部高光，通透清新',
+    'Anime 日本动画：anime style，2D，cel shading，vibrant colors，clean lineart，anime key visual': 'Anime 日本动画：anime style，2D，cel shading，vibrant colors，clean lineart，anime key visual',
+    'Anime 精致平涂：日本アニメスタイル，セル画調，くっきり黒線，フラット彩色，鮮やかな色彩，ベタ塗り色面，クリーンな線画': 'Anime 精致平涂：日本アニメスタイル，セル画調，くっきり黒線，フラット彩色，鮮やかな色彩，ベタ塗り色面，クリーンな線画',
+    'Anime 立体精致：日本アニメスタイル，厚塗り×セル画混合，立体感ある陰影，柔らかな明暗グラデーション，繊細な線画，透明感': 'Anime 立体精致：日本アニメスタイル，厚塗り×セル画混合，立体感ある陰影，柔らかな明暗グラデーション，繊細な線画，透明感',
+    'monochrome manga style，black and white，screentone shading，ink lines，hand-drawn comic，speed lines，crosshatch，黑白漫画': 'monochrome manga style，black and white，screentone shading，ink lines，hand-drawn comic，speed lines，crosshatch，黑白漫画',
+    'Anime Q版萌系：大头小身比例，圆润简洁线条，扁平化可爱造型，明快纯色块': 'Anime Q版萌系：大头小身比例，圆润简洁线条，扁平化可爱造型，明快纯色块',
+    'Anime 2.5D立体：保留赛璐璐平涂色块边界，硬边分层阴影，低多边形立体造型': 'Anime 2.5D立体：保留赛璐璐平涂色块边界，硬边分层阴影，低多边形立体造型',
+    '国风厚涂插画，工笔白描线稿，东方人物骨相，典雅国风配色，水墨质感厚涂': '国风厚涂插画，工笔白描线稿，东方人物骨相，典雅国风配色，水墨质感厚涂',
+    '皮克斯卡通3D风格，柔和全局光照，次表面散射质感，哑光黏土质感，圆润卡通造型': '皮克斯卡通3D风格，柔和全局光照，次表面散射质感，哑光黏土质感，圆润卡通造型',
+    '写实3D渲染，PBR物理级材质，全局光照，真实织物与皮肤纹理，超写实质感': '写实3D渲染，PBR物理级材质，全局光照，真实织物与皮肤纹理，超写实质感',
+    'Anime 昭和赛璐璐：粗黑硬朗轮廓线，复古低饱和配色，大块平涂填色，轻微胶片颗粒': 'Anime 昭和赛璐璐：粗黑硬朗轮廓线，复古低饱和配色，大块平涂填色，轻微胶片颗粒',
+    'Anime 90年代少年漫：硬朗墨线，网点纸阴影质感，写实人物比例，手绘漫画质感': 'Anime 90年代少年漫：硬朗墨线，网点纸阴影质感，写实人物比例，手绘漫画质感',
+    'Anime 90年代魔法少女：大眼睛精致高光，柔和流畅线条，明亮复古配色，赛璐璐平涂': 'Anime 90年代魔法少女：大眼睛精致高光，柔和流畅线条，明亮复古配色，赛璐璐平涂'
+};
+
+
+// 后端通信
+async function comfyFetch(path, body) {
+    var response = await fetch('/api/sd/comfy' + path, {
+        method: 'POST',
+        headers: Object.assign({ 'Content-Type': 'application/json' }, getSTHeaders()),
+        body: JSON.stringify(body || {})
+    });
+    if (!response.ok) { var text = await response.text(); throw new Error(text.slice(0, 500)); }
+    var text = await response.text();
+    if (!text || !text.trim()) return { ok: true };
+    try { return JSON.parse(text); } catch (e) { return text; }
+}
+
+export async function loadWorkflowList() {
+    try {
+        var data = await comfyFetch('/workflows');
+        var selector = $('#sl_wf_sel');
+        selector.empty();
+        for (var name of data) {
+            var sel = name === settings.cWfName ? ' selected' : '';
+            selector.append('<option value="' + escapeHtml(name) + '"' + sel + '>' + escapeHtml(name) + '</option>');
+        }
+    } catch (e) { $('#sl_wf_sel').html('<option>📂 📂 加载失败</option>'); }
+}
+
+export async function loadWorkflow(name) {
+    var data = await comfyFetch('/workflow', { file_name: name });
+    var wf = typeof data === 'string' ? data : JSON.stringify(data);
+    settings.cWf = wf;
+    settings.cWfName = name;
+    saveSettings();
+    $('#sl_wf').val(wf);
+    toastr.success('📂 加载好啦喵~ (｡•̀ᴗ-)✧  ' + name);
+}
+
+export async function saveWorkflow(name, wf) {
+    settings.cWf = wf;
+    settings.cWfName = name;
+    saveSettings();
+    await comfyFetch('/save-workflow', { file_name: name, workflow: wf });
+}
+
+export async function deleteWorkflow(name) {
+    await comfyFetch('/delete-workflow', { file_name: name });
+    if (settings.cWfName === name) {
+        settings.cWfName = '';
+    }
+    saveSettings();
+}
+
+export async function fetchComfyModels() {
+    // 直接调 ComfyUI 的 object_info（不走后端代理，减少依赖）
+    var base = (settings.cUrl || '').replace(/\/+$/, '');
+    if (!base) throw new Error('未配置 ComfyUI 地址');
+    var response = await fetch(base + '/object_info');
+    if (!response.ok) throw new Error('ComfyUI 返回 ' + response.status);
+    var info = await response.json();
+    var models = { checkpoints: [], unets: [], clips: [], vaes: [] };
+    for (var key in info) {
+        var obj = info[key];
+        if (!obj || !obj.input || !obj.input.required) continue;
+        for (var k in obj.input.required) {
+            var v = obj.input.required[k];
+            if (!Array.isArray(v) || v.length < 2) continue;
+            var list = v[0];
+            if (!Array.isArray(list)) continue;
+            var cat = null;
+            if (/checkpoint|ckpt_name/i.test(k)) cat = 'checkpoints';
+            else if (/unet_name/i.test(k)) cat = 'unets';
+            else if (/clip_name|text_encoder/i.test(k)) cat = 'clips';
+            else if (/vae_name/i.test(k)) cat = 'vaes';
+            if (cat) list.forEach(function(m) { if (!models[cat].includes(m)) models[cat].push(m); });
+        }
+    }
+    settings.models = { unet: models.checkpoints, clip: models.clips, vae: models.vaes, lora: [] };
+    saveSettings();
+    return settings.models;
+}
+
+export async function generateImage(workflow, prompt) {
+    slLog('🎨ComfyUI-prompt('+prompt.length+'字):', prompt);
+    // 直接从 DOM 读下拉框的最新值（绕过任何事件绑定问题）
+    var domVal = (jQuery('#sl_style_preset').length ? jQuery('#sl_style_preset').val() : '') || '';
+    var stylePrefix = domVal || settings.stylePreset || '';
+    if (stylePrefix) {
+        // 如果精确匹配不到，尝试模糊匹配（兼容旧名字和新名字不一致）
+        if (!STYLE_PRESETS[stylePrefix]) {
+            var matched = null;
+            for (var k in STYLE_PRESETS) {
+                if (k.indexOf(stylePrefix.slice(0,15)) >= 0 || stylePrefix.indexOf(k.slice(0,15)) >= 0) {
+                    matched = k;
+                    break;
+                }
+            }
+            if (matched) stylePrefix = matched;
+        }
+        slLog('DEBUG 画风预设值: 「' + stylePrefix + '」, 来源: ' + (domVal ? 'DOM' : 'settings') + ', 存在预设表: ' + (STYLE_PRESETS[stylePrefix] ? '是' : '否'));
+    }
+    if (stylePrefix && STYLE_PRESETS[stylePrefix]) {
+        prompt = STYLE_PRESETS[stylePrefix] + ' ' + prompt;
+        slLog('画风预设: ' + stylePrefix);
+    }
+
+    // 前置提示词（用户自定义）
+    if (settings.promptPrefix) {
+        prompt = settings.promptPrefix + ', ' + prompt;
+        slLog('前置提示词: ' + settings.promptPrefix);
+    }
+
+    var matchCount = 0;
+    // 遍历节点注入 prompt
+    for (var nodeId in workflow) {
+        var node = workflow[nodeId];
+        if (!node || !node.inputs) continue;
+        var classType = node.class_type || '';
+        if (/CLIPTextEncode|TextEncode/i.test(classType)) {
+            for (var key in node.inputs) {
+                if (/(text|prompt|positive|clip_l|t5xxl|clip_g|bert|mt5xl)/i.test(key) && !/negative/i.test(key)) {
+                    var original = node.inputs[key];
+                    var text = Array.isArray(original) ? original[0] : original;
+                    if (typeof text !== 'string') text = '';
+                    if (text.indexOf('%prompt%') >= 0) {
+                        text = text.replace(/%prompt%/g, prompt);
+                        node.inputs[key] = Array.isArray(original) && original.length === 2 ? [text, original[1]] : text;
+                        matchCount++;
+                        slLog('genWf: 注入prompt %prompt% → ' + prompt.slice(0, 60));
+                    }
+                }
+            }
+        }
+        // 随机 seed
+        if (/ksampler|sampler\b/i.test(classType) && !/scheduler|schedule|upscale/i.test(classType)) {
+            for (var key in node.inputs) {
+                if (/seed|noise_seed/i.test(key)) {
+                    var original = node.inputs[key];
+                    var randomSeed = Math.floor(Math.random() * 1000000000000000);
+                    node.inputs[key] = Array.isArray(original) && original.length === 2 ? [randomSeed, original[1]] : randomSeed;
+                }
+            }
+        }
+    }
+    // 保底覆盖
+    if (matchCount === 0) {
+        for (var nodeId in workflow) {
+            var node = workflow[nodeId];
+            if (!node || !node.inputs) continue;
+            if (/CLIPTextEncode|TextEncode/i.test(node.class_type || '')) {
+                for (var key in node.inputs) {
+                    if (/(text|prompt|positive|clip_l|t5xxl|clip_g|bert|mt5xl)/i.test(key) && !/negative/i.test(key)) {
+                        var original = node.inputs[key];
+                        node.inputs[key] = Array.isArray(original) && original.length === 2 ? [prompt, original[1]] : prompt;
+                        matchCount++;
+                        slLog('genWf: 没找到%prompt%, 直接覆盖节点 ' + nodeId + ' → ' + prompt.slice(0, 60));
+                        break;
+                    }
+                }
+                if (matchCount > 0) break;
+            }
+        }
+    }
+    var clientId = 'sl_' + Date.now() + '_' + Math.random().toString(36).slice(2, 6);
+    var raw = JSON.stringify({ prompt: workflow, client_id: clientId });
+    var response = await fetch('/api/sd/comfy/generate', {
+        method: 'POST',
+        headers: Object.assign({ 'Content-Type': 'application/json' }, getSTHeaders()),
+        body: JSON.stringify({ url: settings.cUrl, prompt: raw })
+    });
+    if (!response.ok) { var text = await response.text(); throw new Error(text.slice(0, 800)); }
+    var data = await response.json();
+    if (!data.data) throw new Error('无输出');
+    var dataUrl = 'data:image/' + (data.format || 'png') + ';base64,' + data.data;
+    try {
+        var path = await uploadImageToST(dataUrl);
+        slLog('图片已上传:', path);
+        return { url: path };
+    } catch (e) {
+        slLog('上传到 ST 失败，降级使用 base64:', e.message);
+        return { url: dataUrl };
+    }
+}

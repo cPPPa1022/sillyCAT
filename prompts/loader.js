@@ -9,17 +9,16 @@ var PROMPTS_LOADED = false;
 export async function loadPrompts(baseUrl) {
     var files = [
         'static-profile/system.txt',
-        'static-profile/rules.json',
         'static-profile/examples.json',
         'aux-pipeline/jailbreak-dp.txt',
         'aux-pipeline/jailbreak-gemini.txt',
         'aux-pipeline/task.txt',
+        'aux-pipeline/system.txt',
         'aux-pipeline/zit-overlay.txt',
         'aux-pipeline/anime-overlay.txt',
         'aux-pipeline/nsfw-overlay.txt',
         'aux-pipeline/comic-overlay.txt',
         'aux-pipeline/worldcard-npc.txt',
-        'aux-pipeline/rules.json',
         'aux-pipeline/examples.json',
     ];
     var loaded = 0;

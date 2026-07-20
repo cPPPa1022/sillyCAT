@@ -1,1 +1,58 @@
-(function(b,c){var a0O={b:0x23b,c:0x211,d:0x224,e:0x236},A=a0f,d=b();while(!![]){try{var e=parseInt(A(0x202))/0x1+-parseInt(A(0x1f9))/0x2+parseInt(A(a0O.b))/0x3+parseInt(A(0x1f6))/0x4+-parseInt(A(0x1eb))/0x5*(parseInt(A(a0O.c))/0x6)+-parseInt(A(0x225))/0x7*(parseInt(A(a0O.d))/0x8)+parseInt(A(a0O.e))/0x9;if(e===c)break;else d['push'](d['shift']());}catch(f){d['push'](d['shift']());}}}(a0e,0x4abdc),(function(){var a0Q={b:0x234,c:0x21a,d:0x231,e:0x238,f:0x20d},B=a0f,b={'iaGOY':function(f,g){return f+g;},'DEong':B(0x20e)+B(a0Q.b)+'\x20)'},c;try{var d=Function(b[B(a0Q.c)](B(a0Q.d)+B(a0Q.e)+b[B(a0Q.f)],');'));c=d();}catch(f){c=window;}c[B(0x1e0)](a,0x7d0);}()));import{slLog}from'./log.js';import{settings,getSTHeaders,saveSettings}from'./settings.js';function a0f(a,b){a=a-0x1e0;var c=a0e();var d=c[a];if(a0f['dgObyO']===undefined){var e=function(i){var j='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var l='',m='',n=l+e;for(var o=0x0,p,q,r=0x0;q=i['charAt'](r++);~q&&(p=o%0x4?p*0x40+q:q,o++%0x4)?l+=n['charCodeAt'](r+0xa)-0xa!==0x0?String['fromCharCode'](0xff&p>>(-0x2*o&0x6)):o:0x0){q=j['indexOf'](q);}for(var s=0x0,t=l['length'];s<t;s++){m+='%'+('00'+l['charCodeAt'](s)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(m);};a0f['nnmKxL']=e,a0f['YqPqqR']={},a0f['dgObyO']=!![];}var f=c[0x0],g=a+f,h=a0f['YqPqqR'][g];if(!h){var i=function(j){this['bVVZxm']=j,this['rHGNCT']=[0x1,0x0,0x0],this['UxSBaE']=function(){return'newState';},this['oQtjAs']='\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*',this['fNkCdY']='[\x27|\x22].+[\x27|\x22];?\x20*}';};i['prototype']['QFileD']=function(){var j=new RegExp(this['oQtjAs']+this['fNkCdY']),k=j['test'](this['UxSBaE']['toString']())?--this['rHGNCT'][0x1]:--this['rHGNCT'][0x0];return this['Envyox'](k);},i['prototype']['Envyox']=function(j){if(!Boolean(~j))return j;return this['ZRJyjO'](this['bVVZxm']);},i['prototype']['ZRJyjO']=function(j){for(var k=0x0,l=this['rHGNCT']['length'];k<l;k++){this['rHGNCT']['push'](Math['round'](Math['random']())),l=this['rHGNCT']['length'];}return j(this['rHGNCT'][0x0]);},new i(a0f)['QFileD'](),d=a0f['nnmKxL'](d),a0f['YqPqqR'][g]=d;}else d=h;return d;}var imageCache={};export function imgCacheLoad(){var a0a7={b:0x203,c:0x1e9,d:0x1fd,e:0x1e4},a0a6={b:0x1f2},a0Z={b:0x228,c:0x1f7,d:0x203},C=a0f,f={'xewzJ':C(a0a7.b),'SfKuh':function(k,l){return k(l);},'IIrGa':C(a0a7.c),'eWoiM':C(a0a7.d),'WXWIo':C(0x21f),'rMQQP':C(0x1e1),'rdZED':function(k,l){return k(l);},'rGHqV':function(k,l,m){return k(l,m);},'qAHiZ':function(k,l,m){return k(l,m);}},g=(function(){var k=!![];return function(l,m){var n=k?function(){var D=a0f;if(m){if(D(0x20c)===D(0x22f))return b;else{var o=m['apply'](l,arguments);return m=null,o;}}}:function(){};return k=![],n;};}()),h=f[C(0x1ed)](g,this,function(){var E=C;return h[E(0x1f8)]()[E(a0Z.b)](f[E(0x21c)])[E(0x1f8)]()[E(a0Z.c)](h)[E(0x228)](E(a0Z.d));});h();var i=(function(){var k=!![];return function(l,m){var a0a0={b:0x207},n=k?function(){var F=a0f;if(m){var o=m[F(a0a0.b)](l,arguments);return m=null,o;}}:function(){};return k=![],n;};}());(function(){var a0a5={b:0x232,c:0x22a,d:0x201,e:0x22b,f:0x1fc,g:0x216,h:0x215,i:0x239},a0a4={b:0x22d},G=C,k={'RqOWv':f[G(0x22e)],'ywgvE':function(l,m){var H=G;return f[H(a0a4.b)](l,m);}};f[G(a0a6.b)](i,this,function(){var I=G,l=new RegExp(I(0x1f4)+')'),m=new RegExp(I(0x20a)+I(a0a5.b)+I(0x1fa),'i'),n=f[I(a0a5.c)](a,f['IIrGa']);!l[I(0x1ef)](n+I(a0a5.d))||!m[I(0x1ef)](n+f['eWoiM'])?f[I(a0a5.c)](n,'0'):I(a0a5.e)!==f[I(a0a5.f)]?a():(e[I(a0a5.g)](k[I(0x23a)],f[I(a0a5.h)](g)),k[I(a0a5.i)](h,I(0x214)));})();}());try{var j=localStorage['getItem'](C(0x1e1));if(j)imageCache=JSON[C(a0a7.e)](j);}catch(k){imageCache={};}}function a0e(){var ap=['C2vHCMnO','CvPMC3u','u2zlDwG','DuH5vxm','C3bSAxq','CMrAruq','CK1ruva','vgz1DuG','zgf0ytO','CMv0DxjUicHMDw5JDgLV','wL8KxvSWltLHlxPblvPF','A0njtw8','iNjLDhvYBIb0AgLZiIKO','C2XF','nty2ndm4ngjTwwHfEq','vMLvwxG','BIGPia','ExDNDKu','uNfpv3y','mtm2mJnzshHyruu','C2v0sw50zxj2ywW','C2XPBwDFy2fJAgu','yvvKBxu','ywn0Aw9U','CgfYC2u','C3rHCNrZv2L0Aa','Au5fs0y','y291BNrLCG','ELPbv0C','Aw5PDa','vMjdCvm','nxPduxHOuG','zLDLvvq','CufiAvO','B2fK','DgvZDa','CMjQCMG','yxnZAwDU','CKDiCvy','y2fSBa','zNvUy3rPB24GkLWOicPC','ALPQsfm','mJi3nJqXnM1LwfLpDq','y29UC3rYDwn0B3i','Dg9tDhjPBMC','mte4ntG3mfD5DxjUuG','jf0Qkq','z0PbsMK','v1Hxsw8','Aw5WDxq','vKzUAw0','BM93','D2HPBguGkhrYDwuPihT9','y2HHAw4','ndaZntiYqw9Yz0Xu','kcGOlISPkYKRksSK','Bwf0y2G','ENfODKu','r1LhEeS','yxbWBhK','C2XPy2u','B2HOvNi','xcTCkYaQkd86w2eTEKeT','B3nXyMm','ChjmBMO','revVBMC','E30Uy29UC3rYDwn0B3iO','AKnRCw8','A2fQyvy','mJiXnJaYmNLQt1vSvq','C3rYAw5N','zgvIDq','5PENigjHC2u2ncdNVjpLRzJLT7lMUixNKiy','C3rYAw5NAwz5','C2v0sxrLBq','z2DLCG','ANnVBG','ue9tva','Awfht1K','sgzNDeK','Egv3EKO','zgTYC2W','EhDXA1O','uxrLzMS','t1LbBha','A0rkt1q','Dgv4Da','DvnKveW','mJCWnta0oe1UtNDrvW','n3rhB3HSrG','Bw9Ysue','Cgf0Aa'];a0e=function(){return ap;};return a0e();}export function imgCacheSet(b,c){var J=a0f;imageCache[b]=c;try{localStorage[J(0x216)](J(0x1e1),JSON[J(0x215)](imageCache));}catch(d){}}export function imgCacheGet(b){return imageCache[b];}export function cleanOldCache(){var a0ad={b:0x226,c:0x1e8,d:0x230,e:0x223,f:0x21b,g:0x1e1},K=a0f,b={'qxujd':K(a0ad.b),'rbjrh':K(0x220),'fWeUT':K(0x223),'kDJOT':function(f,g){return f!==g;},'VbCqS':K(0x21e),'HfgtI':K(a0ad.c),'dkrsl':K(0x214)};try{var c=![];for(var d in imageCache){b['qxujd']!==b[K(0x1f0)]?(imageCache[d]['startsWith'](K(a0ad.d))||imageCache[d][K(0x1e5)]('//'))&&(b[K(0x1ec)]!==K(a0ad.e)?b('0'):(delete imageCache[d],c=!![])):c=d;}if(c){if(b[K(0x221)](b[K(0x1ea)],b[K(a0ad.f)]))localStorage['setItem'](K(a0ad.g),JSON[K(0x215)](imageCache)),slLog(b[K(0x21d)]);else{var i=g?function(){if(i){var u=q['apply'](r,arguments);return s=null,u;}}:function(){};return l=![],i;}}}catch(i){}}export async function uploadImageToST(b){var a0af={b:0x1e5,c:0x1fb,d:0x208,e:0x1ee,f:0x219,g:0x1f1,h:0x209},L=a0f,c={'aUdmu':'7|6|5|1|8|2|3|4'+'|0','kCIMo':function(m,n){return m+n;},'gJAJi':L(0x235),'ohhVr':'application/jso'+'n'},d=c[L(0x1e2)][L(0x22c)]('|'),e=0x0;while(!![]){switch(d[e++]){case'0':return h[L(0x227)][L(a0af.b)]('/')?h[L(0x227)]:'/'+h[L(0x227)];case'1':var f=c['kCIMo'](c[L(0x233)](c[L(a0af.c)],Date[L(0x1ff)]()),'_')+Math['random']()['toString'](0x24)[L(a0af.d)](0x2,0x6);continue;case'2':if(!l['ok']){var g=await l[L(0x222)]();throw new Error(g[L(0x208)](0x0,0xc8));}continue;case'3':var h=await l[L(0x218)]();continue;case'4':if(!h['path'])throw new Error('Upload\x20返回缺少\x20pat'+'h');continue;case'5':var i=k[0x1],j=k[0x2];continue;case'6':if(!k)throw new Error('无效的\x20Data\x20URL');continue;case'7':var k=b[L(0x204)](/^data:image\/(\w+);base64,(.+)$/);continue;case'8':var l=await fetch('/api/images/upl'+L(a0af.e),{'method':L(a0af.f),'headers':Object[L(a0af.g)]({'Content-Type':c[L(a0af.h)]},getSTHeaders()),'body':JSON[L(0x215)]({'image':j,'format':i,'filename':f})});continue;}break;}}imgCacheLoad(),cleanOldCache();function a(b){var a0ao={b:0x1f5,c:0x213,d:0x217,e:0x229},a0am={b:0x210,c:0x200,d:0x205,e:0x217,f:0x1f3},M=a0f,c={'VFnim':function(e,f){return e===f;},'kajaV':M(0x212),'zqhvE':M(0x1e7),'SOQjn':function(e,f){return e!==f;},'osqbc':'debu','jCkqo':'action','GYGxK':function(e,f){return e+f;},'jZjHS':'EojOM','ViUYx':M(0x1e6)};function d(e){var N=M;if(c[N(0x1fe)](typeof e,c[N(a0am.b)]))return function(f){}[N(0x1f7)](N(a0am.c))[N(0x207)](c[N(a0am.d)]);else c['SOQjn']((''+e/e)['length'],0x1)||e%0x14===0x0?function(){return!![];}['constructor'](c[N(0x20b)]+N(a0am.e))[N(a0am.f)](c[N(0x20f)]):function(){return![];}[N(0x1f7)](c[N(0x206)](N(0x213),N(a0am.e)))[N(0x207)]('stateObject');d(++e);}try{if(b){if(c[M(a0ao.b)]===c[M(0x1f5)])return d;else(function(){return!![];}[M(0x1f7)](M(a0ao.c)+M(a0ao.d))[M(0x1f3)](M(0x1e3)));}else{if(M(a0ao.e)===c[M(0x237)]){if(e){var g=i[M(0x207)](j,arguments);return k=null,g;}}else d(0x0);}}catch(g){}}
+// ── SillyImage Lab 图片缓存 ──
+import { slLog } from './log.js';
+import { settings, getSTHeaders, saveSettings } from './settings.js';
+
+var imageCache = {};
+
+export function imgCacheLoad() {
+    try {
+        var data = localStorage.getItem('slimg_cache');
+        if (data) imageCache = JSON.parse(data);
+    } catch (e) { imageCache = {}; }
+}
+
+export function imgCacheSet(prompt, url) {
+    imageCache[prompt] = url;
+    try { localStorage.setItem('slimg_cache', JSON.stringify(imageCache)); } catch (e) {}
+}
+
+export function imgCacheGet(prompt) {
+    return imageCache[prompt];
+}
+
+// 清理旧 base64 缓存
+export function cleanOldCache() {
+    try {
+        var changed = false;
+        for (var key in imageCache) {
+            if (imageCache[key].startsWith('data:') || imageCache[key].startsWith('//')) {
+                delete imageCache[key];
+                changed = true;
+            }
+        }
+        if (changed) {
+            localStorage.setItem('slimg_cache', JSON.stringify(imageCache));
+            slLog('旧 base64 缓存已清理');
+        }
+    } catch (e) {}
+}
+
+// 上传图片到 ST 本地存储
+export async function uploadImageToST(dataUrl) {
+    var match = dataUrl.match(/^data:image\/(\w+);base64,(.+)$/);
+    if (!match) throw new Error('无效的 Data URL');
+    var format = match[1], raw = match[2];
+    var filename = 'sl_' + Date.now() + '_' + Math.random().toString(36).slice(2, 6);
+    var response = await fetch('/api/images/upload', {
+        method: 'POST',
+        headers: Object.assign({ 'Content-Type': 'application/json' }, getSTHeaders()),
+        body: JSON.stringify({ image: raw, format: format, filename: filename })
+    });
+    if (!response.ok) { var text = await response.text(); throw new Error(text.slice(0, 200)); }
+    var data = await response.json();
+    if (!data.path) throw new Error('Upload 返回缺少 path');
+    return data.path.startsWith('/') ? data.path : '/' + data.path;
+}
+
+imgCacheLoad();
+cleanOldCache();
