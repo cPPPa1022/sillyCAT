@@ -1,7 +1,5 @@
-// ── SillyImage Lab 提示词加载器 ──
-// ES module，被 index.js import 使用
+﻿// ── SillyImage Lab 提示词加载器 ──
 // 从 prompts/ 文件夹异步加载提示词文件，缓存到内存
-// 加载失败返回 undefined，调用方使用 fallback
 
 var PROMPTS_CACHE = {};
 var PROMPTS_LOADED = false;
@@ -9,17 +7,11 @@ var PROMPTS_LOADED = false;
 export async function loadPrompts(baseUrl) {
     var files = [
         'static-profile/system.txt',
-        'static-profile/examples.json',
-        'aux-pipeline/jailbreak-dp.txt',
-        'aux-pipeline/jailbreak-gemini.txt',
-        'aux-pipeline/task.txt',
-        'aux-pipeline/system.txt',
-        'aux-pipeline/zit-overlay.txt',
-        'aux-pipeline/anime-overlay.txt',
-        'aux-pipeline/nsfw-overlay.txt',
-        'aux-pipeline/comic-overlay.txt',
-        'aux-pipeline/worldcard-npc.txt',
-        'aux-pipeline/examples.json',
+        'pipeline/system.txt',
+        'pipeline/zit-overlay.txt',
+        'pipeline/anime-overlay.txt',
+        'pipeline/anime-tag-overlay.txt',
+        'pipeline/nsfw-overlay.txt',
     ];
     var loaded = 0;
     for (var i = 0; i < files.length; i++) {
@@ -35,8 +27,7 @@ export async function loadPrompts(baseUrl) {
         }
     }
     PROMPTS_LOADED = true;
-    var allFailed = (loaded === 0);
-    console.warn('[SillyLab] 提示词加载: ' + loaded + '/' + files.length + (allFailed ? ' (全部失败，使用默认值)' : ''));
+    console.warn('[SillyLab] 提示词加载: ' + loaded + '/' + files.length + (loaded === 0 ? ' (全部失败，使用默认值)' : ''));
 }
 
 export function getPrompt(path) {

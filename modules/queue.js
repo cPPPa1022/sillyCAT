@@ -1,9 +1,10 @@
-// ── SillyImage Lab 生图排队 ──
+﻿// ── SillyImage Lab 生图排队 ──
 import { slLog } from './log.js';
-import { settings, COLORS, getSTContext } from './settings.js';
+import { settings, COLORS, getSTContext, getActiveMode } from './settings.js';
 import { imgCacheSet } from './cache.js';
 import { generateImage } from './comfyui.js';
 import { cleanAnimePrompt } from './text-utils.js';
+import { resolveFacePrompt } from './pipeline/profile.js';
 
 var imageQueue = [];
 var queueRunning = false;
@@ -17,7 +18,7 @@ async function processImageQueue() {
         var workflow = JSON.parse(settings.cWf);
         var prompt = task.prompt;
         // Anime 模式强制清理中文
-        if (settings.modelType === 'anime' || settings.modelType === 'anime_tag') prompt = cleanAnimePrompt(prompt);
+        if (getActiveMode() === 'anime' || getActiveMode() === 'anime_tag') prompt = cleanAnimePrompt(prompt);
         var result = await generateImage(workflow, prompt);
         imgCacheSet(task.prompt, result.url);
         task.btn.text('\u21bb \u91cd\u65b0\u751f\u6210').css({ background: COLORS.card, color: COLORS.text });

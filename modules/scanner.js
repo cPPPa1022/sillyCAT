@@ -1,13 +1,13 @@
-// ── SillyImage Lab 消息扫描与触发 ──
+﻿// ── SillyImage Lab 消息扫描与触发 ──
 import { slLog, slErr } from './log.js';
 import { settings, getSTContext, escapeHtml, saveSettings } from './settings.js';
-import { extractBodyText, hasBodyMarker, stripAiTags } from './text-utils.js';
-import { getChatId, runAuxPipeline, getProfiles } from './pipeline.js';
+import { extractBodyText, extractBodyContent, hasBodyMarker, stripAiTags } from './text-utils.js';
+import { getProfiles, getChatId } from './pipeline/profile.js';
+import { runAuxPipeline } from './pipeline/pipeline.js';
 import { renderBodyEnhanced, renderEnhanced, setRestoreDeps, restoreImageBlocks } from './render.js';
 
 // 注入 render 模块需要的依赖
-import { getChatId as pipelineGetChatId } from './pipeline.js';
-setRestoreDeps(pipelineGetChatId, getSTContext);
+setRestoreDeps(getChatId, getSTContext);
 
 // ── 扫描会话管理 ──
 var scanSession = null;
@@ -17,8 +17,10 @@ function startScanSession(msgElement, mesId, chatId) {
     // [AI-Fix] 如果当前会话正在 scanning（await runAuxPipeline 期间），新消息的扫描请求不能覆写它。
     // 原因：覆写后旧 await 的 DOM 引用失效，渲染到僵尸 DOM，消息永久无法显示图片（致命缺陷 1）。
     // 修复：scanning 阶段拒绝新会话，等当前会话 completed 后才允许。
-    // 同一条消息已有进行中的会话 → 不重复启动
-    if (scanSession && scanSession.mesid === mesId && scanSession.phase !== 'completed') return;
+    // 同一条消息正在扫描（await 管线进行中）→ 不重复启动
+    // [AI-Fix] 仅 scanning 阶段拒绝：wait_marker/wait_end 是待命会话（无 await，仅定时器），
+    // 编辑/swipe 清除标记后必须允许替换，否则 startScanSession 被守卫拦截 → 该消息永不重扫（静默死锁）。
+    if (scanSession && scanSession.mesid === mesId && scanSession.phase === 'scanning') return;
     // [AI-Fix] 不同消息但在 scanning 阶段 → 拒绝覆盖，等当前管线完成
     if (scanSession && scanSession.phase === 'scanning' && scanSession.mesid !== mesId) {
         slLog('扫描会话 #' + scanSession.id + ' 正在 scanning，拒绝 #' + mesId + ' 的覆盖请求');
@@ -30,7 +32,7 @@ function startScanSession(msgElement, mesId, chatId) {
         clearTimeout(scanSession.timer);
         slLog('扫描会话 #' + scanSession.id + ' 被 #' + sessionId + ' 替代');
     }
-    scanSession = { id: sessionId, msgEl: msgElement, mesid: mesId, chatId: chatId, phase: 'wait_marker', timer: null, tries: 0 };
+    scanSession = { id: sessionId, msgEl: msgElement, mesid: mesId, chatId: chatId, phase: 'wait_marker', timer: null, tries: 0, _startTime: Date.now() };
     // 标记会话已启动（和 sl_aux_scanned 分开，避免 auxImageScan 误判）
     msgElement.data('sl_session_started', 1);
     slLog('扫描会话 #' + sessionId + ' 启动');
@@ -55,7 +57,9 @@ function doMarkerCheck(sessionId) {
     if (startIdx >= 0 && endIdx > startIdx) {
         session.phase = 'done';
         slLog('扫描 #' + sessionId + ' 检测到完整标记，提取正文(' + (endIdx - startIdx - 5) + '字)');
-        var bodyText = text.slice(startIdx + 5, endIdx);
+        var rawStart = text.indexOf('正文###');
+        var rawEnd = text.indexOf('结尾###', rawStart + 1);
+        var bodyText = (rawStart >= 0 && rawEnd > rawStart) ? text.slice(rawStart + 5, rawEnd) : text.slice(startIdx + 5, endIdx);
         var minBody = settings.storyMode === 'comic' ? 20 : 80;
         if (bodyText.length >= minBody) {
             slLog('触发管线(标记模式)');
@@ -102,7 +106,9 @@ function doEndCheck(sessionId) {
     var endIdx = clean.indexOf('结尾###', startIdx + 1);
     if (endIdx >= 0) {
         session.phase = 'done';
-        var bodyText = text.slice(startIdx + 5, endIdx);
+        var rawStart = text.indexOf('正文###');
+        var rawEnd = text.indexOf('结尾###', rawStart + 1);
+        var bodyText = (rawStart >= 0 && rawEnd > rawStart) ? text.slice(rawStart + 5, rawEnd) : text.slice(startIdx + 5, endIdx);
         slLog('扫描 #' + sessionId + ' 检测到 结尾###，提取正文(' + bodyText.length + '字)');
         if (bodyText.length >= (settings.storyMode === 'comic' ? 20 : 80)) {
             slLog('触发管线(标记模式)');
@@ -132,7 +138,7 @@ export function scanAllMsgs() {
             if (!mesId || !mesId.trim()) return;
             var cached = findBestCached(chatId, mesId, mesEl.text());
             if (cached && /\[image:/.test(cached)) {
-                if (/sl_img_btn/.test(mesEl.html())) return;
+                if (/sl_img_btn/.test(mesEl.html()) || /sl_img_block/.test(mesEl.html())) return;
                 if (hasBodyMarker(cached)) {
                     var bodyContent = cached.slice(cached.indexOf('正文###') + 5, cached.indexOf('结尾###', cached.indexOf('正文###') + 5));
                     renderBodyEnhanced(mesEl, bodyContent);
@@ -168,10 +174,26 @@ export async function runAuxImageScan(messageElement) {
         var mesContainer = lastMsg.closest('.mes');
         var mesId = mesContainer.length ? mesContainer.attr('mesid') : (Date.now() + '');
         var chatId = getChatId();
-        var enhanced = await runAuxPipeline(bodyText);
+        var pipeTimeout = (settings.cTimeout || 180) * 1000 + 30000;
+        var enhanced = await Promise.race([
+            runAuxPipeline(bodyText),
+            new Promise(function(_, reject) { setTimeout(function() { reject(new Error('管线整体超时(' + pipeTimeout + 'ms)')); }, pipeTimeout); })
+        ]);
         // [AI-Fix] 原逻辑 enhanced=null 时只 log 就 return，不清除 sl_aux_scanned，
         // 导致这条消息被永久标记为"已扫描"，永远不再尝试。现在清除标记允许重试。
-        if (!enhanced) { slLog('无增强输出, 清除标记允许重试'); lastMsg.removeData('sl_aux_scanned'); return; }
+        if (!enhanced) {
+        var retryCount = (lastMsg.data('sl_noimg_retries') || 0) + 1;
+        if (retryCount >= 3) {
+            slLog('无增强输出已达3次, 不再重试');
+            lastMsg.data('sl_aux_scanned', 1);
+        } else {
+            slLog('无增强输出(第' + retryCount + '次), 清除标记允许重试');
+            lastMsg.data('sl_noimg_retries', retryCount);
+            lastMsg.removeData('sl_aux_scanned');
+            try { var pf = getProfiles(); if (pf && pf.chat) pf.chat._castSent = false; } catch(e){}
+        }
+        return;
+    }
         if (!settings.msgMap) settings.msgMap = {};
         // [AI-Fix] 通过 mesId 重新查找 DOM，不依赖 30 秒前的 lastMsg 引用
         var freshContainer = mesId ? jQuery('.mes[mesid="' + mesId + '"]') : jQuery();
@@ -228,17 +250,17 @@ export async function runAuxImageScan(messageElement) {
 }
 
 // ── 消息指纹（正文###后50字，用于检测🔄 重新生成/swipe切换） ──
-function getMsgFingerprint(text) {
+export function getMsgFingerprint(text) {
     var si = text.indexOf('正文###');
     if (si >= 0) return text.slice(si + 5, si + 55).replace(/\s/g, '');
     return text.slice(0, 50).replace(/\s/g, '');
 }
 // ── 为消息缓存生成唯一 key（含指纹，支持 swipe 分支独立缓存） ──
-function getMsgKey(chid, mesid, text) {
+export function getMsgKey(chid, mesid, text) {
     return chid + '_' + mesid + '_' + getMsgFingerprint(text || '').slice(0, 20);
 }
 // ── 模糊匹配缓存（支持 swipe 分支 + 编辑恢复） ──
-function findBestCached(chid, mesid, text) {
+export function findBestCached(chid, mesid, text) {
     var msgMap = settings.msgMap || {};
     var key = getMsgKey(chid, mesid, text);
     if (msgMap[key] && /\[image:/.test(msgMap[key])) return msgMap[key];
@@ -260,10 +282,20 @@ function findBestCached(chid, mesid, text) {
             }
         }
     }
+    // [兜底] mesId 前缀不匹配时，遍历全部 msgMap 按正文内容匹配
+    // 解决 ST 刷新 DOM 后 mesId 变化导致 img 块无法恢复的问题
+    for (var k3 in msgMap) {
+        if (!msgMap[k3] || !/\[image:/.test(msgMap[k3])) continue;
+        var cachedText3 = extractBodyContent(msgMap[k3]).slice(0, 40).replace(/\s/g, '');
+        var msgText3 = extractBodyContent(text).slice(0, 40).replace(/\s/g, '');
+        if (cachedText3 && msgText3 && cachedText3 === msgText3) {
+            return msgMap[k3];
+        }
+    }
     return null;
 }
 // ── 清理某条消息的所有 swipe 分支缓存 ──
-function clearMsgCache(chid, mesid) {
+export function clearMsgCache(chid, mesid) {
     var prefix = chid + '_' + mesid + '_';
     for (var k in (settings.msgMap || {})) {
         if (k.indexOf(prefix) === 0) { delete settings.msgMap[k]; slLog('清理旧缓存: ' + k); }
@@ -271,105 +303,138 @@ function clearMsgCache(chid, mesid) {
 }
 
 // ── 轮询 + 事件钩子注册 ──
+
+// ── 事件驱动扫描（替代 2s/3s 高频轮询） ──
+// [AI-Fix] 原实现：poll1(3s 全量 scanAllMsgs) + poll2(2s 检测最后一条) 双轮询 + 延迟5s注册事件。
+//   问题：轮询空转、事件注册延迟导致事件丢失、MESSAGE_UPDATED 只恢复图片不触发扫描。
+//   新实现：ST 官方事件驱动（MESSAGE_RECEIVED/GENERATION_ENDED/SWIPED/EDITED/UPDATED/CHAT_CHANGED），
+//   仅保留 10s 低频兜底轮询（事件丢失保护），成本约为原来的 1/5。
+
+function checkLastMessage() {
+    try {
+        if (settings.pluginOn === false) return;
+        var all = jQuery('.mes_text');
+        if (!all || !all.length) return;
+        var last = all.last();
+        if (!last || !last.length) return;
+        var rawText = last.text() || '';
+        // 只检测正文###，不要求结尾###同时存在（startScanSession 会等结尾###）
+        if (rawText.indexOf('正文###') < 0) return;
+        // 从 DOM 中获取 mesid：优先 closest->parents 兜底
+        var mesContainer = last.closest('.mes');
+        if (!mesContainer || !mesContainer.length) mesContainer = last.parents('.mes').first();
+        var mesId = mesContainer.length ? mesContainer.attr('mesid') : null;
+        if (!mesId) { slLog('检查: 未获取到mesId, 跳过'); return; }
+        var chatId = getChatId();
+        if (last.data('sl_session_started')) return;     // 已有扫描会话，等待完成
+        if (last.data('sl_aux_scanned')) {
+            var oldFp = last.data('sl_text_fp');
+            var newFp = getMsgFingerprint(rawText) || rawText.slice(0, 50).replace(/\s/g, '');
+            if (oldFp && oldFp !== newFp) {
+                slLog('检查: 检测到文本变化(重新生成/swipe), 清除旧渲染');
+                resetMessageMarkers(last);
+            } else { return; }
+        }
+        var bodyText = extractBodyText(rawText);
+        if (bodyText.length < (settings.storyMode === 'comic' ? 20 : 80)) { slLog('检查: 正文过短(' + bodyText.length + '字), 跳过'); return; }
+        // 已有缓存内容则跳过新扫描（防止重启后二次扫描覆盖缓存）
+        var cachedContent = findBestCached(chatId, mesId, rawText);
+        if (cachedContent && /\[image:/.test(cachedContent)) { slLog('检查: 已有缓存, 跳过扫描, mesId=' + mesId); return; }
+        slLog('检查: 检测到标记, 启动扫描会话, mesId=' + mesId);
+        startScanSession(last, mesId, chatId);
+    } catch (e) { slErr('消息检查异常: ' + e.message); }
+}
+
+function resetMessageMarkers(el) {
+    el.removeData('sl_aux_scanned');
+    el.removeData('sl_session_started');
+    el.find('.sl_img_block, .sl_img_btn').remove();
+    el.css({ background: '', 'border-left': '', padding: '', 'border-radius': '', 'line-height': '', color: '', 'font-size': '', overflow: '' });
+}
+
+// [AI-Fix] 编辑/swipe：清除该消息旧渲染并按新内容重新扫描
+function handleMessageChanged(messageId) {
+    try {
+        if (settings.pluginOn === false) return;
+        var el = messageId != null ? jQuery('.mes[mesid="' + messageId + '"]') : jQuery();
+        if (!el || !el.length) { checkLastMessage(); return; }
+        var msgText = el.find('.mes_text').first();
+        if (!msgText || !msgText.length) { checkLastMessage(); return; }
+        slLog('消息变更(编辑/swipe) mesid=' + messageId + ', 清除旧渲染');
+        resetMessageMarkers(msgText);
+        var text = msgText.text() || '';
+        if (text.indexOf('正文###') < 0) return;
+        var bodyText = extractBodyText(text);
+        if (bodyText.length < (settings.storyMode === 'comic' ? 20 : 80)) { slLog('变更: 正文过短, 跳过'); return; }
+        var cachedContent = findBestCached(getChatId(), messageId, text);
+        if (cachedContent && /\[image:/.test(cachedContent)) { slLog('变更: 已有缓存, 跳过扫描'); return; }
+        slLog('变更: 启动扫描会话, mesId=' + messageId);
+        startScanSession(msgText, messageId, getChatId());
+    } catch (e) { slErr('消息变更处理异常: ' + e.message); }
+}
+
 export function startPolling() {
     // [AI-Fix] 幂等守卫：防止重复注册定时器和事件钩子
     if (startPolling._active) return;
     startPolling._active = true;
-    slLog('startPolling: 启动轮询');
-    var poll1 = setInterval(function() { scanAllMsgs(); }, 3000);
-    var poll2 = setInterval(function() {
+    slLog('startPolling: 启动事件驱动扫描');
+    var ctx = null, evSrc = null, evTypes = null;
+    try {
+        ctx = getSTContext();
+        evSrc = ctx.eventSource;
+        evTypes = ctx.event_types || ctx.eventTypes;
+    } catch (e) { slLog('事件源获取失败, 仅兜底轮询: ' + e.message); }
+
+    if (evSrc && evSrc.on && evTypes) {
+        var onReceived = function() { checkLastMessage(); };
+        var onGenEnded = function() { checkLastMessage(); };
+        var onMsgUpdated = function() { setTimeout(restoreImageBlocks, 300); };
+        var onMsgChanged = function(messageId) { handleMessageChanged(messageId); };
+        var onChatChanged = function() {
+            slLog('检测到聊天切换喵~ 清理旧会话中… ✨');
+            if (scanSession) { clearTimeout(scanSession.timer); scanSession = null; }
+            var last = jQuery('.mes_text').last();
+            setTimeout(function() { restoreImageBlocks(); scanAllMsgs(); }, 2000);
+        };
+        if (evTypes.MESSAGE_RECEIVED) evSrc.on(evTypes.MESSAGE_RECEIVED, onReceived);
+        if (evTypes.GENERATION_ENDED) evSrc.on(evTypes.GENERATION_ENDED, onGenEnded);
+        if (evTypes.MESSAGE_UPDATED) evSrc.on(evTypes.MESSAGE_UPDATED, onMsgUpdated);
+        if (evTypes.MESSAGE_SWIPED) evSrc.on(evTypes.MESSAGE_SWIPED, onMsgChanged);
+        if (evTypes.MESSAGE_EDITED) evSrc.on(evTypes.MESSAGE_EDITED, onMsgChanged);
+        if (evTypes.CHAT_CHANGED) evSrc.on(evTypes.CHAT_CHANGED, onChatChanged);
+        startPolling._handlers = { onReceived: onReceived, onGenEnded: onGenEnded, onMsgUpdated: onMsgUpdated, onMsgChanged: onMsgChanged, onChatChanged: onChatChanged };
+        slLog('ST 事件钩子就绪喵~ ✨');
+    } else {
+        slLog('事件源不可用, 降级为 10s 兜底轮询');
+    }
+
+    // [AI-Fix] 10s 低频兜底轮询（事件丢失保护），替代原 2s+3s 双轮询
+    startPolling._fallback = setInterval(function() {
         try {
             if (settings.pluginOn === false) return;
-            var all = jQuery('.mes_text');
-            if (!all.length) return;
-            var last = all.last();
-            var rawText = last.text();
-
-            // 只检测正文###，不要求结尾###同时存在（startScanSession 会等结尾###）
-            if (rawText.indexOf('正文###') < 0) return;
-
-            // 从 DOM 中获取 mesid：优先 closest->parents 兜底
-            var mesContainer = last.closest('.mes');
-            if (!mesContainer || !mesContainer.length) mesContainer = last.parents('.mes').first();
-            var mesId = mesContainer.length ? mesContainer.attr('mesid') : null;
-            if (!mesId) { slLog('轮询: 未获取到mesId, 跳过'); return; }
-
-            var chatId = getChatId();
-            if (last.data('sl_session_started')) return;     // 已有扫描会话，等待完成
-            if (last.data('sl_aux_scanned')) {
-                var oldFp = last.data('sl_text_fp');
-                var newFp = getMsgFingerprint(rawText) || rawText.slice(0, 50).replace(/\s/g, '');
-                if (oldFp && oldFp !== newFp) {
-                    slLog('轮询: 检测到文本变化(重新生成/swipe), 清除旧渲染');
-                    last.removeData('sl_aux_scanned');
-                    last.removeData('sl_session_started');
-                    last.find('.sl_img_block, .sl_img_btn').remove();
-                    last.css({background:'', 'border-left':'', padding:'', 'border-radius':'', 'line-height':'', color:'', 'font-size':'', overflow:''});
-                } else { return; }
-            }
-
-            var bodyText = extractBodyText(rawText);
-            if (bodyText.length < (settings.storyMode === 'comic' ? 20 : 80)) { slLog('轮询: 正文过短(' + bodyText.length + '字), 跳过'); return; }
-
-            slLog('轮询: 检测到标记, 启动扫描会话, mesId=' + mesId);
-            startScanSession(last, mesId, chatId);
-        } catch (e) { slErr('轮询异常: ' + e.message); }
-    }, 2000);
-
-    // ST 事件钩子
-    var hookTimer = setTimeout(function() {
-        try {
-            var ctx = getSTContext();
-            var evSrc = ctx.eventSource;
-            var evTypes = ctx.event_types || ctx.eventTypes;
-            if (evSrc && evSrc.on && evTypes && evTypes.MESSAGE_UPDATED) {
-                var onMsgUpdated = function() {
-                    setTimeout(restoreImageBlocks, 300);
-                };
-                startPolling._onMsgUpdated = onMsgUpdated;
-                evSrc.on(evTypes.MESSAGE_UPDATED, onMsgUpdated);
-                slLog('消息编辑钩子就绪喵~ ✨');
-            }
-            if (evTypes && evTypes.CHAT_CHANGED) {
-                var onChatChanged = function() {
-                    slLog('检测到聊天切换喵~ 清理旧会话中… ✨');
-                    if (scanSession) { clearTimeout(scanSession.timer); scanSession = null; }
-                    var last = jQuery('.mes_text').last();
-                    setTimeout(function() { restoreImageBlocks(); scanAllMsgs(); }, 2000);
-                };
-                startPolling._onChatChanged = onChatChanged;
-                evSrc.on(evTypes.CHAT_CHANGED, onChatChanged);
-                slLog('聊天切换钩子就绪喵~ ✨');
-            }
-        } catch (e) { slErr('事件钩子失败喵~ (╥﹏╥)  ' + e.message); }
-    }, 5000);
-    startPolling._hookTimer = hookTimer;
-
-    // 💾 保存定时器引用以便 OFF 时清除
-    startPolling._timers = [poll1, poll2];
+            checkLastMessage();
+        } catch (e) { slErr('兜底轮询异常: ' + e.message); }
+    }, 10000);
 }
+
 export function stopPolling() {
-    slLog('stopPolling: 停止轮询');
+    slLog('stopPolling: 停止扫描');
     startPolling._active = false;
-    if (startPolling._timers) {
-        startPolling._timers.forEach(function(t) { clearInterval(t); });
-        startPolling._timers = null;
-    }
-    // [AI-Fix] 清理事件钩子，防止内存泄漏
+    if (startPolling._fallback) { clearInterval(startPolling._fallback); startPolling._fallback = null; }
     if (startPolling._hookTimer) { clearTimeout(startPolling._hookTimer); startPolling._hookTimer = null; }
     try {
         var ctx = getSTContext();
         var evSrc = ctx.eventSource;
         var evTypes = ctx.event_types || ctx.eventTypes;
-        if (evSrc && evSrc.off) {
-            if (startPolling._onMsgUpdated && evTypes && evTypes.MESSAGE_UPDATED) {
-                evSrc.off(evTypes.MESSAGE_UPDATED, startPolling._onMsgUpdated);
-                startPolling._onMsgUpdated = null;
-            }
-            if (startPolling._onChatChanged && evTypes && evTypes.CHAT_CHANGED) {
-                evSrc.off(evTypes.CHAT_CHANGED, startPolling._onChatChanged);
-                startPolling._onChatChanged = null;
-            }
+        var hs = startPolling._handlers;
+        if (evSrc && evSrc.off && evTypes && hs) {
+            if (evTypes.MESSAGE_RECEIVED && hs.onReceived) evSrc.off(evTypes.MESSAGE_RECEIVED, hs.onReceived);
+            if (evTypes.GENERATION_ENDED && hs.onGenEnded) evSrc.off(evTypes.GENERATION_ENDED, hs.onGenEnded);
+            if (evTypes.MESSAGE_UPDATED && hs.onMsgUpdated) evSrc.off(evTypes.MESSAGE_UPDATED, hs.onMsgUpdated);
+            if (evTypes.MESSAGE_SWIPED && hs.onMsgChanged) evSrc.off(evTypes.MESSAGE_SWIPED, hs.onMsgChanged);
+            if (evTypes.MESSAGE_EDITED && hs.onMsgChanged) evSrc.off(evTypes.MESSAGE_EDITED, hs.onMsgChanged);
+            if (evTypes.CHAT_CHANGED && hs.onChatChanged) evSrc.off(evTypes.CHAT_CHANGED, hs.onChatChanged);
+            startPolling._handlers = null;
         }
     } catch (e) { slErr('stopPolling 清理钩子异常: ' + e.message); }
 }
@@ -395,3 +460,7 @@ export function getScannerStatus() {
 }
 
 // ══════════════════════════════
+
+
+
+

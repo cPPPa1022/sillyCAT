@@ -1,11 +1,11 @@
-// ── SillyImage Lab v2.0 — 入口文件 ──
+﻿// ── SillyImage Lab v2.0 — 入口文件 ──
 import { extension_settings, getContext } from '../../../extensions.js';
 import { SlashCommandParser } from '../../../slash-commands/SlashCommandParser.js';
 import { SlashCommand } from '../../../slash-commands/SlashCommand.js';
 import { loadPrompts } from './prompts/loader.js';
 
 import { slLog, slErr, slLogDump, getLogCount } from './modules/log.js';
-import { initSettings, settings, getDefaults, COLORS, INPUT_STYLE, BUTTON_STYLE, getSTContext, getSTHeaders, escapeHtml, saveSettings } from './modules/settings.js';
+import { initSettings, settings, getDefaults, COLORS, getSTContext, getSTHeaders, escapeHtml, saveSettings } from './modules/settings.js';
 import { buildUI } from './modules/ui.js';
 import { setEnqueueGen } from './modules/render.js';
 import { enqueueGen } from './modules/queue.js';
@@ -89,7 +89,7 @@ SlashCommandParser.addCommandObject(SlashCommand.fromProps({name:'sillylab',call
 
 // ── 启动💬 提示词📂 加载 ──
 var PROMPTS_BASE = '';
-try { PROMPTS_BASE = new URL('prompts/', import.meta.url).href; } catch (e) {}
+try { PROMPTS_BASE = new URL('prompts/', import.meta.url).href; } catch (e) { PROMPTS_BASE = '/scripts/extensions/third-party/sillyCAT/prompts/'; slLog('import.meta.url 不可用，使用 fallback 路径'); }
 if (PROMPTS_BASE) { slLog('提示词加载器: 📥 从 ' + PROMPTS_BASE + ' 加载'); /* [AI-Fix] loadPrompts 是 async 函数，原代码未 await 也未被 .catch()，提示词加载失败时产生 Unhandled Promise Rejection。加 catch 防止静默失败。 */ loadPrompts(PROMPTS_BASE).catch(function(e) { slErr('提示词加载失败: ' + (e.message||'').slice(0,80)); }); }
 else { slLog('提示词加载器: 呜呜 import.meta.url 不可用喵~ (╥﹏╥)'); }
 
@@ -101,3 +101,4 @@ try { buildUI(extension_settings); slLog('v2.1.0 UI OK'); } catch (e) { slErr('b
 
 // ── 启动轮询 + 事件钩子 ──
 startPolling();
+

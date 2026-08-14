@@ -1,6 +1,6 @@
-// ── SillyImage Lab 渲染 ──
+﻿// ── SillyImage Lab 渲染 ──
 import { slLog, slErr } from './log.js';
-import { settings, COLORS, escapeHtml, getSTContext, saveSettings } from './settings.js';
+import { settings, COLORS, escapeHtml, getSTContext, saveSettings, getActiveMode } from './settings.js';
 
 // ── 增强文本主题 CSS ──
 export function getThemeCSS() {
@@ -74,7 +74,7 @@ export function getThemeCSS() {
 }
 import { imgCacheGet, imgCacheSet } from './cache.js';
 import { extractImagePrompt, extractBodyContent, hasBodyMarker, cleanAnimePrompt } from './text-utils.js';
-import { resolveFacePrompt } from './pipeline.js';
+import { resolveFacePrompt } from './pipeline/profile.js';
 import { generateImage } from './comfyui.js';
 
 // ── 构造 img 卡片 HTML ──
@@ -98,14 +98,16 @@ export function renderEnhancedBodyHtml(enhanced) {
         return '__SLIMG' + (pid++) + '__';
     });
     safe = safe.replace(/\n?\s*【💬 💬 提示词】[^\n]*\n?/g, '\n');
-    safe = safe.replace(/\n?\s*【提示词[】:：][\s\S]*?(?=\n\n|\n?$)/g, '\n');
+    safe = safe.replace(/\n?\s*【提示词[】:：][^\n]*【\/提示词】/g, '\n');
+    safe = safe.replace(/\n?\s*【提示词[】:：][\s\S]*?【\/提示词】/g, '\n');
+    safe = safe.replace(/\n?\s*【提示词[】:：][^\n]*/g, '\n');
     safe = safe.replace(/\n{1,2}/g, '\n\n');
     return safe.split('\n').map(function(line) { return escapeHtml(line); }).join('<br>')
         .replace(/__SLIMG(\d+)__/g, function(_, n) {
             var scene = imageScenes[+n] || '';
             var imageTag = '[image: ' + scene + ']';
             var fullPrompt = resolveFacePrompt(extractImagePrompt(enhanced, imageTag) || scene);
-            if (settings.modelType === 'anime' || settings.modelType === 'anime_tag') fullPrompt = cleanAnimePrompt(fullPrompt);
+            if (getActiveMode() === 'anime' || getActiveMode() === 'anime_tag') fullPrompt = cleanAnimePrompt(fullPrompt);  // 使用 getActiveMode 统一查询锁定的模式
             return buildImgCard(scene, fullPrompt, imgCacheGet(fullPrompt));
         });
 }
@@ -127,7 +129,10 @@ export function renderBodyEnhanced(element, enhanced, startIdx, endIdx) {
         startIdx = html.indexOf('正文###');
         endIdx = html.indexOf('结尾###', startIdx + 1);
         if (startIdx === -1 || endIdx === -1) { renderEnhanced(element, enhanced); return; }
-        element.html(html.slice(0, startIdx) + renderEnhancedBodyHtml(enhanced) + html.slice(endIdx + 5));
+        
+    var cssStr = Object.keys(getThemeCSS()).map(function(k) { return k + ":" + getThemeCSS()[k]; }).join(";");
+    element.html(html.slice(0, startIdx) + '<div class="sl_enhanced" style="' + cssStr + '">' + renderEnhancedBodyHtml(enhanced) + '</div>' + html.slice(endIdx + 5));
+
     }
     element.css(getThemeCSS());
     element.addClass('sl_enhanced');
@@ -135,8 +140,7 @@ export function renderBodyEnhanced(element, enhanced, startIdx, endIdx) {
     if (settings.enhancedTheme === 'cat' && !element.find('.sl_cat_deco').length) {
         element.prepend('<div class="sl_cat_deco" style="font-size:20px;line-height:1;margin-bottom:4px;opacity:0.5;user-select:none;">🐱<span style="font-size:10px;margin-left:4px;color:#ff9eb5;">meow~</span></div>');
     }
-    bindImageButtons(element);
-    if (settings.autoGen === 1 && !_restoringBlocks) { setTimeout(function() { jQuery('.sl_img_btn').each(function() { var b = jQuery(this); if (b.text().indexOf('生成图片') >= 0) b.trigger('click'); }); }, 600); }
+    if (settings.autoGen === 1 && !_restoringBlocks) { setTimeout(function() { element.find('.sl_img_btn').each(function() { var b = jQuery(this); if (b.text().indexOf('生成图片') >= 0) b.trigger('click'); }); }, 600); }
 }
 
 // ── 全量渲染（无标记 fallback） ──
@@ -158,7 +162,7 @@ export function renderEnhanced(element, text) {
         element.prepend('<div class="sl_cat_deco" style="font-size:20px;line-height:1;margin-bottom:4px;opacity:0.5;user-select:none;">🐱<span style="font-size:10px;margin-left:4px;color:#ff9eb5;">meow~</span></div>');
     }
     element.addClass('sl_enhanced');
-    if (settings.autoGen === 1 && !_restoringBlocks) { setTimeout(function() { jQuery('.sl_img_btn').each(function() { var b = jQuery(this); if (b.text().indexOf('生成图片') >= 0) b.trigger('click'); }); }, 600); }
+    if (settings.autoGen === 1 && !_restoringBlocks) { setTimeout(function() { element.find('.sl_img_btn').each(function() { var b = jQuery(this); if (b.text().indexOf('生成图片') >= 0) b.trigger('click'); }); }, 600); }
 }
 
 // ── 绑定生图按钮（事件委托：绑定一次永久有效，不受 DOM 重建影响） ──
@@ -173,8 +177,6 @@ function bindImageButtonsGlobal() {
     });
 }
 bindImageButtonsGlobal();
-// 兼容旧调用——保留函数但不再需要
-export function bindImageButtons() {};
 // 排队引用由 queue.js / index.js 提供，这里先声明
 var _enqueueGen = null;
 export function setEnqueueGen(fn) { _enqueueGen = fn; }
@@ -182,7 +184,7 @@ function enqueueGen(btn, prompt) { if (_enqueueGen) _enqueueGen(btn, prompt); el
 
 // ── 扫描 DOM 中的 [image:] 标记 ──
 export function scanDom(messageDiv) {
-    if (/sl_img_btn/.test(messageDiv.html())) return;
+    if (/sl_img_btn/.test(messageDiv.html()) || /sl_img_block/.test(messageDiv.html())) return;
     var raw = messageDiv.text();
     if (!/\[image:/.test(raw)) return;
     var rawOriginal = raw;
@@ -192,14 +194,13 @@ export function scanDom(messageDiv) {
         if (/^\[image:/.test(part)) {
             var match = part.match(/\[image:\s*([\s\S]*?)\]/);
             var scene = (match && match[1]) ? match[1].trim() : '';
-            var fullPrompt = resolveFacePrompt(extractImagePrompt(rawOriginal, part) || scene);
-            if (settings.modelType === 'anime' || settings.modelType === 'anime_tag') fullPrompt = cleanAnimePrompt(fullPrompt);
+            var promptContent = extractImagePrompt(rawOriginal, part) || scene; var fullPrompt = resolveFacePrompt(scene ? scene + ', ' + promptContent : promptContent);
+            if (getActiveMode() === 'anime' || getActiveMode() === 'anime_tag') fullPrompt = cleanAnimePrompt(fullPrompt);  // 使用 getActiveMode 统一查询锁定的模式
             return buildImgCard(scene, fullPrompt, imgCacheGet(fullPrompt));
         }
         return escapeHtml(part).replace(/\n/g, '<br>');
     }).join('');
     messageDiv.html(html);
-    bindImageButtons(messageDiv);
 }
 
 // ── 恢复图片块（编辑后） ──
@@ -218,9 +219,15 @@ export function restoreImageBlocks() {
         var mesId = jQuery(this).attr('mesid');
         if (!mesId) { mesId = jQuery(this).attr('data-mesid') || jQuery(this).attr('id'); }
         if (!mesId || !mesId.trim()) return;
-        if (/sl_img_btn/.test(mesEl.html())) return;
+        if (/sl_img_btn/.test(mesEl.html()) || mesEl.find('.sl_img_block').length) return;
         var key = chatId + '_' + mesId;
         var cached = (settings.msgMap || {})[key];
+        if (!cached) {
+            var fpPrefix = key + '_';
+            for (var kk in (settings.msgMap || {})) {
+                if (kk.indexOf(fpPrefix) === 0) { cached = settings.msgMap[kk]; break; }
+            }
+        }
         // 模糊匹配编辑后的 mesId 变化
         if (!cached) {
             var msgText = mesEl.text().slice(0, 120);
@@ -253,3 +260,4 @@ export function restoreImageBlocks() {
     });
     _restoringBlocks = false;
 }
+

@@ -1,6 +1,6 @@
-// ── SillyImage Lab 档案导出 ──
+﻿// ── SillyImage Lab 档案导出 ──
 import { settings, getSTContext, escapeHtml, saveSettings } from './settings.js';
-import { getCharacterName, getChatId, getProfiles } from './pipeline.js';
+import { getCharacterName, getChatId, getProfiles } from './pipeline/profile.js';
 
 export function exportProfiles(mode) {
     var profiles = getProfiles();
@@ -28,7 +28,7 @@ export function exportProfiles(mode) {
             var cv = cast[ck];
             lines.push('  ■ ' + ck);
             if (cv.static) lines.push('    ' + cv.static);
-            if (cv.semi && cv.semi.replace(/[-:]/g, '').trim()) lines.push('    ' + cv.semi);
+            
         }
     } else { lines.push('  （未生成）'); }
     if (mode !== 'cast') {
@@ -39,7 +39,7 @@ export function exportProfiles(mode) {
                 if (dynamics[dk]) { lines.push('  ■ ' + dk); lines.push('    ' + dynamics[dk]); }
             }
         }
-        if (Object.keys(presentList).length) { lines.push(''); lines.push('  当前场景角色：' + presentList.join('、')); }
+        if (presentList.length) { lines.push(''); lines.push('  当前场景角色：' + presentList.join('、')); }
         if (Object.keys(npcs).length) {
             lines.push('');
             lines.push('  NPC列表：');

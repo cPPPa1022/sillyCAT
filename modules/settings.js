@@ -1,6 +1,5 @@
-// ── SillyImage Lab 设置中心 ──
+﻿// ── SillyImage Lab 设置中心 ──
 export var settings = {};
-export var _heartbeat = 0;
 
 export function getDefaults() {
     return {
@@ -10,32 +9,22 @@ export function getDefaults() {
         cTimeout: 180,
         cWf: '',
         cWfName: '',
-        models: null,
         auxUrl: '',
         auxKey: '',
         auxModel: '',
         profileModel: '',
-        auxModels: [],
-        auxProvider: 'deepseek',
         userName: '',
         userDesc: '',
         profiles: {},
         msgMap: {},
-        stylePreset: "",
+        stylePreset: '',
         enhancedTheme: '默认',
-        storyMode: 'narrative',
         nsfwEnhance: false,
         modelType: 'zit',
-        animeQualityPrefix: 'masterpiece, best quality, score_7, safe',
-        animeArtist: '',
         promptPrefix: '',
-        cumulativeInputTokens: 0,
-        cumulativeOutputTokens: 0,
         uiTheme: '奶糖小猫',
         textTheme: '默认',
         debugMode: false,
-        seed: '',
-        neg: ''
     };
 }
 
@@ -53,11 +42,7 @@ export var COLORS = {
     red: '#ff3b30'
 };
 
-export var INPUT_STYLE = 'width:100%;padding:8px 12px;border-radius:8px;border:1px solid ' + COLORS.line + ';font-size:13px;box-sizing:border-box;outline:none;background:' + COLORS.page + ';color:' + COLORS.text + ';transition:border-color .2s;';
-
-export var BUTTON_STYLE = 'padding:7px 16px;border:none;border-radius:8px;cursor:pointer;font-size:12px;font-weight:600;letter-spacing:0.01em;transition:all .15s;';
-
-// 运行时从 index.js 注入
+// ── 运行时依赖（从 index.js 注入） ──
 var _getContext = null;
 var _extensionSettings = null;
 
@@ -82,15 +67,28 @@ export function escapeHtml(text) {
     return div.innerHTML;
 }
 
-var STORAGE_KEY = 'sillab_settings';
-
+// ── 设置持久化（localStorage + extension_settings 双存） ──
 export function saveSettings() {
     try {
-        console.log('[sillab] saveSettings 被调用, stylePreset=' + settings.stylePreset + ', cWf长度=' + (settings.cWf || '').length);
         localStorage.setItem('sillab_settings', JSON.stringify(settings));
         if (_extensionSettings) {
             if (!_extensionSettings.sillab) _extensionSettings.sillab = {};
             _extensionSettings.sillab = JSON.parse(JSON.stringify(settings));
         }
     } catch (e) { console.log('[sillab] saveSettings异常: ' + e.message); }
+}
+
+// ── 统一模式查询 ──
+// 返回角色卡锁定的模式（meta.modelMode），无锁定则返回 settings.modelType（可修改值）
+// 所有需要查模式的地方统一走此函数，确保逻辑一致
+export function getActiveMode() {
+    try {
+        var ctx = getSTContext();
+        var charName = ctx.characters?.[ctx.characterId]?.data?.name || '';
+        if (charName && settings.profiles && settings.profiles[charName] && settings.profiles[charName].meta) {
+            var locked = settings.profiles[charName].meta.modelMode;
+            if (locked) return locked;
+        }
+    } catch (e) {}
+    return settings.modelType || 'zit';
 }

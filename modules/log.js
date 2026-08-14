@@ -1,25 +1,23 @@
-// ── SillyImage Lab 内置日志系统 ──
+﻿// ── SillyImage Lab 日志系统 ──
 var logLines = [];
+var MAX_LOG = 500;
+
 export function slLog(msg) {
     var args = Array.prototype.slice.call(arguments);
-    var time = new Date().toLocaleTimeString();
-    var line = '[' + time + '] ' + args.join(' ');
+    var line = '[' + new Date().toLocaleTimeString() + '] ' + args.join(' ');
     logLines.push(line);
-    if (logLines.length > 500) logLines.shift();
+    if (logLines.length > MAX_LOG) logLines.shift();
     console.log(line);
 }
+
 export function slErr(msg) {
     var args = Array.prototype.slice.call(arguments);
-    var time = new Date().toLocaleTimeString();
-    var line = '[ERR ' + time + '] ' + args.join(' ');
+    var line = '[ERR ' + new Date().toLocaleTimeString() + '] ' + args.join(' ');
     logLines.push(line);
-    if (logLines.length > 500) logLines.shift();
+    if (logLines.length > MAX_LOG) logLines.shift();
     console.error(line);
 }
+
 export function slLogDump() { return logLines.join('\n'); }
 export function getLogCount() { return logLines.length; }
-
-export function slClearLogs() {
-    logLines = [];
-    slLog('日志已清空');
-}
+export function slClearLogs() { logLines = []; slLog('日志已清空'); }

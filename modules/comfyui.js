@@ -1,6 +1,6 @@
-// ── SillyImage Lab 🎨 ComfyUI连接 通信 ──
+﻿// ── SillyImage Lab 🎨 ComfyUI连接 通信 ──
 import { slLog } from './log.js';
-import { settings, getSTHeaders, saveSettings, escapeHtml } from './settings.js';
+import { settings, getSTHeaders, saveSettings, escapeHtml, getActiveMode } from './settings.js';
 import { uploadImageToST } from './cache.js';
 // 画风预设表
 export var STYLE_PRESETS = {
@@ -29,11 +29,21 @@ export var STYLE_PRESETS = {
 
 // 后端通信
 async function comfyFetch(path, body) {
-    var response = await fetch('/api/sd/comfy' + path, {
-        method: 'POST',
-        headers: Object.assign({ 'Content-Type': 'application/json' }, getSTHeaders()),
-        body: JSON.stringify(body || {})
-    });
+    var ctrl = new AbortController();
+    var timer = setTimeout(function() { ctrl.abort(); }, 30000);
+    var response;
+    try {
+        response = await fetch('/api/sd/comfy' + path, {
+            method: 'POST',
+            headers: Object.assign({ 'Content-Type': 'application/json' }, getSTHeaders()),
+            body: JSON.stringify(body || {}),
+            signal: ctrl.signal
+        });
+    } catch (e) {
+        clearTimeout(timer);
+        throw new Error(e && e.name === 'AbortError' ? 'ComfyUI请求超时(30s)' : (e ? e.message : 'fetch失败'));
+    }
+    clearTimeout(timer);
     if (!response.ok) { var text = await response.text(); throw new Error(text.slice(0, 500)); }
     var text = await response.text();
     if (!text || !text.trim()) return { ok: true };
@@ -126,8 +136,11 @@ export async function generateImage(workflow, prompt) {
         slLog('DEBUG 画风预设值: 「' + stylePrefix + '」, 来源: ' + (domVal ? 'DOM' : 'settings') + ', 存在预设表: ' + (STYLE_PRESETS[stylePrefix] ? '是' : '否'));
     }
     if (stylePrefix && STYLE_PRESETS[stylePrefix]) {
-        prompt = STYLE_PRESETS[stylePrefix] + ' ' + prompt;
-        slLog('画风预设: ' + stylePrefix);
+        var curMode = getActiveMode();
+        if (curMode === 'zit' || !curMode) {
+            prompt = STYLE_PRESETS[stylePrefix] + ' ' + prompt;
+            slLog('画风预设: ' + stylePrefix);
+        }
     }
 
     // 前置提示词（用户自定义）
@@ -189,11 +202,21 @@ export async function generateImage(workflow, prompt) {
     }
     var clientId = 'sl_' + Date.now() + '_' + Math.random().toString(36).slice(2, 6);
     var raw = JSON.stringify({ prompt: workflow, client_id: clientId });
-    var response = await fetch('/api/sd/comfy/generate', {
-        method: 'POST',
-        headers: Object.assign({ 'Content-Type': 'application/json' }, getSTHeaders()),
-        body: JSON.stringify({ url: settings.cUrl, prompt: raw })
-    });
+    var ctrl2 = new AbortController();
+    var timer2 = setTimeout(function() { ctrl2.abort(); }, (settings.cTimeout || 180) * 1000);
+    var response;
+    try {
+        response = await fetch('/api/sd/comfy/generate', {
+            method: 'POST',
+            headers: Object.assign({ 'Content-Type': 'application/json' }, getSTHeaders()),
+            body: JSON.stringify({ url: settings.cUrl, prompt: raw }),
+            signal: ctrl2.signal
+        });
+    } catch (e) {
+        clearTimeout(timer2);
+        throw new Error(e && e.name === 'AbortError' ? 'ComfyUI生成超时(' + ((settings.cTimeout || 180)) + 's)' : (e ? e.message : 'fetch失败'));
+    }
+    clearTimeout(timer2);
     if (!response.ok) { var text = await response.text(); throw new Error(text.slice(0, 800)); }
     var data = await response.json();
     if (!data.data) throw new Error('无输出');

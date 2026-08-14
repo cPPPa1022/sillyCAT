@@ -1,4 +1,4 @@
-// ── SillyImage Lab 图片缓存 ──
+﻿// ── SillyImage Lab 图片缓存 ──
 import { slLog } from './log.js';
 import { settings, getSTHeaders, saveSettings } from './settings.js';
 

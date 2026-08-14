@@ -1,52 +1,45 @@
-// ── SillyImage Lab 辅助 API 管线 ──
-import { slLog, slErr } from './log.js';
-import { settings, COLORS, getSTContext, getSTHeaders, escapeHtml, saveSettings } from './settings.js';
-import { imgCacheSet } from './cache.js';
-import { getPrompt, isPromptsLoaded } from '../prompts/loader.js';
+﻿// ── SillyImage Lab 角色档案管理 ──
+// 职责：角色卡扫描、档案增删查、NPC 生命周期、[FACE] 占位符解析
+import { slLog, slErr } from '../log.js';
+import { settings, COLORS, getSTContext, getSTHeaders, escapeHtml, saveSettings } from '../settings.js';
+import { imgCacheSet } from '../cache.js';
+import { auxApiCall } from './api.js';
+import { isPromptsLoaded, getPrompt } from '../../prompts/loader.js';
+import { cleanAnimePrompt } from '../text-utils.js';
 
-// ── 辅助 API 调用 ──
-export async function auxApiCall(systemPrompt, userMessage, maxTokens, temperature, forceModel) {
-    var model = forceModel || settings.auxModel;
-    if (!settings.auxUrl || !model) {
-        slLog('auxApiCall: auxUrl或model未配置');
-        throw new Error('辅助API未配置');
-    }
-    var endpoint = settings.auxUrl.replace(/\/+$/, '');
-    if (!/\/chat\/completions$/.test(endpoint)) endpoint += '/chat/completions';
-    slLog('auxApiCall →', endpoint, 'model:', model);
-
-    var headers = { 'Content-Type': 'application/json' };
-    if (settings.auxKey) headers['Authorization'] = 'Bearer ' + settings.auxKey;
-
-    var messages;
-    if (Array.isArray(systemPrompt)) {
-        messages = systemPrompt;
-    } else {
-        messages = [{ role: 'system', content: systemPrompt }, { role: 'user', content: userMessage }];
-    }
-
-    var body = {
-        messages: messages,
-        max_tokens: maxTokens || 4096,
-        temperature: temperature != null ? temperature : 0.3,
-        stream: false,
-        model: model
-    };
-
-    var response = await fetch(endpoint, { method: 'POST', headers: headers, body: JSON.stringify(body) });
-    slLog('auxApiCall 响应状态:', response.status);
-    if (!response.ok) {
-        var errorText = await response.text().catch(function() { return ''; });
-        slErr('auxApiCall失败:', response.status, errorText.slice(0, 500));
-        throw new Error('HTTP ' + response.status + ': ' + errorText.slice(0, 300));
-    }
-    var data = await response.json();
-    var content = (data && data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content || '').trim();
-    slLog('auxApiCall 返回内容长度:', content.length);
-    return content;
+// [AI-Fix] 兼容 半角/全角冒号 与 【维度：】值 / 维度: 值 两种行格式（模块级，供 pipeline 复用）
+export function parseTagLine(line) {
+    if (!line) return null;
+    var m = line.match(/^【([^】：:]+)[：:】]+(.+)$/) || line.match(/^([^：:]+)[：:]\s*(.+)$/);
+    if (!m) return null;
+    var key = m[1].replace(/[【】\s]/g, '');
+    var value = m[2].replace(/^】+/, '').trim();
+    return key && value ? { key: key, value: value } : null;
 }
 
-// ── 角色名 / 聊天 ID ──
+// [AI-Fix] 动态档案合并：next 覆盖 prev，prev 未被 next 提及的维度保留
+// 目的：LLM 常只回写变化的维度，直接覆盖会导致外貌字段（发型/衣着等）逐轮丢失
+export function mergeDynamicLine(prev, next) {
+    if (!prev) return next || '';
+    if (!next) return prev;
+    var merged = {};
+    var order = [];
+    function addLine(line) {
+        var tag = parseTagLine(line);
+        if (!tag) return;
+        if (tag.key in merged) return;  // 先到者（next）优先，后到者（prev）不覆盖
+        order.push(tag.key);
+        merged[tag.key] = tag.value;
+    }
+    var nextLines = String(next).split('\n');
+    for (var i = 0; i < nextLines.length; i++) addLine(nextLines[i]);
+    var prevLines = String(prev).split('\n');
+    for (var j = 0; j < prevLines.length; j++) addLine(prevLines[j]);
+    var out = [];
+    for (var k = 0; k < order.length; k++) out.push(order[k] + ':' + merged[order[k]]);
+    return out.join('\n');
+}
+
 export function getCharacterName() {
     try {
         var ctx = getSTContext();
@@ -124,6 +117,16 @@ export function getUserName() {
 }
 
 // ── 手动🔍 扫描角色卡档案喵~ (๑•̀ㅂ•́)و✧（合并 User 档案） ──
+
+// ── 设置卡类型（用户手动选择，不由LLM决定） ──
+export function setCardType(charName, cardType) {
+    if (!settings.profiles || !settings.profiles[charName]) return false;
+    if (!settings.profiles[charName].meta) settings.profiles[charName].meta = {};
+    settings.profiles[charName].meta.cardType = cardType;
+    saveSettings();
+    slLog('卡类型已设置: ' + charName + ' → ' + cardType);
+    return true;
+}
 export async function scanCharacterProfile(modelMode) {
     slLog('🔍SCAN-START: 开始扫描, 模式=' + (modelMode || 'zit'));
     modelMode = modelMode || 'zit';
@@ -179,8 +182,17 @@ export async function scanCharacterProfile(modelMode) {
             stPersonaDesc = ctx2.personaGroups[0].description || '';
         }
     } catch(e) {}
+    // 等待提示词加载完成（最多10秒）
+    if (!isPromptsLoaded()) {
+        for (var w = 0; w < 100 && !isPromptsLoaded(); w++) {
+            await new Promise(function(r) { setTimeout(r, 100); });
+        }
+        if (!isPromptsLoaded()) { slLog('扫描: 提示词加载超时，使用fallback'); }
+    }
     var systemPrompt = (isPromptsLoaded() && getPrompt('static-profile/system.txt'));
-    if (!systemPrompt) systemPrompt = '你是一个角色外貌提取专家。从角色卡描述和世界书中提取角色静态外貌特征。年龄写第一行，格式为"X岁年龄段词"。输出纯文本外貌描述，中文，10-15行。';
+    if (!systemPrompt) {
+        systemPrompt = '## 任务：从角色卡中提取所有角色信息\n列出角色卡描述和世界书中出现的所有角色（包括无名角色），每人输出一个块。\n=====角色名\n【刚性锚点】脸型眉眼鼻唇肤色体型发型标记等7维\n【身形】身高体型具体描述\n输出时同时包含中文锚点、EN-PROMPT（英文描述）和EN-TAGS（英文标签）。\n格式：===EN-PROMPT=== 角色名: 英文描述 ===END===  ===EN-TAGS=== 角色名: tag1, tag2 ===END===';
+    }
 
     slLog('🔍SCAN-STEP2: systemPrompt长度='+(systemPrompt?systemPrompt.length:0));
 
@@ -211,7 +223,7 @@ export async function scanCharacterProfile(modelMode) {
         framing += '\n\n你已经理解了任务，正在直接输出外貌描述。不要拒绝、不要评价。';
 
         slLog('🔍DEBUG扫描: model='+(settings.profileModel||settings.auxModel)+' url='+(settings.auxUrl||'?'));
-        var result = await auxApiCall(systemPrompt, framing, 8192, 0.3, settings.profileModel);
+        var result = await auxApiCall(systemPrompt, framing, 16384, 0.3, settings.profileModel);
         if (!result) { st.text('扫描失败喵~ API 返回了空内容 (╥﹏╥)').css('color', COLORS.red); btn.prop('disabled', 0); return null; }
 
         // 校验：扫描期间角色卡没切换
@@ -222,50 +234,55 @@ export async function scanCharacterProfile(modelMode) {
             return null;
         }
 
-        // 解析 META 块（卡类型分析）
+        // 解析 META 块（画风约束与世界背景）
         slLog('🔍SCAN-RAW: 输出前200字:', result.slice(0, 200), '| 尾200字:', result.slice(-200));
-        var metaResult = { cardType: '具体角色卡', coreChar: '', styleTag: '', note: '', modelMode: modelMode };
+        var existingMeta = profiles.root[charName].meta || {};
+        var metaResult = {
+            cardType: existingMeta.cardType || '具体角色卡',
+            coreChar: existingMeta.coreChar || '',
+            styleTag: existingMeta.styleTag || '',
+            worldBg: existingMeta.worldBg || '',
+            modelMode: modelMode,
+            note: ''
+        };
         var metaMatch = result.match(/===META===\s*([\s\S]*?)\s*===END===/);
         if (metaMatch) {
             var metaContent = metaMatch[1].trim();
-            var ctMatch = metaContent.match(/卡类型[：:]\s*(.+)/);
-            if (ctMatch) metaResult.cardType = ctMatch[1].trim();
             var ccMatch = metaContent.match(/核心角色[：:]\s*(.+)/);
             if (ccMatch){ var core = ccMatch[1].trim(); if (core.toLowerCase() !== 'user') metaResult.coreChar = core; }
             var stMatch = metaContent.match(/画风约束[：:]\s*(.+)/);
             if (stMatch) metaResult.styleTag = stMatch[1].trim();
-            var modeMatch = metaContent.match(/绑定模式[：:]\s*(.+)/);
-            if (modeMatch) metaResult.modelMode = modeMatch[1].trim();
-            var noteMatch = metaContent.match(/结论[：:]\s*(.+)/);
-            if (noteMatch) metaResult.note = noteMatch[1].trim();
-            // 从 result 中移除 META 块，避免干扰 cast 解析
-            result = result.replace(/===META===[\s\S]*?===END===/g, '').trim();
+            var wbMatch = metaContent.match(/世界背景[：:]\s*(.+)/);
+            if (wbMatch) metaResult.worldBg = wbMatch[1].trim();
+            result = result.replace(/===META===\s*[\s\S]*?===END===/g, '').trim();
         }
         profiles.root[charName].meta = metaResult;
 
-        // 解析 EN-TAGS 块（仅 anime_tag 模式使用）和 EN-PROMPT（仅 anime 模式）
+        // 解析 EN-TAGS 和 EN-PROMPT（总是剥离，仅保留当前模式对应数据）
         var enTagsMap = {};
-        if (modelMode === 'anime_tag') {
-        slLog('🔍SCAN-EN-TAGS: 原始输出含EN-TAGS?', /===EN-TAGS===/.test(result), '| 尾200字:', result.slice(-200));
+        var enPromptMap = {};
+
+        // EN-TAGS：总是从 result 剥离，仅 anime_tag 模式存储
         var enMatch = result.match(/===EN-TAGS===\s*([\s\S]*?)===END===/);
         if (enMatch) {
-            var enLines = enMatch[1].trim().split('\n');
-            for (var el = 0; el < enLines.length; el++) {
-                var enLine = enLines[el].trim();
-                if (!enLine) continue;
-                var colonIdx = enLine.indexOf(':');
-                if (colonIdx > 0) {
-                    enTagsMap[enLine.slice(0, colonIdx).trim()] = enLine.slice(colonIdx + 1).trim();
+            if (modelMode === 'anime_tag') {
+                var enLines = enMatch[1].trim().split('\n');
+                for (var el = 0; el < enLines.length; el++) {
+                    var enLine = enLines[el].trim();
+                    if (!enLine) continue;
+                    var colonIdx = enLine.indexOf(':');
+                    if (colonIdx > 0) {
+                        enTagsMap[enLine.slice(0, colonIdx).trim()] = enLine.slice(colonIdx + 1).trim();
+                    }
                 }
             }
-            result = result.replace(/===EN-TAGS===[\s\S]*?===END===/g, '').trim();
+            result = result.replace(/===EN-TAGS===\s*[\s\S]*?===END===/g, '').trim();
         }
-        } // close anime_tag if
 
-                var enPromptMap = {};
-        if (modelMode === "anime") {
-            var epMatch = result.match(/===EN-PROMPT===\s*([\s\S]*?)===END===/);
-            if (epMatch) {
+        // EN-PROMPT：总是从 result 剥离，仅 anime 模式存储
+        var epMatch = result.match(/===EN-PROMPT===\s*([\s\S]*?)===END===/);
+        if (epMatch) {
+            if (modelMode === "anime") {
                 var epLines = epMatch[1].trim().split("\n");
                 for (var epl = 0; epl < epLines.length; epl++) {
                     var epLine = epLines[epl].trim();
@@ -273,11 +290,11 @@ export async function scanCharacterProfile(modelMode) {
                     var epColon = epLine.indexOf(":");
                     if (epColon > 0) enPromptMap[epLine.slice(0, epColon).trim()] = epLine.slice(epColon + 1).trim();
                 }
-                result = result.replace(/===EN-PROMPT===\s*[\s\S]*?===END===/g, "").trim();
             }
+            result = result.replace(/===EN-PROMPT===\s*[\s\S]*?===END===/g, "").trim();
         }
-
 // 解析多角色输出
+
         // 兼容 =====角色名===== 格式（LLM有时会输出闭合等号）
         result = result.replace(/=====([^=\n]+)=====/g, '=====$1\n');
         var charBlocks = result.split('=====');
@@ -384,325 +401,14 @@ export function deleteCharacterProfile(fullDelete) {
             pf.root[charName].cast = {};
             pf.root[charName].userProfile = '';
         }
+        if (pf.chat) pf.chat._castSent = false;
         slLog('角色卡档案已清空(保留聊天数据), 等待重新扫描: ' + charName);
     }
     saveSettings();
 }
 
-// ── AI 润色静态档案 ──
-export async function refineStaticProfile(charName, castName, originalAnchor, userEditedText) {
-    if (!charName || !castName || !userEditedText) return null;
-    var systemPrompt = (isPromptsLoaded() && getPrompt('static-profile/system.txt'));
-    if (!systemPrompt) systemPrompt = '你是一个角色外貌提取专家。输出规范的刚性几何量化身份锚点。';
+// ── [FACE:] 占位符解析 ──
 
-    var framing = '【用户对以下角色的静态锚点做了修改。请按照规则重新输出一份规范的刚性锚点。】\n\n';
-framing += '角色名：' + castName + '\n\n';
-framing += '【原始锚点（用户未修改前的样子，作为参考基准）】\n' + (originalAnchor || '无') + '\n\n';
-framing += '【用户编辑后的文本（请据此重新输出锚点）】\n' + userEditedText + '\n\n';
-framing += '规则：\n';
-framing += '1. 严格遵循刚性锚点规范格式（几何量化 + 视觉标签）\n';
-framing += '2. 只调整用户明确改动的特征，其余部分尽量保留原样\n';
-framing += '3. 用户写的是口语/粗糙文字，你要转成规范的刚性锚点格式\n';
-framing += '4. 直接输出【刚性锚点】内容，格式：【刚性锚点】...\\n【身形】...\n';
-
-    slLog('refineStaticProfile: 发送润色请求, 角色=' + castName);
-    try {
-        var result = await auxApiCall(systemPrompt, framing, 8192, 0.3, settings.profileModel);
-        if (!result) { slErr('refineStaticProfile: API返回空'); return null; }
-
-        // Parse result
-        var rigidMatch = result.match(/【刚性锚点】\s*([\s\S]*?)(?=【身形】|---SEMI---|$)/);
-        var bodyMatch = result.match(/【身形】\s*([\s\S]*?)(?=---SEMI---|$)/);
-        var rigidText = rigidMatch ? rigidMatch[1].trim() : '';
-        var bodyText = bodyMatch ? bodyMatch[1].trim() : '';
-
-        if (!rigidText) {
-            // Try without format - take the whole result
-            rigidText = result.trim();
-        }
-
-        // Update the profile
-        var profiles = getProfiles();
-        if (!profiles || !profiles.charName) { slErr('refineStaticProfile: profiles不可用'); return null; }
-        var cast = profiles.root[profiles.charName].cast || {};
-        if (!cast[castName]) {
-            cast[castName] = { static: '', semi: '', anchor: '', body: '' };
-        }
-        cast[castName].static = rigidText;
-        cast[castName].body = bodyText;
-        cast[castName].anchor = rigidText.slice(0, 80);
-        // 解析 EN-TAGS
-        var enMatch2 = result.match(/===EN-TAGS===\s*[\s\S]*?\n\s*([^:\n]+):\s*([^\n]+)/);
-        var enTagMatch = result.match(new RegExp(castName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ':\\s*([^\\n]+)'));
-        if (enTagMatch && enTagMatch[1] && enTagMatch[1].trim().length > 5) {
-            cast[castName].enTags = enTagMatch[1].trim();
-            slLog('refineStaticProfile: EN-TAGS更新, ' + cast[castName].enTags.length + '字');
-        }
-        saveSettings();
-        slLog('refineStaticProfile: 润色完成, ' + rigidText.length + '字');
-        return { rigid: rigidText, body: bodyText };
-    } catch(e) {
-        slErr('refineStaticProfile: ' + (e.message || e));
-        return null;
-    }
-}
-
-// ── 辅助管线主函数 ──
-export async function runAuxPipeline(bodyText) {
-    var profiles = getProfiles();
-    if (!profiles || !profiles.charName) return null;
-
-    
-    var meta = profiles.root[profiles.charName].meta || {};
-    var staticResult = getCachedProfile(profiles);
-    slLog("runAuxPipeline-2: staticResult=" + (staticResult ? staticResult.length + "字" : "无") + ", 卡类型=" + (meta.cardType || '未知'));
-    if (!staticResult && meta.cardType === '世界观卡') {
-        slLog('无角色卡缓存+纯世界观卡, 跳过管线 (请在面板手动扫描角色卡)');
-        return null;
-    }
-
-    var cast = profiles.root[profiles.charName].cast || {};
-    var prevDynamic = profiles.chat.dynamics[Object.keys(cast)[0] || profiles.charName] || '';
-    var provider = settings.auxProvider || 'deepseek';
-    var jailbreakFile = provider === 'gemini' ? 'aux-pipeline/jailbreak-gemini.txt' : 'aux-pipeline/jailbreak-dp.txt';
-    var taskFile = 'aux-pipeline/task.txt';
-    var jailbreak = isPromptsLoaded() ? (getPrompt(jailbreakFile) || '') : '';
-    var task = isPromptsLoaded() ? (getPrompt(taskFile) || '') : '';
-    var loadedSystemPrompt = jailbreak && task ? jailbreak + '\n\n' + task : (getPrompt('aux-pipeline/system.txt') || null);
-
-    // ── 按需附加：NSFW 模式 ──
-    if (settings.nsfwEnhance) {
-        var nsfwOverlay = isPromptsLoaded() ? (getPrompt('aux-pipeline/nsfw-overlay.txt') || '') : '';
-        if (nsfwOverlay) loadedSystemPrompt += '\n\n' + nsfwOverlay;
-    }
-
-    // ── 按需附加：漫画模式 ──
-    if (settings.storyMode === 'comic') {
-        var comicOverlay = isPromptsLoaded() ? (getPrompt('aux-pipeline/comic-overlay.txt') || '') : '';
-        if (comicOverlay) loadedSystemPrompt += '\n\n【当前模式：📱 漫画模式】\n以下漫画模式规则优先级最高，覆盖默认规则。\n' + comicOverlay;
-    }
-
-    // ── 按需附加：模型专属提示词规则（互斥，读绑定模式）──
-    var pipeMode = (meta && meta.modelMode) || settings.modelType || 'zit';
-    if (pipeMode === 'anime' || pipeMode === 'anime_tag') {
-        var overlayFile = pipeMode === 'anime_tag' ? 'aux-pipeline/anime-tag-overlay.txt' : 'aux-pipeline/anime-overlay.txt';
-        var animeOverlay = isPromptsLoaded() ? (getPrompt(overlayFile) || '') : '';
-        if (animeOverlay) loadedSystemPrompt += '\n\n' + animeOverlay;
-    } else {
-        // 默认 ZIT
-        var zitOverlay = isPromptsLoaded() ? (getPrompt('aux-pipeline/zit-overlay.txt') || '') : '';
-        if (zitOverlay) loadedSystemPrompt += '\n\n' + zitOverlay;
-    }
-
-    // 世界卡模式：NPC 动态档案
-    if (meta.cardType === '世界观卡') {
-        var npcOverlay = isPromptsLoaded() ? (getPrompt('aux-pipeline/worldcard-npc.txt') || '') : '';
-        if (npcOverlay) loadedSystemPrompt += '\n\n' + npcOverlay;
-    }
-
-    var systemPrompt, userMessage;
-
-    if (loadedSystemPrompt) {
-        systemPrompt = loadedSystemPrompt;
-
-        // User 人设（用户手写）
-        var userDesc = settings.userDesc || '';
-
-        // 从 cast 构建角色数据（纯文本格式）
-        var dataBlock = '【角色卡档案】\n';
-        if (meta.cardType === '世界观卡') {
-            dataBlock += '（本卡为世界观卡，出场角色由对话生成，无固定角色描述）\n';
-        }
-        if (meta.styleTag) {
-            dataBlock += '【画风约束】' + meta.styleTag + '\n';
-        }
-        if (settings.nsfwEnhance) {
-            dataBlock += '【模式增强】NSFW\n';
-        }
-        // [AI-Fix] cast static 仅首轮或重扫后发送。dynamic 包含完整当前状态，不需要每轮复习 static
-        if (!profiles.chat._castSent) {
-            for (var ck in cast) {
-                var castText = ((pipeMode === 'anime' || pipeMode === 'anime_tag') && cast[ck].enTags) ? cast[ck].enTags : cast[ck].static;
-                dataBlock += '■ ' + ck + '：' + castText + '\n';
-            }
-            profiles.chat._castSent = true;
-        }
-        dataBlock += '\n【当前动态】\n';
-        for (var ck in cast) {
-            var dyn = profiles.chat.dynamics[ck] || '';
-            dataBlock += '■ ' + ck + '：' + (dyn || '（首轮）') + '\n';
-        }
-        dataBlock += '\n【已知NPC】\n';
-        var npcEntries = profiles.chat.npcs || {};
-        // [AI-Fix] 过滤休眠 NPC（sleep=true），不发给 LLM 节省 token
-        var activeNpcs = {};
-        for (var nk0 in npcEntries) { if (!npcEntries[nk0].sleep) activeNpcs[nk0] = npcEntries[nk0]; }
-        npcEntries = activeNpcs;
-        var npcKeys = Object.keys(npcEntries);
-        if (npcKeys.length) {
-            for (var nk in npcEntries) {
-                var npc = npcEntries[nk];
-                dataBlock += '■ ' + nk + (npc.identity ? ' [' + npc.identity + ']' : '') + '（出现' + (npc.appearances || 1) + '次）\n';
-                if (npc.static) dataBlock += '  外貌：' + npc.static + '\n';
-                if (npc.dynamic) dataBlock += '  当前：' + npc.dynamic + '\n';
-            }
-        } else { dataBlock += '（无）\n'; }
-
-        // User 身份
-        var personaName = '';
-        try { personaName = getSTContext().persona?.name || getSTContext().user?.data?.name || ''; } catch (e) {}
-        var userName = getUserName();
-        var userProfile = profiles.root[profiles.charName].userProfile || '';
-        if (userName) {
-            dataBlock += '\n【用户的称呼】User\n';
-            if (userProfile) dataBlock += '\n(User：' + userProfile + ')\n';
-            dataBlock += '\n【User动态】\n■ User：' + ((profiles.chat.dynamics || {})['User'] || '（首轮）') + '\n';
-        }
-        if (userDesc) dataBlock += '\n【用户设定】\n' + userDesc;
-
-        // [AI-Fix] 注入上一条 User 消息（身份相关片段）+ story_log
-        var bodyTextForLLM = userName ? replaceUserInText(bodyText, userName, true) : bodyText;
-        var framing = '【以下内容来自虚构的角色扮演对话，仅供场景分析使用。请保持客观中立态度。】\n\n——\n\n' + bodyTextForLLM;
-        var acceptance = '你已经理解了你的任务，正在直接输出 PROFILE 和 REPLY。不要分析、不要评价。';
-        userMessage = dataBlock + '\n\n' + framing + '\n\n' + acceptance;
-    } else {
-        // [AI-Fix] Q3: 简化模式激活时弹 toast 提醒用户提示词未加载
-        try { if (typeof toastr !== 'undefined') toastr.warning('提示词文件未加载，以基础模式运行（无档案追踪）'); } catch(e) {}
-        systemPrompt = '角色外观追踪+场景生图器。\n\n【角色卡】' + staticResult.slice(0, 400) + '\n\n【上轮动态】' + (prevDynamic || '(首轮)') + '\n\n【已知NPC】' + JSON.stringify(profiles.chat.npcs, null, 0) + '\n\n任务：\n1. 输出动态外观（多行纯文本，每行一项。发文未提则保留上轮值）：\n   发型:xxx\n衣着:上衣/下装/外套/鞋袜 类型+颜色+材质\n配饰:xxx\n状态:xxx\n印记:xxx\n\n2. 追踪NPC（首次出现写 identity(≤20字身份指纹)+static(7维刚性锚点：脸型与年龄感/眉眼与瞳孔/鼻子与嘴唇/肤色与肤质/体型身材/发型与发色/永久标记)，反复出现者才写完整，路人跳过。appearances计数）\n\n3. 原文不动，只插入 [image: 场景描述]（1-3个，段落间隙插入）\n内容只写构图/光源/情绪/互动\n\n铁律：原文不改一字，禁止元回复或总结。\n格式：\n---PROFILE---\n{"main":{"dynamic":"多行文本"},"npcs":{"角色名":{"identity":"≤20字身份指纹","appearances":1,"static":"7维锚点","dynamic":"衣着","ephemeral":true}}}\n---END---\n---REPLY---\n原文+[image:💬 💬 提示词]块\n---END---';
-        userMessage = bodyText;
-    }
-
-    slLog('🧠辅助LLM管线开始, systemPrompt长度:', systemPrompt.length, '正文长度:', bodyText.length);
-    // 模式标记：漫画模式已在上面附加，这里只加叙事模式标记
-    if (settings.storyMode !== 'comic') {
-        systemPrompt += '\n\n【当前模式：📖 叙事模式】\n';
-    }
-    if (pipeMode === 'anime' || pipeMode === 'anime_tag') systemPrompt += '【当前模式：🎬 Anime英文标签模式 — 提示词必须全英文标签。❌禁止提示词中出现中文（发型/衣着/状态/印记等动态字段也必须转为英文标签），❌禁止原文照抄中文动态字段】\n';
-    var output = await auxApiCall(systemPrompt, userMessage, 16384, 0.3);
-    if (!output) { slLog('auxApiCall返回空'); return null; }
-    slLog('auxApiCall返回, 长度:', output.length, ' 前200字:', output.slice(0, 200));
-
-    // [AI-Fix] await 后重新获取 profiles/cast，不使用 await 前的 snapshot。
-    // 原因：await auxApiCall 可能持续 30+ 秒，期间 scanCharacterProfile 可能并发运行
-    // 并写入了新的 cast。如果这里用旧的 profiles 写入 saveSettings()，会将新 cast 覆盖为空
-    // —— 这是致命缺陷 2 的直接后果。重新 getProfiles() 获取最新状态。
-    var profiles = getProfiles();
-    if (!profiles || !profiles.charName) { slLog('管线: profiles 不可用 (角色已切换?)'); return null; }
-    var cast = profiles.root[profiles.charName].cast || {};
-
-    // 解析 PROFILE
-    var profileMatch = output.match(/---PROFILE---\s*([\s\S]*?)\s*---END---/);
-    if (profileMatch) {
-        try {
-            var profileData = JSON.parse(profileMatch[1].trim());
-            var castKeys = Object.keys(cast);
-            if (profileData.main && profileData.main.dynamic) {
-                var mainName = castKeys[0] || profiles.charName;
-                profiles.chat.dynamics[mainName] = typeof profileData.main.dynamic === 'string' ? profileData.main.dynamic : JSON.stringify(profileData.main.dynamic);
-                if (profileData.main.dynamic) slLog('动态更新: ' + mainName);
-            }
-            // 多角色动态（cast 第2人起）
-            for (var ci = 1; ci < castKeys.length; ci++) {
-                var ck = castKeys[ci];
-                if (profileData[ck] && profileData[ck].dynamic) {
-                    profiles.chat.dynamics[ck] = profileData[ck].dynamic;
-                    slLog('动态更新(cast多角色): ' + ck);
-                }
-            }
-            // User 动态
-            if (profileData.user && profileData.user.dynamic) {
-                profiles.chat.dynamics['User'] = profileData.user.dynamic;
-                slLog('动态更新: User');
-            }
-            if (profileData.npcs) {
-                for (var n in profileData.npcs) {
-                    var npcData = profileData.npcs[n];
-                    if (npcData.dynamic) {
-                        if (!profiles.chat.dynamics[n]) profiles.chat.dynamics[n] = '';
-                        profiles.chat.dynamics[n] = npcData.dynamic;
-                    }
-                    if (profiles.root[profiles.charName].cast && profiles.root[profiles.charName].cast[n]) continue;
-                    if (!profiles.chat.npcs) profiles.chat.npcs = {};
-                    if (!profiles.chat.npcs[n]) {
-                        profiles.chat.npcs[n] = npcData;
-                        profiles.chat.npcs[n].last_seen_round = profiles.chat._round || 0;
-                    } else {
-                        var existing = npcData;
-                        profiles.chat.npcs[n].last_seen_round = profiles.chat._round || 0;
-                        if (npcData.wake) { profiles.chat.npcs[n].sleep = false; profiles.chat.npcs[n].wake = true; }
-                        profiles.chat.npcs[n].appearances = (profiles.chat.npcs[n].appearances || 0) + (existing.appearances || 1);
-                        // static 是永久层，不覆盖（正文明确更正除外，由 LLM 通过 identity 声明 merge）
-                        if (existing.dynamic) profiles.chat.npcs[n].dynamic = existing.dynamic;
-                        if (existing.identity) profiles.chat.npcs[n].identity = existing.identity;
-                    }
-                }
-            }
-            // ── auto-merge：旧 NPC 没出现 → identity 匹配新 NPC → 自动合并 ──
-            var oldNpcs = profiles.chat.npcs || {};
-            var newNpcs = profileData.npcs || {};
-            for (var oldKey in oldNpcs) {
-                var oldNPC = oldNpcs[oldKey];
-                for (var newKey in newNpcs) {
-                    if (oldKey === newKey) continue;
-                    var newNPC = newNpcs[newKey];
-                    // identity 标签匹配：取前两个关键标签比对
-                    if (oldNPC.identity && newNPC.identity) {
-                        var oTags = oldNPC.identity.replace(/[·\s]/g,'').toLowerCase();
-                        var nTags = newNPC.identity.replace(/[·\s]/g,'').toLowerCase();
-                        if (oTags && nTags && (oTags.indexOf(nTags) >= 0 || nTags.indexOf(oTags) >= 0)) {
-                            slLog('auto-merge: ' + oldKey + ' → ' + newKey + ' (identity match)');
-                            // 保留旧 static，迁移到新 key
-                            profiles.chat.npcs[newKey] = oldNPC;
-                            profiles.chat.npcs[newKey].appearances = (oldNPC.appearances || 0) + 1;
-                            if (newNPC.dynamic) profiles.chat.npcs[newKey].dynamic = newNPC.dynamic;
-                            if (newNPC.identity) profiles.chat.npcs[newKey].identity = newNPC.identity;
-                            if (newKey !== oldKey) delete profiles.chat.npcs[oldKey];
-                            break;
-                        }
-                    }
-                }
-            }
-            if (profileData.present) profiles.chat.present = profileData.present;
-            if (profileData.story_log) { profiles.chat.story_log = profileData.story_log; slLog("story_log 已更新, events:" + (profileData.story_log.events||[]).length); }
-            // [AI-Fix] Q2: 每轮对话后调用 gcNpcs 淘汰出场<3次且 ephemeral 的路人 NPC
-            gcNpcs(profiles);
-            saveSettings();
-            slLog('PROFILE已更新, dynamics:' + Object.keys(profiles.chat.dynamics).length +
-                ', present:' + (profileData.present || []).length + ', NPC:' + Object.keys(profiles.chat.npcs || {}).length);
-        } catch (e) { slLog('PROFILE JSON解析失败:', e.message); }
-    }
-
-    // 解析 REPLY
-    var replyMatch = output.match(/---REPLY---\s*([\s\S]*?)\s*---END---/);
-    var reply = replyMatch ? replyMatch[1].trim() : output
-        .replace(/---PROFILE---[\s\S]*?---END---/g, '')
-        .replace(/---REPLY---|===REPLY===|___REPLY___/g, '')
-        .replace(/---END---/g, '').trim();
-
-    if (!reply) { slLog('REPLY解析失败: 输出为空'); return null; }
-    var profileIdx = reply.indexOf('---PROFILE---');
-    if (profileIdx >= 0) {
-        var afterProfile = reply.indexOf('---END---', profileIdx + 14);
-        if (afterProfile >= 0) reply = reply.slice(afterProfile + 9).trim();
-    }
-    if (reply.startsWith('{') && reply.indexOf('"main"') > 0) {
-        var jsonEnd = reply.indexOf('}') + 1;
-        reply = reply.slice(jsonEnd).trim();
-    }
-    if (!/\[image:/.test(reply)) { slLog('无img块, REPLY前100字:', reply.slice(0, 100)); return null; }
-
-    var imgCount = (reply.match(/\[image:/g) || []).length;
-    slLog('REPLY返回, 长度:' + reply.length + ' img块数:' + imgCount);
-    var firstImg = reply.match(/\[image:\s*([\s\S]*?)\]/);
-    if (firstImg) slLog('第一个img块:', firstImg[1].slice(0, 80));
-    var userName = getUserName();
-    // 安全阀：REPLY 中出现的真实用户名 → 替换为 [FACE:User]（防泄漏）
-    if (userName) reply = reply.split(userName).join('[FACE:User]');
-    return reply;
-}
-
-
-// ── [FACE:角色名] 占位符替换（完整静态档案→flash）──
 export function resolveFacePrompt(rawPrompt) {
     if (!rawPrompt) return rawPrompt || "";
     if (rawPrompt.indexOf("[FACE:") === -1 && rawPrompt.indexOf("[FACE]") === -1) return rawPrompt;
@@ -762,8 +468,8 @@ export function resolveFacePrompt(rawPrompt) {
                     var dynMap = {};
                     var dynLines = dyn.split('\n');
                     for (var di = 0; di < dynLines.length; di++) {
-                        var dl = dynLines[di], ci = dl.indexOf(':');
-                        if (ci > 0) dynMap[dl.slice(0, ci).trim()] = dl.slice(ci + 1).trim();
+                        var tag = parseTagLine(dynLines[di]);
+                        if (tag) dynMap[tag.key] = tag.value;
                     }
                     // 拿原始 static（带标签的），构建字段 map
                     var rawStatic = cast[charName] ? cast[charName].static : (npcs[charName] ? npcs[charName].static : '');
@@ -771,19 +477,19 @@ export function resolveFacePrompt(rawPrompt) {
                     if (rawStatic) {
                         var stLines = rawStatic.split('\n');
                         for (var si = 0; si < stLines.length; si++) {
-                            var sl = stLines[si], sc = sl.indexOf(':');
-                            if (sc > 0) staticMap[sl.slice(0, sc).trim()] = sl.slice(sc + 1).trim();
+                            var tag = parseTagLine(stLines[si]);
+                            if (tag) staticMap[tag.key] = tag.value;
                         }
                     }
                     // merge 映射：dynamic 字段名 → static 字段名
                     var mergeMap = {
-                        '发型': '发型与发色', '发色': '发型与发色',
-                        '肤色': '肤色与肤质', '肤质': '肤色与肤质',
-                        '体型': '体型身材', '身形': '体型身材', '身材': '体型身材',
-                        '印记': '永久标记',
-                        '脸型': '脸型与年龄感', '年龄': '脸型与年龄感',
-                        '眉眼': '眉眼与瞳孔', '瞳孔': '眉眼与瞳孔',
-                        '鼻唇': '鼻子与嘴唇', '鼻子': '鼻子与嘴唇', '嘴唇': '鼻子与嘴唇'
+                        '发型': '发型与发色', '发色': '发型与发色', '发型与发色': '发型与发色',
+                        '肤色': '肤色与肤质', '肤质': '肤色与肤质', '肤色与肤质': '肤色与肤质',
+                        '体型': '体型身材', '身形': '体型身材', '身材': '体型身材', '体型身材': '体型身材',
+                        '印记': '永久标记', '永久标记': '永久标记',
+                        '脸型': '脸型与年龄感', '年龄': '脸型与年龄感', '脸型与年龄感': '脸型与年龄感',
+                        '眉眼': '眉眼与瞳孔', '瞳孔': '眉眼与瞳孔', '眉眼与瞳孔': '眉眼与瞳孔',
+                        '鼻唇': '鼻子与嘴唇', '鼻子': '鼻子与嘴唇', '嘴唇': '鼻子与嘴唇', '鼻子与嘴唇': '鼻子与嘴唇'
                     };
                     // [AI-Fix] dynamic 为主，static 填空。dynamic 涵盖范围 > static
                     var usedStatic = {};  // 记录已被 dynamic 覆盖的 static 字段
@@ -811,7 +517,7 @@ export function resolveFacePrompt(rawPrompt) {
                 if (perImageOverride) {
                     var overrides = perImageOverride.slice(1).split("|");
                     for (var oi = 0; oi < overrides.length; oi++) {
-                        var ov = overrides[oi], oc = ov.indexOf(":");
+                        var ov = overrides[oi], oc = Math.max(ov.indexOf(":"), ov.indexOf("："));
                         if (oc > 0) anchor = anchor + ", " + ov.slice(oc+1).trim();
                     }
                 }
@@ -848,3 +554,5 @@ export function resolveFacePrompt(rawPrompt) {
         return rawPrompt.replace(/\[FACE:[^\]]+\]|\[FACE\]/g, "").trim();
     }
 }
+
+
