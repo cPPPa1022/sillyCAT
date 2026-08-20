@@ -1,11 +1,11 @@
 {
-  "display_name": "自定义的偷懒小猫生图工具 v2.1.0",
+  "display_name": "自定义的偷懒小猫生图工具 v2.3.0",
   "loading_order": 10,
   "requires": [],
   "optional": [],
   "js": "index.js",
   "author": "reasonix",
-  "version": "2.1.0",
+  "version": "2.3.0",
   "homePage": "https://github.com/cPPPa1022/sillyCAT",
   "auto_update": false
 }

@@ -1,4 +1,4 @@
-﻿// ── SillyImage Lab v2.0 — 入口文件 ──
+// ── SillyImage Lab v2.0 — 入口文件 ──
 import { extension_settings, getContext } from '../../../extensions.js';
 import { SlashCommandParser } from '../../../slash-commands/SlashCommandParser.js';
 import { SlashCommand } from '../../../slash-commands/SlashCommand.js';
@@ -12,8 +12,8 @@ import { enqueueGen } from './modules/queue.js';
 import { startPolling, stopPolling, getScannerStatus, hasCastCache } from './modules/scanner.js';
 
 // ── 版本 ──
-window.SILLYLAB_VERSION = 'v2.1.0';
-slLog('LOADED v2.1.0');
+window.SILLYLAB_VERSION = 'v2.3.0';
+slLog('LOADED v2.3.0');
 
 // ── 初始化设置 ──
 initSettings(getContext, extension_settings);
@@ -33,6 +33,17 @@ try {
     slLog('设置加载失败，使用默认值: ' + e.message);
 }
 
+// [Fix] 配图策略旧默认迁移：上一版默认 encourage（允许零图轮），用户要求默认强制 → 一次性升级为 always。
+// 用哨兵键保证只执行一次：之后用户在设置页主动选择的 encourage/关键场景 不会被再次覆盖。
+if (settings.imageMode === 'encourage' && !localStorage.getItem('sillab_image_mode_migrated')) {
+    settings.imageMode = 'always';
+    try {
+        saveSettings();
+        localStorage.setItem('sillab_image_mode_migrated', '1');
+    } catch (e) {}
+    slLog('配图策略已迁移: encourage → always（强制+鼓励）');
+}
+
 // ── 清旧缓存哨兵 ──
 try {
     localStorage.removeItem('slimg_v2_deployed');
@@ -46,12 +57,12 @@ if (!localStorage.getItem('sillab_clean_v210')) {
         if (typeof extension_settings !== 'undefined') { delete extension_settings.sillab; }
         Object.assign(settings, getDefaults());
         try { saveSettings(); } catch (e) {}
-        slLog('🧹 v2.1.0 全新部署喵~ 缓存清空啦 ✨🧹');
+        slLog('🧹 v2.3.0 全新部署喵~ 缓存清空啦 ✨🧹');
     } catch (e) { slLog('清缓存跳过: ' + e.message); }
     localStorage.setItem('sillab_clean_v210', '1');
 }
 
-slLog('v2.1.0 init');
+slLog('v2.3.0 init');
 
 // ── 注册斜杠命令 ──
 SlashCommandParser.addCommandObject(SlashCommand.fromProps({name:'sillylab',callback:function(){var cb=jQuery('#sl_compact');if(cb.length){cb.trigger('click');}else{toastr.info('插件面板尚未初始化喵~');}}}));
@@ -59,7 +70,7 @@ SlashCommandParser.addCommandObject(SlashCommand.fromProps({name:'sillylab',call
 // ── 版本检测 + 公告 ──
 (function checkUpdateAndAnnounce() {
     var GIT_BASE = 'https://raw.githubusercontent.com/cPPPa1022/sillyCAT/main/';
-    var localVer = '2.1.0';
+    var localVer = '2.3.0';
 
     // 版本检测
     fetch(GIT_BASE + 'manifest.json?t=' + Date.now())
@@ -97,7 +108,7 @@ else { slLog('提示词加载器: 呜呜 import.meta.url 不可用喵~ (╥﹏�
 setEnqueueGen(enqueueGen);
 
 // ── 构建 UI ──
-try { buildUI(extension_settings); slLog('v2.1.0 UI OK'); } catch (e) { slErr('buildUI失败: ' + e.message); console.error('[sillab] buildUI失败:', e); }
+try { buildUI(extension_settings); slLog('v2.3.0 UI OK'); } catch (e) { slErr('buildUI失败: ' + e.message); console.error('[sillab] buildUI失败:', e); }
 
 // ── 启动轮询 + 事件钩子 ──
 startPolling();

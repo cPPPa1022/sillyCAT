@@ -1,16 +1,16 @@
-﻿// ── SillyImage Lab 三个 Tab（首页 / 设置 / 档案） ──
+// ── SillyImage Lab 三个 Tab（首页 / 设置 / 档案） ──
 import { CAT, CAT_THEMES, TEXT_THEMES, applyTheme } from './theme.js';
 import { toast, esc, escAttr, sbtn, fi, chkProf } from './utils.js';
 import { settings, saveSettings } from '../settings.js';
 import { slLogDump, getLogCount, slClearLogs } from '../log.js';
-import { getProfiles, scanCharacterProfile, getCharacterName, deleteCharacterProfile } from '../pipeline/profile.js';
+import { getProfiles, scanCharacterProfile, getCharacterName, deleteCharacterProfile, setCardType } from '../pipeline/profile.js';
 import { startPolling, stopPolling, getScannerStatus } from '../scanner.js';
-import { getQueueLength } from '../queue.js';
-import { generateImage } from '../comfyui.js';
+import { getQueueLength, enqueueTask } from '../queue.js';
 import { cleanAnimePrompt } from '../text-utils.js';
 import { openSubPanel } from './sub-panels.js';
 import * as compact from './compact-bar.js';
 import * as panel from './panel.js';
+import * as story from '../story.js';
 export function renderHomeTab() {
   var body = jQuery("#sl_panel_body"); if (!body.length) return;
   var cn = getCharacterName() || "未选择角色", hp = chkProf(), ss = getScannerStatus(), ql = getQueueLength(),
@@ -42,6 +42,8 @@ export function renderSettingsTab() {
   h += '<div style="background:' + CAT.card + ';border-radius:12px;padding:12px 14px;margin-bottom:10px;border:1px solid ' + CAT.line + ';">';
   h += '<div style="font-size:11px;color:' + CAT.sub + ';margin-bottom:2px;">模型类型</div><select id="sl_model_type" style="' + f + '"><option value="zit"' + (settings.modelType === "zit" ? " selected" : "") + '>🖼️ ZIT</option><option value="anime"' + (settings.modelType === "anime" ? " selected" : "") + '>🎬 Anime</option><option value="anime_tag"' + (settings.modelType === "anime_tag" ? " selected" : "") + '>🏷️ Anime Tag</option></select></div>';
   h += '<div style="background:' + CAT.card + ';border-radius:12px;padding:12px 14px;margin-bottom:10px;border:1px solid ' + CAT.line + ';">';
+  h += '<div style="font-size:11px;color:' + CAT.sub + ';margin-bottom:2px;">🖼️ 配图偏好</div><select id="sl_image_mode" style="' + f + '"><option value="always"' + (settings.imageMode === "always" ? " selected" : "") + '>🔵 总是配图（每轮至少1张，默认，强制+鼓励）</option><option value="encourage"' + (settings.imageMode === "encourage" ? " selected" : "") + '>🟢 鼓励配图（该插就插，纯信息轮可零图）</option><option value="key"' + (settings.imageMode === "key" ? " selected" : "") + '>🟡 关键场景（宁缺毋滥）</option></select></div>';
+  h += '<div style="background:' + CAT.card + ';border-radius:12px;padding:12px 14px;margin-bottom:10px;border:1px solid ' + CAT.line + ';">';
   h += '<div style="font-size:11px;color:' + CAT.sub + ';margin-bottom:2px;">📝 前置提示词</div><input id="sl_prompt_prefix" type="text" value="' + escAttr(settings.promptPrefix || "") + '" style="' + f + '" placeholder="留空则不生效"></div>';
   h += '<div id="sl_anime_opts" style="background:' + CAT.card + ';border-radius:12px;padding:12px 14px;margin-bottom:10px;border:1px solid ' + CAT.line + ';' + (settings.modelType === "anime" || settings.modelType === "anime_tag" ? "" : "display:none;") + '">';
   h += '<div style="font-size:11px;color:' + CAT.sub + ';margin-bottom:2px;">质量前缀</div><input id="sl_anime_prefix" type="text" value="' + escAttr(settings.animeQualityPrefix || "") + '" style="' + f + 'margin-bottom:6px;">';
@@ -54,6 +56,7 @@ export function renderSettingsTab() {
 export function bindSettingsEvents(b) {
   b.off("change", "#sl_plugin_on").on("change", "#sl_plugin_on", function () { settings.pluginOn = jQuery(this).is(":checked"); saveSettings(); if (settings.pluginOn) { startPolling(); compact.setPluginEnabled(true); } else { stopPolling(); compact.setPluginEnabled(false); } });
   b.off("change", "#sl_model_type").on("change", "#sl_model_type", function () { settings.modelType = jQuery(this).val(); jQuery("#sl_anime_opts").toggle(settings.modelType === "anime" || settings.modelType === "anime_tag"); saveSettings(); });
+  b.off("change", "#sl_image_mode").on("change", "#sl_image_mode", function () { settings.imageMode = jQuery(this).val(); saveSettings(); });
   b.off("change input", "#sl_prompt_prefix").on("change input", "#sl_prompt_prefix", function () { settings.promptPrefix = jQuery(this).val(); saveSettings(); });
   b.off("change input", "#sl_anime_prefix").on("change input", "#sl_anime_prefix", function () { settings.animeQualityPrefix = jQuery(this).val(); saveSettings(); });
   b.off("change input", "#sl_anime_artist").on("change input", "#sl_anime_artist", function () { settings.animeArtist = jQuery(this).val(); saveSettings(); });
@@ -69,25 +72,30 @@ export function renderArchiveTab() {
   var dynamics = pf.chat.dynamics || {};
   var npcs = pf.chat.npcs || {};
   var hasCast = Object.keys(cast).length > 0;
-  var isWorld = meta.cardType === "世界观卡";
+  var isWorld = meta.cardType === "世界观卡" || meta.cardType === "混合型卡";
   var h = "";
 
   // State 1: unscanned
   if (!hasCast && !isWorld) {
     h = '<div style="background:' + CAT.card + ';border-radius:12px;padding:16px;border:1px solid ' + CAT.line + ';">';
     h += '<div style="font-weight:700;font-size:14px;color:' + CAT.text + ';margin-bottom:12px;">📋 角色卡档案</div>';
-    h += '<div style="font-size:11px;color:' + CAT.mute + ';margin-bottom:12px;">尚未扫描喵~ 选好画风再点扫描，选完就锁定啦 (｡•̀ᴗ-́)و</div><div style="margin-bottom:10px;"><span style="font-size:11px;color:CAT.sub;">🎨 画风模式</span><select id="sl_scan_mode" style="width:100%;margin-top:4px;padding:8px 10px;border:CAT.borderStyle CAT.line;border-radius:8px;background:CAT.card;font-size:12px;color:CAT.text;"><option value="zit">🖼️ 中文模式 — Z-Image Turbo / 原生中文最优</option><option value="anime">🎬 英文自然语言 — Anima 系列 / 标签+自然语句</option><option value="anime_tag">🏷️ 英文标签模式 — Pony/SDXL / 纯标签链</option></select></div>';
+    h += '<div style="font-size:11px;color:' + CAT.mute + ';margin-bottom:12px;">尚未扫描喵~ 选好画风与卡类型再点扫描，选完就锁定啦 (｡•̀ᴗ-́)و</div><div style="margin-bottom:10px;"><span style="font-size:11px;color:' + CAT.sub + ';">🎨 画风模式</span>' + scanModeSelectHTML(settings.modelType || 'zit') + '</div>';
+    h += '<div style="margin-bottom:10px;"><span style="font-size:11px;color:' + CAT.sub + ';">📇 卡类型</span>' + cardTypeSelectHTML(meta.cardType || '具体角色卡') + '</div>';
     h += '<button id="sl_btn_scan_cast3" style="' + sbtn(CAT.accent) + '">🔍 扫描角色卡档案喵~</button></div>';
     h += userCard();
-    body.html(h); bindArchiveEvents(body); return;
+    h += storyCardHTML();
+    body.html(h); bindArchiveEvents(body); bindStoryEvents(body); return;
   }
 
-  // State 2: world card
-  if (isWorld) {
+  // State 2: world card（纯世界观卡/混合型卡且无档案）
+  if (isWorld && !hasCast) {
     h = '<div style="background:' + CAT.card + ';border-radius:12px;padding:16px;border:1px solid ' + CAT.line + ';margin-bottom:10px;">';
     h += '<div style="font-weight:700;font-size:14px;color:' + CAT.text + ';margin-bottom:4px;">🌐 世界设定卡</div>';
     h += '<div style="font-size:11px;color:' + CAT.sub + ';">此卡为世界观卡，角色由聊天中动态生成</div>';
     if (meta.coreChar) h += '<div style="font-size:10px;color:' + CAT.accent + ';margin-top:4px;">核心角色: ' + esc(meta.coreChar) + '</div>';
+    h += '<div style="margin-top:10px;"><span style="font-size:11px;color:' + CAT.sub + ';">🎨 画风模式</span>' + scanModeSelectHTML(meta.modelMode || settings.modelType || 'zit') + '</div>';
+    h += '<div style="margin-top:10px;"><span style="font-size:11px;color:' + CAT.sub + ';">📇 卡类型</span>' + cardTypeSelectHTML(meta.cardType || '具体角色卡') + '</div>';
+    h += '<div style="margin-top:10px;"><span style="font-size:11px;color:' + CAT.sub + ';">✨ 角色特化（扫描自动识别，可手改）</span><input id="sl_specialization" type="text" value="' + escAttr(meta.specialization || '') + '" placeholder="如：雌小鬼、御姐、足控…" style="width:100%;margin-top:4px;box-sizing:border-box;padding:6px 8px;border:1px solid ' + CAT.line + ';border-radius:8px;background:' + CAT.card + ';font-size:11px;color:' + CAT.text + ';"></div>';
     h += '<button id="sl_btn_scan_cast3" style="' + sbtn(CAT.accent) + 'margin-top:10px;">🔄 重新扫描</button></div>';
     h += '<div style="font-weight:700;font-size:12px;color:' + CAT.text + ';margin-bottom:6px;">👥 本聊天角色档案</div>';
     if (Object.keys(npcs).length) {
@@ -95,10 +103,14 @@ export function renderArchiveTab() {
     } else { h += '<div style="font-size:10px;color:' + CAT.mute + ';padding:8px;">聊天中出现的角色会自动出现在这里喵~</div>'; }
       h += '<div style="margin-top:8px;"><button id="sl_btn_clear_cast" style="' + sbtn(CAT.red) + 'font-size:10px;">🗑 清除本卡档案</button></div>';
   h += userCard();
-    body.html(h); bindArchiveEvents(body); return;
+  h += storyCardHTML();
+    body.html(h); bindArchiveEvents(body); bindStoryEvents(body); return;
   }
 
   // State 3: character card — static + dynamic sub-tabs
+  h += '<div style="display:flex;gap:6px;align-items:center;margin-bottom:10px;flex-wrap:wrap;"><span style="font-size:11px;color:' + CAT.sub + ';">🎨 画风模式（锁定中，重扫可切换）</span><div style="flex:1;min-width:140px;">' + scanModeSelectHTML(meta.modelMode || settings.modelType || 'zit') + '</div><button id="sl_btn_scan_cast3" style="' + sbtn(CAT.accent) + 'font-size:10px;">🔄 重新扫描</button></div>';
+  h += '<div style="display:flex;gap:6px;align-items:center;margin-bottom:10px;flex-wrap:wrap;"><span style="font-size:11px;color:' + CAT.sub + ';">📇 卡类型（重扫生效）</span><div style="flex:1;min-width:140px;">' + cardTypeSelectHTML(meta.cardType || '具体角色卡') + '</div></div>';
+  h += '<div style="display:flex;gap:6px;align-items:center;margin-bottom:10px;flex-wrap:wrap;"><span style="font-size:11px;color:' + CAT.sub + ';">✨ 角色特化</span><input id="sl_specialization" type="text" value="' + escAttr(meta.specialization || '') + '" placeholder="如：雌小鬼、御姐、足控…（留空=未特化）" style="flex:1;min-width:140px;padding:6px 8px;border:1px solid ' + CAT.line + ';border-radius:8px;background:' + CAT.card + ';font-size:11px;color:' + CAT.text + ';"></div>';
   h += '<div style="display:flex;gap:4px;margin-bottom:10px;border-bottom:2px solid ' + CAT.line + ';">';
   h += '<button class="sl_arch_st active" data-ast="0" style="padding:8px 16px;border:none;border-radius:8px 8px 0 0;cursor:pointer;font-size:11px;font-weight:600;background:' + CAT.accent + ';color:#fff;">📋 静态档案</button>';
   h += '<button class="sl_arch_st" data-ast="1" style="padding:8px 16px;border:none;border-radius:8px 8px 0 0;cursor:pointer;font-size:11px;font-weight:400;background:transparent;color:' + CAT.sub + ';">💬 动态档案</button></div>';
@@ -129,7 +141,32 @@ export function renderArchiveTab() {
   h += "</div>";
     h += '<div style="margin-top:8px;"><button id="sl_btn_clear_cast" style="' + sbtn(CAT.red) + 'font-size:10px;">🗑 清除本卡档案</button></div>';
   h += userCard();
-  body.html(h); bindArchiveEvents(body);
+  h += storyCardHTML();
+  body.html(h); bindArchiveEvents(body); bindStoryEvents(body);
+}
+// 卡类型三选下拉（具体角色卡/世界观卡/混合型卡）——v2.0 有卡类型功能，v2.1 起被移除，现在恢复
+function cardTypeSelectHTML(selected) {
+  var opts = [
+    ['具体角色卡', '🎭 具体角色卡 — 剧情围绕固定角色，扫描强制建档'],
+    ['世界观卡', '🌐 世界观卡 — 无具体角色，角色由聊天动态生成'],
+    ['混合型卡', '🔀 混合型卡 — 有具体角色档案，但剧情不围绕他们展开，新角色动态建档']
+  ];
+  var h = '<select id="sl_card_type" style="width:100%;margin-top:4px;padding:8px 10px;border:1px solid ' + CAT.line + ';border-radius:8px;background:' + CAT.card + ';font-size:12px;color:' + CAT.text + ';">';
+  for (var i = 0; i < opts.length; i++) h += '<option value="' + opts[i][0] + '"' + (opts[i][0] === selected ? ' selected' : '') + '>' + opts[i][1] + '</option>';
+  h += '</select>';
+  return h;
+}
+// 画风模式三选下拉（扫描入口复用：未扫描/世界卡/已扫描三个状态都能选）
+function scanModeSelectHTML(selected) {
+  var opts = [
+    ['zit', '🖼️ 中文模式 — Z-Image Turbo / 原生中文最优'],
+    ['anime', '🎬 英文自然语言 — Anima 系列 / 标签+自然语句'],
+    ['anime_tag', '🏷️ 英文标签模式 — Pony/SDXL / 纯标签链']
+  ];
+  var h = '<select id="sl_scan_mode" style="width:100%;margin-top:4px;padding:8px 10px;border:1px solid ' + CAT.line + ';border-radius:8px;background:' + CAT.card + ';font-size:12px;color:' + CAT.text + ';">';
+  for (var i = 0; i < opts.length; i++) h += '<option value="' + opts[i][0] + '"' + (opts[i][0] === selected ? ' selected' : '') + '>' + opts[i][1] + '</option>';
+  h += '</select>';
+  return h;
 }
 export function userCard() {
   var pf = getProfiles();
@@ -144,19 +181,90 @@ export function userCard() {
 }
 export function bindArchiveEvents(b) {
   b.off("click", "#sl_btn_clear_cast").on("click", "#sl_btn_clear_cast", function(){if(!confirm("确定要清除当前角色卡档案喵？聊天记录不受影响~"))return;deleteCharacterProfile(false);toast("warning","档案清除啦~ 需要重新扫描喵 (｡•́︿•̀｡)");renderArchiveTab();compact.refreshCompactBar();});
-  b.off("click", "#sl_btn_scan_cast3").on("click", "#sl_btn_scan_cast3", async function () { var btn = jQuery(this); btn.prop("disabled", true).text("扫描中..."); try { var scanMode = jQuery('#sl_scan_mode').val() || 'zit'; await scanCharacterProfile(scanMode); toast("success", "扫描完成喵~ 🔒 已锁定"); renderArchiveTab(); compact.refreshCompactBar(); } catch (e) { toast("error", "扫描失败喵…"); } btn.prop("disabled", false).text("🔍 扫描角色卡档案喵~"); });
+  b.off("click", "#sl_btn_scan_cast3").on("click", "#sl_btn_scan_cast3", async function () { var btn = jQuery(this); btn.prop("disabled", true).text("扫描中..."); try { var scanMode = jQuery('#sl_scan_mode').val() || 'zit'; var cardType = jQuery('#sl_card_type').val() || '具体角色卡'; try { setCardType(getCharacterName(), cardType); } catch (e2) {} await scanCharacterProfile(scanMode); toast("success", "扫描完成喵~ 🔒 已锁定"); renderArchiveTab(); compact.refreshCompactBar(); } catch (e) { toast("error", "扫描失败喵…"); } btn.prop("disabled", false).text("🔍 扫描角色卡档案喵~"); });
   b.off("change input", "#sl_user_name,#sl_user_desc").on("change input", "#sl_user_name,#sl_user_desc", function () { settings.userName = b.find("#sl_user_name").val(); settings.userDesc = b.find("#sl_user_desc").val(); saveSettings(); });
+  b.off("change input", "#sl_specialization").on("change input", "#sl_specialization", function () { var pf = getProfiles(); if (pf && pf.root[pf.charName] && pf.root[pf.charName].meta) { pf.root[pf.charName].meta.specialization = jQuery(this).val(); saveSettings(); } });
   b.off("click", ".sl_arch_st").on("click", ".sl_arch_st", function () { var st = parseInt(jQuery(this).data("ast")); b.find(".sl_arch_st").css({ background: "transparent", color: CAT.sub, fontWeight: "400" }); jQuery(this).css({ background: CAT.accent, color: "#fff", fontWeight: "600" }); b.find("#sl_arch_static").toggle(st === 0); b.find("#sl_arch_dynamic").toggle(st === 1); });
   b.off("click", ".sl_edit_btn").on("click", ".sl_edit_btn", function () { b.find(".sl_edit_box[data-char=\"" + jQuery(this).data("char") + "\"]").toggle(); });
   b.off("click", ".sl_cancel_btn").on("click", ".sl_cancel_btn", function () { b.find(".sl_edit_box[data-char=\"" + jQuery(this).data("char") + "\"]").hide(); });
   b.off("click", ".sl_save_btn").on("click", ".sl_save_btn", function () { var cn = jQuery(this).data("char"), nt = b.find(".sl_edit_ta[data-char=\"" + cn + "\"]").val(), pf = getProfiles(); if (pf && pf.root[pf.charName] && pf.root[pf.charName].cast && pf.root[pf.charName].cast[cn]) { pf.root[pf.charName].cast[cn].static = nt; pf.root[pf.charName].cast[cn].anchor = nt.slice(0, 80); saveSettings(); toast("success", cn + " 保存好啦喵~ ✨"); renderArchiveTab(); } });
     // AI润色已移除
   
-  b.off("click", ".sl_port_btn").on("click", ".sl_port_btn", async function () { var cn = jQuery(this).data("char"), btn = jQuery(this), pf = getProfiles(), cast = pf && pf.root[pf.charName] && pf.root[pf.charName].cast; if (!cast || !cast[cn] || !cast[cn].static) { toast("error", "没有静态档案喵…"); return; } var anchor = cast[cn].static; var bm=(pf&&pf.root[pf.charName]&&pf.root[pf.charName].meta&&pf.root[pf.charName].meta.modelMode)||settings.modelType; if(bm==="anime"&&cast[cn].enPrompt)anchor=cast[cn].enPrompt; else if(bm==="anime_tag"&&cast[cn].enTags)anchor=cast[cn].enTags; var bodyT = cast[cn].body || "", prompt = anchor + ((bm==="anime"||bm==="anime_tag")?"":(bodyT?", "+bodyT:"")) + ", standing, front view, full body, simple background, neutral expression"; if (bm === "anime" || bm === "anime_tag") prompt = cleanAnimePrompt(prompt); btn.prop("disabled", true).text("生成中..."); try { var wf = JSON.parse(settings.cWf || "{}"); if (!Object.keys(wf).length) { toast("error", "工作流空空如也喵~"); btn.prop("disabled", false).text("📷 生成立绘"); return; } var result = await generateImage(wf, prompt); if (result && result.url) { cast[cn].portrait = result.url; saveSettings(); b.find("#sl_port_" + cn.replace(/[^a-zA-Z0-9\u4e00-\u9fff]/g, "_")).css({ backgroundImage: "url(" + result.url + ")", backgroundSize: "cover", backgroundPosition: "top center", border: "2px solid " + CAT.accent, color: "transparent" }).html(""); toast("success", cn + " 立绘生成好啦喵~ ✨"); } } catch (e) { toast("error", "立绘生成失败喵… (╥﹏╥)"); } btn.prop("disabled", false).text("📷 生成立绘"); });
+  b.off("click", ".sl_port_btn").on("click", ".sl_port_btn", function () { var cn = jQuery(this).data("char"), btn = jQuery(this), pf = getProfiles(), cast = pf && pf.root[pf.charName] && pf.root[pf.charName].cast; if (!cast || !cast[cn] || !cast[cn].static) { toast("error", "没有静态档案喵…"); return; } var anchor = cast[cn].static; var bm=(pf&&pf.root[pf.charName]&&pf.root[pf.charName].meta&&pf.root[pf.charName].meta.modelMode)||settings.modelType; if(bm==="anime"&&cast[cn].enPrompt)anchor=cast[cn].enPrompt; else if(bm==="anime_tag"&&cast[cn].enTags)anchor=cast[cn].enTags; var bodyT = cast[cn].body || "", prompt = anchor + ((bm==="anime"||bm==="anime_tag")?"":(bodyT?", "+bodyT:"")) + ", standing, front view, full body, simple background, neutral expression"; if (bm === "anime" || bm === "anime_tag") prompt = cleanAnimePrompt(prompt); var wf = JSON.parse(settings.cWf || "{}"); if (!Object.keys(wf).length) { toast("error", "工作流空空如也喵~"); return; } btn.prop("disabled", true).text("排队中..."); enqueueTask("portrait_" + Date.now() + "_" + cn, prompt, function(result) { if (result && result.url) { cast[cn].portrait = result.url; saveSettings(); b.find("#sl_port_" + cn.replace(/[^a-zA-Z0-9\u4e00-\u9fff]/g, "_")).css({ backgroundImage: "url(" + result.url + ")", backgroundSize: "cover", backgroundPosition: "top center", border: "2px solid " + CAT.accent, color: "transparent" }).html(""); toast("success", cn + " 立绘生成好啦喵~ ✨"); } btn.prop("disabled", false).text("📷 生成立绘"); }, function() { toast("error", "立绘生成失败喵… (╥﹏╥)"); btn.prop("disabled", false).text("📷 生成立绘"); }); });
   b.off("click", ".sl_dyn_edit_btn").on("click", ".sl_dyn_edit_btn", function () { b.find(".sl_dyn_edit_box[data-char=\"" + jQuery(this).data("char") + "\"]").toggle(); });
   b.off("click", ".sl_dyn_cancel_btn").on("click", ".sl_dyn_cancel_btn", function () { b.find(".sl_dyn_edit_box[data-char=\"" + jQuery(this).data("char") + "\"]").hide(); });
   b.off("click", ".sl_dyn_save_btn").on("click", ".sl_dyn_save_btn", function () { var cn = jQuery(this).data("char"), nt = b.find(".sl_dyn_edit_ta[data-char=\"" + cn + "\"]").val(), pf = getProfiles(); if (pf && pf.chat && pf.chat.dynamics) { pf.chat.dynamics[cn] = nt; saveSettings(); toast("success", cn + " 动态保存啦喵~ ✨"); renderArchiveTab(); } });
   b.off("click", "[id^=sl_port_]").on("click", "[id^=sl_port_]", function () { var bg = jQuery(this).css("background-image"); if (!bg || bg === "none") return; var url = bg.slice(bg.indexOf("(")+1,bg.lastIndexOf(")")).replace(/["']/g,"");
         jQuery('<div style="position:fixed;z-index:30001;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);display:flex;align-items:center;justify-content:center;cursor:pointer;"><img src="' + url + '" style="max-width:90vw;max-height:90vh;border-radius:12px;box-shadow:0 4px 30px rgba(0,0,0,0.5);"></div>').appendTo("body").on("click", function () { jQuery(this).remove(); }); });
+}
+
+// ── 剧情库卡片（长期记忆：存档/标签/总结/归档） ──
+function storyCardHTML() {
+  return '<div id="sl_story_card" style="background:' + CAT.card + ';border-radius:12px;padding:12px;margin-top:10px;border:1px solid ' + CAT.line + ';"><div style="font-weight:700;font-size:12px;color:' + CAT.text + ';margin-bottom:6px;">📚 剧情库 <span style="font-weight:400;font-size:9px;color:' + CAT.mute + ';">每轮正文自动存档 · 标签分类 · 滚动总结</span></div><div id="sl_story_body" style="font-size:10px;color:' + CAT.sub + ';">加载中喵…</div></div>';
+}
+function bindStoryEvents(b) {
+  var bodyEl = b.find("#sl_story_body");
+  if (!bodyEl.length) return;
+  b.off("click", "#sl_story_refresh").on("click", "#sl_story_refresh", function () { renderStoryPanel(b); });
+  b.off("click", "#sl_story_summarize").on("click", "#sl_story_summarize", async function () {
+    var btn = jQuery(this); btn.prop("disabled", true).text("总结中...");
+    try { var ok = await story.summarize(true); toast(ok ? "success" : "warning", ok ? "总结完成喵~ ✨ 早期条目已归档" : "增量不足，暂未总结喵…"); }
+    catch (e) { toast("error", "总结失败喵…"); }
+    renderStoryPanel(b); btn.prop("disabled", false).text("🧠 立即总结");
+  });
+  b.off("click", "#sl_story_clear").on("click", "#sl_story_clear", async function () {
+    if (!confirm("确定清空当前聊天的剧情库喵？\n（只删剧情库存档，聊天记录和图片不受影响）")) return;
+    await story.clearStory(); toast("success", "剧情库已清空喵~ 🧹"); renderStoryPanel(b);
+  });
+  b.off("click", ".sl_story_toggle").on("click", ".sl_story_toggle", function () {
+    var m = jQuery(this).data("mesid"); b.find('.sl_story_detail[data-mesid="' + m + '"]').toggle();
+  });
+  b.off("click", ".sl_story_del").on("click", ".sl_story_del", async function () {
+    var m = jQuery(this).data("mesid"); await story.deleteEntry(m); renderStoryPanel(b);
+  });
+  b.off("click", ".sl_story_tag").on("click", ".sl_story_tag", function () {
+    var tag = jQuery(this).data("tag");
+    b.data("sl_story_filter", b.data("sl_story_filter") === tag ? "" : tag);
+    renderStoryPanel(b);
+  });
+  renderStoryPanel(b);
+}
+async function renderStoryPanel(b) {
+  var bodyEl = b.find("#sl_story_body");
+  if (!bodyEl.length) return;
+  var ov = await story.getOverview();
+  var filter = b.data("sl_story_filter") || "";
+  var h = "";
+  h += '<div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-bottom:6px;">';
+  h += '<span style="font-size:10px;color:' + CAT.text + ';">共 ' + ov.count + ' 条 · ' + ov.slices + ' 片' + (ov.summary ? ' · 已总结至第 ' + ov.summary.toRound + ' 轮' : '') + '</span>';
+  h += '<button id="sl_story_summarize" style="' + sbtn(CAT.accent) + 'font-size:9px;">🧠 立即总结</button>';
+  h += '<button id="sl_story_clear" style="' + sbtn(CAT.red) + 'font-size:9px;">🧹 清空</button>';
+  h += '<button id="sl_story_refresh" style="font-size:9px;padding:3px 8px;border:1px solid ' + CAT.line + ';border-radius:6px;background:transparent;color:' + CAT.sub + ';cursor:pointer;">🔄</button>';
+  h += '</div>';
+  if (ov.summary && ov.summary.text) {
+    h += '<div style="font-size:10px;color:' + CAT.sub + ';background:' + CAT.bg + ';border-radius:8px;padding:6px 8px;margin-bottom:6px;white-space:pre-wrap;border:1px solid ' + CAT.line + ';">📜 ' + esc(ov.summary.text) + (ov.summary.text.length >= 200 ? "…" : "") + '</div>';
+  }
+  var tagKeys = Object.keys(ov.tags);
+  if (tagKeys.length) {
+    h += '<div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:6px;">';
+    for (var i = 0; i < tagKeys.length; i++) {
+      var tk = tagKeys[i], active = tk === filter;
+      h += '<button class="sl_story_tag" data-tag="' + escAttr(tk) + '" style="font-size:9px;padding:2px 8px;border-radius:10px;cursor:pointer;border:1px solid ' + CAT.line + ';background:' + (active ? CAT.accent : "transparent") + ';color:' + (active ? "#fff" : CAT.sub) + ';">' + esc(tk) + ' (' + ov.tags[tk] + ')</button>';
+    }
+    h += '</div>';
+  }
+  var list = filter ? ov.entries.filter(function (en) { return (en.tags || []).indexOf(filter) >= 0; }) : ov.entries;
+  if (!list.length) {
+    h += '<div style="font-size:10px;color:' + CAT.mute + ';padding:8px;text-align:center;">' + (ov.count ? "该标签下没有条目喵~" : "剧情库为空——管线跑起来后每轮正文会自动存档喵~") + '</div>';
+  } else {
+    for (var j = 0; j < list.length; j++) {
+      var en = list[j], mid = escAttr(en.mesid || "");
+      h += '<div style="border:1px solid ' + CAT.line + ';border-radius:8px;padding:6px 8px;margin-bottom:4px;">';
+      h += '<div style="display:flex;align-items:center;gap:6px;"><button class="sl_story_toggle" data-mesid="' + mid + '" style="flex:1;text-align:left;font-size:10px;color:' + CAT.text + ';background:none;border:none;cursor:pointer;padding:0;">[' + en.round + '] <span style="color:' + CAT.accent + ';">' + esc((en.tags || []).join(" ")) + '</span> ' + esc(String(en.body || "").slice(0, 40)) + '</button><button class="sl_story_del" data-mesid="' + mid + '" style="font-size:9px;border:none;background:none;color:' + CAT.red + ';cursor:pointer;">🗑</button></div>';
+      h += '<div class="sl_story_detail" data-mesid="' + mid + '" style="display:none;font-size:10px;color:' + CAT.sub + ';white-space:pre-wrap;margin-top:4px;border-top:1px dotted ' + CAT.line + ';padding-top:4px;">' + esc(en.body) + '</div>';
+      h += '</div>';
+    }
+  }
+  bodyEl.html(h);
 }
 export function showLogViewer() { var t = slLogDump() || "暂无日志喵~"; var h = '<div style="position:fixed;z-index:40000;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);display:flex;align-items:center;justify-content:center;"><div style="background:' + CAT.card + ';border-radius:' + CAT.radius + ';width:90vw;max-width:700px;max-height:80vh;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,0.3);"><div style="display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:1px solid ' + CAT.line + ';"><span style="font-weight:700;font-size:14px;color:' + CAT.text + ';">📋 插件日志 (' + getLogCount() + ' 条)</span><div style="display:flex;gap:6px;"><button id="sl_log_clear" style="' + sbtn(CAT.red) + 'font-size:11px;">🗑 清空</button><button id="sl_log_close" style="border:none;background:none;cursor:pointer;font-size:18px;color:' + CAT.mute + ';">✕</button></div></div><div style="flex:1;overflow-y:auto;padding:12px;font-family:monospace;font-size:11px;color:' + CAT.text + ';white-space:pre-wrap;line-height:1.5;">' + esc(t) + "</div></div></div>"; var m = jQuery(h).appendTo("body"); jQuery("#sl_log_close").on("click", function () { m.remove(); }); jQuery("#sl_log_clear").on("click", function () { slClearLogs(); m.remove(); toast("success", "日志已清空喵~ 🧹"); }); m.on("click", function (e) { if (e.target === this) m.remove(); }); }

@@ -1,4 +1,4 @@
-﻿// ── SillyImage Lab 提示词加载器 ──
+// ── SillyImage Lab 提示词加载器 ──
 // 从 prompts/ 文件夹异步加载提示词文件，缓存到内存
 
 var PROMPTS_CACHE = {};
@@ -12,6 +12,7 @@ export async function loadPrompts(baseUrl) {
         'pipeline/anime-overlay.txt',
         'pipeline/anime-tag-overlay.txt',
         'pipeline/nsfw-overlay.txt',
+        'pipeline/summary.txt',
     ];
     var loaded = 0;
     for (var i = 0; i < files.length; i++) {

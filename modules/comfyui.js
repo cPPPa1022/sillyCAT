@@ -1,7 +1,37 @@
-﻿// ── SillyImage Lab 🎨 ComfyUI连接 通信 ──
+// ── SillyImage Lab 🎨 ComfyUI连接 通信 ──
 import { slLog } from './log.js';
 import { settings, getSTHeaders, saveSettings, escapeHtml, getActiveMode } from './settings.js';
 import { uploadImageToST } from './cache.js';
+import { getProfiles } from './pipeline/profile.js';
+
+// [Fix] 提示词角色名过滤（最后防线）：LLM 偶发违规把角色名写进提示词，或 FACE 占位符残留。
+// 角色名是生图模型无法理解的概念噪音，且会把名字当成画面元素画出来。
+export function stripCharacterNames(prompt) {
+    if (!prompt) return prompt;
+    try {
+        var prof = getProfiles();
+        if (!prof) return prompt;
+        var names = [prof.charName, 'User'];
+        if (prof.root && prof.root[prof.charName]) {
+            var cast = prof.root[prof.charName].cast || {};
+            for (var nk in cast) names.push(nk);
+        }
+        var npcs = (prof.chat && prof.chat.npcs) || {};
+        for (var n2 in npcs) names.push(n2);
+        var changed = false;
+        for (var i = 0; i < names.length; i++) {
+            var nm = names[i];
+            if (!nm || nm.length < 2) continue;
+            var re;
+            try { re = new RegExp(nm.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g'); } catch (e) { continue; }
+            if (re.test(prompt)) { prompt = prompt.replace(re, ''); changed = true; }
+        }
+        if (changed) {
+            prompt = prompt.replace(/[，,]\s*[，,]+/g, '，').replace(/[，,]\s*$/g, '').replace(/\s+/g, ' ').trim();
+        }
+    } catch (e) { /* 过滤失败不影响生成 */ }
+    return prompt;
+}
 // 画风预设表
 export var STYLE_PRESETS = {
     '': '',
@@ -117,6 +147,8 @@ export async function fetchComfyModels() {
 }
 
 export async function generateImage(workflow, prompt) {
+    // [Fix] 角色名过滤（LLM 违规写人名 / FACE 占位符残留的最后防线）
+    prompt = stripCharacterNames(prompt);
     slLog('🎨ComfyUI-prompt('+prompt.length+'字):', prompt);
     // 直接从 DOM 读下拉框的最新值（绕过任何事件绑定问题）
     var domVal = (jQuery('#sl_style_preset').length ? jQuery('#sl_style_preset').val() : '') || '';
@@ -143,6 +175,17 @@ export async function generateImage(workflow, prompt) {
         }
     }
 
+    // [Fix] Anime 质量前缀/艺术家标签接线：原实现仅在设置页保存，generateImage 从未读取（死配置）
+    var curMode = getActiveMode();
+    if ((curMode === 'anime' || curMode === 'anime_tag') && settings.animeQualityPrefix) {
+        prompt = settings.animeQualityPrefix + ', ' + prompt;
+        slLog('Anime质量前缀: ' + settings.animeQualityPrefix);
+    }
+    if ((curMode === 'anime' || curMode === 'anime_tag') && settings.animeArtist) {
+        prompt = prompt + ', ' + settings.animeArtist;
+        slLog('Anime艺术家标签: ' + settings.animeArtist);
+    }
+
     // 前置提示词（用户自定义）
     if (settings.promptPrefix) {
         prompt = settings.promptPrefix + ', ' + prompt;
@@ -161,12 +204,33 @@ export async function generateImage(workflow, prompt) {
                     var original = node.inputs[key];
                     var text = Array.isArray(original) ? original[0] : original;
                     if (typeof text !== 'string') text = '';
+                    // [Fix] 负面占位符节点（key 不含 negative 但文本是 %negative_prompt% 的双CLIP结构）
+                    if (text.indexOf('%negative_prompt%') >= 0) {
+                        if (settings.neg) {
+                            text = text.replace(/%negative_prompt%/g, settings.neg);
+                            node.inputs[key] = Array.isArray(original) && original.length === 2 ? [text, original[1]] : text;
+                            slLog('genWf: 负面占位符已替换 → ' + settings.neg.slice(0, 60));
+                        }
+                        continue;
+                    }
                     if (text.indexOf('%prompt%') >= 0) {
                         text = text.replace(/%prompt%/g, prompt);
                         node.inputs[key] = Array.isArray(original) && original.length === 2 ? [text, original[1]] : text;
                         matchCount++;
                         slLog('genWf: 注入prompt %prompt% → ' + prompt.slice(0, 60));
                     }
+                } else if (/negative/i.test(key) && settings.neg) {
+                    // [Fix] 负面提示词接线：key 明确带 negative 的输入（negative_prompt/negative_text 等）
+                    var negOriginal = node.inputs[key];
+                    var negText = Array.isArray(negOriginal) ? negOriginal[0] : negOriginal;
+                    if (typeof negText !== 'string') negText = '';
+                    if (negText.indexOf('%negative_prompt%') >= 0) {
+                        negText = negText.replace(/%negative_prompt%/g, settings.neg);
+                    } else {
+                        negText = settings.neg;
+                    }
+                    node.inputs[key] = Array.isArray(negOriginal) && negOriginal.length === 2 ? [negText, negOriginal[1]] : negText;
+                    slLog('genWf: 负面提示词已注入 → ' + settings.neg.slice(0, 60));
                 }
             }
         }
@@ -190,6 +254,9 @@ export async function generateImage(workflow, prompt) {
                 for (var key in node.inputs) {
                     if (/(text|prompt|positive|clip_l|t5xxl|clip_g|bert|mt5xl)/i.test(key) && !/negative/i.test(key)) {
                         var original = node.inputs[key];
+                        // [Fix] 保底覆盖跳过负面占位符节点，避免把正向 prompt 写进负面输入
+                        var fallbackText = Array.isArray(original) ? original[0] : original;
+                        if (typeof fallbackText === 'string' && fallbackText.indexOf('%negative_prompt%') >= 0) continue;
                         node.inputs[key] = Array.isArray(original) && original.length === 2 ? [prompt, original[1]] : prompt;
                         matchCount++;
                         slLog('genWf: 没找到%prompt%, 直接覆盖节点 ' + nodeId + ' → ' + prompt.slice(0, 60));

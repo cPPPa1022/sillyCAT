@@ -1,4 +1,4 @@
-﻿// ── SillyImage Lab 设置中心 ──
+// ── SillyImage Lab 设置中心 ──
 export var settings = {};
 
 export function getDefaults() {
@@ -25,6 +25,14 @@ export function getDefaults() {
         uiTheme: '奶糖小猫',
         textTheme: '默认',
         debugMode: false,
+        // 多轮记忆：每次管线额外重放最近 N 轮角色消息正文（0 = 关闭，默认 5）
+        historyRounds: 5,
+        // 剧情库（长期记忆）：存档开关 / 总结触发条目数 / 总结最小间隔轮数
+        storyLib: true,
+        summaryThreshold: 40,
+        summaryGap: 15,
+        // 配图偏好：always 总是配图（默认，强制+鼓励）/ encourage 鼓励配图（纯信息轮可零图） / key 关键场景
+        imageMode: 'always',
     };
 }
 
@@ -64,7 +72,9 @@ export function escapeHtml(text) {
     if (!text) return '';
     var div = document.createElement('div');
     div.textContent = text;
-    return div.innerHTML;
+    // [Fix] div.innerHTML 不转义双引号/单引号，直接用于 data-prompt/title 等属性会被提前闭合
+    // （LLM 输出的提示词常含英文引号 → 属性注入/HTML 破坏）。统一补转义。
+    return div.innerHTML.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 }
 
 // ── 设置持久化（localStorage + extension_settings 双存） ──

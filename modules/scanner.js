@@ -1,4 +1,4 @@
-﻿// ── SillyImage Lab 消息扫描与触发 ──
+// ── SillyImage Lab 消息扫描与触发 ──
 import { slLog, slErr } from './log.js';
 import { settings, getSTContext, escapeHtml, saveSettings } from './settings.js';
 import { extractBodyText, extractBodyContent, hasBodyMarker, stripAiTags } from './text-utils.js';
@@ -175,10 +175,17 @@ export async function runAuxImageScan(messageElement) {
         var mesId = mesContainer.length ? mesContainer.attr('mesid') : (Date.now() + '');
         var chatId = getChatId();
         var pipeTimeout = (settings.cTimeout || 180) * 1000 + 30000;
-        var enhanced = await Promise.race([
-            runAuxPipeline(bodyText),
+        var pipeResult = await Promise.race([
+            runAuxPipeline(bodyText, mesId),
             new Promise(function(_, reject) { setTimeout(function() { reject(new Error('管线整体超时(' + pipeTimeout + 'ms)')); }, pipeTimeout); })
         ]);
+        // [Fix] 无图轮：PROFILE 已更新但无插图，属正常完成（鼓励配图模式）——不缓存、不重试、保留已扫描标记
+        if (pipeResult && pipeResult.ok && !pipeResult.enhanced) {
+            slLog('无图轮: 档案已更新, 无插图, 正常完成');
+            if (scanSession) scanSession.phase = 'completed';
+            return;
+        }
+        var enhanced = pipeResult ? pipeResult.enhanced : null;
         // [AI-Fix] 原逻辑 enhanced=null 时只 log 就 return，不清除 sl_aux_scanned，
         // 导致这条消息被永久标记为"已扫描"，永远不再尝试。现在清除标记允许重试。
         if (!enhanced) {
@@ -192,6 +199,9 @@ export async function runAuxImageScan(messageElement) {
             lastMsg.removeData('sl_aux_scanned');
             try { var pf = getProfiles(); if (pf && pf.chat) pf.chat._castSent = false; } catch(e){}
         }
+        // [Fix] 失败/重试分支复位会话 phase：原实现漏复位，phase 卡在 'scanning'，
+        // 会导致后续新消息的扫描被会话守卫永久拒绝（静默死锁）。
+        if (scanSession) scanSession.phase = 'completed';
         return;
     }
         if (!settings.msgMap) settings.msgMap = {};

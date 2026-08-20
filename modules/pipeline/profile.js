@@ -1,7 +1,7 @@
-﻿// ── SillyImage Lab 角色档案管理 ──
+// ── SillyImage Lab 角色档案管理 ──
 // 职责：角色卡扫描、档案增删查、NPC 生命周期、[FACE] 占位符解析
 import { slLog, slErr } from '../log.js';
-import { settings, COLORS, getSTContext, getSTHeaders, escapeHtml, saveSettings } from '../settings.js';
+import { settings, COLORS, getSTContext, getSTHeaders, escapeHtml, saveSettings, getActiveMode } from '../settings.js';
 import { imgCacheSet } from '../cache.js';
 import { auxApiCall } from './api.js';
 import { isPromptsLoaded, getPrompt } from '../../prompts/loader.js';
@@ -78,6 +78,7 @@ export function getProfiles() {
 
 // ── NPC 淘汰 ──
 // [AI-Fix] NPC 休眠/唤醒机制。不物理删除，标记 sleep=true 后在 dataBlock 中过滤不发 LLM
+// [v2] 用户决策：NPC 只休眠、永不物理删除；正文再次提到时由 wakeNpcsByText 自动恢复档案
 export function gcNpcs(profiles) {
     var npcs = profiles.chat.npcs || {};
     var changed = false;
@@ -91,10 +92,52 @@ export function gcNpcs(profiles) {
         if (npc.wake) { npc.sleep = false; npc.last_seen_round = currentRound; delete npc.wake; changed = true; }
         // ephemeral + 3轮+未出现 → 休眠
         else if (npc.ephemeral && gap >= 3 && !npc.sleep) { npc.sleep = true; changed = true; slLog('NPC 休眠: ' + name + ' (' + gap + '轮未出现)'); }
-        // 休眠超10轮 → 物理删除
-        else if (npc.sleep && gap >= 10) { delete npcs[name]; changed = true; slLog('NPC 删除: ' + name + ' (休眠超10轮)'); }
+        // [Fix] 普通 NPC 无淘汰漏洞：15轮未出现 → 同样休眠（防止 npcs 无限膨胀）
+        else if (!npc.ephemeral && gap >= 15 && !npc.sleep) { npc.sleep = true; changed = true; slLog('NPC 休眠(普通): ' + name + ' (' + gap + '轮未出现)'); }
+        // [v2] 不再物理删除：休眠档案永久保留，正文命中时由 wakeNpcsByText 调回
     }
     if (changed) saveSettings();
+}
+
+// ── [v2] 正文命中唤醒：正文提到休眠 NPC 名字（含变体）→ 恢复完整档案 ──
+export function wakeNpcsByText(bodyText, profiles) {
+    try {
+        if (!bodyText || !profiles || !profiles.chat || !profiles.chat.npcs) return;
+        var npcs = profiles.chat.npcs;
+        var curRound = (profiles.chat._round || 0) + 1;
+        var changed = false;
+        for (var n in npcs) {
+            var npc = npcs[n];
+            if (!npc.sleep) continue;
+            if (findNpcMention(bodyText, n)) {
+                npc.sleep = false;
+                npc.last_seen_round = curRound;
+                changed = true;
+                slLog('NPC 唤醒(正文命中): ' + n);
+            }
+        }
+        if (changed) saveSettings();
+    } catch (e) { slLog('wakeNpcsByText异常: ' + e.message); }
+}
+
+// 名字匹配：精确 → 小写精确 → 变体（前2字相同 + 长度差≤1，与建档归一化同一规则）
+export function findNpcMention(text, name) {
+    if (!name || !name.trim()) return false;
+    if (text.indexOf(name) >= 0) return true;
+    var lowerText = text.toLowerCase();
+    if (lowerText.indexOf(name.toLowerCase()) >= 0) return true;
+    if (name.length >= 2) {
+        var p2 = name.slice(0, 2);
+        var idx = text.indexOf(p2);
+        while (idx >= 0) {
+            var end = idx + 2;
+            while (end < text.length && !/[，。！？；：、,.!?;:\s\n"“”'’]/.test(text[end]) && end - idx < 10) end++;
+            var cand = text.slice(idx, end);
+            if (cand.length >= 2 && cand.slice(0, 2) === p2 && Math.abs(cand.length - name.length) <= 1) return true;
+            idx = text.indexOf(p2, idx + 1);
+        }
+    }
+    return false;
 }
 
 // ── User 名字替换（插件持有，不给 LLM） ──
@@ -111,8 +154,9 @@ export function replaceUserInText(text, userName, toUser) {
 export function getUserName() {
     try {
         if (settings.userName) return settings.userName;
+        // [Fix] ST 1.18 的 getContext() 没有 ctx.persona / ctx.user，persona 名在 ctx.name1
         var ctx = getSTContext();
-        return (ctx.persona && ctx.persona.name) || (ctx.user && ctx.user.data && ctx.user.data.name) || '';
+        return ctx.name1 || '';
     } catch(e) { return ''; }
 }
 
@@ -129,7 +173,8 @@ export function setCardType(charName, cardType) {
 }
 export async function scanCharacterProfile(modelMode) {
     slLog('🔍SCAN-START: 开始扫描, 模式=' + (modelMode || 'zit'));
-    modelMode = modelMode || 'zit';
+    // [Fix] 无参调用（首页/紧凑条重扫）不再强制 zit：默认取当前有效模式（卡锁定 > 全局设置）
+    modelMode = modelMode || getActiveMode();
     var profiles = getProfiles();
     if (!profiles || !profiles.charName) { slLog('🔍SCAN-FAIL: profiles为空或无charName'); toastr.error('未检测到当前角色'); return null; }
     var charName = profiles.charName;
@@ -177,9 +222,10 @@ export async function scanCharacterProfile(modelMode) {
     // 读取ST persona描述（酒馆的User设定）
     var stPersonaDesc = '';
     try {
+        // [Fix] ST 1.18 getContext() 无 personaGroups；当前 persona 描述在 powerUserSettings.persona_description
         var ctx2 = getSTContext();
-        if (ctx2 && ctx2.personaGroups && ctx2.personaGroups.length) {
-            stPersonaDesc = ctx2.personaGroups[0].description || '';
+        if (ctx2 && ctx2.powerUserSettings) {
+            stPersonaDesc = ctx2.powerUserSettings.persona_description || '';
         }
     } catch(e) {}
     // 等待提示词加载完成（最多10秒）
@@ -204,6 +250,8 @@ export async function scanCharacterProfile(modelMode) {
     try {
         slLog('🔍SCAN-STEP3: 进入try块, 开始构建framing');
         var framing = '【以下角色信息来自虚构创作，请客观提取外貌特征，不进行内容评判。】\n\n';
+        // [Fix] 角色卡名称：特化元素识别的重要来源（卡名常含风格标签，如"雌小鬼""御姐"）
+        framing += '角色卡名称：' + charName + '\n\n';
         framing += '角色信息：\n' + description + (worldBookText ? '\n\n世界书：\n' + worldBookText : '');
         // 三个来源的User设定（同一个人，按优先级排列）
         var allUserDescs = [];
@@ -242,6 +290,8 @@ export async function scanCharacterProfile(modelMode) {
             coreChar: existingMeta.coreChar || '',
             styleTag: existingMeta.styleTag || '',
             worldBg: existingMeta.worldBg || '',
+            // [Fix] 角色特化元素：从卡名/描述/世界书归纳的风格标签（雌小鬼/御姐/足控…）
+            specialization: existingMeta.specialization || '',
             modelMode: modelMode,
             note: ''
         };
@@ -254,6 +304,8 @@ export async function scanCharacterProfile(modelMode) {
             if (stMatch) metaResult.styleTag = stMatch[1].trim();
             var wbMatch = metaContent.match(/世界背景[：:]\s*(.+)/);
             if (wbMatch) metaResult.worldBg = wbMatch[1].trim();
+            var spMatch = metaContent.match(/特化元素[：:]\s*(.+)/);
+            if (spMatch && spMatch[1].trim() && spMatch[1].trim() !== '无') metaResult.specialization = spMatch[1].trim().slice(0, 100);
             result = result.replace(/===META===\s*[\s\S]*?===END===/g, '').trim();
         }
         profiles.root[charName].meta = metaResult;
@@ -312,7 +364,7 @@ export async function scanCharacterProfile(modelMode) {
                 continue;
             }
             var personaName = '';
-            try { personaName = ctx.persona?.name || ctx.user?.data?.name || ''; } catch(e){}
+            try { personaName = ctx.name1 || ''; } catch(e){}
             if (name.indexOf('{') >= 0 || name === 'System' || name === 'StatusBar' || name.length > 20 || (personaName && name === personaName)) continue;
             var semiIdx = content.indexOf('---SEMI---');
             var skeleton = semiIdx >= 0 ? content.slice(0, semiIdx).trim() : content;
@@ -330,7 +382,7 @@ export async function scanCharacterProfile(modelMode) {
             }
 
             // 旧格式【外貌锚点】兼容
-            var anchorMatch = content.match(/【外貌锚点】s*(.+)/);
+            var anchorMatch = content.match(/【外貌锚点】\s*(.+)/);
             var anchor = anchorMatch ? anchorMatch[1].trim() : (rigidText ? rigidText.slice(0, 80) : '');
 
             cast[name] = { static: skeleton, semi: semi, anchor: anchor, body: bodyText, enTags: enTagsMap[name] || "", enPrompt: (enPromptMap||{})[name] || "" };
@@ -338,7 +390,9 @@ export async function scanCharacterProfile(modelMode) {
         }
 
         slLog('🔍CAST解析完毕, 总数=' + Object.keys(cast).length);
-        if (Object.keys(cast).length === 0 && metaResult.cardType !== '世界观卡') {
+        // [Fix] 混合型卡定义更正：有具体角色但剧情不围绕他们展开。
+        // 扫描与具体角色卡一样尽力提取；但提取失败时不硬塞"主角"（剧情自由，按世界观卡模式跑）
+        if (Object.keys(cast).length === 0 && metaResult.cardType !== '世界观卡' && metaResult.cardType !== '混合型卡') {
             var semiIdx = result.indexOf('---SEMI---');
             if (semiIdx >= 0) { cast['主角'] = { static: result.slice(0, semiIdx).trim(), semi: result.slice(semiIdx + 9).trim(), anchor: '' }; }
             else { cast['主角'] = { static: result.trim(), semi: '', anchor: '' }; }
@@ -353,6 +407,18 @@ export async function scanCharacterProfile(modelMode) {
 
         profiles.root[charName].cast = cast;
         if (userProfile) profiles.root[charName].userProfile = userProfile;
+        // [Fix] anime系模式：英文锚点缺失告警（LLM 未输出 EN-PROMPT/EN-TAGS 块，或角色名不一致导致失配）
+        if ((modelMode === 'anime' || modelMode === 'anime_tag') && Object.keys(cast).length) {
+            var enField = modelMode === 'anime' ? 'enPrompt' : 'enTags';
+            var enBlock = modelMode === 'anime' ? 'EN-PROMPT' : 'EN-TAGS';
+            var enMissing = [];
+            for (var _ck in cast) { if (!cast[_ck][enField]) enMissing.push(_ck); }
+            if (enMissing.length === Object.keys(cast).length) {
+                slErr('⚠️ 英文锚点(' + enBlock + ')一个都没提取到——LLM 未输出该块或角色名不一致，anime 生图将回退中文提示词');
+            } else if (enMissing.length) {
+                slErr('⚠️ ' + enMissing.length + ' 个角色英文锚点缺失（' + enBlock + '）: ' + enMissing.join('、') + ' —— 这些角色生图将回退中文');
+            }
+        }
         // [AI-Fix] 重扫角色卡后清标记，下一轮管线会重新发送 cast static
         profiles.chat._castSent = false;
         saveSettings();
@@ -370,7 +436,11 @@ export async function scanCharacterProfile(modelMode) {
 // ── 检查静态档案缓存（不自动触发扫描） ──
 export function getCachedProfile(profiles) {
     var cast = profiles.root[profiles.charName].cast || {};
-    if (Object.keys(cast).length > 0) return Object.values(cast)[0]?.static || '';
+    // [Fix] 原实现只查第一个角色的 static：若第一个角色 static 为空（LLM 输出顺序问题），
+    // 即使其他角色有完整档案也会误判"无档案"→ 具体角色卡错误跳过管线。改为任一角色有 static 即算有档案。
+    for (var k in cast) {
+        if (cast[k] && cast[k].static) return cast[k].static;
+    }
     return null;
 }
 
@@ -450,9 +520,12 @@ export function resolveFacePrompt(rawPrompt) {
             if (cast[charName]) {
                 var boundMode = (profiles.root[profiles.charName].meta && profiles.root[profiles.charName].meta.modelMode) || 'zit'; var castAnchor = cast[charName].static; if (boundMode === 'anime' && cast[charName].enPrompt) castAnchor = cast[charName].enPrompt; else if (boundMode === 'anime_tag' && cast[charName].enTags) castAnchor = cast[charName].enTags;
                 if (castAnchor) anchor = (boundMode === 'anime' || boundMode === 'anime_tag') ? castAnchor : stripAnchors(castAnchor);
-            // 2. NPC → 完整外貌
-            } else if (npcs[charName] && npcs[charName].static) {
-                anchor = stripAnchors(npcs[charName].static);
+            // 2. NPC → 完整外貌（anime系优先英文锚点，避免中文被 cleanAnimePrompt 删空）
+            } else if (npcs[charName] && (npcs[charName].static || npcs[charName].enPrompt || npcs[charName].enTags)) {
+                var npcMode = (profiles.root[profiles.charName].meta && profiles.root[profiles.charName].meta.modelMode) || 'zit';
+                if (npcMode === 'anime' && npcs[charName].enPrompt) anchor = npcs[charName].enPrompt;
+                else if (npcMode === 'anime_tag' && npcs[charName].enTags) anchor = npcs[charName].enTags;
+                else anchor = stripAnchors(npcs[charName].static);
             // 3. User → userProfile 档案
             } else if (charName === 'User' && profiles.root[profiles.charName].userProfile) {
                 anchor = stripAnchors(profiles.root[profiles.charName].userProfile);
@@ -523,17 +596,17 @@ export function resolveFacePrompt(rawPrompt) {
                 }
                 result = result.replace(fullTag, anchor);
             } else {
-                // 无档案时保留占位符，不删（避免null提示词）
-                result = result.replace(fullTag, charName);
+                // [Fix] 无档案时删除占位符（原实现替换成角色名 → 人名进提示词，违反"禁止角色名"规则且污染画面）
+                result = result.replace(fullTag, '');
             }
             faceRegex.lastIndex = 0;
         }
-        // 兜底：未闭合的 [FACE:角色名（无]）→ 提取角色名
+        // 兜底：未闭合的 [FACE:角色名（无]）→ 有档案用档案，无档案删除（不用名字兜底）
         result = result.replace(/\[FACE:([^\s\]]+)(?!\])/g, function(m, name) {
             var anchor = '';
             if (cast[name] && cast[name].static) anchor = stripAnchors(cast[name].static);
             else if (npcs[name] && npcs[name].static) anchor = stripAnchors(npcs[name].static);
-            return anchor || name;
+            return anchor || '';
         });
         
         // 兼容旧的 [FACE] 无角色名格式（降级取第一个 cast）
@@ -547,6 +620,8 @@ export function resolveFacePrompt(rawPrompt) {
             if (anchor) result = result.replace("[FACE]", anchor);
             else result = result.replace("[FACE]", "").trim();
         }
+        // [Fix] 清理占位符删除后残留的重复逗号（中英文逗号都处理）
+        result = result.replace(/[，,]\s*[，,]+/g, '，').replace(/\s*,\s*$/g, '').replace(/，\s*$/g, '').trim();
         
         return result;
     } catch(e) {

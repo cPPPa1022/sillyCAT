@@ -1,4 +1,4 @@
-﻿// ── SillyImage Lab 渲染 ──
+// ── SillyImage Lab 渲染 ──
 import { slLog, slErr } from './log.js';
 import { settings, COLORS, escapeHtml, getSTContext, saveSettings, getActiveMode } from './settings.js';
 
@@ -107,7 +107,7 @@ export function renderEnhancedBodyHtml(enhanced) {
             var scene = imageScenes[+n] || '';
             var imageTag = '[image: ' + scene + ']';
             var fullPrompt = resolveFacePrompt(extractImagePrompt(enhanced, imageTag) || scene);
-            if (getActiveMode() === 'anime' || getActiveMode() === 'anime_tag') fullPrompt = cleanAnimePrompt(fullPrompt);  // 使用 getActiveMode 统一查询锁定的模式
+            if (getActiveMode() === 'anime' || getActiveMode() === 'anime_tag') { var _c = cleanAnimePrompt(fullPrompt); if (_c) fullPrompt = _c; }  // 使用 getActiveMode 统一查询锁定的模式；删空则保留原文（防中文提示词被清成空串）
             return buildImgCard(scene, fullPrompt, imgCacheGet(fullPrompt));
         });
 }
@@ -194,8 +194,10 @@ export function scanDom(messageDiv) {
         if (/^\[image:/.test(part)) {
             var match = part.match(/\[image:\s*([\s\S]*?)\]/);
             var scene = (match && match[1]) ? match[1].trim() : '';
-            var promptContent = extractImagePrompt(rawOriginal, part) || scene; var fullPrompt = resolveFacePrompt(scene ? scene + ', ' + promptContent : promptContent);
-            if (getActiveMode() === 'anime' || getActiveMode() === 'anime_tag') fullPrompt = cleanAnimePrompt(fullPrompt);  // 使用 getActiveMode 统一查询锁定的模式
+            var promptContent = extractImagePrompt(rawOriginal, part) || '';
+            // [Fix] 原代码 promptContent 兜底为 scene 后又拼 scene + ', ' + promptContent，无【提示词】块时场景重复两遍
+            var fullPrompt = resolveFacePrompt(scene ? (promptContent ? scene + ', ' + promptContent : scene) : promptContent);
+            if (getActiveMode() === 'anime' || getActiveMode() === 'anime_tag') { var _c2 = cleanAnimePrompt(fullPrompt); if (_c2) fullPrompt = _c2; }  // 使用 getActiveMode 统一查询锁定的模式；删空则保留原文
             return buildImgCard(scene, fullPrompt, imgCacheGet(fullPrompt));
         }
         return escapeHtml(part).replace(/\n/g, '<br>');
